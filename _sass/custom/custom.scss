@@ -419,3 +419,60 @@ a.kb-card {
   ol { margin-bottom: 1rem; }
 }
 .btn.kb-support-btn { display: inline-block; margin: 0.25rem 0 0.75rem 0; }
+
+
+/* ---- Engagement polish (2026-07-02) ---- */
+/* the live "dot" — the product motif, pulsing in the hero kicker */
+.kb-live-dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  margin-right: 8px;
+  background: $lime;
+  border: 2px solid $lime;
+  border-radius: 50%;
+  animation: kb-pulse 1.6s ease-out infinite;
+  vertical-align: baseline;
+}
+@keyframes kb-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(199, 245, 66, 0.55); }
+  70%  { box-shadow: 0 0 0 12px rgba(199, 245, 66, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(199, 245, 66, 0); }
+}
+
+/* three cards in one row on desktop (no orphan) */
+@media (min-width: 50rem) {
+  .kb-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* card "browse" affordance */
+a.kb-card .kb-card-title::after {
+  content: " \2192";
+  color: $lime-deep;
+  font-weight: 700;
+}
+
+/* popular topics: two columns on desktop, lime square bullets */
+.kb-topics ul {
+  columns: 2;
+  column-gap: 2.5rem;
+  padding-left: 0;
+  list-style: none;
+  li {
+    break-inside: avoid;
+    margin: 0 0 0.55rem 0;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: $lime;
+      border: 2px solid $dark;
+      border-radius: 2px;
+      margin-right: 10px;
+    }
+  }
+}
+@media (max-width: 49.9rem) { .kb-topics ul { columns: 1; } }
+
+/* hide the "This site uses Just the Docs" theme credit (off-brand);
+   our own footer_content still renders in the main footer */
+.side-bar .site-footer { display: none; }

@@ -6,7 +6,7 @@ last_updated: 2026-07-02
 ---
 
 <div class="kb-hero">
-  <p class="kb-hero-kicker">Help Centre</p>
+  <p class="kb-hero-kicker"><span class="kb-live-dot"></span>Help Centre</p>
   <h1 class="kb-hero-title">How can we help?</h1>
   <p class="kb-hero-sub">Watch the Dot is live GPS tracking for bike races, group rides and
   adventures. Riders carry the app; anyone can watch their <strong>dot</strong> move along the
@@ -36,6 +36,7 @@ last_updated: 2026-07-02
 
 ## Popular topics
 
+<div class="kb-topics" markdown="1">
 - [What is Watch the Dot?](getting-started/what-is-watch-the-dot.md)
 - [Create an account](getting-started/create-an-account.md)
 - [Your first event: a walkthrough](for-athletes/your-first-event.md)
@@ -46,6 +47,7 @@ last_updated: 2026-07-02
 - [Who can see my location?](account-and-privacy/who-can-see-your-location.md)
 - [Organiser quick-start checklist](for-organisers/quick-start-checklist.md)
 - [Notification settings](notifications/preferences-and-quiet-hours.md)
+</div>
 
 ## Browse everything
 
