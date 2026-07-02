@@ -1,20 +1,23 @@
-# Builds the help centre (Jekyll + just-the-docs) and publishes to GitHub Pages
-# at https://help.astertrack.app (custom domain set in repo Settings > Pages;
-# DNS: CNAME help -> mk-162.github.io).
+# Builds the help centre (Jekyll + just-the-docs) and publishes the built HTML
+# to the gh-pages branch. GitHub Pages serves that branch (Settings > Pages >
+# Source: Deploy from a branch > gh-pages / root).
+#
+# Why branch-deploy instead of actions/deploy-pages: the Actions-based Pages
+# pipeline wedged this repo's first deployments in deployment_queued twice
+# (10-min timeouts, site status stuck null). The classic branch pipeline is
+# the boring reliable path and needs no Pages API calls from the workflow.
 name: publish
 on:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,22 +25,18 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-      - id: pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Push _site to gh-pages
+        run: |
+          cd _site
+          touch .nojekyll
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "publish: ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
