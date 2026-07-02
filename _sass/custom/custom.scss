@@ -113,8 +113,18 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
 .aster-topbar .search-label { position: absolute; left: 0; top: 0; bottom: 0; padding-left: 10px; display: flex; align-items: center;
   .search-icon { color: rgba(220,238,235,0.7); width: 16px; height: 16px; } }
 .aster-topbar .search-results {
-  position: absolute; top: calc(#{$ctrl-h} + 8px); right: 0; left: auto; width: 480px; max-width: 80vw;
-  background: #fff; border: 2px solid $dark; border-radius: 12px; @include pop(4); overflow: hidden;
+  /* the theme's search-active mode pins this to the viewport edge — force a
+     dropdown anchored to the input */
+  position: absolute !important; top: calc(#{$ctrl-h} + 8px) !important;
+  right: 0 !important; left: auto !important;
+  width: 560px !important; max-width: min(80vw, 560px) !important;
+  max-height: 70vh; overflow-y: auto;
+  background: #fff; border: 2px solid $dark; border-radius: 12px; @include pop(4);
+}
+@media (max-width: 49.99rem) {
+  .aster-topbar .search-results {
+    left: 0 !important; right: auto !important; width: 100% !important; max-width: 100% !important;
+  }
 }
 .search-result:hover, .search-result.active { background: $lime-bg; }
 .search-result-title { color: $dark; font-weight: 600; }
