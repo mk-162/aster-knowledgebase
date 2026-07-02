@@ -50,6 +50,14 @@ footer_content: >-
   <a href="https://astertrack.app/terms">Terms</a>
 footer_last_modified: false
 
+# Layouts — without this every page renders RAW (no theme wrapper, no CSS):
+# Jekyll only applies a layout when the page/front-matter/defaults say so.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Build
 markdown: kramdown
 kramdown:
