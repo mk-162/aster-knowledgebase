@@ -475,4 +475,5 @@ a.kb-card .kb-card-title::after {
 
 /* hide the "This site uses Just the Docs" theme credit (off-brand);
    our own footer_content still renders in the main footer */
+.side-bar footer,
 .side-bar .site-footer { display: none; }
