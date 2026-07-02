@@ -266,7 +266,7 @@ div.highlighter-rouge, figure.highlight {
   100% { box-shadow: 0 0 0 0 rgba(199,245,66,0); }
 }
 .kb-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem 0; }
-@media (min-width: 50rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 64rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
 a.kb-card {
   display: flex; flex-direction: column; gap: 0.35rem;
   background: #fff; border: 2px solid $dark; border-radius: 16px; padding: 1.1rem 1.2rem;
