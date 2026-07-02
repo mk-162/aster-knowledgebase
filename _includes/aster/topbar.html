@@ -1,0 +1,30 @@
+<!-- Website-identical top nav (see aster-website components/SiteNav.tsx):
+     dark #0E110C bar, logo lockup, mint condensed links, compact search,
+     lime "Open the app" button. Search keeps the theme's #search-input /
+     #search-results IDs so just-the-docs.js binds unchanged. -->
+<header class="aster-topbar">
+  <div class="aster-container aster-topbar-row">
+    <a class="aster-logo" href="{{ '/' | relative_url }}" aria-label="Aster Help Centre — home">
+      <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="26" height="26">
+      <span class="aster-wordmark">Aster</span>
+      <span class="aster-suffix">Help Centre</span>
+    </a>
+    <nav class="aster-topnav" aria-label="Aster site">
+      <a href="https://astertrack.app/for-athletes">For athletes</a>
+      <a href="https://astertrack.app/for-watchers">For watchers</a>
+      <a href="https://astertrack.app/clubs">For clubs</a>
+      <a href="https://astertrack.app/for-organisers">For organisers</a>
+    </nav>
+    <div class="aster-topbar-tools">
+      {% capture search_placeholder %}Search the help centre{% endcapture %}
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="{{ search_placeholder }}" aria-label="{{ search_placeholder }}" autocomplete="off">
+          <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <a class="aster-cta" href="https://astertrack.app">Open the app</a>
+    </div>
+  </div>
+</header>

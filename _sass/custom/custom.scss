@@ -1,21 +1,18 @@
 /* ==========================================================================
-   Watch the Dot — Help Centre custom styles (neo-brutalist design system)
+   Aster Help Centre — design-system styles (rebuilt 2026-07-02)
 
-   Matches the app/marketing design language exactly (see the aster-design
-   reference pack + frontend/tailwind.config.js):
-     dark #181E15 · lime #C7F542 · lime-deep #4A6300 · lime-bg #EFFBC4
-     mint #DCEEEB · stone #F0F4F4 · gold #F2C94C · coral #E8A798
-     2px dark borders · sharp zero-blur "pop" offset shadows ·
-     Barlow body · Barlow Condensed UPPERCASE display · mono numerals ·
-     press-down button states.
-
-   NOTE ON PATH: just-the-docs auto-imports `custom/custom.scss` from the sass
-   load path — the previous `_sass/custom.scss` was never imported by the
-   theme. This file is the live one.
+   The chrome (topbar + footer) replicates the main website 1:1
+   (aster-website: SiteNav.tsx / SiteFooter.tsx / Button.tsx / globals.css):
+   dark #0E110C sticky nav, mint condensed links, lime CTA (h-10 = 40px),
+   1200px container, dark 4-column footer. Docs body: stone canvas, white
+   bordered content card, 2px borders, sharp pop shadows, Barlow +
+   Barlow Condensed. Layout is owned by _layouts/default.html (aster-shell
+   flex) — the theme's fixed-sidebar layout is fully overridden.
    ========================================================================== */
 
-/* ---- Tokens ---- */
+/* ---- Tokens (mirror the website) ---- */
 $dark: #181E15;
+$navdark: #0E110C;          /* SiteNav bar colour */
 $ink-muted: rgba(24, 30, 21, 0.7);
 $lime: #C7F542;
 $lime-deep: #4A6300;
@@ -25,484 +22,289 @@ $mint-deep: #b9dcd6;
 $stone: #F0F4F4;
 $gold: #F2C94C;
 $paper: #ffffff;
+$container: 1200px;         /* .container-site on the website */
+$ctrl-h: 40px;              /* Button size sm = h-10 — search matches */
 
 $font-body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 $font-display: 'Barlow Condensed', $font-body;
 $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 
-/* Sharp pop shadows — zero blur, solid dark */
 @mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $dark; }
 @mixin press {
-  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  transition: transform 100ms ease, box-shadow 100ms ease, filter 100ms ease;
   &:active { transform: translate(2px, 2px); box-shadow: none; }
 }
+@mixin condensed { font-family: $font-display; text-transform: uppercase; letter-spacing: 0.05em; }
 
 /* ---- Base ---- */
-body {
-  font-family: $font-body;
-  background-color: $stone;
-  color: $dark;
-  font-feature-settings: 'kern', 'liga';
-}
+body { font-family: $font-body; background: $stone; color: $dark; }
 
-/* ---- Headings: condensed uppercase display ---- */
-h1, h2, h3, h4,
-.main-content h1, .main-content h2, .main-content h3, .main-content h4 {
-  font-family: $font-display;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-weight: 700;
-  color: $dark;
-}
+h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
 .main-content h1 {
-  font-size: 2rem;
-  line-height: 1.1;
-  padding-bottom: 0.35rem;
-  border-bottom: none;
-  /* lime underline bar — the marketing h1 treatment */
-  &::after {
-    content: '';
-    display: block;
-    width: 56px;
-    height: 6px;
-    margin-top: 10px;
-    background: $lime;
-    border: 2px solid $dark;
-    border-radius: 999px;
-  }
+  font-size: 2rem; line-height: 1.1; border-bottom: none; padding-bottom: 0.35rem;
+  &::after { content: ''; display: block; width: 56px; height: 6px; margin-top: 10px;
+    background: $lime; border: 2px solid $dark; border-radius: 999px; }
 }
-.main-content h2 {
-  font-size: 1.4rem;
-  border-bottom: 2px solid rgba(24, 30, 21, 0.12);
-  padding-bottom: 0.3rem;
-}
+.main-content h2 { font-size: 1.4rem; border-bottom: 2px solid rgba(24,30,21,0.12); padding-bottom: 0.3rem; }
 
-/* ---- Sidebar ---- */
-.side-bar {
-  background-color: $stone;
-  border-right: 2px solid $dark;
-}
-.site-header {
-  background-color: $dark;
+/* ==========================================================================
+   TOPBAR — replica of the website SiteNav
+   ========================================================================== */
+.aster-container { max-width: $container; margin-inline: auto; padding-inline: 1.25rem; width: 100%; }
+
+.aster-topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: $navdark;
   border-bottom: 2px solid $dark;
-  min-height: 60px;
 }
-.site-title {
-  color: #fff !important;
-  font-family: $font-display;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  color: $lime !important; /* lime wordmark on dark — matches the website header */
-  /* the genuine Aster mark (4-petal flower), lime on dark */
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    margin-right: 10px;
-    background: url('../images/aster-mark-lime.svg') no-repeat center / contain;
-    vertical-align: -4px;
-  }
-  &:hover { background-image: none; background-color: rgba(255, 255, 255, 0.05); }
+.aster-topbar-row {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding-top: 11px; padding-bottom: 11px;
 }
-
-/* Nav list: dark text, lime active chip, wash hover */
-.site-nav .nav-list .nav-list-item {
-  > .nav-list-link {
-    color: $dark;
-    font-weight: 500;
-    border-radius: 10px;
-    margin: 1px 8px;
-    &:hover {
-      background-color: $lime-bg;
-      background-image: none;
-      color: $dark;
-    }
-    &.active {
-      background-color: $lime;
-      background-image: none;
-      color: $dark;
-      font-weight: 700;
-      border: 2px solid $dark;
-      @include pop(2);
-    }
-  }
-  .nav-list-expander {
-    color: $ink-muted;
-    &:hover { background-image: none; background-color: $lime-bg; color: $dark; }
-  }
+.aster-logo {
+  display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none; flex: none;
+  img { display: block; width: 26px; height: 26px; }
+  .aster-wordmark { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 26px; line-height: 1; color: $lime; }
+  .aster-suffix   { @include condensed; letter-spacing: 0.08em; font-weight: 600; font-size: 13px; color: $mint;
+    border-left: 2px solid rgba(220,238,235,0.25); padding-left: 10px; margin-left: 4px; }
+}
+.aster-topnav {
+  display: flex; align-items: center; gap: 1.5rem; margin-left: 0.5rem;
+  a { @include condensed; letter-spacing: 0.06em; font-weight: 600; font-size: 0.875rem;
+      color: $mint; text-decoration: none; padding: 6px 0;
+      &:hover { color: $lime; } }
+}
+.aster-topbar-tools {
+  display: flex; align-items: center; gap: 12px; margin-left: auto; flex: none;
+}
+.aster-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: $ctrl-h; padding: 0 16px;
+  background: $lime; color: $dark !important; text-decoration: none;
+  @include condensed; letter-spacing: 0.03em; font-weight: 700; font-size: 0.875rem;
+  border: 2px solid $dark; border-radius: 12px;
+  @include pop(3); @include press;
+  &:hover { filter: brightness(1.05); }
 }
 
-/* Category headers in the nav (just-the-docs section captions) */
-.nav-category {
-  font-family: $font-display;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: $ink-muted;
-  font-weight: 600;
+/* Search — same height as the CTA, dark-bar treatment, tight */
+.aster-topbar .search {
+  position: relative; width: 300px; max-width: 300px; height: $ctrl-h;
+  padding: 0; margin: 0; flex: none;
 }
-
-/* ---- Search ---- */
-.search { box-shadow: none; }
-.search-input {
-  background-color: #fff;
-  border: 2px solid $dark;
-  border-radius: 12px;
-  color: $dark;
-  font-family: $font-body;
-  &:focus {
-    border-color: $lime-deep;
-    background-color: #fff;
-    @include pop(2);
-  }
-  &::placeholder { color: $ink-muted; }
+.aster-topbar .search-input-wrap {
+  height: $ctrl-h; border-radius: 12px; box-shadow: none;
+  background: rgba(255,255,255,0.08); border: 2px solid rgba(220,238,235,0.25);
+  transition: border-color 120ms ease, background 120ms ease;
+  &:focus-within { border-color: $lime; background: rgba(255,255,255,0.12); }
 }
-.search-label .search-icon { color: $dark; }
-.search-results {
-  background-color: #fff;
-  border: 2px solid $dark;
-  border-radius: 12px;
-  @include pop(4);
-  overflow: hidden;
+.aster-topbar .search-input {
+  height: 36px; padding: 0 12px 0 36px; font-size: 0.875rem;
+  background: transparent; border: none; color: #fff;
+  &::placeholder { color: rgba(220,238,235,0.55); }
+  &:focus { background: transparent; }
 }
-.search-result:hover,
-.search-result.active { background-color: $lime-bg; }
+.aster-topbar .search-label { padding-left: 10px; display: flex; align-items: center; height: 36px;
+  .search-icon { color: rgba(220,238,235,0.7); width: 16px; height: 16px; } }
+.aster-topbar .search-results {
+  position: absolute; top: calc(#{$ctrl-h} + 8px); right: 0; left: auto; width: 480px; max-width: 80vw;
+  background: #fff; border: 2px solid $dark; border-radius: 12px; @include pop(4); overflow: hidden;
+}
+.search-result:hover, .search-result.active { background: $lime-bg; }
 .search-result-title { color: $dark; font-weight: 600; }
 .search-result-highlight { color: $lime-deep; }
 
-/* ---- Main content: white card on the stone canvas ---- */
-.main { background-color: $stone; }
-.main-content-wrap { padding-top: 1.5rem; }
-@media (min-width: 66.5rem) {
-  .main-content-wrap {
-    background: $paper;
-    border: 2px solid $dark;
-    border-radius: 16px;
-    @include pop(4);
-    margin: 1.25rem 2rem 2.5rem 2rem;
-    padding: 2rem 2.5rem;
-    max-width: 56rem;
-  }
+/* ==========================================================================
+   SHELL LAYOUT — centered flex, overrides the theme's fixed sidebar
+   ========================================================================== */
+.aster-shell {
+  display: flex; align-items: flex-start; gap: 2rem;
+  max-width: $container; margin: 0 auto; padding: 0 1.25rem;
+}
+.side-bar {
+  position: sticky !important; top: 78px;
+  flex: 0 0 240px; width: 240px !important; min-width: 240px;
+  height: auto !important; max-height: calc(100vh - 96px); overflow-y: auto;
+  background: transparent; border: none;
+  padding: 1.5rem 0 2rem 0;
+  z-index: 1;
+}
+.main {
+  position: static !important;
+  margin-left: 0 !important; max-width: none !important;
+  flex: 1; min-width: 0;
+}
+/* Old theme chrome that the topbar replaces */
+.main-header { display: none !important; }
+.side-bar .site-header { display: none !important; }
+.side-bar footer, .side-bar .site-footer { display: none !important; }
+
+/* Content card */
+.main-content-wrap {
+  background: $paper; border: 2px solid $dark; border-radius: 16px;
+  @include pop(4);
+  margin: 1.5rem 0 3rem 0 !important;
+  padding: 2rem 2.5rem !important;
+  max-width: none !important;
 }
 
-/* ---- Links: dark text, thick lime underline ---- */
+/* ---- Docs nav (sidebar) ---- */
+.site-nav { padding-top: 0; }
+.site-nav .nav-list .nav-list-item {
+  > .nav-list-link {
+    color: $dark; font-weight: 500; border-radius: 10px; margin: 1px 0;
+    padding-right: 2.75rem;
+    &:hover { background: $lime-bg; background-image: none; color: $dark; }
+    &.active { background: $lime; background-image: none; color: $dark; font-weight: 700;
+      border: 2px solid $dark; @include pop(2); }
+  }
+  .nav-list-expander {
+    right: 8px; width: 2.25rem; height: 2.25rem; border-radius: 8px;
+    color: $ink-muted;
+    &:hover { background-image: none; background: $lime-bg; color: $dark; }
+  }
+}
+.nav-category { @include condensed; letter-spacing: 0.08em; color: $ink-muted; font-weight: 600; padding-left: 0; }
+
+/* ---- Content: links, buttons, callouts, tables, code ---- */
 .main-content a:not(.btn) {
-  color: $dark;
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: $lime;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3px;
+  color: $dark; font-weight: 600; text-decoration: underline;
+  text-decoration-color: $lime; text-decoration-thickness: 3px; text-underline-offset: 3px;
   background-image: none;
-  &:hover { background-color: $lime-bg; text-decoration-color: $lime-deep; }
+  &:hover { background: $lime-bg; text-decoration-color: $lime-deep; }
 }
-
-/* ---- Buttons: the DS primary (lime, bordered, pop, press) ---- */
-.btn, .btn-primary, .btn-purple, .btn-blue, .btn-green {
-  background-color: $lime;
-  background-image: none;
-  color: $dark;
-  font-weight: 700;
-  font-family: $font-body;
-  border: 2px solid $dark;
-  border-radius: 12px;
-  padding: 0.5em 1.1em;
-  @include pop(3);
-  @include press;
-  &:hover {
-    background-color: #d4f05a;
-    background-image: none;
-    color: $dark;
-    @include pop(4);
-    transform: translate(-1px, -1px);
-  }
+.btn, .btn-primary {
+  display: inline-flex; align-items: center; height: $ctrl-h; padding: 0 16px;
+  background: $lime; background-image: none; color: $dark; font-weight: 700;
+  @include condensed; letter-spacing: 0.03em; font-size: 0.875rem;
+  border: 2px solid $dark; border-radius: 12px;
+  @include pop(3); @include press;
+  &:hover { background: #d4f05a; background-image: none; color: $dark; }
 }
-.btn-outline {
-  background: $mint;
-  color: $dark;
-  border: 2px solid $dark;
-  @include pop(2);
-  &:hover { background: $mint-deep; color: $dark; }
-}
-
-/* ---- Aux link ("Open Watch the Dot") as a real CTA button ---- */
-.aux-nav .aux-nav-list-item a.site-button {
-  background-color: $lime;
-  color: $dark !important;
-  border: 2px solid $dark;
-  border-radius: 12px;
-  padding: 6px 14px;
-  font-weight: 700;
-  font-size: 0.875rem;
-  @include pop(2);
-  @include press;
-  &:hover { background-color: #d4f05a; background-image: none; }
-}
-
-/* ---- Callouts: bordered cards, not left-border stripes ----
-   (JTD callouts + plain blockquotes) */
-blockquote,
-.note, .tip, .important, .warning, .highlight-note {
-  background: $lime-bg;
-  border: 2px solid $dark;
-  border-left: 2px solid $dark;
-  border-radius: 12px;
-  padding: 0.85rem 1.1rem;
-  margin: 1.25rem 0;
-  color: $dark;
-  @include pop(2);
-  > p:first-child { margin-top: 0; }
-  > p:last-child { margin-bottom: 0; }
+blockquote, .note, .tip, .important, .warning {
+  background: $lime-bg; border: 2px solid $dark; border-radius: 12px;
+  padding: 0.85rem 1.1rem; margin: 1.25rem 0; color: $dark; @include pop(2);
+  > p:first-child { margin-top: 0; } > p:last-child { margin-bottom: 0; }
 }
 .warning { background: #FDECEA; }
-.note    { background: $mint; }
-
-/* ---- Tables: bordered, condensed uppercase headers, mono numerals ---- */
+.note { background: $mint; }
 .main-content table {
-  border: 2px solid $dark;
-  border-radius: 12px;
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
-  @include pop(2);
-  th {
-    background-color: $stone;
-    font-family: $font-display;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.75rem;
-    color: $dark;
-    border-bottom: 2px solid $dark;
-  }
-  td { border-bottom: 1px solid rgba(24, 30, 21, 0.12); }
+  border: 2px solid $dark; border-radius: 12px; border-collapse: separate; border-spacing: 0;
+  overflow: hidden; @include pop(2);
+  th { background: $stone; @include condensed; letter-spacing: 0.05em; font-size: 0.75rem;
+    color: $dark; border-bottom: 2px solid $dark; }
+  td { border-bottom: 1px solid rgba(24,30,21,0.12); }
   tr:last-child td { border-bottom: none; }
 }
-
-/* ---- Code ---- */
-code {
-  background-color: $stone;
-  border: 1px solid rgba(24, 30, 21, 0.15);
-  border-radius: 6px;
-  font-family: $font-mono;
-  font-size: 0.85em;
-  padding: 0.1em 0.35em;
-  color: $dark;
-}
+code { background: $stone; border: 1px solid rgba(24,30,21,0.15); border-radius: 6px;
+  font-family: $font-mono; font-size: 0.85em; padding: 0.1em 0.35em; color: $dark; }
 div.highlighter-rouge, figure.highlight {
-  background-color: #f7faf9;
-  border: 2px solid rgba(24, 30, 21, 0.15);
-  border-radius: 12px;
-  pre.highlight, pre { background: transparent; }
-  code { background: transparent; border: none; }
+  background: #f7faf9; border: 2px solid rgba(24,30,21,0.15); border-radius: 12px;
+  pre.highlight, pre { background: transparent; } code { background: transparent; border: none; }
+}
+.breadcrumb-nav-list-item { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
+  a { color: $lime-deep; background-image: none; } }
+.label, .label-blue, .label-green { background: $mint !important; color: $dark;
+  border: 2px solid $dark; border-radius: 999px; font-weight: 700; font-family: $font-body; }
+.label-yellow { background: $gold !important; color: $dark; }
+
+/* ==========================================================================
+   FOOTER — replica of the website SiteFooter
+   ========================================================================== */
+.aster-footer {
+  background: $dark; color: rgba(220,238,235,0.6); margin-top: auto;
+  a { color: rgba(220,238,235,0.6); text-decoration: none; font-size: 0.875rem;
+    &:hover { color: $lime; } }
+}
+.aster-footer-main {
+  display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;
+  padding-top: 2.75rem; padding-bottom: 2.75rem;
+}
+.aster-footer-brand {
+  max-width: 280px;
+  .aster-logo img { width: 24px; height: 24px; }
+  .aster-wordmark { font-size: 24px; }
+  p { margin-top: 1rem; font-size: 0.875rem; line-height: 1.6; }
+}
+.aster-footer-cols {
+  display: flex; gap: 3rem; flex-wrap: wrap;
+  > div { display: flex; flex-direction: column; gap: 0.6rem; }
+}
+.aster-footer-title { @include condensed; letter-spacing: 0.06em; font-weight: 600;
+  font-size: 0.75rem; color: $mint; margin: 0 0 0.25rem 0; }
+.aster-footer-strip {
+  border-top: 1px solid rgba(220,238,235,0.1);
+  p { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
+    color: rgba(220,238,235,0.45); padding: 1rem 0; margin: 0; }
 }
 
-/* ---- Breadcrumbs: kicker treatment ---- */
-.breadcrumb-nav-list-item {
-  font-family: $font-display;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.75rem;
-  a { color: $lime-deep; background-image: none; }
-}
-
-/* ---- Labels/pills (JTD .label) ---- */
-.label, .label-blue, .label-green {
-  background-color: $mint !important;
-  color: $dark;
-  border: 2px solid $dark;
-  border-radius: 999px;
-  font-weight: 700;
-  font-family: $font-body;
-}
-.label-yellow { background-color: $gold !important; color: $dark; }
-.label-red { background-color: #E8A798 !important; color: $dark; }
-
-/* ---- Footer ---- */
-.site-footer {
-  background-color: transparent;
-  color: $ink-muted;
-  border-top: none;
-  a { color: $lime-deep; background-image: none; font-weight: 600; }
-  a:hover { color: $dark; }
-}
-.main-footer {
-  border-top: 2px solid rgba(24, 30, 21, 0.12);
-  color: $ink-muted;
-}
-
-/* ---- Mobile niceties ---- */
-@media (max-width: 66.4rem) {
-  .main-content-wrap { background: $paper; }
-  .site-header { border-bottom: 2px solid $dark; }
-}
-
-/* ---- Homepage components (index.md) ---- */
+/* ==========================================================================
+   HOMEPAGE components
+   ========================================================================== */
 .kb-hero {
-  background: $dark;
-  border: 2px solid $dark;
-  border-radius: 16px;
-  padding: 2rem 2.25rem;
-  margin-bottom: 1.5rem;
-  @include pop(4);
-  .kb-hero-kicker {
-    font-family: $font-display;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: $lime;
-    font-weight: 700;
-    font-size: 0.8rem;
-    margin: 0 0 0.4rem 0;
-  }
-  .kb-hero-title {
-    color: #fff;
-    font-size: 2.4rem;
-    margin: 0 0 0.5rem 0;
-    &::after { display: none; }
-  }
-  .kb-hero-sub { color: rgba(255, 255, 255, 0.85); margin: 0; max-width: 46rem; }
+  background: $navdark; border: 2px solid $dark; border-radius: 16px;
+  padding: 2rem 2.25rem; margin-bottom: 1.5rem; @include pop(4);
+  .kb-hero-kicker { @include condensed; letter-spacing: 0.12em; color: $lime; font-weight: 700;
+    font-size: 0.8rem; margin: 0 0 0.4rem 0; }
+  .kb-hero-title { color: #fff; font-size: 2.4rem; margin: 0 0 0.5rem 0; &::after { display: none; } }
+  .kb-hero-sub { color: rgba(255,255,255,0.85); margin: 0; max-width: 46rem; }
 }
-
-.kb-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0 2rem 0;
-}
-a.kb-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  background: #fff;
-  border: 2px solid $dark;
-  border-radius: 16px;
-  padding: 1.1rem 1.2rem;
-  text-decoration: none !important;
-  color: $dark;
-  @include pop(3);
-  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
-  &:hover {
-    background: $lime-bg;
-    transform: translate(-2px, -2px);
-    @include pop(5);
-  }
-  &:active { transform: translate(2px, 2px); box-shadow: none; }
-  .kb-card-emoji { font-size: 1.6rem; line-height: 1; }
-  .kb-card-title {
-    font-family: $font-display;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-weight: 700;
-    font-size: 1.15rem;
-  }
-  .kb-card-sub { color: $ink-muted; font-size: 0.9rem; line-height: 1.45; }
-}
-
-.kb-support {
-  background: $mint;
-  border: 2px solid $dark;
-  border-radius: 16px;
-  padding: 1.4rem 1.6rem;
-  margin-top: 2.25rem;
-  @include pop(4);
-  .kb-support-kicker {
-    font-family: $font-display;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    font-size: 0.8rem;
-    color: $lime-deep;
-    margin: 0 0 0.35rem 0;
-  }
-  ol { margin-bottom: 1rem; }
-}
-.btn.kb-support-btn { display: inline-block; margin: 0.25rem 0 0.75rem 0; }
-
-
-/* ---- Engagement polish (2026-07-02) ---- */
-/* the live "dot" — the product motif, pulsing in the hero kicker */
 .kb-live-dot {
-  display: inline-block;
-  width: 10px; height: 10px;
-  margin-right: 8px;
-  background: $lime;
-  border: 2px solid $lime;
-  border-radius: 50%;
-  animation: kb-pulse 1.6s ease-out infinite;
-  vertical-align: baseline;
+  display: inline-block; width: 10px; height: 10px; margin-right: 8px;
+  background: $lime; border: 2px solid $lime; border-radius: 50%;
+  animation: kb-pulse 1.6s ease-out infinite; vertical-align: baseline;
 }
 @keyframes kb-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(199, 245, 66, 0.55); }
-  70%  { box-shadow: 0 0 0 12px rgba(199, 245, 66, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(199, 245, 66, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(199,245,66,0.55); }
+  70% { box-shadow: 0 0 0 12px rgba(199,245,66,0); }
+  100% { box-shadow: 0 0 0 0 rgba(199,245,66,0); }
 }
-
-/* three cards in one row on desktop (no orphan) */
-@media (min-width: 50rem) {
-  .kb-cards { grid-template-columns: repeat(3, 1fr); }
+.kb-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem 0; }
+@media (min-width: 50rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
+a.kb-card {
+  display: flex; flex-direction: column; gap: 0.35rem;
+  background: #fff; border: 2px solid $dark; border-radius: 16px; padding: 1.1rem 1.2rem;
+  text-decoration: none !important; color: $dark; @include pop(3);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(5); }
+  &:active { transform: translate(2px,2px); box-shadow: none; }
+  .kb-card-emoji { font-size: 1.6rem; line-height: 1; }
+  .kb-card-title { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 1.15rem;
+    &::after { content: " \2192"; color: $lime-deep; font-weight: 700; } }
+  .kb-card-sub { color: $ink-muted; font-size: 0.9rem; line-height: 1.45; }
 }
-
-/* card "browse" affordance */
-a.kb-card .kb-card-title::after {
-  content: " \2192";
-  color: $lime-deep;
-  font-weight: 700;
-}
-
-/* popular topics: two columns on desktop, lime square bullets */
 .kb-topics ul {
-  columns: 2;
-  column-gap: 2.5rem;
-  padding-left: 0;
-  list-style: none;
-  li {
-    break-inside: avoid;
-    margin: 0 0 0.55rem 0;
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 8px; height: 8px;
-      background: $lime;
-      border: 2px solid $dark;
-      border-radius: 2px;
-      margin-right: 10px;
-    }
-  }
+  columns: 2; column-gap: 2.5rem; padding-left: 0; list-style: none;
+  li { break-inside: avoid; margin: 0 0 0.55rem 0;
+    &::before { content: ""; display: inline-block; width: 8px; height: 8px;
+      background: $lime; border: 2px solid $dark; border-radius: 2px; margin-right: 10px; } }
 }
-@media (max-width: 49.9rem) { .kb-topics ul { columns: 1; } }
-
-/* hide the "This site uses Just the Docs" theme credit (off-brand);
-   our own footer_content still renders in the main footer */
-.side-bar footer,
-.side-bar .site-footer { display: none !important; } /* the theme's d-md-block utility is !important */
-
-
-/* ---- Header rework (2026-07-02): compact search, tidy chevrons ---- */
-/* Compact search: the theme's bar is full-width with heavy padding.
-   Cap the width, shrink the field, drop the oversized wrapper height. */
-.main .search {
-  max-width: 20rem;
-  padding: 0;
-  margin: auto 0;
-  height: auto;
+.kb-support {
+  background: $mint; border: 2px solid $dark; border-radius: 16px;
+  padding: 1.4rem 1.6rem; margin-top: 2.25rem; @include pop(4);
+  .kb-support-kicker { @include condensed; letter-spacing: 0.1em; font-weight: 700;
+    font-size: 0.8rem; color: $lime-deep; margin: 0 0 0.35rem 0; }
+  ol { margin-bottom: 1rem; }
 }
-.search-input-wrap {
-  height: 42px;
-  box-shadow: none;
-  border-radius: 12px;
-}
-.search-input {
-  height: 42px;
-  padding: 6px 12px 6px 36px;
-  font-size: 0.875rem;
-}
-.search-label { padding-left: 10px; }
-.main-header { display: flex; align-items: center; }
+.btn.kb-support-btn { display: inline-flex; margin: 0.25rem 0 0.75rem 0; }
 
-/* Nav chevrons: keep the expander off the chip's edge */
-.site-nav .nav-list .nav-list-item .nav-list-expander {
-  right: 8px;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 8px;
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 64rem) {
+  .aster-topnav { display: none; }
+}
+@media (max-width: 50rem) {
+  .aster-topbar-row { flex-wrap: wrap; gap: 0.75rem; }
+  .aster-topbar .search { order: 3; width: 100%; max-width: none; }
+  .aster-topbar .search-results { left: 0; right: auto; width: 100%; max-width: none; }
+  .aster-shell { display: block; padding: 0 1rem; }
+  .side-bar { position: static !important; width: auto !important; min-width: 0; max-height: none; padding: 1rem 0 0 0; }
+  /* restore the theme's mobile menu button strip (dark) so docs nav toggles */
+  .side-bar .site-header { display: flex !important; background: $dark; border-radius: 12px; border: 2px solid $dark; }
+  .site-title { color: $mint !important; @include condensed; font-weight: 700; }
+  .main-content-wrap { padding: 1.25rem 1.1rem !important; }
+  .kb-topics ul { columns: 1; }
+  .aster-footer-main { flex-direction: column; gap: 2rem; }
 }
