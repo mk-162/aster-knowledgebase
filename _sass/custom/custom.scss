@@ -474,7 +474,7 @@ a.kb-card .kb-card-title::after {
 /* hide the "This site uses Just the Docs" theme credit (off-brand);
    our own footer_content still renders in the main footer */
 .side-bar footer,
-.side-bar .site-footer { display: none; }
+.side-bar .site-footer { display: none !important; } /* the theme's d-md-block utility is !important */
 
 
 /* ---- Header rework (2026-07-02): compact search, tidy chevrons ---- */
