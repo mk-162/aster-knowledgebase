@@ -300,7 +300,7 @@ a.kb-card {
 @media (max-width: 64rem) {
   .aster-topnav { display: none; }
 }
-@media (max-width: 50rem) {
+@media (max-width: 49.99rem) { /* align with the theme's min-width:50rem desktop switch */
   .aster-topbar-row { flex-wrap: wrap; gap: 0.65rem; row-gap: 0.65rem; }
   .aster-logo { flex: 1; min-width: 0;
     .aster-suffix { white-space: nowrap; } }
