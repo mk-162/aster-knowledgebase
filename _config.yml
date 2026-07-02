@@ -1,0 +1,70 @@
+# Watch the Dot — Help Centre (Jekyll site config)
+#
+# Built for the "Just the Docs" theme (https://just-the-docs.com), the most
+# common Jekyll knowledge-base theme: category folders become top-level nav
+# sections, articles nest under them via the `parent` front-matter field, and
+# `nav_order` controls ordering. Swappable for any Jekyll theme — the content
+# and front matter are theme-agnostic.
+
+title: Watch the Dot — Help Centre
+description: >-
+  Guides for athletes, spectators and event organisers using Watch the Dot,
+  the live GPS tracking platform for bike races, group rides and adventures.
+lang: en-GB
+
+# Theme — installed via the Gemfile (works locally and in CI).
+theme: just-the-docs
+
+# Custom styles (Aster marketing branding)
+sass:
+  load_paths:
+    - _sass
+
+# baseurl is injected at build time by the GitHub Pages workflow
+# (actions/configure-pages), so it's correct whether the site is served from a
+# custom domain (e.g. help.astertrack.app) or a project page (/repo). Leave blank
+# for local development.
+baseurl: ""
+url: "https://help.astertrack.app"
+
+# Search across all articles
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+# Nicety: collapsible sections + "last edited" support
+nav_sort: case_insensitive
+heading_anchors: true
+
+# Link back to the app
+aux_links:
+  "Open Watch the Dot":
+    - "https://astertrack.app"
+aux_links_new_tab: true
+
+# Footer — aligned with marketing site
+footer_content: >-
+  © Watch the Dot Ltd. &nbsp;·&nbsp;
+  <a href="https://astertrack.app/privacy">Privacy</a> &nbsp;·&nbsp;
+  <a href="https://astertrack.app/terms">Terms</a>
+footer_last_modified: false
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-relative-links
+# Keep .md links as-is in the source (GitHub-browsable) and let the plugin
+# rewrite them to the published URLs at build time.
+relative_links:
+  enabled: true
+  collections: false
+exclude:
+  - README.md
+  - STYLE-GUIDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

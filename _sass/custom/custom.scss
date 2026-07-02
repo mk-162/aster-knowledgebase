@@ -1,0 +1,421 @@
+/* ==========================================================================
+   Watch the Dot — Help Centre custom styles (neo-brutalist design system)
+
+   Matches the app/marketing design language exactly (see the aster-design
+   reference pack + frontend/tailwind.config.js):
+     dark #181E15 · lime #C7F542 · lime-deep #4A6300 · lime-bg #EFFBC4
+     mint #DCEEEB · stone #F0F4F4 · gold #F2C94C · coral #E8A798
+     2px dark borders · sharp zero-blur "pop" offset shadows ·
+     Barlow body · Barlow Condensed UPPERCASE display · mono numerals ·
+     press-down button states.
+
+   NOTE ON PATH: just-the-docs auto-imports `custom/custom.scss` from the sass
+   load path — the previous `_sass/custom.scss` was never imported by the
+   theme. This file is the live one.
+   ========================================================================== */
+
+/* ---- Tokens ---- */
+$dark: #181E15;
+$ink-muted: rgba(24, 30, 21, 0.7);
+$lime: #C7F542;
+$lime-deep: #4A6300;
+$lime-bg: #EFFBC4;
+$mint: #DCEEEB;
+$mint-deep: #b9dcd6;
+$stone: #F0F4F4;
+$gold: #F2C94C;
+$paper: #ffffff;
+
+$font-body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+$font-display: 'Barlow Condensed', $font-body;
+$font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+
+/* Sharp pop shadows — zero blur, solid dark */
+@mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $dark; }
+@mixin press {
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  &:active { transform: translate(2px, 2px); box-shadow: none; }
+}
+
+/* ---- Base ---- */
+body {
+  font-family: $font-body;
+  background-color: $stone;
+  color: $dark;
+  font-feature-settings: 'kern', 'liga';
+}
+
+/* ---- Headings: condensed uppercase display ---- */
+h1, h2, h3, h4,
+.main-content h1, .main-content h2, .main-content h3, .main-content h4 {
+  font-family: $font-display;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: $dark;
+}
+.main-content h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  padding-bottom: 0.35rem;
+  border-bottom: none;
+  /* lime underline bar — the marketing h1 treatment */
+  &::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 6px;
+    margin-top: 10px;
+    background: $lime;
+    border: 2px solid $dark;
+    border-radius: 999px;
+  }
+}
+.main-content h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid rgba(24, 30, 21, 0.12);
+  padding-bottom: 0.3rem;
+}
+
+/* ---- Sidebar ---- */
+.side-bar {
+  background-color: $stone;
+  border-right: 2px solid $dark;
+}
+.site-header {
+  background-color: $dark;
+  border-bottom: 2px solid $dark;
+  min-height: 60px;
+}
+.site-title {
+  color: #fff !important;
+  font-family: $font-display;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  /* little lime "dot" mark before the title — the brand glyph */
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    background: $lime;
+    border: 2px solid $dark;
+    border-radius: 4px;
+    box-shadow: 0 0 0 3px rgba(199, 245, 66, 0.25);
+    vertical-align: baseline;
+  }
+  &:hover { background-image: none; background-color: rgba(255, 255, 255, 0.05); }
+}
+
+/* Nav list: dark text, lime active chip, wash hover */
+.site-nav .nav-list .nav-list-item {
+  > .nav-list-link {
+    color: $dark;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 1px 8px;
+    &:hover {
+      background-color: $lime-bg;
+      background-image: none;
+      color: $dark;
+    }
+    &.active {
+      background-color: $lime;
+      background-image: none;
+      color: $dark;
+      font-weight: 700;
+      border: 2px solid $dark;
+      @include pop(2);
+    }
+  }
+  .nav-list-expander {
+    color: $ink-muted;
+    &:hover { background-image: none; background-color: $lime-bg; color: $dark; }
+  }
+}
+
+/* Category headers in the nav (just-the-docs section captions) */
+.nav-category {
+  font-family: $font-display;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $ink-muted;
+  font-weight: 600;
+}
+
+/* ---- Search ---- */
+.search { box-shadow: none; }
+.search-input {
+  background-color: #fff;
+  border: 2px solid $dark;
+  border-radius: 12px;
+  color: $dark;
+  font-family: $font-body;
+  &:focus {
+    border-color: $lime-deep;
+    background-color: #fff;
+    @include pop(2);
+  }
+  &::placeholder { color: $ink-muted; }
+}
+.search-label .search-icon { color: $dark; }
+.search-results {
+  background-color: #fff;
+  border: 2px solid $dark;
+  border-radius: 12px;
+  @include pop(4);
+  overflow: hidden;
+}
+.search-result:hover,
+.search-result.active { background-color: $lime-bg; }
+.search-result-title { color: $dark; font-weight: 600; }
+.search-result-highlight { color: $lime-deep; }
+
+/* ---- Main content: white card on the stone canvas ---- */
+.main { background-color: $stone; }
+.main-content-wrap { padding-top: 1.5rem; }
+@media (min-width: 66.5rem) {
+  .main-content-wrap {
+    background: $paper;
+    border: 2px solid $dark;
+    border-radius: 16px;
+    @include pop(4);
+    margin: 1.25rem 2rem 2.5rem 2rem;
+    padding: 2rem 2.5rem;
+    max-width: 56rem;
+  }
+}
+
+/* ---- Links: dark text, thick lime underline ---- */
+.main-content a:not(.btn) {
+  color: $dark;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: $lime;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  background-image: none;
+  &:hover { background-color: $lime-bg; text-decoration-color: $lime-deep; }
+}
+
+/* ---- Buttons: the DS primary (lime, bordered, pop, press) ---- */
+.btn, .btn-primary, .btn-purple, .btn-blue, .btn-green {
+  background-color: $lime;
+  background-image: none;
+  color: $dark;
+  font-weight: 700;
+  font-family: $font-body;
+  border: 2px solid $dark;
+  border-radius: 12px;
+  padding: 0.5em 1.1em;
+  @include pop(3);
+  @include press;
+  &:hover {
+    background-color: #d4f05a;
+    background-image: none;
+    color: $dark;
+    @include pop(4);
+    transform: translate(-1px, -1px);
+  }
+}
+.btn-outline {
+  background: $mint;
+  color: $dark;
+  border: 2px solid $dark;
+  @include pop(2);
+  &:hover { background: $mint-deep; color: $dark; }
+}
+
+/* ---- Aux link ("Open Watch the Dot") as a real CTA button ---- */
+.aux-nav .aux-nav-list-item a.site-button {
+  background-color: $lime;
+  color: $dark !important;
+  border: 2px solid $dark;
+  border-radius: 12px;
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  @include pop(2);
+  @include press;
+  &:hover { background-color: #d4f05a; background-image: none; }
+}
+
+/* ---- Callouts: bordered cards, not left-border stripes ----
+   (JTD callouts + plain blockquotes) */
+blockquote,
+.note, .tip, .important, .warning, .highlight-note {
+  background: $lime-bg;
+  border: 2px solid $dark;
+  border-left: 2px solid $dark;
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  margin: 1.25rem 0;
+  color: $dark;
+  @include pop(2);
+  > p:first-child { margin-top: 0; }
+  > p:last-child { margin-bottom: 0; }
+}
+.warning { background: #FDECEA; }
+.note    { background: $mint; }
+
+/* ---- Tables: bordered, condensed uppercase headers, mono numerals ---- */
+.main-content table {
+  border: 2px solid $dark;
+  border-radius: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  @include pop(2);
+  th {
+    background-color: $stone;
+    font-family: $font-display;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    color: $dark;
+    border-bottom: 2px solid $dark;
+  }
+  td { border-bottom: 1px solid rgba(24, 30, 21, 0.12); }
+  tr:last-child td { border-bottom: none; }
+}
+
+/* ---- Code ---- */
+code {
+  background-color: $stone;
+  border: 1px solid rgba(24, 30, 21, 0.15);
+  border-radius: 6px;
+  font-family: $font-mono;
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
+  color: $dark;
+}
+div.highlighter-rouge, figure.highlight {
+  background-color: #f7faf9;
+  border: 2px solid rgba(24, 30, 21, 0.15);
+  border-radius: 12px;
+  pre.highlight, pre { background: transparent; }
+  code { background: transparent; border: none; }
+}
+
+/* ---- Breadcrumbs: kicker treatment ---- */
+.breadcrumb-nav-list-item {
+  font-family: $font-display;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  a { color: $lime-deep; background-image: none; }
+}
+
+/* ---- Labels/pills (JTD .label) ---- */
+.label, .label-blue, .label-green {
+  background-color: $mint !important;
+  color: $dark;
+  border: 2px solid $dark;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: $font-body;
+}
+.label-yellow { background-color: $gold !important; color: $dark; }
+.label-red { background-color: #E8A798 !important; color: $dark; }
+
+/* ---- Footer ---- */
+.site-footer {
+  background-color: transparent;
+  color: $ink-muted;
+  border-top: none;
+  a { color: $lime-deep; background-image: none; font-weight: 600; }
+  a:hover { color: $dark; }
+}
+.main-footer {
+  border-top: 2px solid rgba(24, 30, 21, 0.12);
+  color: $ink-muted;
+}
+
+/* ---- Mobile niceties ---- */
+@media (max-width: 66.4rem) {
+  .main-content-wrap { background: $paper; }
+  .site-header { border-bottom: 2px solid $dark; }
+}
+
+/* ---- Homepage components (index.md) ---- */
+.kb-hero {
+  background: $dark;
+  border: 2px solid $dark;
+  border-radius: 16px;
+  padding: 2rem 2.25rem;
+  margin-bottom: 1.5rem;
+  @include pop(4);
+  .kb-hero-kicker {
+    font-family: $font-display;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $lime;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0 0 0.4rem 0;
+  }
+  .kb-hero-title {
+    color: #fff;
+    font-size: 2.4rem;
+    margin: 0 0 0.5rem 0;
+    &::after { display: none; }
+  }
+  .kb-hero-sub { color: rgba(255, 255, 255, 0.85); margin: 0; max-width: 46rem; }
+}
+
+.kb-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem 0;
+}
+a.kb-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #fff;
+  border: 2px solid $dark;
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  text-decoration: none !important;
+  color: $dark;
+  @include pop(3);
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  &:hover {
+    background: $lime-bg;
+    transform: translate(-2px, -2px);
+    @include pop(5);
+  }
+  &:active { transform: translate(2px, 2px); box-shadow: none; }
+  .kb-card-emoji { font-size: 1.6rem; line-height: 1; }
+  .kb-card-title {
+    font-family: $font-display;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  .kb-card-sub { color: $ink-muted; font-size: 0.9rem; line-height: 1.45; }
+}
+
+.kb-support {
+  background: $mint;
+  border: 2px solid $dark;
+  border-radius: 16px;
+  padding: 1.4rem 1.6rem;
+  margin-top: 2.25rem;
+  @include pop(4);
+  .kb-support-kicker {
+    font-family: $font-display;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: $lime-deep;
+    margin: 0 0 0.35rem 0;
+  }
+  ol { margin-bottom: 1rem; }
+}
+.btn.kb-support-btn { display: inline-block; margin: 0.25rem 0 0.75rem 0; }
