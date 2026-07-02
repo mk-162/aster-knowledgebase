@@ -94,18 +94,22 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
   padding: 0; margin: 0; flex: none;
 }
 .aster-topbar .search-input-wrap {
+  /* the theme absolutely-positions + width-animates this — force a plain box */
+  position: relative !important; width: 100% !important; transition: none;
+  display: flex; align-items: center; overflow: hidden;
   height: $ctrl-h; border-radius: 12px; box-shadow: none;
   background: rgba(255,255,255,0.08); border: 2px solid rgba(220,238,235,0.25);
   transition: border-color 120ms ease, background 120ms ease;
   &:focus-within { border-color: $lime; background: rgba(255,255,255,0.12); }
 }
 .aster-topbar .search-input {
+  position: relative !important; width: 100% !important;
   height: 36px; padding: 0 12px 0 36px; font-size: 0.875rem;
   background: transparent; border: none; color: #fff;
   &::placeholder { color: rgba(220,238,235,0.55); }
   &:focus { background: transparent; }
 }
-.aster-topbar .search-label { padding-left: 10px; display: flex; align-items: center; height: 36px;
+.aster-topbar .search-label { position: absolute; left: 0; top: 0; bottom: 0; padding-left: 10px; display: flex; align-items: center;
   .search-icon { color: rgba(220,238,235,0.7); width: 16px; height: 16px; } }
 .aster-topbar .search-results {
   position: absolute; top: calc(#{$ctrl-h} + 8px); right: 0; left: auto; width: 480px; max-width: 80vw;
