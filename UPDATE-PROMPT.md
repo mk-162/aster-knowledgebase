@@ -41,7 +41,7 @@ which will carry the heaviest support load. Include ALL functionality.
 ## Positioning rules (non-negotiable)
 
 - The brand story is **TRACKING + SHARING** (plus route distribution and community).
-  "Watch the Dot" is dead as a name/identity: fix the site title in `_config.yml`, index
+  "Aster" is dead as a name/identity: fix the site title in `_config.yml`, index
   copy, and every article. "Dot" may appear only as incidental map vocabulary or in the
   glossary-style definition of community terms — never as the product's identity.
 - Sport-neutral: cycling AND running are equal citizens ("athletes", "ride or run").

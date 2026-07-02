@@ -17,10 +17,10 @@ Send your participants this short briefing (copy, paste and tweak) a few days ou
 
 > **Getting set up for [event name]**
 >
-> We're tracking this event live with Watch the Dot. Please do this **before** you
+> We're tracking this event live with Aster. Please do this **before** you
 > arrive — ideally on Wi-Fi:
 >
-> 1. **Install the Watch the Dot app** (iOS or Android). You need the app to be
+> 1. **Install the Aster app** (iOS or Android). You need the app to be
 >    tracked; the website is only for watching.
 > 2. **Create an account** and sign in.
 > 3. **Register for the event** and **open it once while you have signal** — this
@@ -44,7 +44,7 @@ Send your participants this short briefing (copy, paste and tweak) a few days ou
 - **Background location + battery exclusion** are what keep tracking alive with the
   phone in a pocket. See
   [Tips for a reliable track](../for-athletes/tips-for-a-reliable-track.md).
-- **Emergency contact** means your safety net is in place. Remember Watch the Dot's
+- **Emergency contact** means your safety net is in place. Remember Aster's
   SOS is an alert and location share, **not** a call to emergency services — brief
   your real safety plan separately.
 

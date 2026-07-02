@@ -1,4 +1,4 @@
-# Watch the Dot — Help Centre (Jekyll site config)
+# Aster Help Centre (Jekyll site config)
 #
 # Built for the "Just the Docs" theme (https://just-the-docs.com), the most
 # common Jekyll knowledge-base theme: category folders become top-level nav
@@ -6,9 +6,9 @@
 # `nav_order` controls ordering. Swappable for any Jekyll theme — the content
 # and front matter are theme-agnostic.
 
-title: Watch the Dot — Help Centre
+title: Aster Help Centre
 description: >-
-  Guides for athletes, spectators and event organisers using Watch the Dot,
+  Guides for athletes, spectators and event organisers using Aster,
   the live GPS tracking platform for bike races, group rides and adventures.
 lang: en-GB
 
@@ -39,13 +39,12 @@ heading_anchors: true
 
 # Link back to the app
 aux_links:
-  "Open Watch the Dot":
+  "Open the app":
     - "https://astertrack.app"
 aux_links_new_tab: true
 
 # Footer — aligned with marketing site
 footer_content: >-
-  © Watch the Dot Ltd. &nbsp;·&nbsp;
   <a href="https://astertrack.app/privacy">Privacy</a> &nbsp;·&nbsp;
   <a href="https://astertrack.app/terms">Terms</a>
 footer_last_modified: false

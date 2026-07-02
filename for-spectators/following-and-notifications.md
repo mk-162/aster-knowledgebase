@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # Following riders and getting notified
 
-Watching live is open to everyone, but if you want Watch the Dot to **tell you**
+Watching live is open to everyone, but if you want Aster to **tell you**
 when something happens, follow along with an account.
 
 ## Follow an event

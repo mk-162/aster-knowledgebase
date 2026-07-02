@@ -17,7 +17,7 @@ You control:
 
 - Your **name**, **logo** and **banner**.
 - A **description**, your **website** and **social links**.
-- Your **verified** badge (granted by the Watch the Dot team).
+- Your **verified** badge (granted by the Aster team).
 
 The page lists your public and unlisted events, and shows your follower count.
 

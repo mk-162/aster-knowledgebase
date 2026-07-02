@@ -36,7 +36,7 @@ dashboard. See [Finishing a ride](../for-athletes/finishing-a-ride.md).
 ## Notifications
 
 **I'm not getting push notifications.**
-Check your device's system notification settings for Watch the Dot, make sure the
+Check your device's system notification settings for Aster, make sure the
 master push switch is on and the type isn't muted, and confirm you're not in your
 quiet-hours window. Reopening the app refreshes your device registration. See
 [Push notifications and devices](../notifications/push-and-devices.md).
@@ -59,5 +59,5 @@ prompted, tap to load the latest version.
 
 ## Still stuck?
 
-If something isn't covered here, contact the Watch the Dot team or your event's
+If something isn't covered here, contact the Aster team or your event's
 organiser.

@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # Preferences and quiet hours
 
-You're in full control of what Watch the Dot sends you.
+You're in full control of what Aster sends you.
 
 ## Turn individual types on or off
 

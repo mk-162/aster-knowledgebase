@@ -7,7 +7,7 @@ last_updated: 2026-06-18
 
 # Notifications
 
-Watch the Dot can notify you when the riders, teams and events you follow do
+Aster can notify you when the riders, teams and events you follow do
 something — and you're in full control of which alerts you get and when.
 
 - [Notification types](notification-types.md)

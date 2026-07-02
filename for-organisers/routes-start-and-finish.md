@@ -12,7 +12,7 @@ last_updated: 2026-06-18
 
 ## Upload a route
 
-Upload your route as a **GPX file**. Watch the Dot reads it and works out the
+Upload your route as a **GPX file**. Aster reads it and works out the
 distance, elevation profile and the shape of the course, then shows it on the
 event map and lets riders download it for offline use.
 
@@ -24,7 +24,7 @@ files are rejected with an explanation.
 A **start line** and a **finish line** are points on the map, each with a
 detection radius (how close a rider must get to count as crossing).
 
-- When you upload a route, Watch the Dot **suggests** start and finish positions
+- When you upload a route, Aster **suggests** start and finish positions
   from the route — separate points for a point-to-point course, or a single
   point for a loop.
 - You can adjust them manually at any time before the event. Once you've set them

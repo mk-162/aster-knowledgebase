@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # Key concepts
 
-A few core ideas show up everywhere in Watch the Dot. Understanding these makes
+A few core ideas show up everywhere in Aster. Understanding these makes
 everything else straightforward.
 
 ## The dot
@@ -22,7 +22,7 @@ dot and trail update in near real time.
 ## Pings
 
 A **ping** is a single GPS point — your location at one moment. The app records
-pings as you ride and sends them to Watch the Dot, which connects them into your
+pings as you ride and sends them to Aster, which connects them into your
 trail and adds up the distance between them. If you lose signal, pings are saved
 on your phone and sent later; nothing inside your ride is lost.
 

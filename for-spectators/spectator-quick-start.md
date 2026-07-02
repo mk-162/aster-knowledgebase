@@ -33,7 +33,7 @@ That's it. [More on reading the map](the-live-map-and-trails.md) ·
 
 ## Want alerts? Add an account
 
-Watching is open, but if you want Watch the Dot to **tell you** when something
+Watching is open, but if you want Aster to **tell you** when something
 happens — a rider starts or finishes, or raises an SOS — sign in and tap
 **Follow** on the event or ride. Use the **app** for push notifications. See
 [Following riders and getting notified](following-and-notifications.md).

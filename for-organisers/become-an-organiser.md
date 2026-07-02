@@ -35,7 +35,7 @@ your organiser account to be notified when you publish new events. See
 ## Verification
 
 A **verified** badge signals to riders that an organiser is the genuine article.
-Verification is granted by the Watch the Dot team. If you'd like to be verified,
+Verification is granted by the Aster team. If you'd like to be verified,
 get in touch — you may be asked for a few details about your organisation and
 your events.
 

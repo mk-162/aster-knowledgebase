@@ -4,13 +4,13 @@ parent: "Notifications"
 nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [notifications, alerts]
-summary: "Every kind of notification Watch the Dot can send and what triggers it."
+summary: "Every kind of notification Aster can send and what triggers it."
 last_updated: 2026-06-18
 ---
 
 # Notification types
 
-Watch the Dot can notify you about the riders, teams and events you follow, and
+Aster can notify you about the riders, teams and events you follow, and
 about activity on your own account. You control which of these you receive — see
 [Preferences and quiet hours](preferences-and-quiet-hours.md).
 

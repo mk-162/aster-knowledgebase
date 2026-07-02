@@ -45,6 +45,6 @@ notification and can reply, giving you a back-and-forth thread.
   someone may need help.
 - SOS notifications reach the rider's watchers (and any emergency contacts they've
   set) as well as your dashboard.
-- Watch the Dot's SOS is an **in-app alert and location share** — it is not a
+- Aster's SOS is an **in-app alert and location share** — it is not a
   replacement for calling the emergency services. Make sure your event has a real
   emergency plan.

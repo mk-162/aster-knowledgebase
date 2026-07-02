@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # The app vs the website
 
-Watch the Dot is available as a **mobile app** (iOS and Android) and as a
+Aster is available as a **mobile app** (iOS and Android) and as a
 **website** you open in any browser. They share the same account and the same
 data, but they're suited to different jobs.
 

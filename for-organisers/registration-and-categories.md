@@ -50,5 +50,5 @@ event page.
 
 Choose how bibs are assigned:
 
-- **Automatic** — Watch the Dot assigns sequential numbers.
+- **Automatic** — Aster assigns sequential numbers.
 - **Self-entry** — riders enter their own number when registering.

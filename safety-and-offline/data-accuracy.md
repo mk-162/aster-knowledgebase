@@ -4,13 +4,13 @@ parent: "Safety & offline"
 nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [accuracy, distance, time, results]
-summary: "How Watch the Dot keeps distance and time honest, and why everyone sees the same numbers."
+summary: "How Aster keeps distance and time honest, and why everyone sees the same numbers."
 last_updated: 2026-06-18
 ---
 
 # Why your distance and time are accurate
 
-A tracking platform is only as good as its numbers. Here's how Watch the Dot
+A tracking platform is only as good as its numbers. Here's how Aster
 keeps distance and time trustworthy — and why the figure on your screen matches
 what spectators and the leaderboard see.
 

@@ -15,7 +15,7 @@ honest answer.
 
 ## The short version
 
-- Watch the Dot only records and shares your location **while you're actively
+- Aster only records and shares your location **while you're actively
   tracking a ride** — not the rest of the time.
 - **In an event,** your live position is visible to whoever can view that event.
 - **On a free ride,** you're private by default — only people you send the link to

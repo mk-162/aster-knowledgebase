@@ -93,18 +93,16 @@ h1, h2, h3, h4,
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 700;
-  /* little lime "dot" mark before the title — the brand glyph */
+  color: $lime !important; /* lime wordmark on dark — matches the website header */
+  /* the genuine Aster mark (4-petal flower), lime on dark */
   &::before {
     content: '';
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 22px;
+    height: 22px;
     margin-right: 10px;
-    background: $lime;
-    border: 2px solid $dark;
-    border-radius: 4px;
-    box-shadow: 0 0 0 3px rgba(199, 245, 66, 0.25);
-    vertical-align: baseline;
+    background: url('../images/aster-mark-lime.svg') no-repeat center / contain;
+    vertical-align: -4px;
   }
   &:hover { background-image: none; background-color: rgba(255, 255, 255, 0.05); }
 }
@@ -477,3 +475,34 @@ a.kb-card .kb-card-title::after {
    our own footer_content still renders in the main footer */
 .side-bar footer,
 .side-bar .site-footer { display: none; }
+
+
+/* ---- Header rework (2026-07-02): compact search, tidy chevrons ---- */
+/* Compact search: the theme's bar is full-width with heavy padding.
+   Cap the width, shrink the field, drop the oversized wrapper height. */
+.main .search {
+  max-width: 20rem;
+  padding: 0;
+  margin: auto 0;
+  height: auto;
+}
+.search-input-wrap {
+  height: 42px;
+  box-shadow: none;
+  border-radius: 12px;
+}
+.search-input {
+  height: 42px;
+  padding: 6px 12px 6px 36px;
+  font-size: 0.875rem;
+}
+.search-label { padding-left: 10px; }
+.main-header { display: flex; align-items: center; }
+
+/* Nav chevrons: keep the expander off the chip's edge */
+.site-nav .nav-list .nav-list-item .nav-list-expander {
+  right: 8px;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 8px;
+}

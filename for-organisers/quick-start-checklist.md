@@ -56,7 +56,7 @@ top to bottom and you'll have a fully set-up, race-ready event.
 - [ ] Remind riders to **install the app**, **register**, and open the event
       **once with signal** so it's cached for an offline start.
       [Register for an event](../for-athletes/register-for-an-event.md)
-- [ ] Confirm your **on-the-ground emergency plan** — Watch the Dot's SOS is an
+- [ ] Confirm your **on-the-ground emergency plan** — Aster's SOS is an
       alert and location share, not a substitute for calling for help.
 
 ## E. Race day

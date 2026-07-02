@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # Posts and stories
 
-Watch the Dot has a light social layer so you can share your riding and follow
+Aster has a light social layer so you can share your riding and follow
 others' — without leaving for another app.
 
 ## Stories

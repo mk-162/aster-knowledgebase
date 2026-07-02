@@ -12,7 +12,7 @@ last_updated: 2026-06-18
 
 ## Export your data
 
-You can download a complete copy of the data Watch the Dot holds for you, as a
+You can download a complete copy of the data Aster holds for you, as a
 single file. It includes your profile, your event participations and free rides,
 all your GPS points, your messages, follows, notifications and registered
 devices. It's the full record — your own copy to keep or take elsewhere.

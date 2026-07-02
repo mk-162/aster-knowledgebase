@@ -13,7 +13,7 @@ last_updated: 2026-06-18
 ## How push works
 
 When you allow notifications, your device registers to receive **push**
-notifications from Watch the Dot. You can be registered on more than one device
+notifications from Aster. You can be registered on more than one device
 (your phone and a browser, say), and you'll receive push on each.
 
 Push notifications work best on the **mobile app**. Browsers can show web push on
@@ -21,14 +21,14 @@ some platforms, but the app is the most reliable.
 
 ## Turning push on
 
-1. Make sure notifications are allowed for Watch the Dot in your device's system
+1. Make sure notifications are allowed for Aster in your device's system
    settings.
 2. In the app, keep the master **push** switch on (see
    [Preferences and quiet hours](preferences-and-quiet-hours.md)).
 
 ## If push stops working
 
-- Check your device's **system notification settings** for Watch the Dot — push
+- Check your device's **system notification settings** for Aster — push
   can be blocked there even if the app's own switch is on.
 - Confirm the master push switch is on and the specific type isn't muted.
 - Check you're not inside your **quiet hours** window.

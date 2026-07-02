@@ -23,7 +23,7 @@ time and average speed, and you can download the raw GPS track (GPX).
 
 ## Your public profile
 
-Your profile is your public page on Watch the Dot. It shows:
+Your profile is your public page on Aster. It shows:
 
 - Your display name, photo, banner, short bio and location.
 - Your social links (for example Strava or Instagram).

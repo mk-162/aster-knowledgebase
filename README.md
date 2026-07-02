@@ -1,6 +1,6 @@
-# Watch the Dot — Help Centre
+# Aster Help Centre
 
-This folder is the source for the public **Watch the Dot help centre**: a
+This folder is the source for the public **Aster help centre**: a
 knowledge base for everyone who uses the platform — **athletes**, **spectators**,
 and **event organisers**.
 
@@ -16,7 +16,7 @@ knowledge-base/
 ├── _config.yml              # Jekyll site config
 ├── STYLE-GUIDE.md           # How to write + format articles (read before editing)
 ├── index.md                 # Help-centre home page
-├── getting-started/         # 1. New to Watch the Dot
+├── getting-started/         # 1. New to Aster
 ├── for-athletes/            # 2. Riding & being tracked
 ├── for-spectators/          # 3. Watching events & riders live
 ├── for-organisers/          # 4. Creating & running events

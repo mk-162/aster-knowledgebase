@@ -4,7 +4,7 @@ parent: "Account & privacy"
 nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [privacy, data, gdpr]
-summary: "What data Watch the Dot holds about you and how it's used."
+summary: "What data Aster holds about you and how it's used."
 last_updated: 2026-06-18
 ---
 

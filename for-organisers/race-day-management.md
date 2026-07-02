@@ -17,7 +17,7 @@ continuously.
 ## Start the race
 
 For a mass-start race, press **Start** to fire the gun — this sets the official
-start time that every rider's clock runs from. If you forget, Watch the Dot will
+start time that every rider's clock runs from. If you forget, Aster will
 **auto-start** the race shortly after the scheduled start time so the leaderboard
 still has a proper clock. Press Start yourself if you need the gun to the second.
 

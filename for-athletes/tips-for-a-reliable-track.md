@@ -21,7 +21,7 @@ battery. A few habits make your track even cleaner and avoid day-of surprises.
 - **Allow notifications.** This powers reminders, the tracking notification, and
   safety alerts.
 - **Let the app run in the background.** On some Android phones, aggressive
-  battery savers can shut apps down — exclude Watch the Dot from battery
+  battery savers can shut apps down — exclude Aster from battery
   optimisation so background tracking isn't killed.
 - **Register and open the event once with signal.** That downloads the route and
   caches everything so you can start offline later. See

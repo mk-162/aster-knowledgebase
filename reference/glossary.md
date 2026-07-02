@@ -4,7 +4,7 @@ parent: "Reference"
 nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [glossary, definitions]
-summary: "Plain-language definitions of the terms used across Watch the Dot."
+summary: "Plain-language definitions of the terms used across Aster."
 last_updated: 2026-06-18
 ---
 
@@ -96,7 +96,7 @@ own clock.
 **Unlisted event** — Not listed publicly, but watchable by anyone with the link.
 
 **Verified** — A badge showing an organiser or team has been confirmed by the
-Watch the Dot team.
+Aster team.
 
 **Wave** — A category's own start time, so groups set off in stages rather than
 all at once.

@@ -30,7 +30,7 @@ team is shown alongside their name.
 
 ## Verified / pro teams
 
-Teams can apply for **pro** status, reviewed by the Watch the Dot team. Pro teams
+Teams can apply for **pro** status, reviewed by the Aster team. Pro teams
 are highlighted in search.
 
 ## Next

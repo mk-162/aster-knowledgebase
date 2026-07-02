@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # Watch an event live
 
-Following a race on Watch the Dot is meant to be effortless. For **public** and
+Following a race on Aster is meant to be effortless. For **public** and
 **unlisted** events you don't need an account, an app, or any setup — just open
 the link.
 

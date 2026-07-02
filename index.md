@@ -1,14 +1,14 @@
 ---
 title: "Home"
 nav_order: 0
-description: "The Watch the Dot help centre — guides for athletes, spectators and event organisers."
+description: "The Aster help centre — guides for athletes, spectators and event organisers."
 last_updated: 2026-07-02
 ---
 
 <div class="kb-hero">
   <p class="kb-hero-kicker"><span class="kb-live-dot"></span>Help Centre</p>
   <h1 class="kb-hero-title">How can we help?</h1>
-  <p class="kb-hero-sub">Watch the Dot is live GPS tracking for bike races, group rides and
+  <p class="kb-hero-sub">Aster is live GPS tracking for bike races, group rides and
   adventures. Riders carry the app; anyone can watch their <strong>dot</strong> move along the
   route in real time. Search above, or jump to your section below.</p>
 </div>
@@ -37,7 +37,7 @@ last_updated: 2026-07-02
 ## Popular topics
 
 <div class="kb-topics" markdown="1">
-- [What is Watch the Dot?](getting-started/what-is-watch-the-dot.md)
+- [What is Aster?](getting-started/what-is-aster.md)
 - [Create an account](getting-started/create-an-account.md)
 - [Your first event: a walkthrough](for-athletes/your-first-event.md)
 - [Start and track a ride](for-athletes/starting-and-tracking-a-ride.md)

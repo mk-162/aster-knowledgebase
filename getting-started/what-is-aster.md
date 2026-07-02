@@ -1,5 +1,5 @@
 ---
-title: "What is Watch the Dot?"
+title: "What is Aster?"
 parent: "Getting started"
 nav_order: 1
 audience: [athlete, spectator, organiser]
@@ -8,9 +8,9 @@ summary: "What the platform does, who it's for, and how live dot-tracking works.
 last_updated: 2026-06-18
 ---
 
-# What is Watch the Dot?
+# What is Aster?
 
-Watch the Dot is a live GPS tracking platform for bike races, group rides and
+Aster is a live GPS tracking platform for bike races, group rides and
 solo adventures. A rider carries the app while they ride; anyone following along
 sees the rider's **dot** move along the route in real time, on a map, alongside a
 live leaderboard.
@@ -28,7 +28,7 @@ It's built for three kinds of people:
 
 1. A rider taps **Start** in the app. Their phone begins recording GPS points
    ("pings") as they ride.
-2. Those points stream to Watch the Dot, which moves the rider's dot on the map
+2. Those points stream to Aster, which moves the rider's dot on the map
    and updates the leaderboard.
 3. Spectators open the event (or a shared ride link) and watch it unfold live —
    each rider's current position, the trail they've ridden, their distance, and
@@ -39,7 +39,7 @@ It's built for three kinds of people:
 ## What makes it different
 
 - **It keeps working off-grid.** Bike events happen in places with no phone
-  signal. With Watch the Dot, a rider can start and finish a ride with no signal
+  signal. With Aster, a rider can start and finish a ride with no signal
   at all — the app records everything on the phone and catches up automatically
   when signal returns. See [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md)
 - **Watching is open.** For public and unlisted events, spectators don't need an

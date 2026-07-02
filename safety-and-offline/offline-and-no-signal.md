@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # What happens when I lose signal?
 
-Bike events happen in places with no phone signal. Watch the Dot is built for
+Bike events happen in places with no phone signal. Aster is built for
 that. Here's exactly what happens when you go off-grid.
 
 ## Your ride keeps going

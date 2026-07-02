@@ -35,7 +35,7 @@ it in so the organiser has it on the day. See
 
 - Emergency contacts are used **only** for safety alerts — they're not shared
   publicly or used for anything else.
-- Watch the Dot's SOS is an **in-app alert and location share**. It is **not** a
+- Aster's SOS is an **in-app alert and location share**. It is **not** a
   call to the emergency services. Always carry a way to call for real help, and
   make sure someone knows your plans for remote rides.
 

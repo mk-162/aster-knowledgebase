@@ -27,7 +27,7 @@ Most questions are answered already:
 - **Questions about a specific event** — registration, your category, start times,
   results — are best answered by **that event's organiser**. They control the
   event's settings.
-- **App problems, account help, or anything platform-wide** — email the **Watch the Dot team** at
+- **App problems, account help, or anything platform-wide** — email the **Aster team** at
   [help@astertrack.app](mailto:help@astertrack.app) — a human reads every message.
 
 ## Reporting a bug well
@@ -42,7 +42,7 @@ A good report gets fixed faster. Please include:
 
 ## If it's an emergency on a ride
 
-Watch the Dot's **SOS** raises an in-app alert and shares your location with your
+Aster's **SOS** raises an in-app alert and shares your location with your
 watchers, organiser and emergency contacts — but it is **not** a call to the
 emergency services. In a real emergency, call for help directly. See
 [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).

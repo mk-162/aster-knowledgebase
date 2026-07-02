@@ -10,7 +10,7 @@ last_updated: 2026-06-18
 
 # SOS and crash detection
 
-Watch the Dot has two ways to raise the alarm if something goes wrong on a ride:
+Aster has two ways to raise the alarm if something goes wrong on a ride:
 a manual **SOS** button, and automatic **crash detection**.
 
 ## Manual SOS
@@ -32,7 +32,7 @@ stationary and people might be worried.
 
 ## Automatic crash detection
 
-On the mobile app, Watch the Dot watches for the sudden deceleration that looks
+On the mobile app, Aster watches for the sudden deceleration that looks
 like a crash. If it detects one:
 
 1. An **alarm sounds** and your phone vibrates.
@@ -56,6 +56,6 @@ carry on.
   a recipient's quiet hours. Safety comes first.
 - Crash detection needs the phone's motion sensors, so it's a **mobile-app**
   feature.
-- Watch the Dot's SOS is an **in-app alert and live location share** — it does
+- Aster's SOS is an **in-app alert and live location share** — it does
   **not** call the emergency services. Always carry a way to call for real help,
   and follow your event's safety briefing.
