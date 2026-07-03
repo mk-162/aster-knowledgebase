@@ -5,7 +5,7 @@ nav_order: 11
 audience: [athlete, organiser]
 tags: [teams, clubs, troubleshooting, rides]
 summary: "A member can't see the ride, the weekly ride didn't appear, RSVP or route problems — checks in order."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Troubleshooting club rides
@@ -29,12 +29,13 @@ question:
 4. **Were they removed from the club?** Removed members lose access to club
    rides immediately.
 
-## "This free team is full" when someone tries to join
+## Someone can't join — is the club full?
 
-The free tier caps a club at **10 active members** — the 11th join or
-application approval is declined. Nobody already in is ever removed. Options:
-upgrade to a [Club plan](billing-and-your-club-plan.md) for unlimited
-members, or free a slot by removing an inactive member.
+No — a club is never full. Joining always works, on any tier and by any route
+(open join, application approval or invite link). If a would-be member is
+stuck, it's an access or account issue (see the section above), not a member
+limit. Growing past the free size only prompts admins to consider a
+[Club plan](billing-and-your-club-plan.md); it never turns anyone away.
 
 ## The weekly ride didn't appear
 
@@ -42,17 +43,10 @@ Each week's ride is created automatically **about seven days ahead** of the
 ride time. If it's missing:
 
 1. **Is it more than seven days away?** Then it isn't due to appear yet.
-2. **Is the club's plan active?** Weekly scheduling needs the Club plan —
-   when [a plan lapses](billing-and-your-club-plan.md), new occurrences stop
-   being created (nothing already scheduled is removed). Resubscribe and
-   scheduling resumes.
+2. Weekly rides keep producing on every tier, so a free plan or a lapsed plan
+   isn't the cause — nothing already scheduled is removed either.
 3. Still missing? Create a one-off ride for this week and
    [contact support](../reference/getting-support.md) about the repeat.
-
-## "Repeat weekly" shows an upgrade prompt
-
-Weekly repeating rides are a Club-plan feature. On a free club the toggle
-shows the upgrade prompt by design — one-off rides work on every tier.
 
 ## RSVP problems
 

@@ -5,7 +5,7 @@ nav_order: 1
 audience: [spectator]
 tags: [watching, live, no-login]
 summary: "Open an event and follow it live — no account needed for public and unlisted events."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Watch an event live
@@ -19,13 +19,17 @@ people waiting at home.
 
 1. Open the event link (shared with you, or found in **Discover**). It works in
    any browser, including a private/incognito window.
-2. The event page opens on the **About** tab — description, route and organiser.
-   Switch to the **Map** tab for the live picture: every active athlete's dot,
+2. The event page opens on the **About** tab — description, route and
+   organiser, with a one-line strip showing the date, distance, type and
+   location at a glance. When the event is live, a **Watch live** button takes
+   you straight to the map.
+3. Switch to the **Map** tab for the live picture: every active athlete's dot,
    the route line, and the trails they've left behind.
-3. Switch to the **Riders** tab for live progress — standings and gaps for
+4. Switch to the **Riders** tab for live progress — standings and gaps for
    races and time trials, times and "on course / finished" for sportives and
    group rides.
-4. Tap any athlete to focus on them and see their trail and stats.
+5. Tap any athlete to focus on them and see their trail and stats. Tapping also
+   adds them to your favourites for this event (no account needed).
 
 No sign-in prompt will appear. If you ever hit one while watching a public
 event, that's a bug on our side — watching is meant to be open. Please

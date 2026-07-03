@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [account, login, password, email]
 summary: "Sign in, change your password or email, and understand the never-log-you-out promise."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Account and signing in
@@ -48,3 +48,6 @@ stop your ride first.
 - Your password is never shown or sent in plain text.
 - Watching a public event needs no account at all — see
   [Who can see your location?](who-can-see-your-location.md).
+- In rare cases support may **disable** an account (for example while sorting
+  out a manual refund). A disabled account is turned away at sign-in rather
+  than logged out mid-ride; get in touch if you hit this unexpectedly.

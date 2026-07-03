@@ -4,8 +4,8 @@ parent: "Teams & clubs"
 nav_order: 2
 audience: [athlete]
 tags: [teams, clubs, join, create]
-summary: "Start a new club, join an existing one — instantly or by application — and the difference between joining and following."
-last_updated: 2026-07-02
+summary: "Start a new club, join an existing one — instantly, by application or by invite link — and the difference between joining and following."
+last_updated: 2026-07-03
 ---
 
 # Create a club or join one
@@ -15,7 +15,8 @@ depending on how the club has set itself up: instantly, or by application.
 
 ## Create a club
 
-1. In the app, open **Teams** and choose **Create a team**.
+1. In the app, tap **Create** and choose **Club** (the same picker also
+   starts a ride or a run), or open **Teams** and choose **Create a team**.
 2. Give it a **name** and a **description**, and add a logo and banner if you
    have them.
 3. Choose how people join:
@@ -24,9 +25,11 @@ depending on how the club has set itself up: instantly, or by application.
 4. Create it. You become the **owner** and first admin, and the club gets its
    own page you can share.
 
-A new club starts on the free tier — up to 10 active members and one-off club
-rides. You can [upgrade to a Club plan](billing-and-your-club-plan.md) from
-the club page whenever you're ready.
+A new club starts on the free tier. It works fully from day one — members,
+rides (one-off or weekly), the board and routes all work. As the club grows
+past the free size, you'll see a gentle prompt to move to a
+[Club plan](billing-and-your-club-plan.md) sized to your club — nothing is
+ever blocked. You can upgrade from the club page whenever you're ready.
 
 {% include screenshot-todo.html slug="teams-create-club-form" caption="The create-a-team form: name, description, and the Open vs Application join setting." %}
 
@@ -39,10 +42,21 @@ the club page whenever you're ready.
 3. For application clubs, the club's owner and admins are notified of your
    request and approve or decline it. You'll get a notification either way.
 
-**Good to know:** free clubs hold at most 10 active members. If a free club is
-full, your join (or an admin's approval of your application) is declined with
-a message saying so — nobody already in the club is ever removed to make
-room. The club can upgrade to a Club plan for unlimited members.
+## Join by invite link
+
+Clubs can also share a one-tap **invite link** — typically pinned in their
+WhatsApp group or texted round. Tap it and you land on a join page showing the
+club; tap **Join** (or **Sign up & join** if you're new — your place is held
+through sign-up, so you land straight in the club afterwards). The invite is
+the approval: you join as a full member immediately, even for application
+clubs, so there's no waiting to be approved. Invite links are always free to
+join. See [invite links](roles-and-managing-members.md#invite-links) for how
+admins create them.
+
+**Good to know:** a free club is never full. Joining always works — nobody is
+ever turned away, and nobody already in is ever removed. Once a club grows
+past the free size, its admins simply see a prompt to pick a
+[Club plan](billing-and-your-club-plan.md).
 
 ## Follow vs join
 

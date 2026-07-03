@@ -5,7 +5,7 @@ nav_order: 2
 audience: [spectator]
 tags: [map, trail, live, dots]
 summary: "What the dots, trails and gaps on the map mean, and how live updates behave."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Reading the live map and trails
@@ -28,13 +28,17 @@ can watch someone roll to the start.
 On big events the map can be a wall of dots. Two tools help:
 
 - **Star your favourites.** Tap the star next to any athlete to add them to
-  your favourites for this event. Stars work **without an account** — they're
-  remembered on your device — and they drive the ★ favourites filter on the
-  list and the map.
+  your favourites for this event. Tapping a rider's row anywhere in the list
+  also adds them — a quick tap to start following a dot. (To remove one, tap
+  its star again.) Stars work **without an account** — they're remembered on
+  your device — and they drive the ★ favourites filter on the list and the map.
 - **All riders / Top 10 toggle.** Switch the map from everyone to just the
   leaders plus your starred favourites.
+- **Category chips.** Hide or show whole categories at once. The chips are
+  shared with the [Riders list](the-leaderboard.md), so the dots and the list
+  always match.
 
-You can also filter the list by category, team or name search.
+You can also filter the list by team or name search.
 
 ## Trails
 

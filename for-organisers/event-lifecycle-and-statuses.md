@@ -5,7 +5,7 @@ nav_order: 6.5
 audience: [organiser]
 tags: [lifecycle, statuses, reference]
 summary: "The states an event moves through, the statuses a rider can have, and what changes each."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Event lifecycle and rider statuses
@@ -25,6 +25,14 @@ something from one to the next.
 
 Some settings lock once the event is live or once riders have registered, so set
 those early. See [Create an event](create-an-event.md).
+
+**Going live.** On the manage screen, **Go Live** is the primary button that takes
+an upcoming event live; the destructive **End Event** control sits separately
+below it so the two can't be confused. If a timing point or checkpoint is still
+missing, the blocking reason shows inline beneath Go Live, with a link to the
+Course tab. The manage screen also opens on the right tab for where the event is:
+**Setup** while it's still being configured, and **Race Day** once it's set up or
+already live.
 
 ## Rider statuses
 

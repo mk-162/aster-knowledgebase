@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [account, signup, login]
 summary: "When you need an account, how to sign up and sign in, and what an account gives you."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Create an account
@@ -24,6 +24,10 @@ You need an account when you want to **do** something that's tied to you:
 - Join a team or club.
 - Create or manage an event as an organiser.
 
+The first time you open Aster, a quick **"What brings you here?"** prompt lets
+you jump straight to finding a race to ride, watching someone, or organising —
+you can skip it, and it doesn't need an account.
+
 ## Sign up
 
 You can sign up in the app or on the website — it's the same account either way.
@@ -33,9 +37,12 @@ You can sign up in the app or on the website — it's the same account either wa
    your **email**, and a **password** of at least 8 characters.
 3. Enter your **date of birth**. If you're under 16, a parent or guardian must
    tick the consent box for you.
-4. Accept the **privacy policy** (required) — the marketing tick-box is
+4. Optionally pick your **gender**. This is used to group athletes in results
+   and can be left blank. Your age category for results is worked out from your
+   date of birth — you don't enter it separately.
+5. Accept the **privacy policy** (required) — the marketing tick-box is
    optional.
-5. Confirm — your account is created and you're signed in.
+6. Confirm — your account is created and you're signed in.
 
 You'll receive a short series of welcome emails over your first week
 introducing the main things you can do.
@@ -43,7 +50,7 @@ introducing the main things you can do.
 Aster signs you in with your email and password only — there is no
 sign-in-with-Google/Apple and no email-link sign-in.
 
-{% include screenshot-todo.html slug="getting-started-create-account-signup-form" caption="The sign-up form showing display name, email, password, date of birth and the privacy-policy tick-box." %}
+{% include screenshot-todo.html slug="getting-started-create-account-signup-form" caption="The sign-up form showing display name, email, password, date of birth, optional gender and the privacy-policy tick-box." %}
 
 ## Sign in
 

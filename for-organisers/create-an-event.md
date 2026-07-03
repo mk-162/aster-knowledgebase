@@ -5,7 +5,7 @@ nav_order: 2
 audience: [organiser]
 tags: [events, setup, privacy, timezone, publish]
 summary: "Step through creating an event — host, format, timing, privacy — then add the route and publish."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Create an event
@@ -15,31 +15,38 @@ This is the big-picture walkthrough; each part links to a detailed guide.
 
 ## What you fill in
 
-The create form is short — the detail comes on the setup page afterwards.
+The create form is short — four numbered steps, with the detail coming on the
+setup page afterwards. It leads with the format, because that choice shapes
+everything else.
 
-1. **Name it.** Give the event a name, and optionally a one-line tagline and a
-   longer "About" description.
-2. **Choose the host.** Pick which organiser account or team hosts the event. This
-   is fixed once created, so pick the right one. See
-   [Become an organiser](become-an-organiser.md).
-3. **Set the date, start time and time zone.** Always pick the event's **local
-   time zone** — the start time you enter is read in that zone, and the race clock
-   and reminders depend on it. The app pre-fills your current zone but asks you to
-   choose one explicitly if it can't tell.
-4. **Pick the format.** Race, time trial, sportive / gran fondo, group ride or
-   point-to-point. This shapes timing and finishing and can't be changed after
-   riders register. See [Event formats](event-types.md).
-5. **Choose privacy** — public, unlisted or private. See
+1. **Pick the format first.** Race, time trial, sportive / gran fondo, group ride
+   or point-to-point. You pick it from a set of cards. This shapes timing and
+   finishing and can't be changed after riders register. See
+   [Event formats](event-types.md). **Choose privacy** here too — public, unlisted
+   or private. See
    [Public, unlisted and private events](../for-spectators/public-unlisted-private-events.md).
-6. **Tell us the expected field size (optional).** This sets your pricing band.
-   Small community events are free; larger fields move into a paid band. See
+   **Expected field size** is tucked behind an *"Expecting more than 50 riders?"*
+   link — up to 50 riders is free, so casual organisers can skip it; open it to
+   set your pricing band and entry cap. See
    [pricing](https://astertrack.app/pricing) for the current shape.
-7. **Add an advertised distance and laps (optional), and a cut-off (optional).** A
-   cut-off is a wall-clock deadline; anyone still tracking after it is closed out
-   automatically. Set the advertised distance to whatever headline number you
-   promote — the real measured distance comes from your route.
-8. **Optionally group it into a series** — link the event to a series (for example
-   a championship with multiple rounds) or keep it as a one-off.
+2. **Name it, choose the host, and optionally group it into a festival.** Give the
+   event a name, pick which organiser account or team hosts it (this is fixed once
+   created, so pick the right one — see [Become an organiser](become-an-organiser.md)),
+   and optionally add a one-line tagline and a longer "About" description. In the
+   same step you can mark the event as **part of a festival** — a day or weekend
+   with several events — or leave it as a **one-off**. Attach it to an existing
+   festival or name a new one. See [Festivals and series](festivals.md).
+3. **Set the date, start time and time zone.** Always use the event's **local
+   time zone** — the start time you enter is read in that zone, and the race clock
+   and reminders depend on it. The app auto-detects your zone and shows it as a
+   one-line summary; tap **Change** to pick a different one.
+4. **Add your route details.** Set an **advertised distance** (optional — the
+   headline number you promote; the real measured distance comes from your route),
+   turn on **laps** for a circuit, and set a **cut-off** if you need one (a
+   wall-clock deadline; anyone still tracking after it is closed out
+   automatically). Laps and cut-offs don't apply to untimed group rides, so
+   they're hidden for that format — you can still add them later from the manage
+   screen.
 
 Save, and you land on the event's setup page to add the route, timing points,
 categories and images.
@@ -59,13 +66,15 @@ See [Routes, start and finish lines](routes-start-and-finish.md) and
 ## Publishing (going live)
 
 A freshly created event starts **unlisted** so it isn't pushed into public
-discovery before it's ready. When you're set up, you publish it from the setup
-page.
+discovery before it's ready. When you're set up, you publish it with the
+**Go Live** button — the primary action on the manage screen.
 
 - **Timed formats need their timing point first.** Race, time trial and sportive /
   gran fondo can't go live until you've set the start/finish line — riders are
   timed from line to line, so without it no one can be timed. **Group rides are
   exempt** (they're untimed). Point-to-point events need at least one checkpoint.
+  If something's missing, the reason shows **inline beneath the Go Live button**,
+  with a link straight to the Course tab to fix it.
 - **Paid-band events settle their fee at publish.** If your expected field size
   puts the event in a paid band, and it's public or unlisted, publishing takes you
   through checkout. Private and members-only events publish free.

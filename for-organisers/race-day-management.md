@@ -5,7 +5,7 @@ nav_order: 6
 audience: [organiser]
 tags: [dashboard, live, participants, start, broadcast]
 summary: "Use the organiser dashboard to start the race, watch riders, fix problems on individual entries, and message participants."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Running the event on race day
@@ -55,6 +55,13 @@ From the roster on the event's manage screen you can act on individual entries:
   the course.
 
 {% include screenshot-todo.html slug="organisers-raceday-roster-row" caption="A roster row on the manage screen — the per-rider status dropdown (Registered / Started / Finished / DNF / DNS), the Set-start-time control for timed formats, and the remove button." %}
+
+## Invite riders and share the spectator link
+
+From the manage screen, **Invite riders** opens the invite sheet for people who'll
+take part. Separately, the **spectator link** ("Copy spectator link") is a public
+follow link — share it so anyone can follow the event live on the map and
+leaderboard, no account needed.
 
 ## Safety alerts
 

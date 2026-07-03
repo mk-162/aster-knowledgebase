@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [organiser]
 tags: [checklist, quick-start, setup, race-day]
 summary: "An end-to-end checklist from setting up your account to publishing results."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Organiser quick-start checklist
@@ -24,17 +24,19 @@ to bottom and you'll have a fully set-up, ready-to-run event.
 
 ## B. Build the event
 
-- [ ] **Choose the host** (organiser account or team) — it can't be changed later.
-- [ ] **Pick the format** — race, time trial, sportive / gran fondo, group ride or
-      point-to-point. [Event formats](event-types.md)
-- [ ] **Set the start time and time zone.** Double-check the zone.
+- [ ] **Pick the format first** — race, time trial, sportive / gran fondo, group
+      ride or point-to-point. [Event formats](event-types.md)
 - [ ] **Choose privacy** — public, unlisted or private. (New events start
       unlisted.)
       [Public, unlisted and private events](../for-spectators/public-unlisted-private-events.md)
-- [ ] **Set your expected field size** if you want (it sets your pricing band).
-      [pricing](https://astertrack.app/pricing)
+- [ ] **Set your expected field size** if you're over 50 riders (it's behind the
+      *"Expecting more than 50 riders?"* link and sets your pricing band; up to 50
+      is free). [pricing](https://astertrack.app/pricing)
+- [ ] **Name it, choose the host** (organiser account or team — it can't be
+      changed later), and **group it into a festival** if it's part of one.
+- [ ] **Set the start time and time zone.** Double-check the zone.
 - [ ] **Set a cut-off** if you need one, and choose whether timed-out riders are
-      marked DNF (the default) or finished.
+      marked DNF (the default) or finished. (Not used for untimed group rides.)
 
 ## C. Route and timing
 

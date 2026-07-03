@@ -5,7 +5,7 @@ nav_order: 9
 audience: [athlete, organiser]
 tags: [teams, clubs, billing, subscription, payments]
 summary: "Subscribe your club, manage or cancel the plan, and exactly what happens if it lapses — nothing is ever deleted."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Billing and your club plan
@@ -47,17 +47,18 @@ Cancelled the plan, or let it expire? Two promises:
    cut the club off early.
 2. **Nothing is ever deleted.** Your data is never held hostage.
 
-After the paid period ends, the club returns to the free tier:
+After the paid period ends, the club keeps working. Nothing is switched off
+and nothing is deleted:
 
 | | What happens |
 |---|---|
 | Existing members | **All stay** — even if there are more than 10. Nobody is removed, ever. |
-| New members | Joins pause once the club is over the free 10-member limit. |
-| Weekly repeating rides | Stop being scheduled — no new occurrences appear. Already-scheduled rides run as normal. |
-| One-off club rides | Still work (free-tier feature). |
+| New members | **Still join.** As the club grows past the free tier, admins and members see a gentle nudge to renew or upgrade — but joins are never blocked. |
+| Weekly repeating rides | **Keep being scheduled** — new occurrences carry on appearing for every club, subscribed or lapsed. |
+| One-off club rides | Still work. |
 | Club board, route library, past rides and results | **All stay readable and usable** for members. |
 | Sponsor slot | No longer displayed. |
-| Members' follow limit | The [5-favourite limit](the-five-favourite-limit.md) applies again to new follows; existing follows are kept. |
+| Members' follow limit | Members can keep following; over the free allowance they simply see the same friendly [upgrade nudge](the-five-favourite-limit.md), and existing follows are always kept. |
 
-Resubscribe at any time and everything picks up where it left off — the
-weekly rides start scheduling again from the same templates.
+Renew at any time to clear the nudges and bring back the sponsor slot —
+everything else has been running the whole time.

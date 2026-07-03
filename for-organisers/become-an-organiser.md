@@ -5,7 +5,7 @@ nav_order: 1
 audience: [organiser]
 tags: [organiser, account, verification, host]
 summary: "Set up an organiser account so you can create and run events."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Become an organiser
@@ -18,11 +18,13 @@ Anyone can create one — there's no application or approval step.
 
 ## Create an organiser account
 
-1. From your profile, choose to create an organiser account.
+1. From your profile, choose to **Create organiser account**.
 2. Give it a **name** and a **@handle** (the app checks the handle is free as you
    type).
-3. Add the optional extras: a **logo**, a **banner**, a **description**, a
-   **website** and **social links**.
+3. Add the optional extras: a **logo**, a **banner**, a **description** and a
+   **website**. (The create form is deliberately light — **social links** are
+   added later when you edit the organiser profile. See
+   [Your organiser profile and sponsors](profile-and-sponsors.md).)
 4. You're now the owner of that account and can create events under it.
 
 You can own or admin more than one organiser account — for example if you run

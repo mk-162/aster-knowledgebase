@@ -5,7 +5,7 @@ nav_order: 10
 audience: [organiser]
 tags: [profile, sponsors, branding, followers, spectator-report]
 summary: "Control your public organiser page, feature sponsors on your events, and show partners the audience your event reached."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Your organiser profile, sponsors and audience report
@@ -21,6 +21,8 @@ share its page). On it you control:
 - A **verified** badge, when the Aster team grants one.
 
 The page carries your branding and lets riders and fans find your events.
+**Social links** aren't collected when you first create the account — you add them
+here, by editing the organiser profile, once it exists.
 
 ## Followers
 

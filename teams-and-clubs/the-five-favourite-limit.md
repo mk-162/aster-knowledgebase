@@ -4,34 +4,34 @@ parent: "Teams & clubs"
 nav_order: 10
 audience: [athlete, spectator]
 tags: [teams, clubs, follows, favourites, limits]
-summary: "Free accounts can follow up to 5 people; being in a subscribed club lifts the limit. Spectating is never affected."
-last_updated: 2026-07-02
+summary: "Free accounts get a 5-person follow allowance with a gentle nudge beyond it; being in a subscribed club clears it. Spectating is never affected."
+last_updated: 2026-07-03
 ---
 
 # The 5-favourite limit and clubs
 
 Following someone on Aster makes them a persistent favourite — their rides
 and posts land in your feed and you can get their notifications. On a free
-account you can follow up to **5 people**; membership of a club on the
-[Club plan](billing-and-your-club-plan.md) removes the limit.
+account you get a comfortable allowance of **5 people**; membership of a club
+on the [Club plan](billing-and-your-club-plan.md) clears it entirely.
 
-## How the limit works
+## How it works
 
 - It counts the **people you follow** (athletes). Following clubs and
   following events don't count towards it.
-- At 5, trying to follow a 6th person shows a prompt: join a club on Aster
-  to follow more.
+- Past 5, following someone still works — you'll just see a gentle nudge
+  suggesting you join a club on Aster to keep growing your feed. Nothing is
+  blocked.
 - **Unfollowing always works**, so you can swap favourites freely.
-- If you're ever over the limit — say your club's plan lapsed while you
-  followed 20 people — **you keep every follow**. You just can't add new
-  ones until you're back under 5 or in a subscribed club again.
+- However many you follow — 5, or 20 after a club's plan lapsed — **you keep
+  every follow**. They're never trimmed or removed.
 
-## What lifts the limit
+## What clears the nudge
 
 Being an **active member of any club with an active Club plan**. The moment
-you join one (or your club subscribes), the limit is gone. It returns for
-new follows if you leave, or the club's plan lapses — again, existing
-follows are always kept.
+you join one (or your club subscribes), the nudge disappears entirely. It
+can reappear if you leave, or the club's plan lapses — but you can still
+follow freely, and existing follows are always kept.
 
 ## What the limit never touches
 

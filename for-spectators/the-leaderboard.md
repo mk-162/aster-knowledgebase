@@ -5,7 +5,7 @@ nav_order: 3
 audience: [spectator]
 tags: [leaderboard, standings, gaps, time-trial, sportive]
 summary: "How live standings work for each event format — and why sportives show times without positions."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Reading the leaderboard
@@ -24,6 +24,19 @@ races with published standings, and some deliberately are not.
 - For ranked formats: **position** and **gap** to the leader
 
 Tap a row to jump to that athlete on the map and see their live stats.
+Tapping a rider also adds them to your favourites for this event, so their
+dot stays easy to find — see [Reading the live map and trails](the-live-map-and-trails.md).
+
+## Filtering the list
+
+Above the list you can narrow it to what you care about:
+
+- **Category chips** — tap a category to hide or show it, with a **Hide all /
+  Show all** shortcut. The same categories are hidden on the map, so the list
+  and the dots always agree.
+- **Team** and a **name search** box.
+
+Filtering works without an account and only changes what you see.
 
 ## How each format presents
 

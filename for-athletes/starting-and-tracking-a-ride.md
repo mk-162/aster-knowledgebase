@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete]
 tags: [tracking, gps, start, race, time-trial, sportive]
 summary: "How to start tracking an event, what the live screen shows, and how your clock works in each event format."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Starting and tracking a ride
@@ -76,6 +76,11 @@ While you're out you'll see:
   location; it does **not** contact emergency services, and it never ends
   your ride. See
   [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
+- **Open the app on another device** (say the web app) while your phone is
+  tracking and you'll see a **"You're live on your other device"** strip with
+  a link to watch your own tracking. It's read-only reassurance: your ride
+  keeps running on the phone, and a second device can't stop or end it. You
+  can still sign out on that second device without affecting the ride.
 
 ## Important
 

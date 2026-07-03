@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, organiser]
 tags: [teams, clubs, plans, pricing]
 summary: "Teams, clubs and the free and paid tiers — what every group gets for free, and what a Club plan adds."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # What clubs and teams are on Aster
@@ -20,22 +20,23 @@ Anyone can create one, free.
 
 ## Free groups vs the Club plan
 
-A free team is perfect for a group of mates: up to **10 active members**, who
-can schedule one-off members-only group rides together. A paid **Club plan**
-removes the member limit and adds the tools a real club needs week in, week
-out.
+A free team is perfect for a group of mates — around **10 active members**,
+who can schedule members-only group rides, one-off or weekly, and use the
+board and route library. Everything works from day one. A paid **Club plan**
+is sized to a bigger club: as you grow past the free size you're gently
+nudged to pick a plan, which clears the nudges and adds a club sponsor slot.
 
 | What you get | Free team | Club plan |
 |---|---|---|
 | Team page, roster, follows | Yes | Yes |
-| Members | Up to 10 active members | Unlimited |
-| Members-only group rides | One-off rides | Unlimited, including weekly repeating rides |
+| Members | Around 10, then a gentle upgrade nudge (never blocked) | Sized to your club |
+| Members-only group rides | One-off and weekly repeating | One-off and weekly repeating |
+| Invite links | Yes | Yes |
 | Club board (members-only posts) | Yes | Yes |
 | Club route library | Yes | Yes |
 | RSVP list, attendance register and CSV export | Yes | Yes |
 | "Everyone home" view for ride organisers | Yes | Yes |
 | Club sponsor slot on your pages | — | Yes |
-| Members follow unlimited favourites | — (5-favourite limit applies) | Yes |
 
 Plans are priced by club size and billed monthly or annually by card. Exact
 prices are on [astertrack.app/pricing](https://astertrack.app/pricing).

@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [app, web, platforms, install]
 summary: "When you need the mobile app, when a browser is enough, and how to install the app during the beta."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # The app vs the website
@@ -14,6 +14,12 @@ Aster is available as a **mobile app** (iPhone and Android) and as a
 **website** at [astertrack.app](https://astertrack.app) that works in any
 browser. They share the same account and the same data, but they're suited to
 different jobs.
+
+Our marketing pages — what Aster is, pricing, and the like — live on
+[www.astertrack.app](https://www.astertrack.app); the app itself sits on
+[astertrack.app](https://astertrack.app). Open astertrack.app while signed out
+and you'll land on the marketing site; a shared watch link takes you straight
+into the app.
 
 ## Use the mobile app to be tracked
 
@@ -79,5 +85,5 @@ browsers; see [Push notifications and devices](../notifications/push-and-devices
 - Public App Store / Google Play availability: not current — during the beta the install paths are TestFlight (iPhone) and direct APK download (Android). Revisit when the app ships to the public stores.
 - The exact TestFlight and APK link URLs are beta links that rotate with builds; deliberately not reproduced.
 - An installable "add to home screen" web app (PWA): the website works in any browser, but no user-facing PWA install path was found in the product this pass, so none is documented.
-- The app may move to its own web domain in future (TODO: confirm app domain); in-app paths are described by screen name rather than URL for that reason.
+- Domain split confirmed 2026-07-03: the app stays on astertrack.app and marketing moved to www.astertrack.app; in-app paths are still described by screen name rather than URL.
 -->

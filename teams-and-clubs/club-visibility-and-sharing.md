@@ -5,7 +5,7 @@ nav_order: 8
 audience: [athlete, spectator, organiser]
 tags: [teams, clubs, privacy, sharing, sponsors]
 summary: "What's public on a club page, what stays members-only, and what happens when you share a club-ride link."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Club visibility and sharing
@@ -44,6 +44,14 @@ link — the natural way to nudge clubmates: "you in for Saturday?".
 - A **non-member** (or someone signed out) sees a members-only notice with a
   prompt to sign in or ask the club to join. The link never exposes the
   ride's map, riders or route to non-members.
+
+## Sharing an invite link
+
+To bring new people into the club itself (rather than a single ride), admins
+share an **invite link** from the club page. Anyone who taps it lands on a
+join page showing only the club's name, logo and member count, and joins as a
+full member in one tap. The preview reveals nothing members-only. See
+[invite links](roles-and-managing-members.md#invite-links).
 
 ## The club sponsor slot
 

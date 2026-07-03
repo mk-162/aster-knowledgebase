@@ -5,7 +5,7 @@ nav_order: 4
 audience: [athlete, spectator, organiser]
 tags: [export, delete, gdpr, data]
 summary: "Download a copy of everything you've stored, or permanently delete your account."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Export or delete your data
@@ -18,8 +18,11 @@ signed in.
 Tap **Download my data** to get a complete copy of what Aster holds for
 you, as a single JSON file. It includes your profile, the events you took
 part in and your free rides, all your GPS points, your messages, follows,
-notifications and registered devices. It's the full record — your own copy
-to keep or take elsewhere.
+notifications and registered devices. It also covers the rest of what you've
+given us — your event registrations (including any emergency contact and the
+gender and age details you provided), race licences, the consents you've
+agreed to, your payments, and any SOS alerts you raised. It's the full
+record — your own copy to keep or take elsewhere.
 
 On a phone, the app hands the file to your device's share sheet so you can
 save it wherever you like. On the web, it downloads to your browser. Export

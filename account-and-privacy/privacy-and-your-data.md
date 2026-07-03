@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [privacy, data, gdpr]
 summary: "What data Aster holds about you, why, and the control you have over it."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # Privacy and your data
@@ -16,7 +16,9 @@ what's held about you and why, and points you to the controls.
 ## What's held about you
 
 - **Account basics.** Your email and the profile details you add — name,
-  photo, banner, bio, location, social links.
+  photo, banner, bio, location, social links. At sign-up you also give your
+  **date of birth** and, optionally, your **gender**; these place you in the
+  right age and gender categories for results.
 - **Location — only during a ride you start.** When you tap Start, the app
   records GPS points for that ride. Nothing is recorded before you start or
   after you stop.

@@ -5,7 +5,7 @@ nav_order: 7
 audience: [athlete]
 tags: [teams, clubs, feed, posts, board]
 summary: "A members-only noticeboard on your club page — who can read it, who can post, and how it differs from the public feed."
-last_updated: 2026-07-02
+last_updated: 2026-07-03
 ---
 
 # The club board
@@ -26,6 +26,9 @@ photos.
 
 1. Open your club's page and the **Feed** tab.
 2. Write your post and share it.
+
+When you post, the club's other active members get a notification that there's
+a new post on the board, so notices don't go unread.
 
 {% include screenshot-todo.html slug="teams-club-board-tab" caption="The club Feed tab: the members-only board with the post composer at the top." %}
 
