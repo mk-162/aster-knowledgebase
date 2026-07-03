@@ -40,8 +40,21 @@ strong your signal is (weak signal is the single biggest drain).
 
 You can let the app **drop down a gear on its own as your battery falls**, so a
 long day doesn't die on a full-detail mode. Auto-fall-back only ever steps *down*
-the ladder (Live → Standard → Endurance → Ultra), never back up, and a small
-banner tells you each time it happens. It holds off while your phone is charging.
+the ladder, never back up, and a small banner tells you each time it happens. It
+holds off while your phone is charging.
+
+The steps happen at fixed battery levels:
+
+| At this charge | The app drops to |
+|---|---|
+| **30%** | Standard |
+| **15%** | Endurance |
+| **8%** | Ultra |
+
+So a ride that starts on **Live** eases back to Standard at 30%, Endurance at
+15%, and Ultra at 8% — stretching your remaining charge as far as it can while
+keeping your dot alive. If you started lower down the ladder, only the steps
+below your starting mode apply.
 
 You can also turn auto-fall-back **off** and stay locked to the mode you chose for
 the whole ride — handy if you started on Endurance and don't want any surprises.
