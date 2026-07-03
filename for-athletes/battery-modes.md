@@ -4,40 +4,55 @@ parent: "For athletes"
 nav_order: 3
 audience: [athlete]
 tags: [battery, tracking, gps]
-summary: "Choosing how often the app records your position to balance accuracy against battery life."
-last_updated: 2026-06-18
+summary: "Choosing how often the app records your position, and how it drops down gears automatically as your battery falls."
+last_updated: 2026-07-02
 ---
 
 # Battery modes
 
-When you start a ride, you pick a **battery mode**. It controls how often the app
-records and sends your position — which trades off live accuracy against how long
-your phone lasts.
+Tracking runs on your phone's GPS, and GPS uses power. When you start a ride you
+pick a **battery mode** — how often the app records and sends your position. More
+frequent updates give watchers a smoother dot; less frequent ones make your phone
+last far longer. You pick the mode per ride, so you can run **Live** for a short
+race and **Ultra** for a multi-day trip.
 
 ## The modes
 
+Four modes, from most detailed to most economical:
+
 | Mode | Best for | Trade-off |
 |---|---|---|
-| **Live** | Short, fast races where you want the smoothest live dot | Highest battery use |
+| **Live** | Short, fast events where you want the smoothest live dot | Highest battery use; recommended up to about 2 hours |
 | **Standard** | Most events | Balanced |
-| **Endurance** | Long days (roughly 4–12 hours) | Slightly choppier live dot, much longer battery |
+| **Endurance** | Long days | Slightly choppier live dot, much longer battery |
 | **Ultra** | Ultra-distance and multi-day rides | Most economical; updates least often |
 
-Higher-frequency modes make your dot and stats update more smoothly for watchers,
-but use more power. Longer rides should pick a more economical mode.
+The mode only changes the **recording rate**. It never changes how accurate each
+recorded point is, or your final distance — a point is a point in any mode.
 
-## Auto fall-back
+For real numbers — roughly how many hours each mode lasts from a given starting
+charge — use the interactive forecaster at
+[astertrack.app/battery-use](https://astertrack.app/battery-use). Those figures
+are estimates: real drain varies a lot with your phone, the temperature, and how
+strong your signal is (weak signal is the single biggest drain).
 
-When you start, you can turn on an option to **automatically drop to a more
-economical mode if your battery gets low** (around 10%). If that happens, your
-live updates become less frequent so your phone survives longer — you'll see a
-note that the mode changed. Your ride is unaffected; only the update rate changes.
+## Automatic fall-back
+
+You can let the app **drop down a gear on its own as your battery falls**, so a
+long day doesn't die on a full-detail mode. Auto-fall-back only ever steps *down*
+the ladder (Live → Standard → Endurance → Ultra), never back up, and a small
+banner tells you each time it happens. It holds off while your phone is charging.
+
+You can also turn auto-fall-back **off** and stay locked to the mode you chose for
+the whole ride — handy if you started on Endurance and don't want any surprises.
+The forecaster lets you model both.
 
 ## Good to know
 
-- Battery mode only changes the **recording rate**, never the accuracy of the
-  points themselves or your final distance.
-- You choose the mode per ride, so you can run Live for a crit and Ultra for a
-  bikepacking trip.
 - Whatever mode you pick, the app keeps recording in the background with the
-  screen off.
+  **screen off** — you don't need to keep it open.
+- A more economical mode means watchers see your dot update a little less often,
+  but your saved ride is just as complete.
+- Losing signal doesn't cost you data or points — everything is stored on the
+  phone and uploads later. See
+  [Mobile data, battery and what runs offline](data-usage.md).

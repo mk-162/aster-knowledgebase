@@ -4,36 +4,43 @@ parent: "For spectators"
 nav_order: 5
 audience: [spectator]
 tags: [compare, gaps, splits]
-summary: "Put two or more riders side by side to see gaps and splits."
-last_updated: 2026-06-18
+summary: "Put two to five riders side by side to see gaps, splits and progress."
+last_updated: 2026-07-02
 ---
 
 # Comparing riders
 
 The **Compare** view puts riders side by side so you can see exactly how they
-stack up.
+stack up. Like the rest of the spectator experience, it works without an
+account.
 
 ## How to compare
 
-1. From the leaderboard, select the riders you want to compare (at least two).
-2. Open **Compare**.
+1. On the **Riders** tab, switch on compare mode.
+2. Tick the riders you want to compare — between **two and five**.
+3. Tap **Compare**.
 
-You can also open a compare link directly if someone shares one with you.
+The compare page has its own web address, so you can share it or open a link
+someone sends you.
 
 ## What you'll see
 
-- Each rider's **position**, **distance**, **time** and **current speed**.
-- A **gap matrix** showing the gap between each pair of riders.
-- For time trials, **split times** at each checkpoint — useful for seeing who's
-  faster on which part of the course.
-- An elevation profile with each rider's position marked.
+- Each rider's **distance**, **time** and (on ranked formats) **position**.
+- Their **current speed** — shown for riders still moving; a finished or
+  stopped rider's speed isn't shown.
+- A **gap matrix** showing the time gap between each pair of riders. For time
+  trials these are projected gaps based on each rider's own clock.
+- On time trials with checkpoints, a **splits table** — each rider's time at
+  each checkpoint, with the fastest highlighted, so you can see who's quicker
+  on which part of the course.
+- An elevation profile with each rider's position marked on it.
 
 Everything updates live as the riders progress.
 
 ## Good to know
 
-- Gaps for mass-start races are shown as time behind; for time trials they
-  compare each rider's own elapsed time.
+- Gaps for mass-start races are time behind on the same clock; for time trials
+  they compare each rider's own elapsed time.
 - A finished rider shows their **final** time in the comparison — it stops
-  counting once they're done.
+  counting the moment they cross the line.
 - You can compare riders from different categories.

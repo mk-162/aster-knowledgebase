@@ -4,52 +4,71 @@ parent: "Notifications"
 nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [notifications, preferences, quiet-hours]
-summary: "Turn individual alerts on or off, set quiet hours, and tune thresholds."
-last_updated: 2026-06-18
+summary: "Turn individual alerts on or off and set quiet hours, from Notification settings."
+last_updated: 2026-07-02
 ---
 
 # Preferences and quiet hours
 
-You're in full control of what Aster sends you.
+You choose exactly what Aster sends you. In the app, open
+**Profile → Notification settings**.
 
 ## Turn individual types on or off
 
-In **Notification settings** you can switch each type of notification on or off
-individually — for example keep finishes and SOS but mute "stopped" alerts. See
-the full list in [Notification types](notification-types.md).
+Notification settings groups your alerts so you can keep the ones you want and
+mute the rest:
 
-Muting a type stops both the push **and** the in-app entry for that type.
+- **Alerts about athletes you follow** — race progress; stoppages and off-route;
+  race finishes and cutoffs; feed-zone approaches.
+- **Events** — event reminders and announcements; new events from organisers you
+  follow.
+- **Safety** — SOS alerts.
+- **Social** — new followers, messages, likes on your posts, comments on your
+  posts, and mentions.
+
+Muting a type stops both the push **and** the in-app entry for it. See the full
+list in [Notification types](notification-types.md).
 
 ## The master push switch
 
-There's a single switch to turn **push notifications** on or off across the board.
+At the top is a single **Push notifications** switch — the master on/off for push
+on this device.
 
-> **Good to know:** turning push off still keeps the in-app notification list
-> working — you'll just catch up in the app rather than getting buzzed. So you
-> never silently lose track of what happened.
+> **Good to know:** turning push off still keeps your in-app alerts list working.
+> You'll catch up in the app instead of getting buzzed, so you never silently lose
+> track of what happened.
 
 ## Quiet hours
 
-Set a **quiet hours** window (for example overnight) during which push
-notifications are held back. They still appear in your in-app list, so nothing is
-lost — you simply won't be buzzed while you sleep.
+Turn on **quiet hours** to pause push overnight (a sensible 10 pm–7 am window is
+set for you, which you can change). Pick the **From** and **Until** times in your
+own local time.
+
+Pushes are simply held during the window — everything still appears in your alerts
+list, so nothing is lost. You just won't be buzzed while you sleep.
 
 **Safety alerts (SOS) ignore quiet hours** and always come through.
 
-## Fine-tuning
+## Who can watch you
 
-A couple of the watching alerts have thresholds you can set:
-
-- **Gap change** — how big a change in the gap to the leader is worth telling you
-  about.
-- **Stopped** — how long a rider must be stationary before you're alerted.
-
-Raise these if you find a busy race sends too many alerts; lower them if you want
-to catch every move.
+The same screen has a **Who can watch me** section, where you decide whether your
+followers get a notification (with a watch link) when you start a free ride or a
+race. This is about who can follow *you* live — see
+[following and your feed](../social-and-following/following-and-your-feed.md).
 
 ## Tips
 
-- If you follow a lot of riders in one race, the watching alerts (gap, stopped,
-  progress) can add up — tune the thresholds or mute the ones you don't need.
-- Reminders for events you've registered for are on by default so you don't miss
-  a start.
+- If you follow a lot of riders in one race, the watching alerts (progress,
+  stoppages) can add up. Mute the group you don't need for that race.
+- Event reminders are on by default so you don't miss a start.
+- If push is on but nothing arrives, check
+  [Push notifications and devices](push-and-devices.md) — the app will also warn
+  you on this screen if your phone is blocking notifications.
+
+<!-- ## Unverified
+- The stoppage timer uses a default of about 15 minutes of no movement before it
+  alerts, stored per rider. There is no user-facing control to change that
+  threshold in the current settings screen, so this article does not promise one.
+- A gap-change threshold value exists in the data model but has no visible control
+  and no live producer, so it is not described here as tunable.
+-->

@@ -4,46 +4,77 @@ parent: "For spectators"
 nav_order: 4
 audience: [spectator]
 tags: [follow, notifications, events]
-summary: "Follow an event or ride to get alerts when something happens."
-last_updated: 2026-06-18
+summary: "Follow an athlete, event or ride to get alerts — and how the free favourites cap works."
+last_updated: 2026-07-02
 ---
 
 # Following riders and getting notified
 
-Watching live is open to everyone, but if you want Aster to **tell you**
-when something happens, follow along with an account.
+Watching live is open to everyone, no account needed. But if you want Aster
+to **tell you** when something happens — rather than keeping the page open —
+that part needs an account, so the alert has somewhere to go.
 
 ## Follow an event
 
-On an event page, tap **Follow**. You'll then get notifications about the event —
-for example when riders start and finish, and when the organiser posts an update.
-You can follow an event whether or not you're racing in it. Following needs an
-account (you'll be prompted to sign in).
+On an event page, tap **Follow**. You'll then get notifications about the
+event — for example when riders start and finish, and when the organiser
+posts an update. You can follow an event whether or not you're taking part.
+Following an event needs an account; you'll be prompted to sign in.
 
-## Follow a rider's free ride
+## Follow a rider's shared ride
 
-When someone shares a free ride with you, you can open it with no account. To get
-notified — for instance if they raise an **SOS** or when they finish — tap
-**Follow** / **Join** on the ride (this needs an account).
+When someone shares a [free ride](../for-athletes/free-rides.md) with you,
+you can open the watch link and follow along with no account. To also get
+**notified** — for instance if they raise an **SOS**, or when they finish —
+sign in and tap **Follow** / **Join** on the ride.
 
-## Follow people and teams
+## Follow athletes and teams
 
-You can also follow individual athletes and teams from their profiles, to keep up
-with their rides and posts. See
+You can follow individual athletes and teams from their profiles, to keep
+up with their rides and posts in your feed. See
 [Following and your feed](../social-and-following/following-and-your-feed.md).
+
+### The free favourites cap
+
+On a **free** account you can keep up to **five** athletes as favourites —
+that's the running list of people you follow. Reach the limit and Aster
+asks you to unfollow someone first, or to join a subscribed club, which
+lifts the cap. You can always unfollow.
+
+**This cap only touches following athletes with an account.** It never
+limits watching: opening an event page or a shared-ride link, and following
+an event for updates, are all unaffected — watch as many as you like.
+
+## What you can be notified about
+
+Once you're following, the alerts a spectator can get include:
+
+- An athlete or event **starting** and **finishing**.
+- A **stoppage** — a rider who's been stationary for a while.
+- **Milestones** as a rider passes distance markers.
+- An **SOS** raised on a ride you follow.
+- A **new follower**, and likes or comments on your posts.
+
+For the full list of what Aster can notify you about, and how each type
+behaves, see [notification types](../notifications/notification-types.md).
+
+Some of these don't apply to every format — a sportive or group ride
+deliberately doesn't push race-position alerts, because it isn't ranked.
+See [the leaderboard](the-leaderboard.md) for why.
 
 ## Controlling your alerts
 
-You're in full control of which notifications you receive, on which device, and
-during which hours. See:
+You choose which notifications you get, on which device, and during which
+hours. See:
 
-- [Notification types](../notifications/notification-types.md) — what each alert means
+- [Notification types](../notifications/notification-types.md) — what each
+  alert means
 - [Preferences and quiet hours](../notifications/preferences-and-quiet-hours.md)
 - [Push notifications and devices](../notifications/push-and-devices.md)
 
 ## Good to know
 
-- Notifications reach you on the **app** (push) and in your in-app notification
-  list. Use the mobile app if you want push alerts.
-- **SOS alerts always come through**, even during your quiet hours — safety comes
-  first.
+- Notifications reach you as **push** alerts on the app and in your in-app
+  list. Use the mobile app if you want push.
+- **SOS alerts always come through**, even during quiet hours — safety
+  comes first.

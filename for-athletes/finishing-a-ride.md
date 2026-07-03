@@ -4,53 +4,68 @@ parent: "For athletes"
 nav_order: 5
 audience: [athlete]
 tags: [finish, dnf, cutoff, results]
-summary: "The ways a ride ends — crossing the line, tapping Finish, abandoning, or a cut-off — and what freezes afterwards."
-last_updated: 2026-06-18
+summary: "The ways a ride ends — crossing the line, abandoning, a cut-off, or tapping Stop — and what freezes afterwards."
+last_updated: 2026-07-02
 ---
 
 # Finishing a ride
 
-## The ways an event ride can end
+How a ride ends depends on whether you're in an **event** or on a **free ride**.
 
-- **You cross the finish line.** The app detects the crossing automatically and
-  finishes you. Your time and distance are recorded at the crossing.
-- **You tap Finish.** Useful if the automatic detection doesn't fire (for example
-  you finished slightly off the marked line, or you were offline). You'll confirm
-  with a short **code** so a stray pocket-tap can't end your ride by accident.
-- **You abandon.** Tap **Abandon** and confirm with the code. You're recorded as
-  **DNF** (did not finish). Depending on the event, you may be able to rejoin.
+## Ending an event ride
+
+There are three ways an event ride ends. Two are decided for you; one is your
+own choice.
+
+- **You cross the finish line.** In a race or timed event, the app detects the
+  crossing from your position and finishes you automatically — no button to tap.
+  You'll see a **finish banner** on the tracking screen, then a results screen
+  with your time, distance, average speed and, on a multi-lap event, your lap
+  splits.
 - **The cut-off passes.** If the organiser set a cut-off time, anyone still out
-  past it is closed out automatically — recorded as DNF (or finished), as the
-  organiser chose. Riders who are paused aren't caught by the cut-off.
+  past it is closed out automatically — recorded as DNF or as finished, whichever
+  the organiser chose. Riders who are **paused** aren't caught by the cut-off.
+- **You abandon.** If you need to pull out, tap **Abandon** and confirm by typing
+  a 4-digit code shown on screen. You're recorded as **DNF** (did not finish).
+  This is deliberate friction so a pocket-tap can't end your ride — there's no
+  finish or stop button on your event tracking screen otherwise, and nothing in
+  the notification tray can end it either.
 
-## The finish screen
+Depending on the event, you may be able to rejoin after abandoning — start again
+from the event page. See [Register for an event](register-for-an-event.md).
 
-When you finish you'll see a summary: your **time**, **distance**, **average
-speed**, and **lap splits** if it was a multi-lap event. From there you can share
-your result or jump to the leaderboard and full results.
+{% include screenshot-todo.html slug="for-athletes-finish-results-screen" caption="The auto-finish results screen: Finished! header, total time, distance and average speed, lap splits, and Share result / Results / Leaderboard buttons." %}
+
+## Ending a free ride
+
+A free ride ends when **you** tap **Stop & save ride** — that's the only thing
+that ends it. There's no finish line and no cut-off. Your ride saves to your
+history with its distance, time and average speed. See [Free rides](free-rides.md).
 
 ## What "finished" means
 
-The instant you finish, your ride is **frozen everywhere** — your dot stops at the
-finish, and your distance, time and position lock in. This is true on your own
-screen, on the leaderboard, and for every spectator at the same moment. No timer
-keeps ticking and no late GPS points extend your trail past the finish. See
+The instant a ride ends — line crossing, cut-off, DNF, or your Stop tap — it's
+**frozen everywhere at the same moment**. Your dot stops at the finish, and your
+distance, time and position lock in. That's true on your own screen, on the
+leaderboard, and for every spectator. No timer keeps ticking, and no later GPS
+points extend your trail past the finish. See
 [Why your distance and time are accurate](../safety-and-offline/data-accuracy.md).
 
 ## Finishing offline
 
-If you finish with no signal, the app records the **exact moment you finished**
-on your phone. Hours later, when signal returns, your ride uploads with that
-original finish time — so your result reflects when you actually finished, not
-when your phone reconnected. Any points your phone recorded after you finished are
-discarded, so your trail ends cleanly at the line.
+If you finish or stop with no signal, the app records the **exact moment you
+finished** on your phone. Hours later, when signal returns, your ride uploads
+carrying that original finish time — so your result reflects when you actually
+finished, not when your phone reconnected. Any points your phone recorded after
+you finished are discarded, so your trail ends cleanly at the line, and any
+points from *before* the finish that were still queued fill your trail back in.
 
 ## Troubleshooting
 
-- **I crossed the line but it still says I'm racing.** Automatic finish can take a
-  short time, and if you're offline it can't confirm until you reconnect. You can
-  tap **Finish** to end it yourself, or the organiser can finish you from their
-  dashboard.
-- **I tapped Finish but the save failed.** If you're offline you'll see a retry
-  prompt. Your finish time is already saved on the phone; tap retry when you have
-  signal and it'll sync with the correct time.
+- **I crossed the line but it still says I'm racing.** Automatic finish needs a
+  moment, and if you're offline it can't confirm until you reconnect — reopen the
+  app with signal. If it still hasn't fired, the organiser can finish you from
+  their dashboard.
+- **My save failed with no signal.** You'll see a retry prompt. Your finish time
+  is already safe on the phone; tap retry when you have signal and it syncs with
+  the correct time. Nothing is lost in the meantime.

@@ -3,75 +3,99 @@ title: "Starting and tracking a ride"
 parent: "For athletes"
 nav_order: 2
 audience: [athlete]
-tags: [tracking, gps, start, race, time-trial]
-summary: "How to start tracking an event, what the live screen shows, and how the race clock works."
-last_updated: 2026-06-18
+tags: [tracking, gps, start, race, time-trial, sportive]
+summary: "How to start tracking an event, what the live screen shows, and how your clock works in each event format."
+last_updated: 2026-07-02
 ---
 
 # Starting and tracking a ride
 
-This covers tracking an **event** you've registered for. For personal tracking,
-see [Free rides](free-rides.md).
+This covers tracking an **event** you've registered for. For personal
+tracking, see [Free rides](free-rides.md).
 
 ## Start tracking
 
-1. On your tracking screen, find your registered event and tap
-   **Start [event name]**.
-2. Choose a **battery mode** (Live, Standard, Endurance or Ultra) to match how
-   long you'll be out. See [Battery modes](battery-modes.md).
-3. The app does a short **GPS warm-up** (usually 15–30 seconds) so your first
-   position is accurate. You can tap **Start anyway** to skip the wait once your
-   signal is good enough.
-4. You're now tracking. What happens next depends on the event type:
-   - **Mass-start race:** you'll see **Tracking armed** until the organiser
-     starts the race (the "gun"). When it fires you'll see **GO!** with a beep and
-     a buzz, and your clock begins.
-   - **Time trial / group ride / adventure:** you're on the clock from the moment
-     you start.
+1. On your tracking screen, tap **Start [event name]**. (If the button shows
+   "Opens in…", the start window hasn't opened yet — see below.)
+2. Answer **How long will you be riding?** The app recommends a
+   **battery mode** (Live, Standard, Endurance or Ultra) to match, and you can
+   override it. See [Battery modes](battery-modes.md).
+3. The app does a short **GPS warm-up** (about 15 seconds, a little longer if
+   it's still waiting for an accurate fix) so your first position is right. A
+   **Start anyway** button appears after about 30 seconds if you'd rather not
+   wait.
+4. You're now tracking. What happens next depends on the event format —
+   see "How the clock works" below.
 
-> **You can start with no signal.** Starting works fully offline — the app uses
-> your phone's GPS and your saved copy of the event. Your positions are stored on
-> the phone and sync when signal returns.
-
-## The live screen
-
-While riding you'll see:
-
-- **The map** with your live dot and the trail behind you, the route line, and
-  the finish line. In an event you'll also see other riders' dots.
-- **Live stats:** distance, current speed, elapsed time and average speed.
-- Buttons for **Pause**, **Finish**, **I'm OK**, and **SOS**.
+> **You can start with no signal.** Starting works fully offline — the app
+> uses your phone's GPS and your saved copy of the event. Your positions are
+> stored on the phone and sync when signal returns.
 
 ## How the clock works
 
-- **Mass-start races** are timed from the **gun** — the official start moment set
-  by the organiser. Everyone shares the same start time, so your clock matches the
-  race, not the exact instant you tapped Start.
-- **Time trials, group rides and adventures** are timed from **when you start**.
-- **Distance** is measured from the GPS points recorded between your start and
-  now. **Average speed** is distance ÷ time.
+- **Mass-start race** — you're **armed**, not racing, until the gun. The
+  screen shows **Tracking Armed** with a "race starts in…" countdown; in the
+  final five seconds you get tick beeps and a big count, then **GO!** with a
+  beep and a buzz. Your race clock is anchored to the **gun**, the same
+  official start moment for every rider — not to the instant you tapped
+  Start. Points recorded before the gun don't count.
+- **Time trial and sportive** — your official time runs from when you
+  physically **cross the start line** to when you cross the finish, not from
+  when you tapped Start. You'll see "Start line crossed — clock is running!"
+  as you set off. Warm-up wandering before the line doesn't count. (In a
+  sportive there are no published positions — see
+  [event types](../for-organisers/event-types.md).)
+- **Group ride and adventure (grand départ)** — your time runs from the
+  moment you start. No gun, no gate.
+- **Distance** is measured from the GPS points recorded between your start
+  and now. **Average speed** is distance ÷ time.
+
+## The live screen
+
+While you're out you'll see:
+
+- **The map** with your live dot and the trail behind you, the route line,
+  and — in an event — other riders' dots.
+- **Live stats:** battery, distance, current speed, time and average speed.
+- A **health pill** summarising GPS, connectivity and battery state at a
+  glance.
+- Buttons for **I'm OK**, **SOS**, **Pause**/**Resume**, and
+  **Abandon** (before the gun in a race this is **Cancel start** instead —
+  a clean back-out that keeps you registered).
+
+{% include screenshot-todo.html slug="for-athletes-tracking-live-screen" caption="The tracking screen mid-event: map with dot and trail, stat cards, and the I'm OK / SOS / Pause / Abandon buttons." %}
 
 ## During the ride
 
-- **Pause** when you stop for a mechanical, a café or a nature break — it freezes
-  your clock and distance. See [Pausing and resuming](pausing-and-resuming.md).
-- Tap **I'm OK** to reassure watchers if you've been stationary for a while.
-- Tap **SOS** in an emergency — see [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
-  An SOS does **not** end your ride.
+- **Pause** when you stop for a mechanical, a café or a nature break — it
+  freezes your distance and moving time. See
+  [Pausing and resuming](pausing-and-resuming.md).
+- Tap **I'm OK** to reassure your watchers if you've been stationary a while.
+  (Sending it needs signal; the app tells you if it couldn't go.)
+- Tap **SOS** in an emergency — it alerts the event organisers with your
+  location; it does **not** contact emergency services, and it never ends
+  your ride. See
+  [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
 
 ## Important
 
-- **The app never ends your ride on its own.** It won't stop because you paused,
-  lost signal, your phone got killed in the background, or a network request
-  failed. Your ride continues until **you** finish or abandon it, you cross the
-  finish line, or the organiser's cut-off time passes. See
+- **The app never ends your ride on its own.** It won't stop because you
+  paused, lost signal, your phone got killed in the background, or a network
+  request failed. Your ride continues until **you** stop or abandon it, you
+  cross the finish line, or the organiser's cut-off time passes. See
+  [Finishing a ride](finishing-a-ride.md) and
   [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md)
-- **The app never signs you out mid-ride.** If your login needs refreshing you'll
-  see a gentle banner, but your ride keeps recording.
+- **The app never signs you out mid-ride.** If your login needs refreshing
+  you'll see a gentle banner, but your ride keeps recording.
+- **The tracking notification has no stop button.** Nothing in your pocket or
+  on your lock screen can end the ride.
 
 ## Troubleshooting
 
-- **The Start button is greyed out.** The start window hasn't opened yet, or the
-  event isn't ready. Check the countdown.
-- **GPS warm-up is slow.** Step into the open, away from buildings or tree cover;
-  tap **Start anyway** once accuracy looks good.
+- **The Start button shows "Opens in…".** The start window opens shortly
+  before the event: about 15 minutes before races, time trials and sportives,
+  30 minutes before group rides, and 2 hours before grand départs.
+- **GPS warm-up is slow.** Step into the open, away from buildings or tree
+  cover; use **Start anyway** once accuracy looks good.
+- **I armed for the wrong race.** Before the gun, tap **Cancel start** — you
+  stay registered and can start again any time before the gun.

@@ -2,15 +2,15 @@
 title: "For athletes"
 nav_order: 2
 has_children: true
-last_updated: 2026-06-18
+last_updated: 2026-07-02
 ---
 
 # For athletes
 
-Everything you need as a rider: joining events, starting and tracking a ride,
-recording personal free rides, and finding your results afterwards. Watch the
-Dot is designed so the parts you rely on at the start line and finish line keep
-working even with no phone signal.
+Everything you need as an athlete: joining events, starting and tracking a
+ride or run, recording personal free rides, and finding your results
+afterwards. Aster is designed so the parts you rely on at the start line and
+finish line keep working even with no phone signal.
 
 - [Register for an event](register-for-an-event.md)
 - [Manage or cancel your registration](manage-your-registration.md)

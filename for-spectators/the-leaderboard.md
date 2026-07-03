@@ -3,49 +3,69 @@ title: "Reading the leaderboard"
 parent: "For spectators"
 nav_order: 3
 audience: [spectator]
-tags: [leaderboard, standings, gaps, time-trial]
-summary: "How standings, gaps and pace are calculated, and how they differ by event type."
-last_updated: 2026-06-18
+tags: [leaderboard, standings, gaps, time-trial, sportive]
+summary: "How live standings work for each event format — and why sportives show times without positions."
+last_updated: 2026-07-02
 ---
 
 # Reading the leaderboard
 
-The leaderboard (the **Riders** tab) shows the live standings and updates as
-riders progress.
+The **Riders** tab shows every athlete in the event and updates live as they
+progress. What each row shows depends on the event format — some formats are
+races with published standings, and some deliberately are not.
 
 ## What each row shows
 
-- **Position** in the standings
-- **Rider** name, bib and category
-- **Distance** covered (and laps, for multi-lap events)
-- **Gap** — how far behind the leader
-- **Pace / speed**
+- The athlete's **name, bib and category**
+- Their **status** — Entered (registered, not yet riding), Ready (tracking
+  armed, waiting for the start), on course, Finished, DNS or DNF
+- Their live progress — distance done and to go (with laps on multi-lap
+  courses), or elapsed time, depending on the format
+- For ranked formats: **position** and **gap** to the leader
 
-## How standings are worked out
+Tap a row to jump to that athlete on the map and see their live stats.
 
-It depends on the event type:
+## How each format presents
 
-- **Mass-start race / group ride:** everyone is on the same clock (the gun).
-  Standings reflect who is furthest along, and gaps are shown as **time** behind
+- **Race (mass start):** everyone is on the same clock — the gun. Standings
+  reflect who is furthest along the course, and gaps are shown as time behind
   the leader. First across the line wins.
-- **Time trial:** each rider runs their own clock, starting when they cross the
-  start. Standings are by **fastest elapsed time**, and gaps compare each rider's
-  time.
+- **Time trial:** each rider runs their own clock, started when they cross the
+  start gate. Standings are by fastest elapsed time, and gaps compare each
+  rider's time.
+- **Sportive / gran fondo:** **no positions, anywhere** — see below.
+- **Group ride and grand depart:** these aren't timed competitions, so there
+  are no positions or gaps. Rows show who's on course and who's finished.
 
-Distances are measured along the course from the start, so what you see reflects
-progress on the route rather than raw distance from anywhere on Earth.
+Distances are measured **along the course** from the start, so what you see
+reflects real progress on the route, not straight-line distance.
+
+## Why sportives show times but no positions
+
+A sportive isn't a race — that's a matter of how the event is run and insured,
+not a technicality. So Aster never publishes a finishing order for a sportive:
+
+- Rows are listed by **bib number and name**, not by who's fastest.
+- Live riders show **"On course"** and their elapsed time; finishers show
+  **"Finished"** and their time.
+- No gaps, no leader, no podium language — on the live view, in the results,
+  and in notifications.
+
+Every rider still gets their own accurate time. If you want to see how a
+particular rider is going relative to a friend, you can compare them yourself —
+that's your query, not the event's publication.
 
 ## Live, but consistent
 
-The leaderboard updates live (and refreshes periodically if your connection is
-slow). It's calculated from the same trusted set of GPS points as the map and the
-rider trails, so the distance you see on the leaderboard matches the dot on the
-map.
+The leaderboard updates live (with a periodic refresh as a fallback if your
+connection is patchy). It's calculated from the same trusted set of GPS points
+as the map and the trails, so the distance you see in the list always matches
+the dot on the map.
 
-## Finished and DNF riders
+## Finished, DNS and DNF
 
-- **Finished** riders lock in their final time and position — they won't move or
-  re-rank afterwards.
-- **DNF** (did not finish) riders are shown as such; their last position is kept
-  but they're not ranked as finishers.
-- Riders who haven't started yet don't appear until they begin.
+- **Finished** athletes lock in their final time (and position, on ranked
+  formats) — they won't move or re-rank afterwards.
+- **DNF** (did not finish) athletes are shown as such and aren't ranked as
+  finishers.
+- **DNS** (did not start) marks athletes who registered but never set off.

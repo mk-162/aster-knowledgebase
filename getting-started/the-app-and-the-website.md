@@ -3,47 +3,81 @@ title: "The app vs the website"
 parent: "Getting started"
 nav_order: 3
 audience: [athlete, spectator, organiser]
-tags: [app, web, platforms]
-summary: "When to use the mobile app and when the website is enough."
-last_updated: 2026-06-18
+tags: [app, web, platforms, install]
+summary: "When you need the mobile app, when a browser is enough, and how to install the app during the beta."
+last_updated: 2026-07-02
 ---
 
 # The app vs the website
 
-Aster is available as a **mobile app** (iOS and Android) and as a
-**website** you open in any browser. They share the same account and the same
-data, but they're suited to different jobs.
+Aster is available as a **mobile app** (iPhone and Android) and as a
+**website** at [astertrack.app](https://astertrack.app) that works in any
+browser. They share the same account and the same data, but they're suited to
+different jobs.
 
 ## Use the mobile app to be tracked
 
-If you're going to **ride and be tracked**, use the app. Only a native app can
-keep recording your GPS position reliably in the background — while your phone is
-in your pocket, the screen is off, or you've switched to another app. The app
-also powers:
+If you're going to **ride or run and be tracked**, use the app. Only the
+native app can keep recording your GPS position reliably in the background —
+while your phone is in your pocket, the screen is off, or you've switched to
+another app. The app also powers:
 
 - Offline starting and finishing (no signal needed).
-- Background GPS recording for hours, tuned to your battery.
+- Background GPS recording for hours, with battery modes to match the length
+  of your day.
 - The persistent "tracking" notification so you know it's still running.
-- Automatic crash detection.
+- Crash detection, which can start an SOS countdown if you hit the ground.
 
-Download it from the App Store (iOS) or Google Play (Android).
+If you open the tracking screen in a browser, you'll see install options for
+the app instead — GPS tracking simply isn't possible from a browser tab.
 
-## Use the website to watch and manage
+### Installing the app (early-access beta)
 
-The website is perfect for everything that isn't live tracking:
+Aster is currently in early-access beta, so it isn't yet installed from the
+public app stores:
 
-- **Watching** events and riders live — the map, trails and leaderboard all work
-  in a browser, no app required.
-- Checking **results** and **leaderboards**.
-- Managing your **profile**, **notifications** and account settings.
-- Most **organiser** setup and race-day monitoring.
+- **iPhone** — via Apple's **TestFlight**. Install TestFlight from the App
+  Store first, then open Aster's invite link, tap **Accept**, then
+  **Install**.
+- **Android** — via a **direct download** (an `.apk` file). Download it, tap
+  the file, and allow installs from your browser if your phone asks — you
+  only need to do that once.
 
-> **Good to know:** browsers can't record your location once you switch away or
-> lock the screen, so the website isn't used to track your own ride. If you try to
-> start tracking on the web, you'll be pointed to the app.
+The current install links are shown on the website whenever you try to start
+tracking in a browser (open **Track** on
+[astertrack.app](https://astertrack.app)). Links change as new beta builds
+ship, so we don't reproduce them here.
+
+{% include screenshot-todo.html slug="getting-started-app-vs-website-install-cards" caption="The install options shown on the website's Track page: iPhone via TestFlight and Android via direct download, each with a QR code." %}
+
+## Use the website for everything else
+
+The website covers everything that isn't live GPS recording:
+
+- **Watching** events and shared rides live — the map, trails and live
+  standings all work in a browser, no app and (for public events and share
+  links) no account required.
+- Checking **results**, watching **replays**, and comparing athletes.
+- Reading and posting to event **feeds**, and following athletes and teams.
+- Managing your **profile**, **settings**, privacy and account.
+- The full **organiser dashboard** — creating events, uploading routes,
+  managing registrations, monitoring race day and handling SOS alerts.
+- **Club and team** pages and management.
+
+> **Good to know:** browsers can't record your location once you switch away
+> or lock the screen, so the website is never used to track your own ride. If
+> you try, you'll be shown the app install options instead.
 
 ## Which should a spectator use?
 
-Either. The website is the quickest way to open a shared link and watch — no
-install. The app gives watchers push notifications (for example, when a rider you
-follow starts or finishes).
+Either. The website is the quickest way to open a shared link and watch —
+nothing to install. Notifications (for example, when an athlete you follow
+starts or finishes) are available in the app and in most desktop and Android
+browsers; see [Push notifications and devices](../notifications/push-and-devices.md).
+
+<!-- ## Unverified
+- Public App Store / Google Play availability: not current — during the beta the install paths are TestFlight (iPhone) and direct APK download (Android). Revisit when the app ships to the public stores.
+- The exact TestFlight and APK link URLs are beta links that rotate with builds; deliberately not reproduced.
+- An installable "add to home screen" web app (PWA): the website works in any browser, but no user-facing PWA install path was found in the product this pass, so none is documented.
+- The app may move to its own web domain in future (TODO: confirm app domain); in-app paths are described by screen name rather than URL for that reason.
+-->

@@ -3,43 +3,50 @@ title: "Manage or cancel your registration"
 parent: "For athletes"
 nav_order: 1.6
 audience: [athlete]
-tags: [registration, withdraw, change, events]
-summary: "Change your details, switch category, or withdraw from an event you've joined."
-last_updated: 2026-06-18
+tags: [registration, withdraw, change, transfer, ballot, events]
+summary: "Withdraw, defer, change category or transfer your place — and handle ballot offers — from My registrations."
+last_updated: 2026-07-02
 ---
 
 # Manage or cancel your registration
 
-Joined an event and need to change something? Here's what you can do.
+Everything you've entered lives in **My registrations** in the app. Each
+registration shows its status and the actions available for it.
 
-## Change your details
+## What you can do
 
-From the event, you can update the details you entered when you registered — for
-example your **race name**, **category** or **team** — subject to the organiser's
-settings and how close it is to the event. Some organisers lock changes once
-registration closes.
+- **Withdraw** — take yourself off the start list. Your place (and any
+  per-category spot) is freed for someone else, and you won't appear in the
+  results. If you change your mind while registration is still open and
+  there's space, you can join again from the event page.
+- **Defer to next year** — step back from this edition and carry your entry
+  to the next one, where the event supports it.
+- **Change category** — switch to a different category (for example a
+  different distance or age group), subject to space in the new category.
+- **Transfer to another rider** — pass your place to someone else by entering
+  their email address.
 
-## Withdraw from an event
+Each action asks you to confirm before it goes through.
 
-If you can't make it, **withdraw** from the event. Withdrawing:
+## Ballot events
 
-- Takes you off the start list and frees your place (and any per-category spot).
-- Means you won't appear in the results.
+If the event runs a **ballot**, My registrations is where you manage it:
 
-If you change your mind, you can usually register again while registration is
-still open and there's space.
-
-## Approval-based events
-
-Some events only confirm you after the organiser **approves** your entry. Until
-then your place isn't guaranteed — you'll be notified when you're confirmed (or
-declined). See [Registration and categories](../for-organisers/registration-and-categories.md).
+- While you're in the ballot you can **leave** it at any time.
+- If you're drawn, you'll get an **offer** — **accept** it to confirm your
+  place, or **decline** it to release it.
 
 ## Good to know
 
-- **What you can change, and until when, is up to the organiser.** If an option is
-  greyed out, registration changes may be closed for that event — contact the
-  organiser.
-- Withdrawing is about your **entry**, not your data. To remove your account or
-  download your data entirely, see
+- **What's available depends on the event.** Organisers control whether
+  deferrals and transfers are offered, and changes can close as the event
+  nears. If an action isn't shown, contact the organiser.
+- Withdrawing is about your **entry**, not your data. To download or remove
+  your account data entirely, see
   [Export or delete your data](../account-and-privacy/export-or-delete-your-data.md).
+- Withdrawing also clears the event from your phone's offline start cache, so
+  it no longer appears on your tracking screen.
+
+<!-- ## Unverified
+- "Defer … where the event supports it" / "Organisers control whether deferrals and transfers are offered" — the defer and transfer actions exist in the app; per-event organiser toggles for them weren't individually verified this pass.
+-->

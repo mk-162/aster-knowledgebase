@@ -8,16 +8,16 @@ last_updated: 2026-07-02
 <div class="kb-hero">
   <p class="kb-hero-kicker"><span class="kb-live-dot"></span>Help Centre</p>
   <h1 class="kb-hero-title">How can we help?</h1>
-  <p class="kb-hero-sub">Aster is live GPS tracking for bike races, group rides and
-  adventures. Riders carry the app; anyone can watch their <strong>dot</strong> move along the
-  route in real time. Search above, or jump to your section below.</p>
+  <p class="kb-hero-sub">Aster is live tracking and sharing for races, club rides, runs and
+  adventures. Athletes carry the app; anyone they share with can follow them along the route
+  in real time — no account needed to watch. Search above, or jump to your section below.</p>
 </div>
 
 <div class="kb-cards">
   <a class="kb-card" href="for-athletes/">
     <span class="kb-card-emoji">🚴</span>
     <span class="kb-card-title">For athletes</span>
-    <span class="kb-card-sub">Enter events, start and track a ride, free rides, results —
+    <span class="kb-card-sub">Enter events, track a ride or run, share it live, results —
     built to keep working when the signal doesn't.</span>
   </a>
   <a class="kb-card" href="for-spectators/">
@@ -42,6 +42,7 @@ last_updated: 2026-07-02
 - [Your first event: a walkthrough](for-athletes/your-first-event.md)
 - [Start and track a ride](for-athletes/starting-and-tracking-a-ride.md)
 - [Watch an event live](for-spectators/watch-an-event-live.md)
+- [Clubs on Aster](teams-and-clubs/)
 - [SOS and crash detection](safety-and-offline/sos-and-crash-detection.md)
 - [What happens when I lose signal?](safety-and-offline/offline-and-no-signal.md)
 - [Who can see my location?](account-and-privacy/who-can-see-your-location.md)

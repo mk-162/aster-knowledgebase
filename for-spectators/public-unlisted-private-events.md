@@ -1,23 +1,28 @@
 ---
-title: "Public, unlisted and private events"
+title: "Public, unlisted, private and members events"
 parent: "For spectators"
 nav_order: 7
 audience: [spectator, organiser]
 tags: [privacy, events, access]
-summary: "The three event privacy levels and what each means for who can watch."
-last_updated: 2026-06-18
+summary: "The four event privacy levels and what each means for who can watch."
+last_updated: 2026-07-02
 ---
 
-# Public, unlisted and private events
+# Public, unlisted, private and members events
 
-Every event has one of three privacy levels. They control **who can find it** and
-**who can watch it**.
+Every event has one of four privacy levels. They control **who can find it**
+and **who can watch it**.
 
 | Level | Listed in Discover? | Who can watch | Account needed? |
 |---|---|---|---|
-| **Public** | Yes | Anyone with the link or who finds it | No |
-| **Unlisted** | No | Anyone who has the link | No |
-| **Private** | No | Signed-in people with access (the organiser's code) | Yes |
+| **Public** | Yes | Anyone | No |
+| **Unlisted** | No | Anyone with the link | No |
+| **Private** | No | Signed-in people with the organiser's code | Yes |
+| **Members** | No | Signed-in members of the host club | Yes |
+
+Anonymous watching — no login, no app, no payment — is a promise for
+**public and unlisted** events. **Private and members** events are the
+exception: they need a sign-in.
 
 ## Public
 
@@ -26,23 +31,35 @@ leaderboard, route and results. Best for events that want an audience.
 
 ## Unlisted
 
-Doesn't show up anywhere public, but **anyone with the link can watch** with no
-account. Best for events the organiser wants to share selectively without putting
-them in front of everyone.
+Doesn't show up in Discover or any public list, but **anyone with the link
+can watch** with no account. Best for events an organiser wants to share
+selectively without putting them in front of everyone.
 
 ## Private
 
-Hidden, and **locked**. To view, you sign in and use the access code the
-organiser shared. People without access who try the link are told the event can't
-be found — its existence isn't revealed. Best for closed, invite-only events.
+Hidden and **locked**. To view, you sign in and use the access code the
+organiser shared. Someone without access who tries the link is told the
+event **can't be found** — its existence isn't revealed. Best for closed,
+invite-only events.
+
+## Members
+
+Visible only to **signed-in members of the club** hosting it. It never
+appears in Discover, and to anyone who isn't a member — signed in or not —
+the link reads as **not found**, the same as a private event. Members
+events are how a club runs rides just for its own people.
 
 ## Good to know (for organisers)
 
-- You set the privacy level when you create the event, and you can change it
-  later. Be aware that switching **public → private** will stop existing public
-  links working for people without access.
-- Private events deliberately don't appear in discovery or notify your followers
-  on creation — they stay closed by design.
+- You set the privacy level when you create the event, and you can change
+  it later. Switching a **public** event to **private** or **members** will
+  stop existing public links working for people without access.
+- Private and members events deliberately stay out of discovery and don't
+  announce themselves to followers — they're closed by design.
 
 See also [Watch an event live](watch-an-event-live.md) and
 [Share links](share-links.md).
+
+<!-- ## Unverified
+- No club-membership article exists in the KB yet to link "members" events to; kept as prose until a for-teams section lands.
+-->

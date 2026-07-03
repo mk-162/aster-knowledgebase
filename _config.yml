@@ -8,8 +8,9 @@
 
 title: Aster Help Centre
 description: >-
-  Guides for athletes, spectators and event organisers using Aster,
-  the live GPS tracking platform for bike races, group rides and adventures.
+  Guides for athletes, spectators, clubs and event organisers using Aster,
+  the live tracking and sharing platform for races, club rides and
+  adventures — on bikes or on foot.
 lang: en-GB
 
 # Theme — installed via the Gemfile (works locally and in CI).
@@ -71,6 +72,7 @@ relative_links:
 exclude:
   - README.md
   - STYLE-GUIDE.md
+  - UPDATE-PROMPT.md
   - Gemfile
   - Gemfile.lock
   - vendor
