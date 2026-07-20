@@ -2,7 +2,7 @@
 title: "Home"
 nav_order: 0
 description: "The Aster help centre — guides for athletes, spectators and event organisers."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 <div class="kb-hero">

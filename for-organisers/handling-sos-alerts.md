@@ -5,7 +5,7 @@ nav_order: 7
 audience: [organiser]
 tags: [sos, safety, dashboard]
 summary: "How rider SOS alerts reach your dashboard, how to respond and resolve them, and what Aster's SOS does and does not do."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Handling SOS alerts
@@ -21,9 +21,10 @@ Be clear on this before your event, and brief your riders on it too.
 
 - An SOS is an **in-app alert and location share**. It tells the organisers that
   a rider needs help and shows their last known position.
-- Aster **does not contact the emergency services**. It cannot call 999 for a
-  rider. The rider's own screen offers a one-tap **Call 999** button, but placing
-  that call is down to the rider or to you — the app never does it.
+- Aster **does not contact the emergency services**. It cannot call for a rider.
+  The rider's own screen offers a one-tap **Call emergency services (999 / 112)**
+  button, but placing that call is down to the rider or to you — the app never does
+  it.
 - An SOS **does not guarantee anyone will respond**. It is an aid, not a rescue
   service and not a safety device. Your event still needs a real emergency plan.
 
@@ -65,14 +66,14 @@ help.
 ## Important: an SOS never ends the ride
 
 Raising an SOS is completely separate from finishing. The rider keeps being
-tracked — which is exactly what you want when someone may need help, so their dot
-stays live and their location keeps updating. To end a rider's ride you set their
+tracked — which is exactly what you want when someone may need help, so their live
+location stays visible and keeps updating. To end a rider's ride you set their
 status yourself (see [Running the event on race day](race-day-management.md)); an
 SOS on its own changes nothing about their race record.
 
 Crash detection works the same way: if the app thinks a rider has crashed it
 starts an SOS countdown, but it never stops the ride. A rider who's just hit the
-ground may be the one who most needs their dot to stay visible.
+ground may be the one who most needs their live location to stay visible.
 
 <!-- ## Unverified
 - Whether an event-mode SOS also fans out to a rider's own personal followers (in addition to the organisers) was not separately confirmed this pass; the in-app sender copy states event SOS alerts the organisers, which is what this article documents.

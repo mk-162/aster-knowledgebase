@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [troubleshooting, help, offline, android, sign-in]
 summary: "The most common issues, the quick fix for each, and where to read more."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Troubleshooting
@@ -16,11 +16,11 @@ explanation. If yours isn't here, see
 
 ## Watching
 
-**An athlete's dot isn't moving.**
+**An athlete's live marker isn't moving.**
 They're almost certainly in an area with no phone signal. Their points are
-being saved on their phone and will upload — and the dot, trail and distance
+being saved on their phone and will upload — and the marker, trail and distance
 will catch up — when they get signal back. Nothing is lost. (If they've
-finished, their dot stays at the line for good.) See
+finished, their marker stays at the line for good.) See
 [Reading the live map and trails](../for-spectators/the-live-map-and-trails.md).
 
 **I'm asked to sign in to watch a public event.**
@@ -82,17 +82,18 @@ doesn't settle, the organiser can finish you from their dashboard. See
 
 ## Follows and clubs
 
-**"Follow limit reached."**
-Free accounts can follow up to 5 athletes as favourites. Membership of a
-subscribed club removes the cap; unfollowing someone frees a slot. The cap
-never affects watching — a shared link or public event page works for anyone.
-See [Teams and clubs](../teams-and-clubs/index.md).
+**Can I follow more people?**
+Yes — following is free and unlimited, so follow as many athletes, teams and
+events as you like, and unfollow any time. Following never affects watching: a
+shared link or public event page works for anyone, with no account.
+See [Following and your feed](../social-and-following/following-and-your-feed.md).
 
 **Our weekly club ride hasn't appeared.**
-Upcoming recurring rides are created from the club's template while the club's
-plan is active. If the plan has lapsed, new rides stop being created — but
-nothing is deleted, and past rides stay readable. Once the plan is renewed,
-the recurring rides resume. See [Teams and clubs](../teams-and-clubs/index.md).
+Upcoming recurring rides are created from the club's template while the club has
+its full club features switched on (its members hold **Aster Plus**). If that
+lapses, new rides stop being created — but nothing is deleted, and past rides
+stay readable. Once membership is back in place, the recurring rides resume.
+See [Teams and clubs](../teams-and-clubs/index.md).
 
 ## Notifications
 

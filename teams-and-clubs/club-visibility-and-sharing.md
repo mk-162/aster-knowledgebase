@@ -5,7 +5,7 @@ nav_order: 8
 audience: [athlete, spectator, organiser]
 tags: [teams, clubs, privacy, sharing, sponsors]
 summary: "What's public on a club page, what stays members-only, and what happens when you share a club-ride link."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Club visibility and sharing
@@ -20,8 +20,8 @@ out which is which.
 - The **Events** tab — public events the club's members have taken part in.
 - Any **public or unlisted events the club hosts** (a club open day, say) on
   its Rides tab.
-- The club's **sponsor strip**, if it has one (Club plan or
-  [verified teams](verified-pro-teams.md)).
+- The club's **sponsor strip**, if it has one — available to any club (and
+  [verified/pro teams](verified-pro-teams.md)).
 
 Anyone can **follow** a club from its page to get its public updates in
 their feed.
@@ -53,9 +53,9 @@ join page showing only the club's name, logo and member count, and joins as a
 full member in one tap. The preview reveals nothing members-only. See
 [invite links](roles-and-managing-members.md#invite-links).
 
-## The club sponsor slot
+## The club sponsor strip
 
-Clubs on the [Club plan](billing-and-your-club-plan.md) (and verified teams)
-can display a sponsor on the club page and on club-ride pages — a
-display-only strip, typically the local bike shop that puts money behind the
-club. It's visible to whoever can see the page it's on.
+Any club (and [verified/pro teams](verified-pro-teams.md)) can display a
+sponsor on the club page and on club-ride pages — a display-only strip,
+typically the local bike shop that puts money behind the club. It's visible to
+whoever can see the page it's on.

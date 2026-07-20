@@ -5,7 +5,7 @@ nav_order: 1.6
 audience: [organiser]
 tags: [riders, briefing, pre-event, communication]
 summary: "A ready-to-share briefing so your participants arrive set up and trouble-free."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # What to tell your riders before the event
@@ -53,8 +53,9 @@ Send your participants this short briefing (copy, paste and tweak) a few days ou
 
 Tell riders plainly what Aster's SOS does: it **alerts you, the organisers**, and
 shares the rider's location. It **does not call the emergency services** — a rider
-who needs 999 must call it themselves (their screen has a one-tap button). Brief
-your real emergency plan separately; the app is an aid, not a rescue service. See
+who needs help must call it themselves (their screen has a one-tap **Call emergency
+services (999 / 112)** button). Brief your real emergency plan separately; the app
+is an aid, not a rescue service. See
 [Handling SOS alerts](handling-sos-alerts.md).
 
 ## On the day, from your side

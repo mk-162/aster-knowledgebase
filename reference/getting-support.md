@@ -5,7 +5,7 @@ nav_order: 0
 audience: [athlete, spectator, organiser]
 tags: [support, help, contact, bug]
 summary: "Where to go when something isn't working — and how to report it so it gets fixed fast."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Getting help and reporting a problem
@@ -17,7 +17,7 @@ Stuck? Here's the fastest route to an answer.
 Most questions are answered already:
 
 - **[Troubleshooting](troubleshooting.md)** — fixes for the common issues
-  (a dot that isn't moving, a ride that hasn't uploaded, sign-in trouble,
+  (a live marker that isn't moving, a ride that hasn't uploaded, sign-in trouble,
   notifications).
 - **[Frequently asked questions](faq.md)** — the questions people ask most.
 - Your section's guides: [athletes](../for-athletes/index.md),
@@ -33,8 +33,11 @@ Most questions are answered already:
 - **Bugs, problems mid-ride, or anything safety-relevant** — email
   [help@astertrack.app](mailto:help@astertrack.app). Put "URGENT" in the
   subject if it's safety-relevant and it will be triaged the same day.
-- **General questions** about free rides, share links, your profile or an
+- **General questions** about Just Rides, share links, your profile or an
   event — email [hello@astertrack.app](mailto:hello@astertrack.app).
+- **Pricing, organiser plans and enterprise enquiries** — see
+  [astertrack.app/pricing](https://astertrack.app/pricing), which has a contact
+  route for larger events and bespoke arrangements.
 - The full list of contact channels (press, partnerships and so on) is at
   [astertrack.app/contact](https://astertrack.app/contact).
 

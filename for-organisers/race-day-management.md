@@ -5,7 +5,7 @@ nav_order: 6
 audience: [organiser]
 tags: [dashboard, live, participants, start, broadcast]
 summary: "Use the organiser dashboard to start the race, watch riders, fix problems on individual entries, and message participants."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Running the event on race day
@@ -81,7 +81,7 @@ See [Messaging your riders](messaging-your-riders.md) for when to use each.
 ## Important: once a rider finishes, they're done
 
 When a rider crosses the line, is cut off, or you finish them by hand, their
-result **freezes** — their dot stops at the finish, and their time and position
+result **freezes** — their marker stops at the finish, and their time and position
 lock in. Late GPS points that arrive from their phone afterwards can complete the
 trail up to the finish but never move a finished rider on the map or change their
 result. That's what keeps your results clean.

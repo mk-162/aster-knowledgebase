@@ -5,7 +5,7 @@ nav_order: 11
 audience: [athlete, organiser]
 tags: [teams, clubs, troubleshooting, rides]
 summary: "A member can't see the ride, the weekly ride didn't appear, RSVP or route problems — checks in order."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Troubleshooting club rides
@@ -29,13 +29,19 @@ question:
 4. **Were they removed from the club?** Removed members lose access to club
    rides immediately.
 
-## Someone can't join — is the club full?
+## Someone can't join
 
-No — a club is never full. Joining always works, on any tier and by any route
-(open join, application approval or invite link). If a would-be member is
-stuck, it's an access or account issue (see the section above), not a member
-limit. Growing past the free size only prompts admins to consider a
-[Club plan](billing-and-your-club-plan.md); it never turns anyone away.
+Most of the time this is an access or account issue (see the section above),
+not a limit. But two real things can be in play:
+
+1. **Do they need Aster Plus?** A club's first three members join free. From
+   the **fourth member onward**, each rider takes out
+   [Aster Plus](billing-and-your-club-plan.md) to join as a full member (a free
+   demo lets them try it first). Until they do, they can still follow and watch
+   the club, just not take a full member's seat.
+2. **Is the club at 500 members?** A club can hold up to **500 members** — a
+   scale limit. If it's full to 500, someone would need to leave before a new
+   full member can join. Below 500, nobody already in is ever removed.
 
 ## The weekly ride didn't appear
 
@@ -43,8 +49,8 @@ Each week's ride is created automatically **about seven days ahead** of the
 ride time. If it's missing:
 
 1. **Is it more than seven days away?** Then it isn't due to appear yet.
-2. Weekly rides keep producing on every tier, so a free plan or a lapsed plan
-   isn't the cause — nothing already scheduled is removed either.
+2. Weekly rides are free and keep producing on every club, so billing is never
+   the cause — nothing already scheduled is removed either.
 3. Still missing? Create a one-off ride for this week and
    [contact support](../reference/getting-support.md) about the repeat.
 

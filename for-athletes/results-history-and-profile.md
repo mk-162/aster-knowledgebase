@@ -5,7 +5,7 @@ nav_order: 7
 audience: [athlete]
 tags: [results, profile, history, privacy, replay]
 summary: "Where to find your past rides and results, how to replay them, and what your public profile shows."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Your results, history and profile
@@ -18,7 +18,7 @@ screen links straight there. (In a sportive there are no positions, just times.)
 
 ## My rides
 
-Every ride you record — free rides and your event rides — lives in **My rides**.
+Every ride you record — Just Rides and your event rides — lives in **My rides**.
 Open one to see:
 
 - The full route on a map, with distance, time, average speed and elevation.
@@ -27,7 +27,7 @@ Open one to see:
   below).
 - For an **event** ride, **Ghost race** — replay it side by side against another
   rider's ride from the same event.
-- A **public / private** switch, and (for free rides) a **Delete** button. Event
+- A **public / private** switch, and (for Just Rides) a **Delete** button. Event
   rides are your race record and can't be deleted.
 
 {% include screenshot-todo.html slug="for-athletes-ride-detail" caption="A saved ride's detail page: static route map, stats, and the Share / Replay / Ghost race / Download GPX / visibility controls." %}

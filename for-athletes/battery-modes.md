@@ -5,14 +5,14 @@ nav_order: 3
 audience: [athlete]
 tags: [battery, tracking, gps]
 summary: "Choosing how often the app records your position, and how it drops down gears automatically as your battery falls."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Battery modes
 
 Tracking runs on your phone's GPS, and GPS uses power. When you start a ride you
 pick a **battery mode** — how often the app records and sends your position. More
-frequent updates give watchers a smoother dot; less frequent ones make your phone
+frequent updates give watchers a smoother live location; less frequent ones make your phone
 last far longer. You pick the mode per ride, so you can run **Live** for a short
 race and **Ultra** for a multi-day trip.
 
@@ -22,9 +22,9 @@ Four modes, from most detailed to most economical:
 
 | Mode | Best for | Trade-off |
 |---|---|---|
-| **Live** | Short, fast events where you want the smoothest live dot | Highest battery use; recommended up to about 2 hours |
+| **Live** | Short, fast events where you want the smoothest live location | Highest battery use; recommended up to about 2 hours |
 | **Standard** | Most events | Balanced |
-| **Endurance** | Long days | Slightly choppier live dot, much longer battery |
+| **Endurance** | Long days | Slightly choppier live location, much longer battery |
 | **Ultra** | Ultra-distance and multi-day rides | Most economical; updates least often |
 
 The mode only changes the **recording rate**. It never changes how accurate each
@@ -53,7 +53,7 @@ The steps happen at fixed battery levels:
 
 So a ride that starts on **Live** eases back to Standard at 30%, Endurance at
 15%, and Ultra at 8% — stretching your remaining charge as far as it can while
-keeping your dot alive. If you started lower down the ladder, only the steps
+keeping your live location alive. If you started lower down the ladder, only the steps
 below your starting mode apply.
 
 You can also turn auto-fall-back **off** and stay locked to the mode you chose for
@@ -64,7 +64,7 @@ The forecaster lets you model both.
 
 - Whatever mode you pick, the app keeps recording in the background with the
   **screen off** — you don't need to keep it open.
-- A more economical mode means watchers see your dot update a little less often,
+- A more economical mode means watchers see your live location update a little less often,
   but your saved ride is just as complete.
 - Losing signal doesn't cost you data or points — everything is stored on the
   phone and uploads later. See

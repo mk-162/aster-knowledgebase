@@ -5,7 +5,7 @@ nav_order: 2.5
 audience: [athlete, spectator, organiser]
 tags: [privacy, location, safety, sharing]
 summary: "Exactly who can see where you are, when, and how to keep a ride private."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Who can see your location?
@@ -19,10 +19,10 @@ clear, honest answer.
   tracking a ride** — not the rest of the time.
 - **In an event,** your live position is visible to whoever can view that
   event, which depends on its privacy level.
-- **On a free ride,** you're private by default — only people you send the
+- **On a Just Ride,** you're private by default — only people you send the
   watch link to can follow along.
-- When you **stop** or **finish**, the live sharing ends and your dot
-  freezes.
+- When you **stop** or **finish**, the live sharing ends and your live
+  location freezes.
 
 ## While you're tracking an event
 
@@ -30,7 +30,7 @@ When you ride or run an event, being on the map is the point — spectators
 follow the action. **Who** can see you depends on the event's privacy
 level.
 
-| Event privacy | Who can see your dot | Shown in Discover? |
+| Event privacy | Who can see your live location | Shown in Discover? |
 |---|---|---|
 | **Public** | Anyone — no account needed | Yes |
 | **Unlisted** | Anyone with the event link — no account needed | No |
@@ -41,27 +41,27 @@ So before you register, know the event's privacy level if that matters to
 you. See
 [Public, unlisted, private and members events](../for-spectators/public-unlisted-private-events.md).
 
-### Hide your dot in an event
+### Hide my location in an event
 
-Some organisers let riders hide their live dot from the public map for a
+Some organisers let riders hide their live location from the public map for a
 particular event. When that's switched on for the event, you'll find a
-**Hide my dot** toggle on your tracking screen.
+**Hide my location** toggle on your tracking screen.
 
 Turning it on keeps you off the **public** live map — spectators see a
-"Hidden rider" without your name, dot or trail. It does **not** hide you
+"Hidden rider" without your name, marker or trail. It does **not** hide you
 from the organiser: you stay visible on their dashboard, keep your place in
 the results, and keep tracking and uploading exactly as normal. It's a
 visibility choice, not a safety switch — an SOS still reaches your
 organiser and safety contacts. If the organiser hasn't enabled it for the
 event, the toggle isn't there.
 
-## While you're on a free ride
+## While you're on a Just Ride
 
-A free ride is **private by default**. Nobody can see it unless **you**
+A Just Ride is **private by default**. Nobody can see it unless **you**
 create a **watch link** and share it. Anyone you give that link to can
 follow you live while the ride is on; people without it can't find your
 ride at all. You can turn a watch link off at any time. See
-[Free rides](../for-athletes/free-rides.md) and
+[Just Ride](../for-athletes/free-rides.md) and
 [Share links](../for-spectators/share-links.md).
 
 ## When you're not riding
@@ -75,22 +75,22 @@ shown to anyone. See
 ## After you finish
 
 The instant you finish — crossing the line, an organiser cutoff, or
-tapping Stop — every screen freezes at that moment. Your dot stops at the
-finish, your time and distance lock, and nothing keeps moving even if your
-phone is still uploading the last of the ride. See
+tapping Stop — every screen freezes at that moment. Your live location stops
+at the finish, your time and distance lock, and nothing keeps moving even if
+your phone is still uploading the last of the ride. See
 [What "finished" means](../for-athletes/finishing-a-ride.md).
 
 What stays visible afterwards depends on the ride:
 
 - A **public** event ride and its result stay on the event page and your
   profile for anyone to see.
-- A **free ride** is visible only to you and anyone who still has a watch
+- A **Just Ride** is visible only to you and anyone who still has a watch
   link you sent.
 
 ## Raising an SOS
 
 An SOS on Aster **alerts the people watching your ride** — in an event,
-the organiser; on a free ride, your watchers. It shares your location with
+the organiser; on a Just Ride, your watchers. It shares your location with
 them so they can help. It does **not** contact the emergency services, and
 it isn't a rescue service. If you need one, your own phone can call the
 emergency number directly. See
@@ -102,11 +102,11 @@ and never appears on your public profile.
 
 ## How to keep a ride private
 
-- **Use a free ride** (private by default) rather than a public event if
+- **Use a Just Ride** (private by default) rather than a public event if
   you don't want an audience.
-- **Don't share the watch link** — without it, nobody can find a free ride.
+- **Don't share the watch link** — without it, nobody can find a Just Ride.
 - **Check an event's privacy level** before you register.
-- If the organiser allows it, use **Hide my dot** to stay off the public
+- If the organiser allows it, use **Hide my location** to stay off the public
   map during an event.
 
 ## Related

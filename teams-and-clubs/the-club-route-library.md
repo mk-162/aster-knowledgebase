@@ -5,7 +5,7 @@ nav_order: 6
 audience: [athlete, organiser]
 tags: [teams, clubs, routes, gpx]
 summary: "Upload your club's routes once, and attach them to club rides whenever you schedule one."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # The club route library

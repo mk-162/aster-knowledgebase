@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, organiser]
 tags: [posts, stories, media, sharing]
 summary: "Share ride and run updates with photos, GIFs and stickers, attach your ride stats, and choose who sees them."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Posts and stories

@@ -5,13 +5,13 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [sos, crash, safety, emergency]
 summary: "How to raise the alarm, exactly who gets alerted, and what SOS can and cannot do."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # SOS and crash detection
 
 Aster has two ways to raise the alarm if something goes wrong on a ride or
-run: a manual **SOS** button, and automatic **crash detection** on free rides.
+run: a manual **SOS** button, and automatic **crash detection** on Just Rides.
 
 Before anything else, the honest bit — and the app tells you the same thing
 the first time you open SOS:
@@ -27,7 +27,7 @@ the first time you open SOS:
   acknowledges it within a couple of minutes they're alerted again. It's
   handled discreetly: spectators don't see it. See
   [Handling SOS alerts](../for-organisers/handling-sos-alerts.md).
-- **On a free ride**, your SOS goes to **your watchers** — everyone following
+- **On a Just Ride**, your SOS goes to **your watchers** — everyone following
   your ride through your watch link. Before you send, the app shows how many
   people that is. **If nobody is watching, it says so plainly**: an alert
   would reach nobody, and if you need urgent help you should call 999.
@@ -39,16 +39,16 @@ emergency contacts — see
 ## Sending an SOS
 
 1. While tracking, tap the red **SOS** button (**SOS — Alert organisers** in
-   an event, **SOS — Alert my watchers** on a free ride).
+   an event, **SOS — Alert my watchers** on a Just Ride).
 2. To rule out pocket-taps, you confirm by typing a 4-digit code shown on
    screen.
 3. Your current location is captured and sent.
 
-Once it's sent, the confirmation screen offers a one-tap **Call 999** button —
-if you need real help and have signal, that call is yours to make; Aster
-can't make it for you.
+Once it's sent, the confirmation screen offers a one-tap **Call emergency
+services** button — if you need real help and have signal, that call is yours
+to make (999 in the UK, 112 across the EU); Aster can't make it for you.
 
-{% include screenshot-todo.html slug="safety-sos-send-modal" caption="The SOS confirmation flow on the tracking screen, ending on the sent state with the Call 999 button and 'Cancel SOS (False Alarm)'." %}
+{% include screenshot-todo.html slug="safety-sos-send-modal" caption="The SOS confirmation flow on the tracking screen, ending on the sent state with the Call emergency services button and 'Cancel SOS (False Alarm)'." %}
 
 A few things worth knowing:
 
@@ -73,24 +73,24 @@ editor, fill in **Emergency phone**, and tick **Show my phone number to SOS
 recipients**. The number is revealed only alongside an SOS — it's never shown
 on your public profile.
 
-## Automatic crash detection (free rides)
+## Automatic crash detection (Just Rides)
 
-On a free ride, Aster watches your GPS speed for the signature of a crash:
+On a Just Ride, Aster watches your GPS speed for the signature of a crash:
 moving at roughly 20 km/h or more, then stopping almost instantly. If that
 happens:
 
 1. An **alarm sounds** and your phone vibrates.
-2. A **30-second countdown** appears.
+2. A **60-second countdown** appears.
 3. If you don't cancel in time, a crash SOS goes to your watchers
    automatically — same recipients, same rules as a manual SOS, flagged as a
    possible crash.
 
 Kerb hop, dropped phone, emergency stop for a sheep? Tap **I'm OK — Cancel**
 during the countdown and nothing is sent. Crash detection never stops your
-ride — if you did come off, your dot staying live is what helps people find
-you.
+ride — if you did come off, your live location staying visible is what helps
+people find you.
 
-Crash detection runs on free rides only; it isn't active in events.
+Crash detection runs on Just Rides only; it isn't active in events.
 
 ## What a watcher sees
 
@@ -100,10 +100,10 @@ the watch page — no login needed:
 - who triggered it, and whether it was a possible crash
 - their **last-known location**, as a link you can open in your maps app
 - what to do: **try to contact them first**; if you can't reach them, **call
-  999** and give the operator that location. Aster cannot call the emergency
-  services for anyone.
+  the emergency services** (999 in the UK, 112 across the EU) and give the
+  operator that location. Aster cannot call the emergency services for anyone.
 
-{% include screenshot-todo.html slug="safety-sos-watcher-banner" caption="The red SOS banner a watcher sees on the live watch page, with the last-known location link and call-999 guidance." %}
+{% include screenshot-todo.html slug="safety-sos-watcher-banner" caption="The red SOS banner a watcher sees on the live watch page, with the last-known location link and call-emergency-services guidance." %}
 
 ## Related
 

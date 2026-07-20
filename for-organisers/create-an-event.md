@@ -5,13 +5,14 @@ nav_order: 2
 audience: [organiser]
 tags: [events, setup, privacy, timezone, publish]
 summary: "Step through creating an event — host, format, timing, privacy — then add the route and publish."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Create an event
 
-Creating an event is **free**, and you can preview it fully before it goes live.
-This is the big-picture walkthrough; each part links to a detailed guide.
+Creating an event is **free**, and you can preview it fully before it goes live —
+publishing is free too. This is the big-picture walkthrough; each part links to a
+detailed guide.
 
 ## What you fill in
 
@@ -25,10 +26,11 @@ everything else.
    [Event formats](event-types.md). **Choose privacy** here too — public, unlisted
    or private. See
    [Public, unlisted and private events](../for-spectators/public-unlisted-private-events.md).
-   **Expected field size** is tucked behind an *"Expecting more than 50 riders?"*
-   link — up to 50 riders is free, so casual organisers can skip it; open it to
-   set your pricing band and entry cap. See
-   [pricing](https://astertrack.app/pricing) for the current shape.
+   There's no field-size or pricing step here — creating, previewing and publishing
+   are all free. What a free event *can't* do is take more than **3 registrations**
+   or appear in public discovery; to lift that, subscribe to an **Event Organiser**
+   plan sized to your event. See [registration and categories](registration-and-categories.md)
+   and [pricing](https://astertrack.app/pricing) for the current shape.
 2. **Name it, choose the host, and optionally group it into a festival.** Give the
    event a name, pick which organiser account or team hosts it (this is fixed once
    created, so pick the right one — see [Become an organiser](become-an-organiser.md)),
@@ -75,9 +77,11 @@ discovery before it's ready. When you're set up, you publish it with the
   exempt** (they're untimed). Point-to-point events need at least one checkpoint.
   If something's missing, the reason shows **inline beneath the Go Live button**,
   with a link straight to the Course tab to fix it.
-- **Paid-band events settle their fee at publish.** If your expected field size
-  puts the event in a paid band, and it's public or unlisted, publishing takes you
-  through checkout. Private and members-only events publish free.
+- **Publishing is free.** There's no fee at publish. What decides how many riders
+  can register — and whether the event shows in public discovery — is your
+  subscription, not publishing. A free event stays a share-link preview capped at
+  **3 registrations**; an **Event Organiser** plan lifts that to the tier you
+  choose. See [Registration and categories](registration-and-categories.md).
 
 ## Important
 

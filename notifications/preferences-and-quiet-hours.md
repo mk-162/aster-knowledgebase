@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [notifications, preferences, quiet-hours]
 summary: "Turn individual alerts on or off and set quiet hours, from Notification settings."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Preferences and quiet hours
@@ -52,7 +52,7 @@ list, so nothing is lost. You just won't be buzzed while you sleep.
 ## Who can watch you
 
 The same screen has a **Who can watch me** section, where you decide whether your
-followers get a notification (with a watch link) when you start a free ride or a
+followers get a notification (with a watch link) when you start a Just Ride or a
 race. This is about who can follow *you* live — see
 [following and your feed](../social-and-following/following-and-your-feed.md).
 
@@ -69,6 +69,4 @@ race. This is about who can follow *you* live — see
 - The stoppage timer uses a default of about 15 minutes of no movement before it
   alerts, stored per rider. There is no user-facing control to change that
   threshold in the current settings screen, so this article does not promise one.
-- A gap-change threshold value exists in the data model but has no visible control
-  and no live producer, so it is not described here as tunable.
 -->

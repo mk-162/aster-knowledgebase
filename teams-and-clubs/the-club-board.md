@@ -5,7 +5,7 @@ nav_order: 7
 audience: [athlete]
 tags: [teams, clubs, feed, posts, board]
 summary: "A members-only noticeboard on your club page — who can read it, who can post, and how it differs from the public feed."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # The club board
@@ -18,6 +18,8 @@ photos.
 ## Who can read and post
 
 - **Any active member** can read the board and post to it.
+- The club's **owner and admins** can **pin** an important post to the top (and
+  unpin it later).
 - **Non-members and anyone not signed in** can't see it at all.
 - Board posts **never appear in the public feed** or on anyone's public
   profile — they stay inside the club.
@@ -38,12 +40,14 @@ a new post on the board, so notices don't go unread.
 |---|---|---|
 | Who sees it | Active club members only | Your followers / the public, per post |
 | Where it lives | The club page's Feed tab | Your home feed and profiles |
-| Best for | Club logistics, internal chat, ride notices | Ride stories, results, public posts |
+| Best for | Club logistics, ride notices | Ride stories, results, public posts |
 
 For public posting — stories, photos, event posts — see
 [posts and stories](../social-and-following/posts-and-stories.md).
 
-**Good to know:** the board is a noticeboard, not a chat — there are no
-direct messages or group chat on Aster. Most clubs keep their WhatsApp group
-for banter and use the board for anything the whole roster should see next
-to the rides it's about.
+**Good to know:** the board is a **club-wide noticeboard** for anything the
+whole roster should see. Alongside it, each [club ride](club-rides.md) has its
+own **ride thread** — a private chat for the people going (plus admins), where
+organisers can pin announcements. What Aster still doesn't have is **1:1 direct
+messages**, so many clubs keep their WhatsApp group for one-to-one banter and
+use the board and ride threads for club and ride matters.

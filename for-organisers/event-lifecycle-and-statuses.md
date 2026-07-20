@@ -5,7 +5,7 @@ nav_order: 6.5
 audience: [organiser]
 tags: [lifecycle, statuses, reference]
 summary: "The states an event moves through, the statuses a rider can have, and what changes each."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Event lifecycle and rider statuses
@@ -58,7 +58,7 @@ already live.
 
 ## Important
 
-Once a rider is **Finished**, their result freezes everywhere — dot at the line,
+Once a rider is **Finished**, their result freezes everywhere — marker at the line,
 time and position locked. Late GPS data draining off their phone can complete the
 trail up to the finish moment but can never change a finisher's time or position.
 This is what keeps your published results trustworthy. See

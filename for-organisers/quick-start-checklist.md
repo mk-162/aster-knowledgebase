@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [organiser]
 tags: [checklist, quick-start, setup, race-day]
 summary: "An end-to-end checklist from setting up your account to publishing results."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Organiser quick-start checklist
@@ -29,9 +29,12 @@ to bottom and you'll have a fully set-up, ready-to-run event.
 - [ ] **Choose privacy** — public, unlisted or private. (New events start
       unlisted.)
       [Public, unlisted and private events](../for-spectators/public-unlisted-private-events.md)
-- [ ] **Set your expected field size** if you're over 50 riders (it's behind the
-      *"Expecting more than 50 riders?"* link and sets your pricing band; up to 50
-      is free). [pricing](https://astertrack.app/pricing)
+- [ ] **Plan your registration capacity.** Creating, previewing and publishing are
+      free; a free event is a share-link preview capped at **3 registrations**. To
+      take more real registrations and appear in public discovery, subscribe to an
+      **Event Organiser** plan sized to your event.
+      [Registration and categories](registration-and-categories.md) ·
+      [pricing](https://astertrack.app/pricing)
 - [ ] **Name it, choose the host** (organiser account or team — it can't be
       changed later), and **group it into a festival** if it's part of one.
 - [ ] **Set the start time and time zone.** Double-check the zone.

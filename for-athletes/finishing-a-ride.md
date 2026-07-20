@@ -4,13 +4,13 @@ parent: "For athletes"
 nav_order: 5
 audience: [athlete]
 tags: [finish, dnf, cutoff, results]
-summary: "The ways a ride ends — crossing the line, abandoning, a cut-off, or tapping Stop — and what freezes afterwards."
-last_updated: 2026-07-02
+summary: "The ways a ride ends — crossing the line, abandoning, a cut-off, or sliding to end — and what freezes afterwards."
+last_updated: 2026-07-20
 ---
 
 # Finishing a ride
 
-How a ride ends depends on whether you're in an **event** or on a **free ride**.
+How a ride ends depends on whether you're in an **event** or on a **Just Ride**.
 
 ## Ending an event ride
 
@@ -36,19 +36,24 @@ from the event page. See [Register for an event](register-for-an-event.md).
 
 {% include screenshot-todo.html slug="for-athletes-finish-results-screen" caption="The auto-finish results screen: Finished! header, total time, distance and average speed, lap splits, and Share result / Results / Leaderboard buttons." %}
 
-## Ending a free ride
+## Ending a Just Ride
 
-A free ride ends when **you** tap **Stop & save ride** — that's the only thing
-that ends it. There's no finish line and no cut-off. Your ride saves to your
-history with its distance, time and average speed. See [Free rides](free-rides.md).
+A Just Ride ends when **you** use the **slide-to-end** control — *slide to end
+your ride* — that's the only thing that ends it. There's no finish line and no
+cut-off. Your ride saves to your history with its distance, time and average
+speed. See [Just Ride](free-rides.md).
 
 ## What "finished" means
 
-The instant a ride ends — line crossing, cut-off, DNF, or your Stop tap — it's
-**frozen everywhere at the same moment**. Your dot stops at the finish, and your
-distance, time and position lock in. That's true on your own screen, on the
-leaderboard, and for every spectator. No timer keeps ticking, and no later GPS
-points extend your trail past the finish. See
+The instant a ride ends — line crossing, cut-off, DNF, or sliding to end — it's
+**frozen everywhere at the same moment**. Your distance, time and position lock
+in. That's true on your own screen, on the leaderboard, and in the replay. No
+timer keeps ticking, and no later GPS points extend your trail past the finish.
+
+On the **live spectator map**, a finished rider's marker holds at the line for a
+moment, then **fades and clears after a couple of seconds** — the live map is
+there to show who's still on course. Your result itself doesn't disappear: it
+stays frozen on the leaderboard and results, and in the replay. See
 [Why your distance and time are accurate](../safety-and-offline/data-accuracy.md).
 
 ## Finishing offline

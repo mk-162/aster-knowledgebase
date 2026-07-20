@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [athlete]
 tags: [quick-start, walkthrough, first-time, checklist]
 summary: "Everything from signing up to seeing your result, in order, for your first tracked event."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Your first event: a walkthrough
@@ -25,18 +25,18 @@ more detail if you want it.
    caches your registration so you can start later even with no signal.
 5. **Allow location and notifications** when the app asks, so tracking and
    alerts work.
-6. *(Optional)* Send your **[watch link](../for-spectators/share-links.md)**
+6. *(Optional)* Send your **[live watch link](../for-spectators/share-links.md)**
    to friends and family who want to follow you.
 
 ## At the start line
 
 1. Open the app; your event shows a **countdown** as the start approaches.
-2. When the start window opens, tap **Start [event name]**.
-3. Answer **How long will you be riding?** — the app recommends a
-   **[battery mode](battery-modes.md)** to match.
-4. Let the **GPS warm up** (about 15 seconds) for an accurate first position;
-   **Start anyway** appears if you'd rather not wait.
-5. What happens next depends on the format:
+2. When the start window opens, tap **Start [event name]**. Events start on the
+   **Standard [battery mode](battery-modes.md)** with automatic fall-back on —
+   there's no battery-mode question, and you can change it mid-ride.
+3. Let the **GPS warm up** (about 15 seconds) for an accurate first position;
+   you're away once the fix looks good.
+4. What happens next depends on the format:
    - **Mass-start race** — you'll see **Tracking Armed** until the gun, a
      beeping five-second countdown, then **GO!**
    - **Time trial or sportive** — set off when you're ready; your official
@@ -54,8 +54,8 @@ more detail if you want it.
   count against your moving time; **Resume** to carry on.
 - Tap **I'm OK** to reassure watchers, or **SOS** in an emergency —
   [SOS doesn't end your ride](../safety-and-offline/sos-and-crash-detection.md).
-- Lost signal? Keep going. Your dot pauses for watchers and **catches up**
-  when you reconnect.
+- Lost signal? Keep going. Your live location holds for watchers and **catches
+  up** when you reconnect.
   [More on offline behaviour](../safety-and-offline/offline-and-no-signal.md)
 
 ## Finishing

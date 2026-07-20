@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [notifications, alerts]
 summary: "Every kind of notification Aster can send, and whether it's for the people watching or the athlete."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Notification types
@@ -32,6 +32,8 @@ and fans.
   strayed from the course.
 - **Feed-zone approaches** — during a race, a countdown as a rider you're
   watching nears a feed station.
+- **Gone quiet** — when you're watching someone's Just Ride, an alert if their
+  tracking hasn't updated for a while, so you know before you start worrying.
 
 > **Good to know:** ride or run, these updates only ever describe what a rider is
 > doing. A "stopped" alert means "still out there, not moving" — someone fixing a
@@ -40,8 +42,8 @@ and fans.
 
 **Sportives and other untimed formats show times, not positions.** For a sportive
 gran fondo — and for group rides and grand departs — there are no rankings, so
-you'll never get a "moved up to 3rd" or "gap to the leader changed" notification.
-Those only make sense for races and time trials. See
+nothing you receive ever talks about positions or places. Progress updates stick
+to distance, milestones and checkpoints, which suit every format. See
 [event types](../for-organisers/event-types.md).
 
 ## Events you follow
@@ -99,7 +101,4 @@ Choose which types reach you in
 - Push delivery itself depends on mobile push keys being provisioned; the in-app
   bell records every type regardless. Whether every listed push actually buzzes a
   device today was not verifiable this pass (no live device test).
-- A "gap to the leader changed" notification exists in code but has no live
-  producer wired and no visible toggle, so it is deliberately not listed as
-  something you receive today.
 -->

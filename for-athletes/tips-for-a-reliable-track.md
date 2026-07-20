@@ -5,7 +5,7 @@ nav_order: 2.5
 audience: [athlete]
 tags: [gps, battery, permissions, reliability, tips]
 summary: "Practical steps to get a clean, complete track for a ride or run, and avoid surprises on the day."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Tips for a reliable track
@@ -29,7 +29,7 @@ surprises.
   but excluding it up front avoids gaps in the first place.
 - **Register and open the event once with signal.** That downloads the route and
   caches everything so you can start offline later. See
-  [Register for an event](register-for-an-event.md). (A free ride needs no
+  [Register for an event](register-for-an-event.md). (A Just Ride needs no
   download — just start it.)
 - **Start with a good charge** and pick the right
   [battery mode](battery-modes.md) for how long you'll be out.
@@ -47,7 +47,7 @@ surprises.
 - **Don't force-quit the app.** Leave it running in the background — it keeps
   recording. Swiping it away can stop tracking.
 - **Lost signal? Keep going.** Your points are saved on the phone and upload when
-  you reconnect; your dot catches up for watchers. See
+  you reconnect; your live location catches up for watchers. See
   [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md).
 - **Use Pause for real stops** so a café, a mechanical or a nature break doesn't
   count against your moving time. See [Pausing and resuming](pausing-and-resuming.md).

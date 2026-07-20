@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [profile, handle, avatar, privacy]
 summary: "Edit your public profile, set your @handle, and control what's shown."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Your profile and handle
@@ -43,7 +43,7 @@ athlete page directly.
   links, your follower and following counts, your completed events, and
   your public rides and posts.
 - **Private:** your email and password are never shown. An emergency phone
-  number, if you add one, is never public. Free rides are visible only to
+  number, if you add one, is never public. Just Rides are visible only to
   you and anyone with the watch link.
 
 ## Good to know

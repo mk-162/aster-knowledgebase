@@ -2,13 +2,13 @@
 title: "For athletes"
 nav_order: 2
 has_children: true
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # For athletes
 
 Everything you need as an athlete: joining events, starting and tracking a
-ride or run, recording personal free rides, and finding your results
+ride or run, recording personal Just Rides, and finding your results
 afterwards. Aster is designed so the parts you rely on at the start line and
 finish line keep working even with no phone signal.
 
@@ -21,5 +21,5 @@ finish line keep working even with no phone signal.
 - [Battery modes](battery-modes.md)
 - [Pausing and resuming](pausing-and-resuming.md)
 - [Finishing a ride](finishing-a-ride.md)
-- [Free rides](free-rides.md)
+- [Just Ride](free-rides.md)
 - [Your results, history and profile](results-history-and-profile.md)

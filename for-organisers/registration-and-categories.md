@@ -5,7 +5,7 @@ nav_order: 5
 audience: [organiser]
 tags: [registration, categories, capacity, ballot, bibs]
 summary: "Control how riders join, cap the field, group riders into categories, and assign bibs."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Registration and categories
@@ -31,10 +31,15 @@ On **managed** events you can set:
 - An overall **capacity**, and a **per-category** capacity.
 - A registration **window** — when joining opens and closes.
 
-Your expected field size (set when you create the event) also puts the event in a
-pricing band, and each band has a ceiling on how many riders it covers. If your own
-capacity is higher than the band's ceiling, the ceiling applies. See
-[pricing](https://astertrack.app/pricing) for the current shape of the bands.
+Creating, previewing and publishing an event are all free. A **free** event is a
+share-link preview that takes **up to 3 registrations** — ideal for building,
+testing and demoing — and it doesn't appear in public discovery. To take more real
+registrations, and to show up in discovery, subscribe to an **Event Organiser**
+plan sized to your event. The plan tiers are set by registrations-per-event
+(roughly 100 / 500 / 1000 riders, with a larger enterprise / contact-us option),
+and it's a monthly plan bought in the app through the App Store or Google Play. Your
+plan tier is the ceiling on registrations; any capacity you set can only sit at or
+below it. See [pricing](https://astertrack.app/pricing) for the current shape.
 
 ## The registration form
 

@@ -2,16 +2,17 @@
 title: "Teams & clubs"
 nav_order: 5
 has_children: true
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Teams & clubs
 
 A club on Aster brings your riders and runners together under one name — with
 club rides, a members-only live map, a shared route library, a club board, and
-one place for families to follow along. Small informal groups can use the free
-"mates" tier; larger clubs move onto a paid Group plan priced by size. Anyone
-can create or join a club.
+one place for families to follow along. Every club is **free** — the club never
+pays a subscription. A club's first three members join free; from the fourth
+member onward, each rider chooses **Aster Plus** to join as a full member.
+Anyone can create or join a club.
 
 ## Getting started
 
@@ -29,7 +30,6 @@ can create or join a club.
 
 ## Plans, limits and support
 
-- [Billing and your club plan](billing-and-your-club-plan.md)
-- [The 5-favourite limit and clubs](the-five-favourite-limit.md)
+- [Club membership and Aster Plus](billing-and-your-club-plan.md)
 - [Verified (pro) teams](verified-pro-teams.md)
 - [Troubleshooting club rides](troubleshooting-club-rides.md)

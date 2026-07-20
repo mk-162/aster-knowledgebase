@@ -5,7 +5,7 @@ nav_order: 7
 audience: [spectator, organiser]
 tags: [privacy, events, access]
 summary: "The four event privacy levels and what each means for who can watch."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Public, unlisted, private and members events
@@ -47,7 +47,9 @@ invite-only events.
 Visible only to **signed-in members of the club** hosting it. It never
 appears in Discover, and to anyone who isn't a member — signed in or not —
 the link reads as **not found**, the same as a private event. Members
-events are how a club runs rides just for its own people.
+events are how a club runs rides just for its own people. For how clubs and
+membership work, see
+[What clubs and teams are](../teams-and-clubs/what-clubs-and-teams-are.md).
 
 ## Good to know (for organisers)
 
@@ -59,7 +61,3 @@ events are how a club runs rides just for its own people.
 
 See also [Watch an event live](watch-an-event-live.md) and
 [Share links](share-links.md).
-
-<!-- ## Unverified
-- No club-membership article exists in the KB yet to link "members" events to; kept as prose until a for-teams section lands.
--->

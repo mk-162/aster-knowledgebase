@@ -5,27 +5,29 @@ nav_order: 2
 audience: [athlete]
 tags: [tracking, gps, start, race, time-trial, sportive]
 summary: "How to start tracking an event, what the live screen shows, and how your clock works in each event format."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Starting and tracking a ride
 
 This covers tracking an **event** you've registered for. For personal
-tracking, see [Free rides](free-rides.md).
+tracking, see [Just Ride](free-rides.md).
 
 ## Start tracking
 
-1. On your tracking screen, tap **Start [event name]**. (If the button shows
-   "Opens in…", the start window hasn't opened yet — see below.)
-2. Answer **How long will you be riding?** The app recommends a
-   **battery mode** (Live, Standard, Endurance or Ultra) to match, and you can
-   override it. See [Battery modes](battery-modes.md).
-3. The app does a short **GPS warm-up** (about 15 seconds, a little longer if
-   it's still waiting for an accurate fix) so your first position is right. A
-   **Start anyway** button appears after about 30 seconds if you'd rather not
-   wait.
-4. You're now tracking. What happens next depends on the event format —
+1. On the **Go Live** tab, your registered event shows as a card — **Your
+   event**, with a "Starts in M:SS" countdown. Tap **Start [event name]**. (If
+   the button shows "Opens in…", the start window hasn't opened yet — see
+   below.)
+2. The app does a short **GPS warm-up** (about 15 seconds, a little longer if
+   it's still waiting for an accurate fix) so your first position is right —
+   you're away once the fix looks good.
+3. You're now tracking. What happens next depends on the event format —
    see "How the clock works" below.
+
+An event **starts on the Standard [battery mode](battery-modes.md)** with
+automatic fall-back switched on — there's no battery-mode question at the start
+line. You can change battery mode mid-ride if you need to.
 
 > **You can start with no signal.** Starting works fully offline — the app
 > uses your phone's GPS and your saved copy of the event. Your positions are
@@ -54,8 +56,8 @@ tracking, see [Free rides](free-rides.md).
 
 While you're out you'll see:
 
-- **The map** with your live dot and the trail behind you, the route line,
-  and — in an event — other riders' dots.
+- **The map** with your live location and the trail behind you, the route line,
+  and — in an event — other riders' markers.
 - **Live stats:** battery, distance, current speed, time and average speed.
 - A **health pill** summarising GPS, connectivity and battery state at a
   glance.
@@ -63,7 +65,7 @@ While you're out you'll see:
   **Abandon** (before the gun in a race this is **Cancel start** instead —
   a clean back-out that keeps you registered).
 
-{% include screenshot-todo.html slug="for-athletes-tracking-live-screen" caption="The tracking screen mid-event: map with dot and trail, stat cards, and the I'm OK / SOS / Pause / Abandon buttons." %}
+{% include screenshot-todo.html slug="for-athletes-tracking-live-screen" caption="The tracking screen mid-event: map with your live location and trail, stat cards, and the I'm OK / SOS / Pause / Abandon buttons." %}
 
 ## During the ride
 
@@ -101,6 +103,6 @@ While you're out you'll see:
   before the event: about 15 minutes before races, time trials and sportives,
   30 minutes before group rides, and 2 hours before grand départs.
 - **GPS warm-up is slow.** Step into the open, away from buildings or tree
-  cover; use **Start anyway** once accuracy looks good.
+  cover; you're away once accuracy looks good.
 - **I armed for the wrong race.** Before the gun, tap **Cancel start** — you
   stay registered and can start again any time before the gun.

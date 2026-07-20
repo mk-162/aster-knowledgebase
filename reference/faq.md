@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [faq, pricing, offline, battery, sos]
 summary: "Quick answers to the support questions people ask most."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Frequently asked questions
@@ -18,11 +18,15 @@ that come up in support.
 ## Cost and accounts
 
 **Does Aster cost anything?**
-Not for you as an athlete or a watcher — taking part in events and spectating
-are free, and stay free. Paid plans exist for the people running things: club
-plans (priced by member count — a small group of mates is free), an event
-organiser subscription that includes a number of events per month, and an
-enterprise tier by arrangement. Current prices are on
+Not for the things most people do: taking part in events, watching and
+spectating, following, and recording your own Just Rides are all free and stay
+free. Two paid options exist. **Aster Plus** is an individual membership that
+unlocks full club membership — the roster, chat, RSVP and group rides — and is
+what you need to join a club as its fourth-or-later member (the first three
+members are free). The **Event Organiser** plan is a subscription for people
+running events, sized by how many registrations each event needs (there's a free
+three-registration preview, then larger tiers, up to enterprise by arrangement).
+Clubs themselves never pay a subscription. Current prices are on
 [astertrack.app/pricing](https://astertrack.app/pricing).
 
 **Do I need an account to watch?**
@@ -30,11 +34,6 @@ No. Public and unlisted events, and any ride shared with you by link, are
 watchable in a browser with no account and no app install. Only private and
 members-only events require signing in. See
 [Watching an event](../for-spectators/index.md).
-
-**Why can't I follow more athletes?**
-Free accounts can follow up to 5 athletes as favourites; membership of a
-subscribed club removes the cap. The cap never affects watching — anyone can
-open a shared link or a public event page.
 
 ## Safety
 
@@ -89,9 +88,10 @@ In a mass-start race everyone is timed from the gun, not from the moment they
 individually tapped Start. See
 [Starting and tracking a ride](../for-athletes/starting-and-tracking-a-ride.md).
 
-**I forgot to stop my free ride and it tracked my drive home.**
-Stop it as soon as you notice — tap **Stop & save ride**. For events this isn't
-an issue: finishing freezes your ride at the line, and nothing after it counts.
+**I forgot to stop my Just Ride and it tracked my drive home.**
+Stop it as soon as you notice — use the **slide-to-end** control on the ride
+screen. For events this isn't an issue: finishing freezes your ride at the line,
+and nothing after it counts.
 
 **Can I change my category or withdraw after registering?**
 Usually yes, while registration is open — what's allowed, and until when, is
@@ -106,7 +106,7 @@ head-unit app today.
 
 **Who can see my location?**
 Only while you're tracking, and only the right people: in an event, whoever can
-view that event (per its privacy level); on a free ride, just the people you
+view that event (per its privacy level); on a Just Ride, just the people you
 share the link with. See
 [Who can see your location?](../account-and-privacy/who-can-see-your-location.md).
 

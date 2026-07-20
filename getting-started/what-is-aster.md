@@ -5,21 +5,22 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [overview, basics]
 summary: "What Aster does — live tracking plus sharing — who it's for, and what it costs."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # What is Aster?
 
 Aster is a live tracking and sharing platform for endurance sport — races,
 sportives, club rides, and personal rides or runs. An athlete carries their
-phone; the people who care about them watch their dot move along the route in
-real time, on a map, from any browser. Afterwards, the ride lives on: results,
-a replay, and posts and photos the athlete can share with their followers.
+phone; the people who care about them watch their live location move along the
+route in real time, on a map, from any browser. Afterwards, the ride lives on:
+results, a replay, and posts and photos the athlete can share with their
+followers.
 
 It's built for four kinds of people:
 
 - **Athletes** — carry the app to be tracked during an event, a club ride, or a
-  personal free ride, then share the story afterwards.
+  personal Just Ride, then share the story afterwards.
 - **Spectators** — friends, family and fans who watch live, follow the
   standings, and cheer from afar. For public events and shared rides, no
   account is needed.
@@ -32,8 +33,8 @@ It's built for four kinds of people:
 
 1. An athlete taps **Start** in the app. Their phone begins recording GPS
    points as they ride or run.
-2. Those points stream to Aster, which moves the athlete's dot on the map and
-   updates the event's live view.
+2. Those points stream to Aster, which moves the athlete's live position on the
+   map and updates the event's live view.
 3. Spectators open the event page (or a shared ride link) in any browser and
    watch it unfold — current position, the trail so far, distance and time.
 4. When the athlete crosses the finish line (or taps Finish), their result is
@@ -43,8 +44,9 @@ It's built for four kinds of people:
 
 Tracking is half the product. The other half is what happens around it:
 
-- **Share links** — a free ride generates a link anyone can open to watch you
-  live, no account or install needed.
+- **Share links** — when you set who can watch a Just Ride, Aster creates one
+  live link anyone can open to watch you in real time, no account or install
+  needed.
 - **Posts and photos** — share updates before, during and after an event;
   comment, react and @mention.
 - **Replays** — relive a finished event or ride as an animated playback.
@@ -68,18 +70,21 @@ Tracking is half the product. The other half is what happens around it:
 
 ## What does it cost?
 
-Taking part and watching are **free, forever**. Anyone riding, running or
-spectating an event never pays Aster anything.
+Almost everything is **free, forever**. Taking part in events, watching and
+spectating, following (as many people, teams and events as you like), and
+recording your own Just Rides never cost anything. Clubs don't pay a
+subscription either.
 
-Paid plans exist for the groups who run things:
+There are two things you can pay for, and both are bought in the app through the
+App Store or Google Play:
 
-- **Group** — for clubs, priced by member size. Small groups of mates are
-  free; larger clubs pay a subscription that unlocks recurring club rides,
-  unlimited members and club tools.
-- **Event organiser** — a subscription that includes a number of events per
-  month and scales up with you.
-- **Enterprise** — priced on application, with dedicated infrastructure and
-  extended marketing and sponsorship support.
+- **Aster Plus** — an individual membership. It unlocks full membership of a
+  club: the roster, club chat and threads, RSVPs and group rides. You also need
+  it to join a club as its fourth-or-later member. It's a monthly membership,
+  and you manage or cancel it in the App Store or Google Play.
+- **Event Organiser** — a monthly plan for people running events. Tiers are
+  sized by how many riders each event can register (around 100, 500 or 1,000
+  per event), with a larger enterprise option if you need more.
 
 Prices change as the product grows, so we don't list numbers here — see the
 current plans at [astertrack.app/pricing](https://astertrack.app/pricing).
@@ -94,7 +99,6 @@ current plans at [astertrack.app/pricing](https://astertrack.app/pricing).
 - In a club? Head to [Teams and clubs](../teams-and-clubs/).
 
 <!-- ## Unverified
-- Paid-plan names and shape (Group / Event organiser / Enterprise) follow the current pricing direction from the founder (2026-07-02); the in-app pricing page still shows an older per-rider model, so specifics are deliberately not stated — the pricing page link is the source of truth.
-- "Events per month" inclusion in the organiser subscription is business-model shape, not yet visible in product code.
+- Pricing shape (Aster Plus individual membership; Event Organiser monthly plan sized by per-event registration cap; clubs free) reflects the current model as of 2026-07-20; exact prices and tier numbers are deliberately not stated — the pricing page link is the source of truth.
 - Running as an equal sport: events carry a sport field in the product, but most current in-app copy is cycling-first; sport-neutral framing here follows the 2026-07 positioning brief.
 -->

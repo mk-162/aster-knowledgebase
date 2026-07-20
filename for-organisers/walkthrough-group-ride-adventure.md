@@ -5,7 +5,7 @@ nav_order: 3.3
 audience: [organiser]
 tags: [walkthrough, group-ride, grand-depart, adventure, checkpoints]
 summary: "Set up a social group ride or a long-distance point-to-point adventure with checkpoints."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Walkthrough: a group ride or adventure
@@ -50,7 +50,7 @@ split by distance.
 ## 5. On the day
 
 - Riders **start when they're ready** and are tracked the whole way.
-- Spectators follow everyone's dots along the route and through the checkpoints.
+- Spectators follow everyone's live position along the route and through the checkpoints.
 - The same safety tools apply — riders have **SOS** and **crash detection**, and
   you see [SOS alerts](handling-sos-alerts.md) on your dashboard. Remember an SOS
   alerts you, not the emergency services — brief your riders on that.
@@ -69,7 +69,7 @@ live following and the saved adventures.
 - **Checkpoints carry a long route.** Place them at meaningful points so riders
   and spectators can track progress between start and finish.
 - **Brief riders on offline behaviour.** On remote routes, reassure them the app
-  keeps recording with no signal — their dot just catches up when they reconnect.
+  keeps recording with no signal — their live location just catches up when they reconnect.
 - **Brief the safety limits.** For self-supported adventures, make sure riders
-  know SOS alerts *you* (not 999) and that they must carry their own means to call
-  for help.
+  know SOS alerts *you* (not the emergency services) and that they must carry their
+  own means to call for help.

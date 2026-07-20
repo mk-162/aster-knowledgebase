@@ -4,27 +4,29 @@ parent: "Teams & clubs"
 nav_order: 12
 audience: [athlete, organiser]
 tags: [teams, pro, verified]
-summary: "Verified status for professional and elite teams — what it is, how to apply, and how it differs from the Club plan."
-last_updated: 2026-07-03
+summary: "Verified status for professional and elite teams — what it is, how to apply, and how it differs from an ordinary club."
+last_updated: 2026-07-20
 ---
 
 # Verified (pro) teams
 
-Verified status marks a team as a genuine professional or elite outfit. It's
-a **badge of identity, reviewed by Aster** — not a paid plan, and not the
-same thing as the [Club plan](billing-and-your-club-plan.md).
+Verified status marks a team as a genuine professional or elite outfit. It's a
+**reviewed identity badge, granted by Aster** — free, and completely separate
+from [Aster Plus](billing-and-your-club-plan.md), which individual riders
+choose for club membership.
 
-## Verified vs the Club plan
+## Verified/pro vs an ordinary club
 
-| | Verified (pro) | Club plan |
+| | Verified (pro) team | An ordinary club |
 |---|---|---|
-| What it is | Identity verification for pro/elite teams | A paid subscription for club tools |
-| How you get it | Apply with evidence; Aster reviews | Subscribe from the club page |
-| What it gives | Verified badge on the team and its riders; sponsor strip on the team page | Weekly rides, the sponsor slot, and a nudge-free experience as the club grows — members never see the upgrade prompts |
+| What it is | A reviewed identity badge for pro/elite teams | Any group of athletes under one name |
+| How you get it | Apply with evidence; Aster reviews and grants it | Anyone can create one, free |
+| What it gives | A **PRO** badge on the team and its riders, plus a sponsor strip on the team page | The full club toolkit — rides, board, routes, RSVP, register — and a sponsor strip too |
+| Cost | Free | Free; riders join via Aster Plus from the fourth member on |
 
-A team can be either, both, or neither — a pro team doesn't need the Club
-plan for its badge, and your local club doesn't need to be "pro" to
-subscribe.
+Every club, verified or not, gets the same free tools — the pro badge is about
+**identity**, not extra features. A team can be verified or not; a local club
+doesn't need to be "pro" for any of its club tools.
 
 ## Apply for verified status
 

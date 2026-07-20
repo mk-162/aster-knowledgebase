@@ -5,7 +5,7 @@ nav_order: 4
 audience: [athlete, spectator, organiser]
 tags: [export, delete, gdpr, data]
 summary: "Download a copy of everything you've stored, or permanently delete your account."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Export or delete your data
@@ -17,7 +17,7 @@ signed in.
 
 Tap **Download my data** to get a complete copy of what Aster holds for
 you, as a single JSON file. It includes your profile, the events you took
-part in and your free rides, all your GPS points, your messages, follows,
+part in and your Just Rides, all your GPS points, your messages, follows,
 notifications and registered devices. It also covers the rest of what you've
 given us — your event registrations (including any emergency contact and the
 gender and age details you provided), race licences, the consents you've
@@ -49,8 +49,8 @@ Two things stop this happening by accident:
 
 - You **can't delete while a ride is in progress**. Stop or finish your
   ride first, so live tracking data isn't destroyed mid-ride.
-- You have to **confirm by typing** a short confirmation word before the
-  delete goes through.
+- You have to **confirm by typing** the exact confirmation phrase shown
+  before the delete goes through.
 
 {% include screenshot-todo.html slug="account-privacy-delete-confirm" caption="The Delete account confirmation: the warning text and the type-to-confirm field." %}
 

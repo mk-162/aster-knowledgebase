@@ -5,7 +5,7 @@ nav_order: 4
 audience: [athlete, organiser]
 tags: [teams, clubs, rides, rsvp, recurring, register]
 summary: "Create one-off or weekly club rides, take RSVPs, keep an attendance register, and check everyone got home."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Club rides
@@ -25,9 +25,7 @@ Club admins can create rides from the **Rides** tab:
 1. Open your club's page and the **Rides** tab, then tap **New club ride**.
 2. Give it a **name** ("Saturday shop ride") and a **date & time**.
 3. Optionally:
-   - **Repeat weekly** — see below. Works on every club, free or paid; a free
-     club may see a gentle prompt to consider a
-     [Club plan](billing-and-your-club-plan.md), but the ride is still created.
+   - **Repeat weekly** — see below. Works on every club, free of charge.
    - **Route** — attach a route from your
      [club route library](the-club-route-library.md).
    - **Pace groups** — comma-separated group names, e.g. "Fast, Steady,
@@ -50,9 +48,9 @@ advance**, so there's always exactly one upcoming occurrence for members to
 RSVP to. Times follow your club's local clock, so the 6:30pm chain-gang stays
 at 6:30pm across daylight-saving changes.
 
-Weekly rides keep producing regardless of the club's plan — a plan lapsing or
-a club staying on the free tier never stops the next occurrence appearing, and
-nothing is deleted. See [Billing and your club plan](billing-and-your-club-plan.md).
+Weekly rides keep producing on every club — they're free to run, so nothing
+ever stops the next occurrence appearing, and nothing is deleted. See
+[club membership and Aster Plus](billing-and-your-club-plan.md).
 
 ## RSVP — "I'm in"
 
@@ -98,12 +96,13 @@ themselves. "Quiet" means "no recent update", not "stopped": riders in dead
 zones keep recording on their phone and their trail fills in when signal
 returns. See [offline and no signal](../safety-and-offline/offline-and-no-signal.md).
 
-## Rides on free clubs
+## Rides are free on every club
 
-Free clubs get the full ride toolkit — one-off **and** weekly repeating rides,
-RSVP, register, CSV export, everyone-home, pace groups, routes. Nothing here
-is paywalled; as the club grows past the free size, admins simply see a gentle
-prompt to consider a [Club plan](billing-and-your-club-plan.md).
+Every club gets the full ride toolkit for nothing — one-off **and** weekly
+repeating rides, RSVP, register, CSV export, everyone-home, pace groups,
+routes. None of it is paywalled, and the club never pays a subscription. See
+[club membership and Aster Plus](billing-and-your-club-plan.md) for how riders
+join.
 
 <!-- ## Unverified
 - How a rider selects their pace group: the one-tap "I'm in" RSVP joins without picking a group; whether/where a rider chooses or changes their group afterwards was not verified in code this pass.

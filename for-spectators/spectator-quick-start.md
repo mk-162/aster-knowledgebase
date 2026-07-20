@@ -5,7 +5,7 @@ nav_order: 0.5
 audience: [spectator]
 tags: [quick-start, watching, walkthrough]
 summary: "The fastest path to following an event or a single athlete live — no account, no app, no payment."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Watch your first event: a quick start
@@ -17,15 +17,16 @@ nothing to pay. Watching is part of what Aster is for. Here's the quick path.
 
 1. **Open the event link** someone shared, or find the event in **Discover**.
    It opens in any browser — no sign-in for public and unlisted events.
-2. Open the **Map** tab: each athlete is a moving **dot**, with the route and
-   the trail they've left behind.
+2. Open the **Map** tab: each athlete is a moving **marker** showing their live
+   location, with the route and the trail they've left behind.
 3. Open the **Riders** tab for live progress. Races and time trials show
    standings and gaps; sportives and group rides show times and
    "on course / finished" instead — [here's why](the-leaderboard.md).
 4. Tap any athlete to focus on them and see their trail and stats — tapping
-   also stars them as a favourite for this event, so their dot is easy to find.
+   also stars them as a favourite for this event, so their marker is easy to
+   find.
 
-{% include screenshot-todo.html slug="spectators-quick-start-live-map" caption="An event's Map tab mid-race: route line, moving dots, and a selected rider's trail and stats panel." %}
+{% include screenshot-todo.html slug="spectators-quick-start-live-map" caption="An event's Map tab mid-race: route line, moving rider markers, and a selected rider's trail and stats panel." %}
 
 That's it. [More on reading the map](the-live-map-and-trails.md) ·
 [More on the leaderboard](the-leaderboard.md).
@@ -33,7 +34,7 @@ That's it. [More on reading the map](the-live-map-and-trails.md) ·
 ## Watching one person (a shared ride)
 
 1. **Open the watch link** they sent you (it looks like `…/ride/watch/…`).
-2. You see their live position, trail, distance and time — no account needed.
+2. You see their live location, trail, distance and time — no account needed.
 3. The page updates live until they finish, then keeps showing the finished
    ride.
 
@@ -48,8 +49,11 @@ notifications. See
 
 ## Three things to know
 
-- **A paused or stopped dot** usually means the athlete paused, lost signal, or
-  finished — a finished athlete's dot stops at the line for good.
+- **A paused or stopped marker** usually means the athlete paused or lost
+  signal. When an athlete finishes, their result freezes and — on the live map
+  — their marker fades out and clears a couple of seconds later; the live map is
+  for who's still on course. Their frozen result stays on the leaderboard and in
+  the replay.
 - **Trail gaps** are usually just dead zones; the missing section fills in when
   the athlete's phone reconnects.
 - **Private and members-only events** are the exception to open watching — they

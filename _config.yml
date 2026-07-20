@@ -73,6 +73,7 @@ exclude:
   - README.md
   - STYLE-GUIDE.md
   - UPDATE-PROMPT.md
+  - CONTENT-AUDIT.md
   - Gemfile
   - Gemfile.lock
   - vendor

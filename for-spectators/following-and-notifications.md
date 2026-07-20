@@ -4,8 +4,8 @@ parent: "For spectators"
 nav_order: 4
 audience: [spectator]
 tags: [follow, notifications, events]
-summary: "Follow an athlete, event or ride to get alerts — and how the free favourites cap works."
-last_updated: 2026-07-02
+summary: "Follow an athlete, event or ride to get alerts — following is free and unlimited."
+last_updated: 2026-07-20
 ---
 
 # Following riders and getting notified
@@ -23,7 +23,7 @@ Following an event needs an account; you'll be prompted to sign in.
 
 ## Follow a rider's shared ride
 
-When someone shares a [free ride](../for-athletes/free-rides.md) with you,
+When someone shares a [Just Ride](../for-athletes/free-rides.md) with you,
 you can open the watch link and follow along with no account. To also get
 **notified** — for instance if they raise an **SOS**, or when they finish —
 sign in and tap **Follow** / **Join** on the ride.
@@ -31,19 +31,9 @@ sign in and tap **Follow** / **Join** on the ride.
 ## Follow athletes and teams
 
 You can follow individual athletes and teams from their profiles, to keep
-up with their rides and posts in your feed. See
+up with their rides and posts in your feed. Following is **free and
+unlimited** — follow as many people as you like. See
 [Following and your feed](../social-and-following/following-and-your-feed.md).
-
-### The free favourites cap
-
-On a **free** account you can keep up to **five** athletes as favourites —
-that's the running list of people you follow. Reach the limit and Aster
-asks you to unfollow someone first, or to join a subscribed club, which
-lifts the cap. You can always unfollow.
-
-**This cap only touches following athletes with an account.** It never
-limits watching: opening an event page or a shared-ride link, and following
-an event for updates, are all unaffected — watch as many as you like.
 
 ## What you can be notified about
 
@@ -52,6 +42,8 @@ Once you're following, the alerts a spectator can get include:
 - An athlete or event **starting** and **finishing**.
 - A **stoppage** — a rider who's been stationary for a while.
 - **Milestones** as a rider passes distance markers.
+- **Lap or checkpoint** passings, on events that use them.
+- **Feed posts** — an organiser's announcements and updates.
 - An **SOS** raised on a ride you follow.
 - A **new follower**, and likes or comments on your posts.
 

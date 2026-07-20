@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [privacy, data, gdpr]
 summary: "What data Aster holds about you, why, and the control you have over it."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Privacy and your data
@@ -34,7 +34,7 @@ what's held about you and why, and points you to the controls.
 - Watching **public and unlisted** events needs **no account**, so
   spectators aren't asked for data they don't need.
 - Your **email and password** are never shown publicly.
-- **Free rides** are private by default — visible only to you and anyone
+- **Just Rides** are private by default — visible only to you and anyone
   you give a watch link.
 - GPS points outside a ride's start–finish window are never stored or
   shown to anyone.

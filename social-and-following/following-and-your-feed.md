@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator]
 tags: [following, feed, discover, live-now]
 summary: "Follow athletes, teams, events and organisers, find people in Discover, and see it all in your feed."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Following and your feed
@@ -21,16 +21,9 @@ Tap **Follow** on any profile or event page. Following is public — the people 
 follow and your own followers are shown on your profile. Tap **Unfollow** any
 time.
 
-## The five-favourite limit
-
-On a free account you can follow up to **5 people**. Being an active member of a
-club on a paid plan removes the limit. It only ever counts **athletes you
-follow** — following teams and events doesn't count towards it, and it never
-affects **watching** anything.
-
-You can always open a share link or watch a public event, on any device, with no
-account and no limit — the cap is only about who's pinned to your feed. Full
-detail in [the five-favourite limit](../teams-and-clubs/the-five-favourite-limit.md).
+Following is **free and unlimited** — follow as many people, teams and events as
+you like, and unfollow any time. Watching a ride isn't following: you can always
+open a share link or watch a public event, on any device, with no account.
 
 ## Finding people: Discover
 
@@ -65,5 +58,3 @@ in [Notification types](../notifications/notification-types.md) and
   empty on day one. Unfollow anyone you like.
 - Following an **event** is separate from following the **riders** in it — do both
   for the full picture.
-- Following clubs and events for updates never counts against the five-favourite
-  limit.

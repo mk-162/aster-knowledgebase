@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [accuracy, distance, time, results, gps]
 summary: "How Aster keeps distance and time honest with phone GPS, and why everyone sees the same numbers."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Why your distance and time are accurate
@@ -32,7 +32,7 @@ finish (rolling to the car park) are ignored.
 
 This is why:
 
-- A finished rider's dot **stops at the line** and never drifts.
+- A finished rider's marker **stops at the line** and never drifts.
 - Warm-up wandering doesn't inflate your distance or top speed.
 
 ## Distance is measured along your actual path
@@ -55,7 +55,7 @@ separate calculation that can drift.
   everyone shares one race clock.
 - **Time trials** are timed from the moment you **cross the start gate**, not
   from when you tapped Start — warm-up loops near the gate don't count.
-- **Free rides** (and events where everyone sets off in their own time) are
+- **Just Rides** (and events where everyone sets off in their own time) are
   timed from **when you start**.
 - Times are stamped at the moment your start and finish actually happen, so a
   wrong clock on your phone can't make your ride look longer or shorter.

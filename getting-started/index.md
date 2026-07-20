@@ -2,7 +2,7 @@
 title: "Getting started"
 nav_order: 1
 has_children: true
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Getting started
@@ -14,4 +14,4 @@ handful of concepts that make everything else click.
 - [What is Aster?](what-is-aster.md)
 - [Create an account](create-an-account.md)
 - [The app vs the website](the-app-and-the-website.md)
-- [Key concepts: events, free rides and following](key-concepts.md)
+- [Key concepts: events, Just Rides and following](key-concepts.md)

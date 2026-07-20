@@ -1,11 +1,11 @@
 ---
-title: "Key concepts: events, free rides and following"
+title: "Key concepts: events, Just Rides and following"
 parent: "Getting started"
 nav_order: 4
 audience: [athlete, spectator, organiser]
 tags: [concepts, glossary, basics]
 summary: "The handful of ideas that make the rest of the platform make sense."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Key concepts
@@ -13,11 +13,11 @@ last_updated: 2026-07-02
 A few core ideas show up everywhere in Aster. Understanding these makes
 everything else straightforward.
 
-## Your dot and trail
+## Your live location and trail
 
-Your **dot** is your live position on the map. As you ride or run, the dot
-moves and leaves a **trail** — the line showing where you've been. Spectators
-watch your dot and trail update in near real time.
+Your **live location** is your position on the map. As you ride or run, your
+marker moves and leaves a **trail** — the line showing where you've been.
+Spectators watch your position and trail update in near real time.
 
 ## Pings
 
@@ -27,20 +27,20 @@ your trail and adds up the distance between them. If you lose signal, pings
 are saved on your phone and sent later — your trail and distance fill in
 automatically when signal returns.
 
-## Events, free rides and club rides
+## Events, Just Rides and club rides
 
 There are three ways to be tracked:
 
-| | **Event** | **Club ride** | **Free ride** |
+| | **Event** | **Club ride** | **Just Ride** |
 |---|---|---|---|
 | What it is | An organised race, sportive or ride you register for | A members-only ride organised by your club or team | A personal ride or run you track on your own |
 | Set up by | An event organiser | The club | You, on the spot |
 | Who's on the map | All registered athletes | Club members who joined | Just you |
 | Live times/results | Depends on the format (below) | Untimed | No — just your own stats |
-| Who can watch | Spectators of that event | Club members | Anyone you share your ride link with |
+| Who can watch | Spectators of that event | Club members | Whoever you choose with the who-can-watch control |
 
 See [Register for an event](../for-athletes/register-for-an-event.md),
-[Free rides](../for-athletes/free-rides.md) and
+[Just Rides](../for-athletes/free-rides.md) and
 [Teams and clubs](../teams-and-clubs/what-clubs-and-teams-are.md).
 
 ## Event formats
@@ -67,29 +67,30 @@ Every ride is bounded by two moments: when it **started** and when it
 **ended**. Everything shown about your ride — your trail, distance and time —
 is measured strictly between those two moments. Points recorded before your
 start or after your finish are ignored, and once you're finished, every
-surface freezes: your dot, your clock, your distance and your result all stop
-at the line. This is what keeps your numbers honest. See
+surface freezes: your live location, your clock, your distance and your result
+all stop at the line. This is what keeps your numbers honest. See
 [Why your distance and time are accurate](../safety-and-offline/data-accuracy.md).
 
-## Following and the 5-follow limit
+## Following
 
 **Following** an athlete, team or event puts them in your feed and gets you
-notifications (starts, finishes, posts). Free accounts can follow up to **5**
-people; joining a subscribed club lifts the limit. Two things the limit never
-touches:
+notifications (starts, finishes, posts). Following is **free and unlimited** for
+everyone — follow as many people, teams and events as you like. Two things worth
+knowing:
 
 - **Unfollowing** — always allowed.
 - **Watching** — opening an event page or a shared ride link is not
-  following. You can spectate anything you have access to, without limit and
-  without an account.
+  following. You can spectate anything you have access to, without an account.
 
 See [Following and your feed](../social-and-following/following-and-your-feed.md).
 
 ## Share links
 
-A **share link** is how a free ride gets watched. Generate one from your ride
-screen and send it to anyone — they open it in a browser and see you live, no
-account or app needed. See [Share links](../for-spectators/share-links.md).
+A **share link** is how a Just Ride gets watched. When you choose who can watch
+you live — **Followers & club** or **Anyone with link** — Aster creates one live
+link you can send to anyone. They open it in a browser and see you live, no
+account or app needed. Choosing **Just me** means no one watches and no link is
+shared. See [Share links](../for-spectators/share-links.md).
 
 ## Event privacy levels
 

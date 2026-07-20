@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete]
 tags: [events, registration, offline]
 summary: "How to find and join an event, what gets downloaded for offline use, and what to do before the start."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Register for an event
@@ -62,7 +62,7 @@ and still start. See
 - Want friends to follow you? Tap **Share watch link** to send them the
   event's live page — they can watch you with no account.
 - If the organiser has enabled rider privacy for the event, you'll also see a
-  **Hide my dot** toggle — see
+  **Hide my location** toggle — see
   [Who can see your location](../account-and-privacy/who-can-see-your-location.md).
 
 ## Good to know

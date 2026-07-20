@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete]
 tags: [offline, signal, battery, reliability]
 summary: "Exactly how the app behaves with no signal — and why nothing inside your ride is lost."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # What happens when I lose signal?
@@ -31,10 +31,10 @@ that. Here's exactly what happens when you go off-grid.
 
 ## What watchers see while you're offline
 
-Your dot **pauses** at your last known position, because your new points
-can't upload yet. The moment your phone gets signal again, the saved points
-upload and your dot and trail **catch up** — your route fills in and the
-leaderboard updates.
+Your live location **pauses** at your last known position, because your new
+points can't upload yet. The moment your phone gets signal again, the saved
+points upload and your position and trail **catch up** — your route fills in
+and the leaderboard updates.
 
 ## Finishing offline
 

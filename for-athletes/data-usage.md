@@ -5,7 +5,7 @@ nav_order: 3.5
 audience: [athlete]
 tags: [data, offline, battery, mobile]
 summary: "How much mobile data tracking uses, what works with no signal, and how to keep both data and battery in check."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Mobile data, battery and what runs offline
@@ -17,7 +17,7 @@ battery? Here's the honest answer for a ride or a run.
 
 - The biggest one-off download is an **event's route and map**, which happens when
   you register or first open the event. Do that on **Wi-Fi** beforehand and it's
-  cached for the day. A free ride has no such download.
+  cached for the day. A Just Ride has no such download.
 - While you're out, the app sends your position as small updates — light on data.
 - With **no signal**, tracking uses **no data at all**. Your points are saved on
   the phone and uploaded later when you reconnect. See

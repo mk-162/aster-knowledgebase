@@ -5,19 +5,19 @@ nav_order: 4
 audience: [athlete]
 tags: [pause, tracking, moving-time]
 summary: "How pausing works, what watchers see, and why a paused rider is still on their ride."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Pausing and resuming
 
 Pause when you stop mid-ride or mid-run — a mechanical, a café stop, a nature
 break — so the break doesn't count against your moving time. Works the same on
-a free ride or an event.
+a Just Ride or an event.
 
 ## How it works
 
-- Tap **Pause Ride**. Your clock and distance hold where they are, and your dot
-  freezes in place.
+- Tap **Pause Ride**. Your clock and distance hold where they are, and your live
+  location freezes in place.
 - Tap **Resume Ride** to carry on. Your time and distance pick up from where they
   left off.
 - Your **moving time** is the total elapsed time minus however long you were
@@ -31,10 +31,10 @@ time, so a pause is never mistaken for a lost signal.
 - You **stay in your ride** while paused. Pausing is not stopping, finishing or
   abandoning — you keep your place on the leaderboard and your session stays
   alive.
-- Watchers see your dot as paused rather than moving.
+- Watchers see the rider as paused rather than moving.
 - While you're paused, the app won't raise "off-route" or other movement-based
   alerts about you — it knows you've deliberately stopped.
-- Your safety tools still work while paused. **SOS** and, on a free ride, crash
+- Your safety tools still work while paused. **SOS** and, on a Just Ride, crash
   detection are unaffected — see
   [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
 

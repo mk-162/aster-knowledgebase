@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [account, signup, login]
 summary: "When you need an account, how to sign up and sign in, and what an account gives you."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Create an account
@@ -18,7 +18,7 @@ shares with you by link — works with no account at all.
 You need an account when you want to **do** something that's tied to you:
 
 - Register for an event and be tracked as an athlete.
-- Record your own free rides.
+- Record your own Just Rides.
 - Follow athletes, teams or events and get notifications.
 - Post updates, comment, or react.
 - Join a team or club.

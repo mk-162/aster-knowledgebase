@@ -2,7 +2,7 @@
 title: "For spectators"
 nav_order: 3
 has_children: true
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # For spectators
@@ -13,6 +13,7 @@ payment**. That's a promise, not a trial: spectating on Aster is free, forever.
 These guides explain what you can see and how to read it.
 
 - [Watch your first event: a quick start](spectator-quick-start.md) — start here
+- [The live demo (simulated)](the-live-demo.md) — try live tracking with no signup
 - [Watch an event live](watch-an-event-live.md)
 - [Reading the live map and trails](the-live-map-and-trails.md)
 - [Reading the leaderboard](the-leaderboard.md)

@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete]
 tags: [teams, clubs, join, create]
 summary: "Start a new club, join an existing one — instantly, by application or by invite link — and the difference between joining and following."
-last_updated: 2026-07-03
+last_updated: 2026-07-20
 ---
 
 # Create a club or join one
@@ -16,7 +16,7 @@ depending on how the club has set itself up: instantly, or by application.
 ## Create a club
 
 1. In the app, tap **Create** and choose **Club** (the same picker also
-   starts a ride or a run), or open **Teams** and choose **Create a team**.
+   starts a ride or a run), or open **Groups** and choose **Create a team**.
 2. Give it a **name** and a **description**, and add a logo and banner if you
    have them.
 3. Choose how people join:
@@ -25,17 +25,17 @@ depending on how the club has set itself up: instantly, or by application.
 4. Create it. You become the **owner** and first admin, and the club gets its
    own page you can share.
 
-A new club starts on the free tier. It works fully from day one — members,
-rides (one-off or weekly), the board and routes all work. As the club grows
-past the free size, you'll see a gentle prompt to move to a
-[Club plan](billing-and-your-club-plan.md) sized to your club — nothing is
-ever blocked. You can upgrade from the club page whenever you're ready.
+Creating a club is **free**, and it works fully from day one — members, rides
+(one-off or weekly), the board and routes all work at no cost. The club never
+pays a subscription. Its first three members join free; from the fourth member
+onward, each rider chooses [Aster Plus](billing-and-your-club-plan.md) to join
+as a full member.
 
 {% include screenshot-todo.html slug="teams-create-club-form" caption="The create-a-team form: name, description, and the Open vs Application join setting." %}
 
 ## Join a club
 
-1. Open the club's page — from **Teams**, from search, or from a link someone
+1. Open the club's page — from **Groups**, from search, or from a link someone
    sent you.
 2. Tap **Join** (open clubs — you're in straight away) or **Request to join**
    (application clubs).
@@ -53,16 +53,17 @@ clubs, so there's no waiting to be approved. Invite links are always free to
 join. See [invite links](roles-and-managing-members.md#invite-links) for how
 admins create them.
 
-**Good to know:** a free club is never full. Joining always works — nobody is
-ever turned away, and nobody already in is ever removed. Once a club grows
-past the free size, its admins simply see a prompt to pick a
-[Club plan](billing-and-your-club-plan.md).
+**Good to know:** a club's first three members join free. From the fourth
+member onward, each new rider takes out [Aster Plus](billing-and-your-club-plan.md)
+to join as a full member — with a free demo to try first. A club can hold up to
+**500 members**; below that, nobody already in is ever removed.
 
 ## Follow vs join
 
 - **Following** a club means its updates appear in your feed — you don't have
-  to be a member, and following a club doesn't count towards the
-  [5-favourite limit](the-five-favourite-limit.md).
+  to be a member, and following is free and unlimited. Once a club has three
+  members, anyone can still follow and watch it for free without taking out
+  Aster Plus.
 - **Joining** puts you on the roster. Members can see and RSVP to
   [club rides](club-rides.md), read and post on the
   [club board](the-club-board.md), and use the

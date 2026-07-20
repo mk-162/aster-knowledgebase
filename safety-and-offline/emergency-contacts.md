@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [athlete]
 tags: [safety, sos, watchers, emergency]
 summary: "Your safety contacts on Aster are the people watching your ride — here's how to make sure someone actually is."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Who gets alerted when you need help
@@ -17,12 +17,12 @@ alert goes to:
 
 - **the event organisers**, if you're riding an event — it lands on their
   race-day dashboard with your location, and
-- **your watchers**, if you're on a free ride — everyone following your
+- **your watchers**, if you're on a Just Ride — everyone following your
   watch link.
 
 That's the honest deal: an SOS is a notification to real people who care
 about your ride, not a call to the emergency services. If nobody is watching
-a free ride, the app tells you an alert would reach nobody — and points you
+a Just Ride, the app tells you an alert would reach nobody — and points you
 at 999 instead.
 
 ## Make sure someone is actually watching
@@ -30,11 +30,11 @@ at 999 instead.
 A safety contact only works if they exist, so before a big or remote ride or
 run:
 
-1. **On a free ride:** create a watch link and send it to someone —
+1. **On a Just Ride:** create a watch link and send it to someone —
    a partner, a club mate, whoever would notice if you stopped moving. See
-   [Free rides](../for-athletes/free-rides.md).
+   [Just Ride](../for-athletes/free-rides.md).
 2. **In an event:** the organisers are your safety contact by default. Share
-   the event page with your people too, so they can follow your dot live.
+   the event page with your people too, so they can follow your live position.
 3. Tell them what the link is for: they'll see your live position, and a red
    banner with your last-known location if you raise an SOS.
 

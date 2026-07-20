@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [glossary, definitions]
 summary: "Plain-language definitions of the terms used across Aster and this help centre."
-last_updated: 2026-07-02
+last_updated: 2026-07-20
 ---
 
 # Glossary
@@ -18,6 +18,15 @@ this page sticks to what you'll see on screen.
 **Abandon** — Ending an event ride before the finish; recorded as DNF. Behind a
 confirmation code so a pocket tap can't end your ride.
 
+**Aster** — The app and service this help centre is about: live tracking for
+races, rides and runs, spectating, clubs and events.
+
+**Aster Plus** — An individual membership that unlocks full club membership — the
+roster, chat, RSVP and group rides — and lets you join a club as its fourth or
+later member (the first three members are free). A monthly membership, bought
+in the App Store or Google Play. Prices are on
+[astertrack.app/pricing](https://astertrack.app/pricing).
+
 **Bib** — An athlete's number for an event, shown on the leaderboard.
 
 **Category** — A group within an event (for example "Women 40–49"); results are
@@ -27,9 +36,11 @@ on club rides.
 **Checkpoint** — A marked point along a route (an aid station, a turn, a
 waypoint), used especially on point-to-point and time-trial courses.
 
-**Club** — A team on a paid club plan: unlimited members, recurring club rides,
-a members-only bulletin board, a shared route library, and members-only events.
-See [Teams and clubs](../teams-and-clubs/index.md).
+**Club** — A team with full club features switched on: unlimited members,
+recurring club rides, a members-only bulletin board, a shared route library, and
+members-only events. The club itself never pays a subscription — the first three
+members are free, and each further member joins with their own **Aster Plus**
+membership. See [Teams and clubs](../teams-and-clubs/index.md).
 
 **Course** — A reusable route template — its shape, start/finish lines and feed
 stations — that an organiser can apply to several events.
@@ -44,24 +55,34 @@ closed out automatically.
 
 **DNS** — "Did not start": registered but never started.
 
-**Dot** — Your live position on the map. Watchers follow your dot; it moves
-while you do and freezes at the line when you finish.
+**Dot / dot watching** — Endurance-cycling slang for a rider's live position on
+a tracking map, and the pastime of following it. It comes from ultra-distance
+racing (the Transcontinental and the like), where fans "watch the dots" for days.
+In Aster we usually say **live location**, **position** or **marker** on screen,
+but you'll hear "dot watching" across the sport.
 
 **Event** — An organised race, time trial, sportive, group ride or adventure
 you register for.
 
-**Favourite (follow)** — An athlete you follow, so their activity shows up for
-you and you can be notified when they ride. Free accounts can follow up to 5
-athletes; membership of a subscribed club removes the cap. You never need to
-follow (or even have an account) just to watch a shared ride.
+**Event Organiser plan** — A monthly subscription for people running events,
+sized by how many registrations each event needs. There's a free
+three-registration preview, then larger tiers, up to enterprise by arrangement.
+Clubs never need it to run their own members-only rides. Prices are on
+[astertrack.app/pricing](https://astertrack.app/pricing).
 
 **Feed station** — A support point (water, food, aid) marked on the route.
 
 **Festival** — A group of related events run under one banner — for example
 several distances on one weekend.
 
-**Free ride** — A personal ride or run you track outside any event; private by
-default, shareable by link. See [Free rides](../for-athletes/free-rides.md).
+**Follow** — Following an athlete, team, event or organiser so their activity
+shows up in your feed and you can be notified when they ride. Following is free
+and unlimited, and you can unfollow any time. You never need to follow (or even
+have an account) just to watch a shared ride.
+
+**Just Ride (formerly Free Ride)** — A personal ride or run you track outside any
+event; private by default, shareable by link. See
+[Just Rides](../for-athletes/free-rides.md).
 
 **Ghost ride** — A replay of two rides on the same map, so you can compare one
 against the other over the same ground.
@@ -130,8 +151,9 @@ ends, each with a detection zone that records crossings automatically.
 (or the finish line or cut-off) does that.
 
 **Team** — A group of athletes on Aster — a club, a crew, or just a few mates.
-Free teams hold up to 10 active members and can run one-off members-only group
-rides; upgrading to a club plan unlocks more. See
+The first three members are free; adding a fourth-or-later member needs each of
+them to have **Aster Plus**, which unlocks the full club features (roster, chat,
+RSVP and recurring group rides). See
 [Teams and clubs](../teams-and-clubs/index.md).
 
 **Time trial** — A format where athletes start individually and are timed on
