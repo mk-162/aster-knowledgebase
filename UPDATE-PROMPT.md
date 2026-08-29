@@ -24,7 +24,7 @@ which will carry the heaviest support load. Include ALL functionality.
    size), **Event Organiser** (a SUBSCRIPTION including N events/month, scalable), and
    **Enterprise** (POA — white glove, dedicated server, extended marketing + sponsorship).
    Exact prices are EXPERIMENTAL (see `lib/pricing.ts` in the marketing site) — in the KB,
-   describe the SHAPE of pricing and link to astertrack.app/pricing rather than hardcoding
+   describe the SHAPE of pricing and link to aster-track.com/pricing rather than hardcoding
    numbers. Also scoped (describe as "how it works" only where user-visible today):
    events can be created free and previewed fully but stay private until the plan is
    active; if a plan lapses, joins and new posts pause but nothing is ever deleted and old
@@ -48,10 +48,12 @@ which will carry the heaviest support load. Include ALL functionality.
 - Voice per `knowledge-base/STYLE-GUIDE.md` + the brand: warm, plain-spoken, BRITISH
   English, headlines end in a period, no emoji, specificity over adjectives, honest about
   limits (battery, dead zones, phone-GPS accuracy).
-- Domains: the app is moving to app.astertrack.app with the website at astertrack.app —
-  write app links as relative in-app paths ("in the app, open Profile → Privacy") rather
-  than hardcoded URLs wherever possible; where a URL is unavoidable use astertrack.app
-  for marketing pages and flag app-domain links with `<!-- TODO: confirm app domain -->`.
+- Domains (settled 2026-08, supersedes the earlier app.astertrack.app plan): the app
+  lives on astertrack.app and marketing lives on aster-track.com (the old
+  www.astertrack.app marketing pages permanently redirect there). Write app links as
+  relative in-app paths ("in the app, open Profile → Privacy") rather than hardcoded
+  URLs wherever possible; where a URL is unavoidable use aster-track.com for marketing
+  pages and astertrack.app only for the app itself (sign-in, watch links, the Track page).
 
 ## Screenshot rule
 

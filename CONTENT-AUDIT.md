@@ -14,7 +14,7 @@ working document (excluded from the built site).
   is a monthly subscription sized by per-event registration cap (free 3-registration
   preview, then ~100 / 500 / 1000 tiers, plus enterprise). Clubs never pay. Both paid
   products are in-app purchases (App Store / Google Play). No prices are printed; the KB
-  links to `astertrack.app/pricing`.
+  links to `aster-track.com/pricing`.
 - **Following is free and unlimited** — the 5-favourite cap was removed in the product.
 - **"Free Ride" → "Just Ride"** (branded name); **no "dot"** in user-facing copy (say
   live location / position / marker); **"activity"** as the umbrella term; **"Event
@@ -131,13 +131,13 @@ offline behaviour and Rules 1–6 safety promises.
    is false unless `MONETIZATION_ENABLED`/`REVENUECAT_WEBHOOK_AUTH` is set). While off,
    club joins are free with no cap and every public event appears in discovery. The KB
    documents the model as designed and as already advertised on the marketing site
-   (`ForClubs.tsx`, `astertrack.app/pricing`). Confirm it is correct to describe the
+   (`ForClubs.tsx`, `aster-track.com/pricing`). Confirm it is correct to describe the
    Aster Plus / Event Organiser caps as the live customer model now.
 3. **"Hide my location" label.** The privacy toggle is written in code as `hide_dot`; the
    no-"dot" copy rule means the user-facing label should not say "dot". The KB now calls
    it **"Hide my location"** — confirm the exact on-screen wording.
 4. **Prices & tiers** are intentionally not printed; the KB links to
-   `astertrack.app/pricing`. Confirm that page reflects the current model (Aster Plus;
+   `aster-track.com/pricing`. Confirm that page reflects the current model (Aster Plus;
    Event Organiser tiers ~100/500/1000; free 3-registration preview).
 5. **SOS vs "Alert".** The KB keeps **"SOS"** (per the app's product rules the SOS→"Alert"
    rename is pending/not yet enforced), while some in-app buttons already read "Alert my

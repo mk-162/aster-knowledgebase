@@ -36,10 +36,10 @@ Most questions are answered already:
 - **General questions** about Just Rides, share links, your profile or an
   event — email [hello@astertrack.app](mailto:hello@astertrack.app).
 - **Pricing, organiser plans and enterprise enquiries** — see
-  [astertrack.app/pricing](https://astertrack.app/pricing), which has a contact
+  [aster-track.com/pricing](https://aster-track.com/pricing), which has a contact
   route for larger events and bespoke arrangements.
 - The full list of contact channels (press, partnerships and so on) is at
-  [astertrack.app/contact](https://astertrack.app/contact).
+  [aster-track.com/contact](https://aster-track.com/contact).
 
 ## Reporting a bug well
 

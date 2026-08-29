@@ -41,7 +41,7 @@ Aster Plus is an **in-app purchase**, bought in the **App Store** (iPhone) or
    unlock.
 
 Current prices are on
-[astertrack.app/pricing](https://astertrack.app/pricing).
+[aster-track.com/pricing](https://aster-track.com/pricing).
 
 ## Manage or cancel Aster Plus
 

@@ -4,8 +4,8 @@ parent: "Getting started"
 nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [app, web, platforms, install]
-summary: "When you need the mobile app, when a browser is enough, and how to install the app during the beta."
-last_updated: 2026-07-03
+summary: "When you need the mobile app, when a browser is enough, and where to install the app."
+last_updated: 2026-08-18
 ---
 
 # The app vs the website
@@ -16,10 +16,11 @@ browser. They share the same account and the same data, but they're suited to
 different jobs.
 
 Our marketing pages — what Aster is, pricing, and the like — live on
-[www.astertrack.app](https://www.astertrack.app); the app itself sits on
+[aster-track.com](https://aster-track.com); the app itself sits on
 [astertrack.app](https://astertrack.app). Open astertrack.app while signed out
-and you'll land on the marketing site; a shared watch link takes you straight
-into the app.
+and you'll see the sign-in screen, which also carries the install links and a
+link across to the marketing site; a shared watch link takes you straight
+into the app, no account needed.
 
 ## Use the mobile app to be tracked
 
@@ -37,24 +38,21 @@ another app. The app also powers:
 If you open the tracking screen in a browser, you'll see install options for
 the app instead — GPS tracking simply isn't possible from a browser tab.
 
-### Installing the app (early-access beta)
+### Installing the app
 
-Aster is currently in early-access beta, so it isn't yet installed from the
-public app stores:
+Aster is on both public app stores:
 
-- **iPhone** — via Apple's **TestFlight**. Install TestFlight from the App
-  Store first, then open Aster's invite link, tap **Accept**, then
-  **Install**.
-- **Android** — via a **direct download** (an `.apk` file). Download it, tap
-  the file, and allow installs from your browser if your phone asks — you
-  only need to do that once.
+- **iPhone and iPad** — on the
+  [App Store](https://apps.apple.com/app/id6764533612) (iOS 15 and later).
+- **Android** — on
+  [Google Play](https://play.google.com/store/apps/details?id=app.astertrack)
+  (Android 7 and later).
 
-The current install links are shown on the website whenever you try to start
-tracking in a browser (open **Track** on
-[astertrack.app](https://astertrack.app)). Links change as new beta builds
-ship, so we don't reproduce them here.
+The same links (with QR codes) are shown on the website whenever you try to
+start tracking in a browser — open **Track** on
+[astertrack.app](https://astertrack.app).
 
-{% include screenshot-todo.html slug="getting-started-app-vs-website-install-cards" caption="The install options shown on the website's Track page: iPhone via TestFlight and Android via direct download, each with a QR code." %}
+{% include screenshot-todo.html slug="getting-started-app-vs-website-install-cards" caption="The install options shown on the website's Track page: App Store and Google Play, each with a QR code." %}
 
 ## Use the website for everything else
 
@@ -82,8 +80,7 @@ starts or finishes) are available in the app and in most desktop and Android
 browsers; see [Push notifications and devices](../notifications/push-and-devices.md).
 
 <!-- ## Unverified
-- Public App Store / Google Play availability: not current — during the beta the install paths are TestFlight (iPhone) and direct APK download (Android). Revisit when the app ships to the public stores.
-- The exact TestFlight and APK link URLs are beta links that rotate with builds; deliberately not reproduced.
 - An installable "add to home screen" web app (PWA): the website works in any browser, but no user-facing PWA install path was found in the product this pass, so none is documented.
-- Domain split confirmed 2026-07-03: the app stays on astertrack.app and marketing moved to www.astertrack.app; in-app paths are still described by screen name rather than URL.
+- Store availability updated 2026-08-18: App Store live since 2026-08-05, Google Play live 2026-08-18 — the beta TestFlight/APK install section is retired.
+- Domain layout updated 2026-08-18: marketing moved to its own domain aster-track.com (the old www.astertrack.app marketing pages permanently redirect there); the app stays on astertrack.app, whose signed-out root shows the in-app sign-in screen (not a bounce to marketing — that behaviour was retired 2026-08-05).
 -->

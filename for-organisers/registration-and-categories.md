@@ -39,7 +39,7 @@ plan sized to your event. The plan tiers are set by registrations-per-event
 (roughly 100 / 500 / 1000 riders, with a larger enterprise / contact-us option),
 and it's a monthly plan bought in the app through the App Store or Google Play. Your
 plan tier is the ceiling on registrations; any capacity you set can only sit at or
-below it. See [pricing](https://astertrack.app/pricing) for the current shape.
+below it. See [pricing](https://aster-track.com/pricing) for the current shape.
 
 ## The registration form
 

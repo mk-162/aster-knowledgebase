@@ -34,7 +34,7 @@ to bottom and you'll have a fully set-up, ready-to-run event.
       take more real registrations and appear in public discovery, subscribe to an
       **Event Organiser** plan sized to your event.
       [Registration and categories](registration-and-categories.md) ·
-      [pricing](https://astertrack.app/pricing)
+      [pricing](https://aster-track.com/pricing)
 - [ ] **Name it, choose the host** (organiser account or team — it can't be
       changed later), and **group it into a festival** if it's part of one.
 - [ ] **Set the start time and time zone.** Double-check the zone.

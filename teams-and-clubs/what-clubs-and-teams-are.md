@@ -54,7 +54,7 @@ for free.
 
 Aster Plus is a monthly membership, bought in the App Store or Google Play.
 Current prices are on
-[astertrack.app/pricing](https://astertrack.app/pricing). See
+[aster-track.com/pricing](https://aster-track.com/pricing). See
 [club membership and Aster Plus](billing-and-your-club-plan.md) for the detail.
 
 **Good to know:** taking part in events and spectating are free for everyone,

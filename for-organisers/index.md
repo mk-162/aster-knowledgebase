@@ -16,7 +16,7 @@ Creating an event is free, previewing it is free, and publishing it is free. A
 free event is a share-link preview that takes **up to 3 registrations** — perfect
 for building, testing and demoing. To take real registrations beyond that, and to
 appear in public discovery, subscribe to an **Event Organiser** plan sized to your
-event. See [pricing](https://astertrack.app/pricing) for the current shape.
+event. See [pricing](https://aster-track.com/pricing) for the current shape.
 
 - [Become an organiser](become-an-organiser.md)
 - [Quick-start checklist](quick-start-checklist.md) — the whole journey on one page

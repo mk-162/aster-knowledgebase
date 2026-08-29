@@ -68,7 +68,7 @@ access. From the manage screen you can:
 If you run chip timing, timed results can be brought into Aster and matched to
 riders by bib number — a job handled through Aster's results integration rather
 than an upload button in the organiser screens. If chip timing is your authority
-for placings, get in touch via the [contact page](https://astertrack.app/contact)
+for placings, get in touch via the [contact page](https://aster-track.com/contact)
 to set it up.
 
 ## Reliving the event: replay

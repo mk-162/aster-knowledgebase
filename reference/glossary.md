@@ -11,7 +11,7 @@ last_updated: 2026-07-20
 # Glossary
 
 The words you'll meet in the app and in this help centre. The Aster website has
-a fuller [glossary](https://astertrack.app/glossary) of tracking and
+a fuller [glossary](https://aster-track.com/glossary) of tracking and
 endurance-sport terms (dot watching, bikepacking, gravel racing and more) —
 this page sticks to what you'll see on screen.
 
@@ -25,7 +25,7 @@ races, rides and runs, spectating, clubs and events.
 roster, chat, RSVP and group rides — and lets you join a club as its fourth or
 later member (the first three members are free). A monthly membership, bought
 in the App Store or Google Play. Prices are on
-[astertrack.app/pricing](https://astertrack.app/pricing).
+[aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Bib** — An athlete's number for an event, shown on the leaderboard.
 
@@ -68,7 +68,7 @@ you register for.
 sized by how many registrations each event needs. There's a free
 three-registration preview, then larger tiers, up to enterprise by arrangement.
 Clubs never need it to run their own members-only rides. Prices are on
-[astertrack.app/pricing](https://astertrack.app/pricing).
+[aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Feed station** — A support point (water, food, aid) marked on the route.
 

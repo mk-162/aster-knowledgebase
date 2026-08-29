@@ -38,7 +38,7 @@ no way around that on a phone. What you *can* control is the recording rate: pic
 [battery mode](battery-modes.md) to match your ride length, and let the app drop to
 a more economical mode as your battery falls. For a rough forecast of how long each
 mode lasts, and tips to stretch it further, see
-[astertrack.app/battery-use](https://astertrack.app/battery-use) and
+[aster-track.com/battery-use](https://aster-track.com/battery-use) and
 [Tips for a reliable track](tips-for-a-reliable-track.md).
 
 ## What works with no signal

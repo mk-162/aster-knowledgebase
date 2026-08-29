@@ -87,7 +87,7 @@ App Store or Google Play:
   per event), with a larger enterprise option if you need more.
 
 Prices change as the product grows, so we don't list numbers here — see the
-current plans at [astertrack.app/pricing](https://astertrack.app/pricing).
+current plans at [aster-track.com/pricing](https://aster-track.com/pricing).
 
 ## Where to next
 

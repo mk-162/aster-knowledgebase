@@ -30,7 +30,7 @@ everything else.
    are all free. What a free event *can't* do is take more than **3 registrations**
    or appear in public discovery; to lift that, subscribe to an **Event Organiser**
    plan sized to your event. See [registration and categories](registration-and-categories.md)
-   and [pricing](https://astertrack.app/pricing) for the current shape.
+   and [pricing](https://aster-track.com/pricing) for the current shape.
 2. **Name it, choose the host, and optionally group it into a festival.** Give the
    event a name, pick which organiser account or team hosts it (this is fixed once
    created, so pick the right one — see [Become an organiser](become-an-organiser.md)),

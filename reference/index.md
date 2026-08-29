@@ -16,6 +16,6 @@ most often.
 - [Frequently asked questions](faq.md)
 - [Troubleshooting](troubleshooting.md)
 
-The Aster website also has a general [FAQ](https://astertrack.app/faq) and a
-fuller [glossary](https://astertrack.app/glossary) of tracking and
+The Aster website also has a general [FAQ](https://aster-track.com/faq) and a
+fuller [glossary](https://aster-track.com/glossary) of tracking and
 endurance-sport terms.

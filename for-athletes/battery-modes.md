@@ -32,7 +32,7 @@ recorded point is, or your final distance — a point is a point in any mode.
 
 For real numbers — roughly how many hours each mode lasts from a given starting
 charge — use the interactive forecaster at
-[astertrack.app/battery-use](https://astertrack.app/battery-use). Those figures
+[aster-track.com/battery-use](https://aster-track.com/battery-use). Those figures
 are estimates: real drain varies a lot with your phone, the temperature, and how
 strong your signal is (weak signal is the single biggest drain).
 

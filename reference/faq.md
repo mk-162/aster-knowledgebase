@@ -12,7 +12,7 @@ last_updated: 2026-07-20
 
 The general FAQ — what Aster is, how it compares with other trackers, and how
 organisers get set up — lives on the website:
-[astertrack.app/faq](https://astertrack.app/faq). This page keeps the questions
+[aster-track.com/faq](https://aster-track.com/faq). This page keeps the questions
 that come up in support.
 
 ## Cost and accounts
@@ -27,7 +27,7 @@ members are free). The **Event Organiser** plan is a subscription for people
 running events, sized by how many registrations each event needs (there's a free
 three-registration preview, then larger tiers, up to enterprise by arrangement).
 Clubs themselves never pay a subscription. Current prices are on
-[astertrack.app/pricing](https://astertrack.app/pricing).
+[aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Do I need an account to watch?**
 No. Public and unlisted events, and any ride shared with you by link, are
@@ -68,7 +68,7 @@ Tracking all day costs battery — Aster is honest about that. You choose a
 battery mode to match your ride length, and the app can drop to a more
 economical mode when your battery runs low. See
 [Battery modes](../for-athletes/battery-modes.md) and the website's
-[battery guide](https://astertrack.app/battery-use).
+[battery guide](https://aster-track.com/battery-use).
 
 **Do I need to keep the screen on or the app open?**
 No. Leave the app in the background with the screen off — it keeps recording.
