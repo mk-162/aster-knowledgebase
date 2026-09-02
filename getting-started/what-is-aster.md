@@ -11,7 +11,7 @@ last_updated: 2026-08-28
 # What is Aster?
 
 Aster is a live tracking and sharing platform for endurance sport — races,
-sportives, club rides, and personal rides or runs. An athlete carries their
+sportives, club meet-ups, and personal rides or runs. An athlete carries their
 phone; the people who care about them watch their live location move along the
 route in real time, on a map, from any browser. Afterwards, the ride lives on:
 results, a replay, and posts and photos the athlete can share with their
@@ -19,7 +19,7 @@ followers.
 
 It's built for four kinds of people:
 
-- **Athletes** — carry the app to be tracked during an event, a club ride, or a
+- **Athletes** — carry the app to be tracked during an event, a club meet-up, or a
   personal Just Ride, then share the story afterwards.
 - **Spectators** — friends, family and fans who watch live, follow the
   standings, and cheer from afar. For public events and shared rides, no

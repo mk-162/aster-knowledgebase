@@ -22,9 +22,9 @@ one-tap RSVP, so a member's first screen is the thing that matters most.
 
 A meet-up's own page is the **same map-first page every Aster event uses** —
 the live map is front and centre, and About, Chat and the post-ride Recap
-live behind an **Info** sheet you open from the map. There's no separate
-"club ride" page design any more; a meet-up is a first-class event that
-happens to be run by a club.
+live behind an **Info** sheet you open from the map. There is
+no separate "club ride" page design any more; a meet-up is a
+first-class event that happens to be run by a club.
 
 ## Create a meet-up
 

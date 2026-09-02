@@ -8,7 +8,7 @@ last_updated: 2026-08-28
 <div class="kb-hero">
   <p class="kb-hero-kicker"><span class="kb-live-dot"></span>Help Centre</p>
   <h1 class="kb-hero-title">How can we help?</h1>
-  <p class="kb-hero-sub">Aster is live tracking and sharing for races, club rides, runs and
+  <p class="kb-hero-sub">Aster is live tracking and sharing for races, meet-ups, runs and
   adventures. Athletes carry the app; anyone they share with can follow them along the route
   in real time — no account needed to watch. Search above, or jump to your section below.</p>
 </div>

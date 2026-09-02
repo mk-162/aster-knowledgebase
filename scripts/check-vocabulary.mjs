@@ -82,6 +82,21 @@ const RULES = [
     unless: [/`[^`]*group[_ -]ride[^`]*`/i, /group_ride/i, /club-rides?\.md/i, /\/club-rides/i],
   },
   {
+    /*
+     * The decree names "Group ride", but "club ride" is the same retired idea
+     * wearing a different first word, and it fails for the same reason: a
+     * club's activity can be a run. The teams-and-clubs section was swept to
+     * "meet-up" in the 2026-09-02 audit while getting-started, the glossary and
+     * the home page kept saying "club ride", so the estate contradicted itself
+     * for a fortnight. Enforced here so the two halves cannot drift apart
+     * again.
+     */
+    term: "club ride",
+    say: "meet-up",
+    pattern: /\bclub[- ]rides?\b/i,
+    unless: [/`[^`]*club[_ -]ride[^`]*`/i, /club-rides?\.md/i, /\/club-rides/i],
+  },
+  {
     term: "Club Line",
     say: "Milestone",
     pattern: /\bclub[- ]lines?\b/i,
@@ -125,7 +140,7 @@ const NEVER_COPY = [
    * than SOS" is the sentence that teaches the decree, and an article that
    * explains a rename has to be able to say the old name once.
    */
-  /(?:rather than|instead of|not|formerly|used to be|no longer)\s+["'“”]?[A-Za-z][\w '-]*["'“”]?/i,
+  /(?:rather than|instead of|not|formerly|used to be|no longer|no separate)\s+["'“”]?[A-Za-z][\w '-]*["'“”]?/i,
 ]
 
 /** Files that are working documents rather than published articles. */

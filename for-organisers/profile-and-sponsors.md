@@ -40,7 +40,7 @@ public page, a clean, consistent way to give partners visibility. Add and
 reorder them from the sponsors screen for that event, festival, series, org
 or team.
 
-- **A meet-up never carries sponsors.** A social club ride has no
+- **A meet-up never carries sponsors.** A social meet-up has no
   commercial backing to show, so the Sponsors tab, and the sponsor strip
   itself, is dropped entirely for the meet-up format. Every other format
   (race, time trial, sportive, point-to-point) can carry one.

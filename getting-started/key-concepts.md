@@ -27,13 +27,13 @@ your trail and adds up the distance between them. If you lose signal, pings
 are saved on your phone and sent later — your trail and distance fill in
 automatically when signal returns.
 
-## Events, Just Rides and club rides
+## Events, Just Rides and meet-ups
 
 There are three ways to be tracked:
 
-| | **Event** | **Club ride** | **Just Ride** |
+| | **Event** | **Meet-up** | **Just Ride** |
 |---|---|---|---|
-| What it is | An organised race, sportive or ride you register for | A members-only ride organised by your club or team | A personal ride or run you track on your own |
+| What it is | An organised race, sportive or ride you register for | A members-only ride or run organised by your club or team | A personal ride or run you track on your own |
 | Set up by | An event organiser | The club | You, on the spot |
 | Who's on the map | All registered athletes | Club members who joined | Just you |
 | Live times/results | Depends on the format (below) | Untimed | No — just your own stats |

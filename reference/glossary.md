@@ -48,13 +48,13 @@ annually, bought in the App Store or Google Play. Prices are on
 
 **Category** — A group within an event (for example "Women 40–49"); results are
 ranked within each category. Clubs also use categories as pace or speed groups
-on club rides.
+on meet-ups.
 
 **Checkpoint** — A marked point along a route (an aid station, a turn, a
 waypoint), used especially on point-to-point and time-trial courses.
 
 **Club** — A team with full club features switched on: unlimited members,
-recurring club rides, a members-only bulletin board, a shared route library, and
+recurring meet-ups, a members-only bulletin board, a shared route library, and
 members-only events. The club itself never pays a subscription — the first three
 members are free, and each further member joins with their own **Aster Plus**
 membership. See [Teams and clubs](../teams-and-clubs/index.md).
