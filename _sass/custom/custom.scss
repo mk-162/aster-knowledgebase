@@ -375,7 +375,7 @@ body.kb-landing {
 
 /* The section index: the house chip (paper fill, ink border, ink text). */
 .kb-chips { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 3rem 0 0;
-  a { @include condensed; font-weight: 600; font-size: 0.875rem; letter-spacing: 0.06em; line-height: 1;
+  .kb-landing & a { @include condensed; font-weight: 600; font-size: 0.875rem; letter-spacing: 0.06em; line-height: 1;
     color: $dark; text-decoration: none !important;
     background: $paper; border: 2px solid $dark; border-radius: 999px; padding: 0.7rem 1rem;
     @include pop(2); @include press;
@@ -396,18 +396,21 @@ body.kb-landing {
 .kb-cta-links {
   display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem;
   margin: 2rem 0 0; font-size: 0.875rem;
-  a { color: $lime; font-weight: 600; text-decoration: underline;
+  .kb-landing & a { color: $lime; font-weight: 600; text-decoration: underline;
     text-decoration-color: $lime; text-decoration-thickness: 2px; text-underline-offset: 2px;
     &:hover { text-decoration-thickness: 4px; } }
 }
 
 /* Any bare link on the home page that is none of the above (there should be
-   none) gets the article treatment rather than the theme's purple. */
-.kb-landing main a:not([class]) {
+   none) gets the article treatment rather than the theme's purple. Wrapped in
+   :where() so it never outranks a component rule: the chips and the closing
+   band's links are bare <a>s too, and this rule stole the chips' colour the
+   first time round. */
+.kb-landing main :where(a:not([class])) {
   color: $lime-deep; font-weight: 600; text-decoration: underline;
   text-decoration-color: $lime-deep; text-decoration-thickness: 2px; text-underline-offset: 2px;
 }
-.kb-landing main .kb-band a:not([class]) { color: $lime; text-decoration-color: $lime; }
+.kb-landing main .kb-band :where(a:not([class])) { color: $lime; text-decoration-color: $lime; }
 
 /* ==========================================================================
    RESPONSIVE
