@@ -22,7 +22,7 @@ what's held about you and why, and points you to the controls.
 - **Display preferences.** Your unit choice (metric or imperial) and sport
   preference (ride, run, or both) are saved to your account, so notification
   copy and default views match your choice on every device, not just the one
-  where you set it.
+  where you set it. See [Display and units](display-and-units.md).
 - **Location, only during an activity you start.** When you tap Start, the
   app records GPS points for that ride or run. Nothing is recorded before
   you start or after you stop.

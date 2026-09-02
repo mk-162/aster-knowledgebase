@@ -127,3 +127,5 @@ and never appears on your public profile.
 
 - [Privacy and your data](privacy-and-your-data.md)
 - [Export or delete your data](export-or-delete-your-data.md)
+- [Blocking someone](blocking-someone.md)
+- [Reporting a post, a person or an event](reporting-content.md)

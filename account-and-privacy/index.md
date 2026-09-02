@@ -2,7 +2,7 @@
 title: "Account & privacy"
 nav_order: 9
 has_children: true
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Account & privacy
@@ -21,3 +21,9 @@ everything you've stored or deleting your account entirely.
   why
 - [Export or delete your data](export-or-delete-your-data.md): download a
   copy, or remove your account for good
+- [Blocking someone](blocking-someone.md): what happens when you block an
+  account, and how to undo it
+- [Reporting a post, a person or an event](reporting-content.md): what you
+  can report, where to find it, and what happens next
+- [Display and units](display-and-units.md): metric or imperial, your sport
+  preference, and text size

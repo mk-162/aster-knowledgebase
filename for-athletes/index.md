@@ -23,3 +23,4 @@ finish line keep working even with no phone signal.
 - [Finishing a ride](finishing-a-ride.md)
 - [Just Ride](free-rides.md)
 - [Your results, history and profile](results-history-and-profile.md)
+- [Building and saving routes](building-and-saving-routes.md)
