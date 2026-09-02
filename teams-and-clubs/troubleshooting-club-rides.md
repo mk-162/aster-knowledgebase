@@ -95,10 +95,11 @@ the meet-up time. If it's missing:
   usually means a signal dead zone, not a stopped athlete. The panel is
   informational and never ends anyone's ride or run.
 - **Someone shows as DNF, not Finished** — on a plain meet-up, ending
-  normally always marks an athlete **Finished**, never DNF. A DNF is only
-  possible when the meet-up was given a competitive format (race, TT,
+  normally always marks an athlete **Finished**, never DNF. A DNF happens
+  either because the meet-up was given a competitive format (race, TT,
   sportive, point-to-point via "Add a format") and the athlete formally
-  abandoned it.
+  abandoned it, or because an event manager set it by hand from the roster —
+  check there if neither explanation fits.
 
 ## The meet-up still says "Live" (or already says "Finished")
 

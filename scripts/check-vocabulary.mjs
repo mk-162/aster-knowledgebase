@@ -114,6 +114,32 @@ const RULES = [
     pattern: /\broute[- ]moments?\b/i,
     unless: [],
   },
+  {
+    /*
+     * Founder ruling, 2026-09-02: the one canonical user-facing label is
+     * exactly "Point-to-point". Not "Point to point" (no hyphens), not
+     * "Point-to-point adventure" (the format isn't branded "adventure"),
+     * and not "Grand depart"/"grand départ" — that's the `grand_depart`
+     * code identifier, never a name a reader should see.
+     */
+    term: "Point-to-point adventure",
+    say: "Point-to-point",
+    pattern: /\bpoint[- ]to[- ]point adventures?\b/i,
+    unless: [],
+  },
+  {
+    term: "Point to point",
+    say: "Point-to-point",
+    pattern: /\bpoint to point\b/i,
+    unless: [],
+  },
+  {
+    term: "Grand depart",
+    say: "Point-to-point",
+    pattern: /\bgrand[- ]d[ée]parts?\b/i,
+    /* grand_depart (the engine/event_type value) is a code identifier. */
+    unless: [/`[^`]*grand[_ -]d[ée]part[^`]*`/i, /grand_depart/i],
+  },
 ]
 
 /**

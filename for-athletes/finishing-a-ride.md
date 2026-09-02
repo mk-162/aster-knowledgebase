@@ -14,9 +14,11 @@ How a ride ends depends on whether you're in an **event** or on a **Just Ride**.
 
 ## Ending an event ride
 
-How an event ride ends depends on whether it's a **ranked** format (a race or
-a ranked time trial) or an **unranked** one (a sportive, a meet-up, a grand
-départ). See [event types](../for-organisers/event-types.md).
+How an event ride ends depends on the event's **format**. Race and time
+trial are ranked; sportive and point-to-point are timed but unranked; a
+meet-up is untimed. Unranked doesn't mean DNF-free, though — a sportive or
+point-to-point is still a challenge you can fail to complete. See
+[event types](../for-organisers/event-types.md).
 
 **Race and time trial** (both ranked) have a real finish line, so ending is
 either decided for you or deliberately protected against a pocket-tap:
@@ -39,16 +41,27 @@ either decided for you or deliberately protected against a pocket-tap:
 **Sportive.** A sportive is timed like a time trial — your time runs from
 crossing the start line to crossing the finish, and crossing the finish
 line ends your tracking automatically, the same finish-line detection as a
-race or TT. The difference is that a sportive is **unranked**: there's no
-DNF. If you stop early, or you'd rather not wait on the app to catch your
-line-crossing, use the **slide-to-end** control instead — either way you're
-recorded as **Finished**, never DNF.
+race or TT. It's **unranked** — no positions, no podium, personal times
+only — but unranked doesn't mean DNF-free: a sportive is a challenge, and if
+you stop early instead of reaching the line, that's recorded as a **DNF**,
+the same as abandoning a race. If you'd rather not wait on the app to catch
+your line-crossing, or you're stopping early, use the **slide-to-end**
+control.
 
-**Meet-up and grand départ** have no finish-line geometry at all — no gun,
-no gate, no course end to detect. You end them the same way as a Just Ride:
-with the **slide-to-end** control on the tracking screen — *slide to end
-ride* (or *run*) — whenever you decide you're done. Like a sportive, this
-is always recorded as **Finished**, never DNF.
+**Point-to-point.** Timed the same way as a sportive — your elapsed time
+runs from your first checkpoint to your last — but with checkpoints instead
+of a route line. Reaching the final checkpoint ends your tracking
+automatically, the same as crossing a finish line. Stopping before that is
+also a **DNF**, for the same reason as a sportive: it's a challenge to
+complete, not a race to rank.
+
+**Meet-up** has no finish line and no DNF — no gun, no gate, no course end
+to detect. You end it the same way as a Just Ride: with the **slide-to-end**
+control on the tracking screen — *slide to end ride* (or *run*) — whenever
+you decide you're done, and it's always recorded as **Finished**. (An
+organiser can still mark you DNF by hand from their dashboard, or by a
+cut-off if they've set one — but nothing about ending your own meet-up ever
+does.)
 
 Depending on the event, you may be able to rejoin after abandoning — start again
 from the event page. See [Register for an event](register-for-an-event.md).

@@ -78,12 +78,13 @@ athlete picking their own line between them. Point-to-point events don't need
 a GPX route; instead you drop checkpoints on the map, and the first one
 becomes the start. Each athlete's own **elapsed time** is tracked from the
 first checkpoint to the last, the same personal-times-only presentation as a
-sportive, but **nobody is ranked**. This suits long "grand départ"-style
-adventures where there's no single fixed course.
+sportive, but **nobody is ranked**. This suits a long self-navigated route
+with no single fixed course.
 
-Best for: bikepacking grand départs, adventure routes, self-navigated
-challenges. See [Courses and feed stations](courses-and-feed-stations.md) for
-placing checkpoints.
+Best for: bikepacking point-to-point routes, gravel adventures,
+self-navigated challenges. See
+[Courses and feed stations](courses-and-feed-stations.md) for placing
+checkpoints.
 
 ## How the formats compare
 
@@ -97,12 +98,16 @@ placing checkpoints.
 
 In a **ranked** format (race, time trial), an athlete can finish automatically
 by crossing the line, or end early by tapping **Abandon**, which marks them
-**DNF**. In an **unranked** format (sportive / gran fondo, point-to-point,
-meet-up), there's no abandon-as-DNF: an athlete who stops early simply ends
-their activity, and it's marked **Finished**, the same as reaching the line or
-the final checkpoint normally. A **cut-off** (if you set one) closes out
-anyone still going past the deadline, marked DNF or finished depending on how
-you configured it. See [Finishing a ride](../for-athletes/finishing-a-ride.md)
+**DNF**. A **sportive** or **point-to-point** is unranked, but not DNF-free:
+they're a challenge rather than a race, and an athlete who stops early
+(using slide-to-end, since there's no Abandon button on these formats) is
+still marked **DNF**, the same as an abandoned race. The **only** format
+where ending early is never a DNF is a **meet-up** — untimed, so an athlete
+who stops early is simply marked **Finished**, the same as stopping at the
+end of the ride normally. A **cut-off** (if you set one — not
+available on a meet-up) closes out anyone still going past the deadline,
+marked DNF or finished depending on how you configured it. See
+[Finishing a ride](../for-athletes/finishing-a-ride.md)
 and [Event lifecycle and rider statuses](event-lifecycle-and-statuses.md).
 
 ## Laps

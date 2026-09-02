@@ -17,9 +17,11 @@ this page sticks to what you'll see on screen.
 
 **Abandon** — Ending a **race** or **time trial** early, before the finish;
 recorded as a DNF. Behind a confirmation code so a pocket tap can't end your
-ride. Untimed and unranked formats (sportive, meet-up, point-to-point) don't
-have an Abandon — you end them the same way as a Just Ride, and they're
-recorded as **Finished**, not DNF.
+ride. A **sportive** or **point-to-point** has no Abandon button — you end
+early the same way as a Just Ride, with **slide-to-end** — but it's still
+recorded as a **DNF**: unranked doesn't mean DNF-free, since either is a
+challenge you can fail to complete. Only a **meet-up** always ends as
+**Finished**.
 
 **Activity** — The umbrella word for anything you record on Aster: a ride or a
 run. Aster treats running as a first-class activity alongside cycling, so
@@ -70,10 +72,12 @@ closed out automatically, as either DNF or Finished — the organiser chooses
 which when they set the cut-off.
 
 **DNF** — "Did not finish": started an event but didn't complete it. Ending a
-**race** or **time trial** early is always a DNF, via Abandon. Sportives,
-meet-ups and point-to-point adventures normally end as **Finished** instead,
-since there's no ranking to drop out of — an organiser's cut-off is the one
-exception, as it can be configured to mark any format DNF.
+**race** or **time trial** early is always a DNF, via Abandon. A **sportive**
+or **point-to-point** is unranked, not a race, but it's still a challenge —
+ending either early is a DNF too. The one format that's exempt is a
+**meet-up**: an untimed social ride that always ends as **Finished** instead,
+since there's no ranking to drop out of. An organiser's cut-off, or a manual
+change on the roster, can still mark **any** format DNF, meet-ups included.
 
 **DNS** — "Did not start": registered but never started.
 
@@ -84,7 +88,7 @@ In Aster we usually say **live location**, **position** or **marker** on screen,
 but you'll hear "dot watching" across the sport.
 
 **Event** — An organised activity you register for: a race, time trial,
-sportive, meet-up or point-to-point adventure.
+sportive, meet-up or point-to-point.
 
 **Event Organiser** — The person, club, series or company that hosts an event
 and runs the event dashboard (registrations, results, Alert handling).
@@ -146,9 +150,9 @@ and unlimited for the club regardless of any admin's personal count — see
 
 **Off route** — When an athlete has left the event's planned course.
 
-**Point-to-point adventure (grand départ)** — A format with a start, a finish
-and optionally some checkpoints, but no prescribed route between them —
-athletes choose their own line and set off in their own time.
+**Point-to-point** — A format with a start, a finish and optionally some
+checkpoints, but no prescribed route between them — athletes choose their own
+line and set off in their own time.
 
 **Private event** — Hidden and locked; requires signing in and the organiser's
 access code to view.

@@ -67,6 +67,7 @@ node scripts/check-vocabulary.mjs
 | "SOS" | **Alert** | "SOS implies a guaranteed response; Alert means you are raising an alert" |
 | "Group ride" (the event type) | **Meet-up** | "Group *ride* excludes running, and we do run" |
 | "Club Line" / "Club Marker" / "Route moments" | **Milestone** | One name, not four |
+| "Point to point" / "Point-to-point adventure" / "Grand depart" | **Point-to-point** | One canonical label; `grand_depart` is a code identifier, not a user-facing name |
 
 **The umbrella nouns.** Aster covers running as a first-class activity, so
 "ride" is not the umbrella term:

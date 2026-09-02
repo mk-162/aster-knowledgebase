@@ -30,7 +30,7 @@ model and isn't affected — see [Become an organiser](become-an-organiser.md).)
 - [Walkthrough: a mass-start race](walkthrough-mass-start-race.md)
 - [Walkthrough: a time trial](walkthrough-time-trial.md)
 - [Walkthrough: a sportive or gran fondo](walkthrough-sportive.md)
-- [Walkthrough: a meet-up or adventure](walkthrough-group-ride-adventure.md)
+- [Walkthrough: a meet-up or point-to-point](walkthrough-group-ride-adventure.md)
 
 **Detail**
 - [Routes, start and finish lines](routes-start-and-finish.md)

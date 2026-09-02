@@ -76,9 +76,10 @@ wound back — the markers, trails and standings all replay together.
 ## Finished athletes freeze
 
 The moment an athlete's activity ends — crossing the line, hitting a cutoff,
-or ending early with Abandon — their result **freezes everywhere**. (Abandon
-marks a race or time trial DNF; on other formats it marks the athlete
-Finished instead — see [Reading the leaderboard](the-leaderboard.md).) Their
+or ending early — their result **freezes everywhere**. (Ending early is a
+DNF on every format except a meet-up: Abandon on a race or time trial,
+slide-to-end on a sportive or point-to-point — only a meet-up always records
+Finished instead. See [Reading the leaderboard](the-leaderboard.md).) Their
 time, distance and trail lock in at that moment, and even if their phone
 keeps sending points afterwards (driving home, for example), those are
 ignored.

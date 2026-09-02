@@ -47,11 +47,11 @@ line. You can change battery mode mid-ride if you need to.
   when you tapped Start. You'll see "Start line crossed — clock is running!"
   as you set off. Warm-up wandering before the line doesn't count. Crossing
   the finish line ends your tracking automatically, the same as a race. (In a
-  sportive there are no published positions and no DNF — see
-  [event types](../for-organisers/event-types.md) and
-  [Finishing a ride](finishing-a-ride.md).)
-- **Meet-up and adventure (grand départ)** — your time runs from the
-  moment you start. No gun, no gate.
+  sportive there are no published positions — it's unranked, but stopping
+  early is still a DNF, see [event types](../for-organisers/event-types.md)
+  and [Finishing a ride](finishing-a-ride.md).)
+- **Meet-up and point-to-point** — your time runs from the moment you
+  start. No gun, no gate.
 - **Distance** is measured from the GPS points recorded between your start
   and now. **Average speed** is distance ÷ time.
 
@@ -73,9 +73,12 @@ While you're out you'll see:
     tap Start. There's no pre-gun grace period like a race has, since a TT
     has no gun — abandoning before you've even crossed the start line still
     records a DNF.
-  - **Sportive, meet-up or grand départ** — **slide-to-end**, whenever you're
-    done. These formats never record a DNF, so there's no challenge-code
-    friction to guard against a stray tap.
+  - **Sportive or point-to-point** — **slide-to-end**, if you want to stop
+    before reaching the line or your final checkpoint. There's no
+    challenge-code friction like Abandon, but ending early is still a
+    **DNF** — unranked doesn't mean DNF-free.
+  - **Meet-up** — **slide-to-end**, whenever you're done. This is the only
+    format that never records a DNF for ending your own activity.
 
 {% include screenshot-todo.html slug="for-athletes-tracking-live-screen" caption="The tracking screen mid-event: map with your live location and trail, stat cards, and the I'm OK / Alert / Pause / Abandon buttons." %}
 
@@ -120,8 +123,8 @@ While you're out you'll see:
 
 - **The Start button shows "Opens in…".** The start window opens shortly
   before the event: about 1 hour before mass-start races, 15 minutes before
-  time trials and sportives, 2 hours before grand départs, and a full 24
-  hours before meet-ups (going early is a real recorded start — see
+  time trials and sportives, 2 hours before point-to-point events, and a full
+  24 hours before meet-ups (going early is a real recorded start — see
   [Register for an event](register-for-an-event.md)).
 - **GPS warm-up is slow.** Step into the open, away from buildings or tree
   cover; you're away once accuracy looks good.

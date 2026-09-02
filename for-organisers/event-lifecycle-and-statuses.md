@@ -49,26 +49,32 @@ Event Day) but isn't shown any more.
 | **Registered** | Joined the event but hasn't started tracking |
 | **Started** | Tracking live |
 | **Finished** | Crossed the line, ended their activity manually, or finished at the cut-off |
-| **DNF** | Did not finish (only reachable in a ranked format — race or time trial — by abandoning, or by the cut-off, if you set it to DNF) |
+| **DNF** | Did not finish — reachable on every format except a meet-up, by abandoning/ending early, from the dashboard, or by the cut-off, if you set it to DNF |
 | **DNS** | Did not start (registered but never began) |
 | **Withdrawn** | The athlete cancelled their own registration before the event; no longer counts against capacity |
 
 ## What changes an athlete's status
 
 - **Started:** the athlete taps **Start** and begins tracking.
-- **Finished:** in a ranked format (race, time trial) they cross the finish
-  line, or you finish them from the dashboard, or the cut-off closes them out
-  as finished. In an **unranked** format (sportive / gran fondo,
-  point-to-point, meet-up) there's no DNF path for a self-ended activity: an
-  athlete who reaches the line/final checkpoint *or* ends early always lands
-  as **Finished** (founder decision, 2026-08-05, after a social meet-up
+- **Finished:** on race, time trial, sportive / gran fondo or point-to-point,
+  they cross the finish line or reach the final checkpoint, or you finish
+  them from the dashboard, or the cut-off closes them out as finished. A
+  **meet-up** is the one format that's DNF-exempt for the athlete's own
+  ending: reaching the end *or* ending early both always land as
+  **Finished** (founder decision, 2026-08-05, after a social meet-up
   incorrectly recorded a rider as DNF). See
   [Event formats](event-types.md).
-- **DNF:** only possible in a ranked format — the athlete taps **Abandon**
-  (behind a confirm/challenge code), you mark them DNF from the dashboard, or
-  the cut-off closes them out as DNF. When you set a cut-off, you choose
-  whether it marks people **DNF** or **finished** (configurable from the
-  Event Day tab after creation); the default is DNF.
+- **DNF:** possible on every format except a meet-up. On a race or time
+  trial the athlete taps **Abandon** (behind a confirm/challenge code); on a
+  sportive or point-to-point, ending early with the app's normal end control
+  is recorded as DNF too — unranked doesn't mean DNF-exempt, only a meet-up
+  is (founder ruling, 2026-09-02: "a sportive is a challenge; although it is
+  not a race, people still fail to finish a challenge"). You can also mark
+  any athlete DNF by hand from the dashboard, or have the cut-off close them
+  out as DNF — on any format, meet-ups included, if you have a specific
+  reason to. When you set a cut-off, you choose whether it marks people
+  **DNF** or **finished** (configurable from the Event Day tab after
+  creation); the default is DNF.
 - **Withdrawn:** the athlete withdraws their own registration; you can also
   set this manually from the dashboard.
 - **Reset:** you can send an athlete back to **Registered** from the

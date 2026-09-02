@@ -20,7 +20,7 @@ nothing to pay. Watching is part of what Aster is for. Here's the quick path.
 2. Open the **Map** tab: each athlete is a moving **marker** showing their live
    location, with the route and the trail they've left behind.
 3. Open the **Riders** tab for live progress. Races and time trials show
-   standings and gaps; sportives and point-to-point adventures show times
+   standings and gaps; sportives and point-to-point events show times
    and "on course / finished" instead — [here's why](the-leaderboard.md).
    **Meet-ups skip this tab entirely** — it's a map-only, untimed activity,
    so the marker is the whole picture.

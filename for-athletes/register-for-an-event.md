@@ -58,8 +58,8 @@ and still start. See
   also see a live "starts in M:SS" **countdown** to the gun.
 - The **Start** button unlocks within the start window: about **1 hour**
   before the scheduled start for mass-start races, **15 minutes** for time
-  trials and sportives, and **2 hours** for long-distance "grand départ"
-  adventures. Until then it shows when it opens.
+  trials and sportives, and **2 hours** for point-to-point events. Until
+  then it shows when it opens.
 - **Meet-ups open a full 24 hours early.** Riding or running to the meet
   point is part of the activity, so you can go live up to a day before the
   scheduled start — that's a real, recorded start, not a warm-up. On a

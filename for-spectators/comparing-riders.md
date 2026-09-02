@@ -15,7 +15,7 @@ stack up. Like the rest of the spectator experience, it works without an
 account.
 
 Compare needs a Riders tab to select from, so it's available on races, time
-trials, sportives and point-to-point adventures. **Meet-ups don't have a
+trials, sportives and point-to-point events. **Meet-ups don't have a
 Riders tab, so there's no compare view for them** — see
 [Reading the leaderboard](the-leaderboard.md).
 
@@ -35,7 +35,7 @@ someone sends you.
   stopped rider's speed isn't shown.
 - A **gap matrix** showing the time gap between each pair of riders. For time
   trials these are projected gaps based on each rider's own clock. On
-  unranked formats (sportives and gran fondos, point-to-point adventures),
+  unranked formats (sportives and gran fondos, point-to-point events),
   the compare page shows no positions and no gap matrix, matching the
   leaderboard's [neutral treatment](the-leaderboard.md).
 - On time trials with checkpoints, a **splits table** — each rider's time at

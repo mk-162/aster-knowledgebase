@@ -27,7 +27,7 @@ people waiting at home.
    marker, the route line, and the trails they've left behind.
 4. Switch to the **Riders** tab for live progress — standings and gaps for
    races and time trials, times and "on course / finished" for sportives and
-   point-to-point adventures. **Meet-ups don't have a Riders tab** — see
+   point-to-point events. **Meet-ups don't have a Riders tab** — see
    [Reading the leaderboard](the-leaderboard.md) for why.
 5. Tap any athlete to focus on them and see their trail and stats. Tapping also
    adds them to your favourites for this event (no account needed).

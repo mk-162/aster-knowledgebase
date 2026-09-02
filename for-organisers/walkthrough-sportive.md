@@ -53,10 +53,9 @@ group; they just don't produce a ranking. If athletes set off in waves, set
 ## 4. Cut-off (optional)
 
 If there's a course-closing time, set a **cut-off** and choose whether
-athletes still out are marked **DNF** or **finished**. Because a sportive is
-neutral by design, most organisers choose finished here too, in line with
-how an early end is handled below. Paused athletes aren't caught by the
-cut-off.
+athletes still out are marked **DNF** or **finished** — whichever fits how
+you want to treat someone who didn't get round in time. Paused athletes
+aren't caught by the cut-off.
 
 ## 5. Registration
 
@@ -70,9 +69,9 @@ there if you're oversubscribed and want to run a draw.
 - They're **finished automatically** at the finish line.
 - The live view shows everyone as **on course** or **finished** with their
   elapsed time, no leaderboard positions.
-- An athlete who pulls out early is recorded as **Finished**, never
-  **DNF**: a sportive has no DNF concept, since there's no ranking to fall
-  out of.
+- An athlete who pulls out early is recorded as **DNF** — a sportive
+  doesn't rank finishers, but it's still a challenge someone can fail to
+  complete.
 - Handle any **alerts** from your dashboard: see
   [Handling alerts](handling-sos-alerts.md).
 - If an athlete's start crossing was missed, you can **set their start time

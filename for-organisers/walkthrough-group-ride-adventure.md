@@ -1,20 +1,19 @@
 ---
-title: "Walkthrough: a meet-up or adventure"
+title: "Walkthrough: a meet-up or point-to-point"
 parent: "For organisers"
 nav_order: 3.3
 audience: [organiser]
-tags: [walkthrough, meetup, grand-depart, adventure, checkpoints]
-summary: "Set up a social meet-up or a long-distance point-to-point adventure with checkpoints."
+tags: [walkthrough, meetup, point-to-point, checkpoints]
+summary: "Set up a social meet-up or a point-to-point event with checkpoints."
 last_updated: 2026-09-02
 ---
 
-# Walkthrough: a meet-up or adventure
+# Walkthrough: a meet-up or point-to-point
 
 This covers two non-race formats: a **meet-up** (social, untimed, everyone
-rides or runs together) and a **point-to-point adventure** (start, finish
-and optional waypoints in between, with the athlete picking their own line).
-In both, athletes set off individually and it's about taking part, not
-placing.
+rides or runs together) and a **point-to-point** event (start, finish and
+optional waypoints in between, with the athlete picking their own line). In
+both, athletes set off individually and it's about taking part, not placing.
 
 ## 1. Create the event
 
@@ -37,7 +36,7 @@ afterwards, in the recap, not during the ride.
 
 ## 3. Checkpoints define the course (point-to-point)
 
-A point-to-point adventure doesn't need a GPX file; your **checkpoints**
+A point-to-point event doesn't need a GPX file; your **checkpoints**
 define the course:
 
 - Your **first checkpoint** is the start gate.
@@ -54,10 +53,11 @@ against.
 ## 4. Timing and cut-offs
 
 A meet-up is **untimed**: athletes end their own activity when they're
-done, and nothing about it is ranked or timed. A point-to-point adventure
-**is** timed: an athlete's clock starts at their first-checkpoint crossing
-and stops automatically when they cross the last one. In either format you
-can set a **cut-off** if there's a hard course-closing time.
+done, and nothing about it is ranked or timed. A point-to-point event **is**
+timed: an athlete's elapsed time is tracked from their first checkpoint to
+their last, and reaching the last checkpoint ends their tracking
+automatically. In either format you can set a **cut-off** if there's a hard
+course-closing time.
 
 ## 5. Registration
 
@@ -86,15 +86,16 @@ group, or split by distance.
 ## 7. After
 
 Athletes' activities are saved with full routes, stats and a replay. A
-point-to-point adventure that finishes at the last checkpoint can
+point-to-point event that finishes at the last checkpoint can
 [publish results](results.md) if you've brought in timing data for it; a
 meet-up never has a results page; its value is the live following, the
 Milestone recap, and the saved activities.
 
-An athlete who ends early, a mechanical, weather, running out of daylight,
-is recorded as **Finished**, never **DNF**. Neither format is ranked, so
-there's no standing to fall out of; ending the activity is simply ending
-it, whenever that happens.
+On a **meet-up**, an athlete who ends early — a mechanical, weather, running
+out of daylight — is recorded as **Finished**, never **DNF**: it's untimed,
+so there's no standing to fall out of. A **point-to-point** is different: it's
+unranked, but still a challenge to complete, so an athlete who ends early
+there is recorded as **DNF**, the same as a race or sportive.
 
 ## Things to get right
 

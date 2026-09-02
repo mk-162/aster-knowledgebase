@@ -42,8 +42,8 @@ and fans.
 > puncture or waiting out a shower is still on their activity. It never means the ride
 > or run has ended.
 
-**Sportives and other untimed formats show times, not positions.** For a sportive
-gran fondo, and for meet-ups and grand departs, there are no rankings, so
+**Sportives and other unranked formats show times, not positions.** For a
+sportive gran fondo, a point-to-point or a meet-up, there are no rankings, so
 nothing you receive ever talks about positions or places. Progress updates stick
 to distance, milestones and checkpoints, which suit every format. See
 [event types](../for-organisers/event-types.md).

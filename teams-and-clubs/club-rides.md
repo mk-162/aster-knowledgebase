@@ -210,10 +210,13 @@ raced**:
 
 Ending a meet-up normally — reaching the end, or just stopping tracking —
 marks an athlete as **Finished**, not DNF. A meet-up has no "race result": it
-is, in the app's own words, "a shared ride on open roads, not a race." DNF is
-only possible on a meet-up that was given a competitive format (see
+is, in the app's own words, "a shared ride on open roads, not a race." The
+one way a meet-up records **DNF** through its own course of events is if it
+was given a competitive format (see
 [above](#beyond-a-simple-meetup-club-races-and-time-trials)) and someone
-formally abandons it.
+formally abandons it — an event manager can still mark someone DNF by hand
+from the roster if they have a specific reason to, on a plain meet-up
+included.
 
 ## Meet-ups are free on every club
 

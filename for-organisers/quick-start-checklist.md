@@ -49,10 +49,11 @@ to bottom and you'll have a fully set-up, ready-to-run event.
       (Not offered for point-to-point or meet-up.)
 - [ ] **Set a tracking cutoff** if you need one. (Not offered for meet-ups.)
       Whether it marks timed-out athletes DNF or finished can be changed later
-      from the Event Day tab; the default is DNF, but note that a
-      **ranked** format (race, time trial) is the only place DNF applies at
-      all — an unranked format (sportive, point-to-point, meet-up) marks an
-      early ender **Finished**, never DNF.
+      from the Event Day tab; the default is DNF. Every format except a
+      **meet-up** can record a DNF — a sportive or point-to-point is
+      unranked, but an early ender there is still DNF, the same as
+      abandoning a race or time trial. A meet-up is the one format where
+      ending early always lands as **Finished**.
 
 ## C. Route and timing
 

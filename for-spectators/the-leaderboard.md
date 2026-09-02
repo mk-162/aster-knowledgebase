@@ -58,7 +58,7 @@ See [Watch an event live](watch-an-event-live.md).
   start gate. Standings are by fastest elapsed time, and gaps compare each
   rider's time.
 - **Sportive / gran fondo:** **no positions, anywhere** — see below.
-- **Point-to-point adventure:** timed (each rider gets an elapsed time) but
+- **Point-to-point:** timed (each rider gets an elapsed time) but
   deliberately not ranked — no positions or gaps. Rows show who's on course
   and who's finished, with their time.
 - **Meet-up:** untimed — no clock and no rankings, and no Riders tab at all.
@@ -97,8 +97,11 @@ the marker on the map.
   finishers.
 - **DNS** (did not start) marks athletes who registered but never set off.
 
-Ending an activity early through **Abandon** only produces a DNF on **ranked**
-formats (race, time trial). On sportives, point-to-point adventures and
-meet-ups, Abandon marks the athlete **Finished** instead — they aren't
-racing, so there's no "failure to finish" to record. An organiser-set cutoff
-can still mark any format DNF if that's how they've configured it.
+Ending an activity early produces a **DNF** on every format except a
+meet-up. On race and time trial that's via **Abandon**; a sportive or
+point-to-point has no Abandon button (it ends with the same slide-to-end
+control as a Just Ride), but stopping early is still a DNF — unranked
+doesn't mean there's no "failure to finish" to record. Only a **meet-up**
+always marks the athlete **Finished** instead, since it's untimed with
+nothing to fail. An organiser-set cutoff, or a manual roster change, can
+still mark any format DNF, meet-ups included.

@@ -42,7 +42,8 @@ more detail if you want it.
    - **Time trial or sportive** — set off when you're ready; your official
      time starts when you **cross the start line**, and the app confirms
      "Start line crossed — clock is running!"
-   - **Meet-up or adventure** — you're rolling from the moment you start.
+   - **Meet-up or point-to-point** — you're rolling from the moment you
+     start.
 
 > You can do all of this with **no phone signal** — the app uses your saved
 > copy of the event.
@@ -61,12 +62,14 @@ more detail if you want it.
 ## Finishing
 
 - **In a race, time trial or sportive**, cross the finish line and the app
-  finishes you automatically — no tap needed. In a race or time trial, pulling
-  out instead with **Abandon** records a DNF; a sportive never DNFs, so if you
-  stop early (or don't want to wait on the app to catch your crossing) you can
-  also just **slide to end**. **In a meet-up or grand départ**, there's no
-  finish line to detect at all — you always end it yourself with
-  **slide-to-end**, whenever you're done.
+  finishes you automatically — no tap needed. **In a point-to-point**,
+  reaching your final checkpoint does the same. In a race or time trial,
+  pulling out instead with **Abandon** records a DNF. A sportive or
+  point-to-point is unranked, but stopping early there is still a **DNF** —
+  use **slide to end** instead of waiting on the app to catch your crossing.
+  **In a meet-up**, there's no finish line and no DNF at all — you always
+  end it yourself with **slide-to-end**, whenever you're done, and it's
+  recorded as **Finished**.
 - You'll see your **summary** — time, distance, average speed, and lap splits
   if it was a multi-lap event. [More on finishing](finishing-a-ride.md)
 

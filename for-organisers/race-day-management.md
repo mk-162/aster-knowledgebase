@@ -31,8 +31,8 @@ signal.
 You can't start until a finish line is set, and you can't restart an event
 that's already finished or cancelled. A **time trial** or **sportive**
 doesn't use a gun at all: each athlete's own clock starts when they cross the
-start line. A **meet-up** is untimed, and a **point-to-point** adventure
-times each athlete from the moment they cross their first checkpoint.
+start line. A **meet-up** is untimed, and a **point-to-point** times each
+athlete from the moment they cross their first checkpoint.
 
 ## Watch the field
 
@@ -48,11 +48,14 @@ entries:
 
 - **Change an athlete's status** with the per-athlete dropdown: Registered,
   Started, **Finished**, **DNF** or **DNS**. Use **Finished** for someone who
-  crossed the line (or ended their activity) while their phone was offline.
-  On a **sportive, meet-up or point-to-point**, an athlete who pulls out
-  mid-activity in the app is recorded as **Finished**, never DNF: there's no
-  ranking to fall out of on these formats, so use Finished here by hand too
-  for consistency. The dropdown still lets you pick DNF on any format if you
+  crossed the line (or completed their activity) while their phone was
+  offline. On a **meet-up**, an athlete who pulls out mid-activity in the app
+  is recorded as **Finished**, never DNF: it's untimed, so there's no
+  ranking to fall out of, and it's worth using Finished here by hand too for
+  consistency. A **sportive** or **point-to-point** is unranked as well, but
+  it's still a challenge someone can fail — pulling out early on either is
+  recorded as **DNF**, the same as a race or time trial. The dropdown still
+  lets you pick DNF (or Finished) on any format, meet-ups included, if you
   have a specific reason to. Because a status change edits their race record
   immediately, Aster asks you to confirm the consequential ones.
 - **Set an athlete to Registered** to let them start again. This clears their
