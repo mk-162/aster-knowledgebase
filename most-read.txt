@@ -1,0 +1,13 @@
+# The guides the front page leads with, one per line as section/slug, in the
+# order they show. Read by the aster-website copy of the help centre
+# (scripts/sync-help.mjs there) and by nothing here yet.
+getting-started/what-is-aster
+getting-started/create-an-account
+for-athletes/your-first-event
+for-athletes/starting-and-tracking-a-ride
+for-spectators/watch-an-event-live
+safety-and-offline/sos-and-crash-detection
+safety-and-offline/offline-and-no-signal
+account-and-privacy/who-can-see-your-location
+for-organisers/quick-start-checklist
+notifications/preferences-and-quiet-hours
