@@ -26,11 +26,11 @@ $paper: #fbfcf7;            /* --aster-paper */
 $container: 1200px;
 $ctrl-h: 40px;
 
-$font-body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+$font-body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 $font-display: 'Barlow Condensed', $font-body;
 $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 
-@mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $dark; }
+@mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $lime-deep; }
 @mixin press {
   transition: transform 100ms ease, box-shadow 100ms ease, filter 100ms ease;
   &:active { transform: translate(2px, 2px); box-shadow: none; }
@@ -38,15 +38,19 @@ $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 @mixin condensed { font-family: $font-display; text-transform: uppercase; letter-spacing: 0.05em; }
 
 /* ---- Base ---- */
-body { font-family: $font-body; background: $stone; color: $dark; }
+body { font-family: $font-body; background: $paper; color: $dark; }
 
-h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
+h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-transform: none; }
 .main-content h1 {
-  font-size: 2rem; line-height: 1.1; border-bottom: none; padding-bottom: 0.35rem;
-  &::after { content: ''; display: block; width: 56px; height: 6px; margin-top: 10px;
-    background: $lime; border: 2px solid $dark; border-radius: 999px; }
+  font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; border-bottom: none; padding-bottom: 0.35rem;
+  font-weight: 500; letter-spacing: -0.025em;
+  &::after { display: none; }
 }
-.main-content h2 { font-size: 1.4rem; border-bottom: 2px solid rgba(24,30,21,0.12); padding-bottom: 0.3rem; }
+.main-content h2 {
+  font-size: 1.65rem; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em;
+  border-bottom: none; padding-bottom: 0; margin-top: 2rem;
+}
+.main-content h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; }
 
 /* ==========================================================================
    TOPBAR — matched to aster-website SiteHeader.tsx
@@ -208,8 +212,8 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
 
 /* Content card */
 .main-content-wrap {
-  background: $paper; border: 2px solid $dark; border-radius: 16px;
-  @include pop(4);
+  background: #fff; border: 2px solid $dark; border-radius: 16px;
+  @include pop(6);
   margin: 1.5rem 0 3rem 0 !important;
   padding: 2rem 2.5rem !important;
   max-width: none !important;
@@ -241,12 +245,12 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
   &:hover { background: $lime-bg; text-decoration-color: $lime-deep; }
 }
 .btn, .btn-primary {
-  display: inline-flex; align-items: center; height: $ctrl-h; padding: 0 16px;
+  display: inline-flex; align-items: center; height: auto; padding: 12px 24px;
   background: $lime; background-image: none; color: $dark; font-weight: 700;
-  @include condensed; letter-spacing: 0.03em; font-size: 0.875rem;
+  @include condensed; letter-spacing: 0.06em; font-size: 1rem;
   border: 2px solid $dark; border-radius: 12px;
-  @include pop(3); @include press;
-  &:hover { background: #d4f05a; background-image: none; color: $dark; }
+  @include pop(4); @include press;
+  &:hover { background: $lime; background-image: none; color: $dark; filter: none; }
 }
 blockquote, .note, .tip, .important, .warning {
   background: $lime-bg; border: 2px solid $dark; border-radius: 12px;
@@ -276,45 +280,67 @@ div.highlighter-rouge, figure.highlight {
 .label-yellow { background: $gold !important; color: $dark; }
 
 /* ==========================================================================
-   FOOTER — replica of the website SiteFooter
+   FOOTER — matched to aster-website SiteFooter.tsx
    ========================================================================== */
 .aster-footer {
-  background: $dark; color: rgba(220,238,235,0.6); margin-top: auto;
-  a { color: rgba(220,238,235,0.6); text-decoration: none; font-size: 0.875rem;
-    &:hover { color: $lime; } }
+  background: $navdark; color: $soft; margin-top: auto;
+  border-top: 1px solid $line-band; overflow: hidden;
+  a { color: rgba(246,252,223,0.85); text-decoration: none; font-size: 0.875rem;
+    &:hover { color: $soft; text-decoration: underline; text-underline-offset: 4px; } }
 }
 .aster-footer-main {
   display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;
-  padding-top: 2.75rem; padding-bottom: 2.75rem;
+  padding-top: 3rem; padding-bottom: 1.5rem;
 }
-.aster-footer-brand {
-  max-width: 280px;
-  .aster-logo img { width: 24px; height: 24px; }
-  .aster-wordmark { font-size: 24px; }
-  p { margin-top: 1rem; font-size: 0.875rem; line-height: 1.6; }
+.aster-footer-brand { max-width: 22rem; }
+.aster-footer-line {
+  font-family: $font-display; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2.75rem, 8vw, 4.5rem); line-height: 0.92; letter-spacing: -0.02em;
+  color: $soft; margin: 0;
+  span { color: $lime; }
+}
+.aster-footer-desc {
+  margin: 1.25rem 0 0 0; font-size: 1.05rem; line-height: 1.5; color: rgba(246,252,223,0.75);
 }
 .aster-footer-cols {
-  display: flex; gap: 3rem; flex-wrap: wrap;
-  > div { display: flex; flex-direction: column; gap: 0.6rem; }
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 2.5rem;
+  flex: 1; max-width: 48rem;
+  nav { display: flex; flex-direction: column; gap: 0.75rem; }
 }
-.aster-footer-title { @include condensed; letter-spacing: 0.06em; font-weight: 600;
-  font-size: 0.75rem; color: $mint; margin: 0 0 0.25rem 0; }
+@media (min-width: 40rem) {
+  .aster-footer-cols { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.aster-footer-title { @include condensed; letter-spacing: 0.14em; font-weight: 600;
+  font-size: 0.75rem; color: $soft-mut; margin: 0; }
+.aster-footer-compare {
+  padding: 1.5rem 0 0.5rem 0;
+  .aster-container { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; }
+}
 .aster-footer-strip {
-  border-top: 1px solid rgba(220,238,235,0.1);
-  p { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
-    color: rgba(220,238,235,0.45); padding: 1rem 0; margin: 0; }
+  border-top: 1px solid $line-band; margin-top: 1.5rem;
+  p { font-family: $font-mono; font-size: 0.75rem; color: $soft-mut; padding: 1rem 0; margin: 0; }
+}
+.aster-footer-signoff {
+  pointer-events: none; user-select: none;
+  display: flex; align-items: center; justify-content: center; gap: 0.08em;
+  padding: 2rem 0.5rem 1.5rem;
+  img { width: min(14vw, 215px); height: min(14vw, 215px); }
+  span {
+    font-family: $font-display; font-weight: 700; text-transform: uppercase;
+    font-size: min(19vw, 290px); line-height: 0.9; letter-spacing: -0.02em; color: $lime;
+  }
 }
 
 /* ==========================================================================
    HOMEPAGE components
    ========================================================================== */
 .kb-hero {
-  background: $navdark; border: 2px solid $dark; border-radius: 16px;
-  padding: 2rem 2.25rem; margin-bottom: 1.5rem; @include pop(4);
+  background: $navdark; border: none; border-radius: 0;
+  padding: 2.5rem 2.25rem; margin: -1.5rem -2.5rem 1.75rem -2.5rem;
   .kb-hero-kicker { @include condensed; letter-spacing: 0.12em; color: $lime; font-weight: 700;
     font-size: 0.8rem; margin: 0 0 0.4rem 0; }
-  .kb-hero-title { color: #fff; font-size: 2.4rem; margin: 0 0 0.5rem 0; &::after { display: none; } }
-  .kb-hero-sub { color: rgba(255,255,255,0.85); margin: 0; max-width: 46rem; }
+  .kb-hero-title { color: $soft; font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 500; letter-spacing: -0.03em; margin: 0 0 0.5rem 0; text-transform: none; &::after { display: none; } }
+  .kb-hero-sub { color: $soft-mut; margin: 0; max-width: 46rem; font-size: 1.1rem; }
 }
 .kb-live-dot {
   display: inline-block; width: 10px; height: 10px; margin-right: 8px;
@@ -368,4 +394,5 @@ a.kb-card {
   .main-content-wrap { padding: 1.25rem 1.1rem !important; }
   .kb-topics ul { columns: 1; }
   .aster-footer-main { flex-direction: column; gap: 2rem; }
+  .aster-footer-signoff span { font-size: 18vw; }
 }
