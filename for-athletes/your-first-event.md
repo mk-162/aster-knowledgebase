@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [athlete]
 tags: [quick-start, walkthrough, first-time, checklist]
 summary: "Everything from signing up to seeing your result, in order, for your first tracked event."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Your first event: a walkthrough
@@ -42,7 +42,7 @@ more detail if you want it.
    - **Time trial or sportive** — set off when you're ready; your official
      time starts when you **cross the start line**, and the app confirms
      "Start line crossed — clock is running!"
-   - **Group ride or adventure** — you're rolling from the moment you start.
+   - **Meet-up or adventure** — you're rolling from the moment you start.
 
 > You can do all of this with **no phone signal** — the app uses your saved
 > copy of the event.
@@ -52,16 +52,19 @@ more detail if you want it.
 - Watch your live **distance, speed and time** on the tracking screen.
 - **[Pause](pausing-and-resuming.md)** for a café or mechanical so it doesn't
   count against your moving time; **Resume** to carry on.
-- Tap **I'm OK** to reassure watchers, or **SOS** in an emergency —
-  [SOS doesn't end your ride](../safety-and-offline/sos-and-crash-detection.md).
+- Tap **I'm OK** to reassure watchers, or **Alert** in an emergency —
+  [an Alert doesn't end your ride](../safety-and-offline/sos-and-crash-detection.md).
 - Lost signal? Keep going. Your live location holds for watchers and **catches
   up** when you reconnect.
   [More on offline behaviour](../safety-and-offline/offline-and-no-signal.md)
 
 ## Finishing
 
-- **Cross the finish line** and the app finishes you automatically — no tap
-  needed. If you have to pull out instead, **Abandon** records a DNF.
+- **In a race or time trial**, cross the finish line and the app finishes you
+  automatically — no tap needed. If you have to pull out instead, **Abandon**
+  records a DNF. **In a sportive, meet-up or grand départ**, there's no finish
+  line to detect — you end it yourself with the **slide-to-end** control
+  whenever you're done.
 - You'll see your **summary** — time, distance, average speed, and lap splits
   if it was a multi-lap event. [More on finishing](finishing-a-ride.md)
 

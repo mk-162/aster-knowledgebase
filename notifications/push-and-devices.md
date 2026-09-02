@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [push, devices, notifications]
 summary: "How push works across your devices, and how to fix it when nothing arrives."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Push notifications and devices
@@ -13,11 +13,11 @@ last_updated: 2026-07-20
 ## How push works
 
 When you allow notifications, your device registers to receive **push** from
-Aster. You can be registered on more than one device — your phone and a browser,
-say — and you'll get push on each.
+Aster. You can be registered on more than one device, your phone and a browser,
+say, and you'll get push on each.
 
 Push is most reliable in the **mobile app** (Android and iPhone). Supported
-browsers can show push too, but the app is the dependable option — see
+browsers can show push too, but the app is the dependable option, see
 [the app and the website](../getting-started/the-app-and-the-website.md).
 
 ## Turning push on
@@ -27,7 +27,7 @@ browsers can show push too, but the app is the dependable option — see
 2. In the app, keep the master **Push notifications** switch on (see
    [Preferences and quiet hours](preferences-and-quiet-hours.md)).
 
-That's it — there's no device list to manage. Each device you sign in on and
+That's it, there's no device list to manage. Each device you sign in on and
 allow notifications for is registered automatically.
 
 ## If push stops working
@@ -41,7 +41,7 @@ button. Tapping it re-attempts registration.
 
 If nothing is arriving:
 
-- Check your device's **system notification settings** for Aster — push can be
+- Check your device's **system notification settings** for Aster, push can be
   blocked there even when the app's own switch is on.
 - Confirm the master **Push notifications** switch is on and the specific type
   isn't muted.

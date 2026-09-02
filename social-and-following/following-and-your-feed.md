@@ -4,8 +4,8 @@ parent: "Social & following"
 nav_order: 3
 audience: [athlete, spectator]
 tags: [following, feed, discover, live-now]
-summary: "Follow athletes, teams, events and organisers, find people in Discover, and see it all in your feed."
-last_updated: 2026-07-20
+summary: "Follow athletes, teams and events, find people under Events and Groups, and see it all in your feed."
+last_updated: 2026-08-28
 ---
 
 # Following and your feed
@@ -25,12 +25,17 @@ Following is **free and unlimited** — follow as many people, teams and events 
 you like, and unfollow any time. Watching a ride isn't following: you can always
 open a share link or watch a public event, on any device, with no account.
 
-## Finding people: Discover
+## Finding people: Events and Groups
 
-**Discover** (the search button in the app) is where you find who and what to
-follow. It has tabs for **Events**, **Festivals**, **Organisers**, **Teams** and
-**Riders** — leave the search empty to browse popular and active ones, or type to
-search a tab.
+Two tabs in the main navigation help you find what to follow:
+
+- **Events** lists events, with a **Meet-ups** tab alongside it for untimed
+  group activities. Search or browse either.
+- **Groups** (shown as **Social** in the navigation) has tabs for **Clubs**,
+  **Teams** and **Riders** — search a tab, or leave the box empty to browse.
+
+Following anyone you find works with no account for the browsing itself; you
+only need to sign in when you tap Follow.
 
 ## Your feed
 

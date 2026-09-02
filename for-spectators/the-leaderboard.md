@@ -5,7 +5,7 @@ nav_order: 3
 audience: [spectator]
 tags: [leaderboard, standings, gaps, time-trial, sportive]
 summary: "How live standings work for each event format — and why sportives show times without positions."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Reading the leaderboard
@@ -47,7 +47,7 @@ Filtering works without an account and only changes what you see.
   start gate. Standings are by fastest elapsed time, and gaps compare each
   rider's time.
 - **Sportive / gran fondo:** **no positions, anywhere** — see below.
-- **Group ride and grand depart:** these aren't timed competitions, so there
+- **Meet-up and point-to-point:** these aren't timed competitions, so there
   are no positions or gaps. Rows show who's on course and who's finished.
 
 Distances are measured **along the course** from the start, so what you see

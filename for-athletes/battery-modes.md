@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete]
 tags: [battery, tracking, gps]
 summary: "Choosing how often the app records your position, and how it drops down gears automatically as your battery falls."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Battery modes
@@ -20,12 +20,15 @@ race and **Ultra** for a multi-day trip.
 
 Four modes, from most detailed to most economical:
 
-| Mode | Best for | Trade-off |
-|---|---|---|
-| **Live** | Short, fast events where you want the smoothest live location | Highest battery use; recommended up to about 2 hours |
-| **Standard** | Most events | Balanced |
-| **Endurance** | Long days | Slightly choppier live location, much longer battery |
-| **Ultra** | Ultra-distance and multi-day rides | Most economical; updates least often |
+| Mode | Best for | Watchers see updates | Approx. battery use |
+|---|---|---|---|
+| **Live** | Short, fast events; recommended up to about 2 hours | About every 1-2 seconds | ~15% per hour |
+| **Standard** | Most activities, under about 4 hours | About every 6 seconds | ~8.5% per hour |
+| **Endurance** | Long days, 4-12 hours | About every 15 seconds | ~4.5% per hour |
+| **Ultra** | Ultra-distance and multi-day efforts, 12 hours+ | About every 5 minutes | ~4% per hour |
+
+Battery figures are approximate: real drain varies with your phone, the
+temperature and your signal strength, as below.
 
 The mode only changes the **recording rate**. It never changes how accurate each
 recorded point is, or your final distance — a point is a point in any mode.
@@ -58,7 +61,9 @@ below your starting mode apply.
 
 You can also turn auto-fall-back **off** and stay locked to the mode you chose for
 the whole ride — handy if you started on Endurance and don't want any surprises.
-The forecaster lets you model both.
+Even locked, the app still warns you once your battery hits **10%**, so opting
+out of automatic switching doesn't mean opting out of being told. The forecaster
+lets you model both.
 
 ## Good to know
 

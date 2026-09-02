@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [overview, basics]
 summary: "What Aster does — live tracking plus sharing — who it's for, and what it costs."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # What is Aster?
@@ -63,10 +63,10 @@ Tracking is half the product. The other half is what happens around it:
   by link — spectators need no account, no install and no payment. See
   [Watch an event live](../for-spectators/watch-an-event-live.md)
 - **Safety features that are honest about what they do.** Athletes have an
-  **SOS** button that alerts the people watching their ride, and crash
-  detection that can start an SOS automatically. SOS does not contact
-  emergency services — it's an aid, not a rescue service. See
-  [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md)
+  **Alert** button that alerts the people watching their ride, and crash
+  detection that can raise an Alert automatically. An Alert does not contact
+  emergency services. It's an aid, not a rescue service. See
+  [Alerts and crash detection](../safety-and-offline/sos-and-crash-detection.md)
 
 ## What does it cost?
 
@@ -79,9 +79,10 @@ There are two things you can pay for, and both are bought in the app through the
 App Store or Google Play:
 
 - **Aster Plus** — an individual membership. It unlocks full membership of a
-  club: the roster, club chat and threads, RSVPs and group rides. You also need
-  it to join a club as its fourth-or-later member. It's a monthly membership,
-  and you manage or cancel it in the App Store or Google Play.
+  club: the roster, club chat and threads, RSVPs and meet-ups. You also need
+  it to join a club as its fourth-or-later member. Billed monthly or annually
+  (annual works out cheaper), and you manage or cancel it in the App Store or
+  Google Play.
 - **Event Organiser** — a monthly plan for people running events. Tiers are
   sized by how many riders each event can register (around 100, 500 or 1,000
   per event), with a larger enterprise option if you need more.

@@ -5,7 +5,7 @@ nav_order: 7
 audience: [athlete]
 tags: [results, profile, history, privacy, replay]
 summary: "Where to find your past rides and results, how to replay them, and what your public profile shows."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Your results, history and profile
@@ -26,7 +26,7 @@ Open one to see:
 - **Replay** — watch the ride play back on the map from start to finish (see
   below).
 - For an **event** ride, **Ghost race** — replay it side by side against another
-  rider's ride from the same event.
+  athlete's ride from the same event.
 - A **public / private** switch, and (for Just Rides) a **Delete** button. Event
   rides are your race record and can't be deleted.
 
@@ -37,7 +37,7 @@ Open one to see:
 - **Replay** plays your ride back on the map — scrub the timeline, change the
   speed, and share the replay with a link. A shared replay opens for anyone, no
   account needed.
-- **Ghost race** (event rides only) puts your ride and another rider's on the map
+- **Ghost race** (event rides only) puts your ride and another athlete's on the map
   together so you can see, second by second, where the gap opened up.
 
 Sharing a replay or ghost race of a **private** ride will offer to make it public
@@ -50,14 +50,15 @@ Your profile is your public page on Aster. It shows:
 - Your display name, photo, banner, short bio and location.
 - Your social links (for example Strava, Instagram or a website).
 - Your follower and following counts.
-- Summary stats — events completed and total distance.
+- Summary stats — events, distance, elevation and podiums.
 - Tabs for your **Posts**, your race **History**, and your public **Rides**.
 
 ## What stays private
 
 - Your **email address** and password are never shown.
-- **Private rides** are visible only to you and to anyone you've handed the link.
-  Your public Rides tab shows public rides only.
+- **Private rides** are visible only to you — the link won't open for anyone
+  else, even someone you've handed it to directly. To share one, switch it to
+  public first (see below). Your public Rides tab shows public rides only.
 - GPS points recorded outside a ride's start–finish window are never shown to
   anyone.
 

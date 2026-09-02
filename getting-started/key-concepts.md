@@ -5,7 +5,7 @@ nav_order: 4
 audience: [athlete, spectator, organiser]
 tags: [concepts, glossary, basics]
 summary: "The handful of ideas that make the rest of the platform make sense."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Key concepts
@@ -55,7 +55,7 @@ how timing, results and finishing work:
 - **Sportive / gran fondo** — timed start-line to finish-line, but results are
   published as **personal times, not rankings**. No positions, no podium — you
   can compare your own time, but the event publishes no finishing order.
-- **Group ride** — no competition, no timing. Ride together.
+- **Meet-up** — no competition, no timing. Ride or run together.
 - **Point-to-point** — start, finish and optional checkpoints; the athlete
   picks the line between them.
 

@@ -5,7 +5,7 @@ nav_order: 6
 audience: [athlete]
 tags: [just-ride, tracking, sharing]
 summary: "Track a personal ride or run outside any event, share it live with anyone, and save it to your history."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Just Ride
@@ -56,7 +56,7 @@ If you turn sharing on while offline, watchers can follow along as soon as you'r
 back in signal — the app tells you so.
 
 **Watching versus following.** Anyone can *watch* your ride from the link with no
-account. To *follow* it — so they get a notification if you send an SOS or when
+account. To *follow* it — so they get a notification if you raise an Alert or when
 you finish — a watcher signs in with an Aster account first.
 
 {% include screenshot-todo.html slug="for-athletes-free-ride-share" caption="The Who can watch you live control on the ride screen: Just me / Followers & club / Anyone with link, with Copy / Share and the watcher count." %}
@@ -70,24 +70,26 @@ while you're stopped. See [Pausing and resuming](pausing-and-resuming.md).
 
 A Just Ride carries two safety tools:
 
-- An **SOS** button (**SOS — Alert my watchers**) that alerts the people watching
-  your ride with your location.
+- An **Alert** button that raises an alert to the people watching your ride,
+  with your location. You confirm first, then have a short cancellable
+  countdown before it actually sends — a stray pocket-tap doesn't fire an alert.
 - Automatic **crash detection**, which is a Just-Ride-only feature. If your speed
-  drops from fast to a dead stop, the app starts a countdown and, if you don't
-  cancel, raises a crash SOS to your watchers.
+  drops from fast to a dead stop, the app starts the same cancellable countdown
+  and, if you don't cancel, raises a crash Alert to your watchers.
 
 Both alert the people watching you — they do **not** contact the emergency
 services, and if nobody's watching, the app tells you plainly. Neither ever ends
 your ride. See
-[SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md) for
+[Alert and crash detection](../safety-and-offline/sos-and-crash-detection.md) for
 exactly who gets alerted and what to do.
 
 ## End and save
 
 To finish, use the **slide-to-end** control on the ride screen — *slide to end
-your ride*. Your ride saves to your history with its distance, time, average
-speed and trail, and you get a link to view it. It ends only when you slide to
-end — the app never ends a Just Ride on its own.
+ride* (or *slide to end run*, if you're running). Your ride saves to your
+history with its distance, time, average speed and trail, and you get a link
+to view it. It ends only when you slide to end — the app never ends a Just
+Ride on its own.
 
 If you end while offline, the app records the exact stop moment and uploads the
 ride when signal returns — your trail ends where you actually stopped, not where

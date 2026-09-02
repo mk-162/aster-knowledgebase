@@ -5,7 +5,7 @@ nav_order: 6
 audience: [spectator, athlete]
 tags: [sharing, links, just-ride]
 summary: "What a shared event or ride link shows the person who opens it — nothing to install, no account."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Share links: events and shared rides
@@ -46,8 +46,8 @@ rider's live location, trail, distance and time — with no account required.
   the distance and time freeze until they resume.
 - After the ride ends, the link still opens, but instead of live updates it
   shows a **finished-ride summary** — the distance covered and how long it took.
-- If the rider raises an **SOS**, everyone with the watch page open sees the
-  alert with their location. To also get a push notification when you're *not*
+- If the rider raises an **Alert**, everyone with the watch page open sees it,
+  with their location. To also get a push notification when you're *not*
   looking at the page, you need to be signed in — see
   [Following riders and getting notified](following-and-notifications.md).
 

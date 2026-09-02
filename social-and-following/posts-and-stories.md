@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, organiser]
 tags: [posts, stories, media, sharing]
 summary: "Share ride and run updates with photos, GIFs and stickers, attach your ride stats, and choose who sees them."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Posts and stories
@@ -36,8 +36,8 @@ lay:
 - **GIFs and stickers** from GIPHY — these stay **animated** wherever the post is
   seen: in the editor, in the feed and on the post itself.
 - **Emoji**.
-- **Ride-data stickers** — your distance, time or other stats from a ride, dropped
-  straight onto the image.
+- **Ride-data stickers** — your distance, time or other stats from a ride or run,
+  dropped straight onto the image.
 
 Drag to move a layer; use two fingers to resize and rotate it. What you build is
 exactly what everyone sees — the same live image renders in the feed and on the
@@ -47,10 +47,10 @@ post, so animated GIFs never flatten into a still.
 
 ## Event feed posts
 
-On an event, organisers — and, where the organiser allows it, participants — can
-post to the **event feed**: announcements, updates and recaps that registered
-riders and event followers see. Organiser posts can notify the event's audience;
-see [Notification types](../notifications/notification-types.md).
+On an event, organisers and participants can both post to the **event feed**:
+announcements, updates and recaps that registered riders and event followers
+see. Organiser posts can notify the event's audience; see
+[Notification types](../notifications/notification-types.md).
 
 ## Posting as a team
 

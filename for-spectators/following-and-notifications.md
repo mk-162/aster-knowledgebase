@@ -5,7 +5,7 @@ nav_order: 4
 audience: [spectator]
 tags: [follow, notifications, events]
 summary: "Follow an athlete, event or ride to get alerts — following is free and unlimited."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Following riders and getting notified
@@ -25,7 +25,7 @@ Following an event needs an account; you'll be prompted to sign in.
 
 When someone shares a [Just Ride](../for-athletes/free-rides.md) with you,
 you can open the watch link and follow along with no account. To also get
-**notified** — for instance if they raise an **SOS**, or when they finish —
+**notified** — for instance if they raise an **Alert**, or when they finish —
 sign in and tap **Follow** / **Join** on the ride.
 
 ## Follow athletes and teams
@@ -44,13 +44,13 @@ Once you're following, the alerts a spectator can get include:
 - **Milestones** as a rider passes distance markers.
 - **Lap or checkpoint** passings, on events that use them.
 - **Feed posts** — an organiser's announcements and updates.
-- An **SOS** raised on a ride you follow.
+- An **Alert** raised on a ride you follow.
 - A **new follower**, and likes or comments on your posts.
 
 For the full list of what Aster can notify you about, and how each type
 behaves, see [notification types](../notifications/notification-types.md).
 
-Some of these don't apply to every format — a sportive or group ride
+Some of these don't apply to every format — a sportive or meet-up
 deliberately doesn't push race-position alerts, because it isn't ranked.
 See [the leaderboard](the-leaderboard.md) for why.
 
@@ -68,5 +68,5 @@ hours. See:
 
 - Notifications reach you as **push** alerts on the app and in your in-app
   list. Use the mobile app if you want push.
-- **SOS alerts always come through**, even during quiet hours — safety
+- **Alerts always come through**, even during quiet hours — safety
   comes first.

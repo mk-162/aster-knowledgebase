@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [glossary, definitions]
 summary: "Plain-language definitions of the terms used across Aster and this help centre."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Glossary
@@ -18,13 +18,26 @@ this page sticks to what you'll see on screen.
 **Abandon** — Ending an event ride before the finish; recorded as DNF. Behind a
 confirmation code so a pocket tap can't end your ride.
 
+**Activity** — The umbrella word for anything you record on Aster: a ride or a
+run. Aster treats running as a first-class activity alongside cycling, so
+"activity" is the general term — you'll see **ride** or **run** once the type
+is actually known, for example on your own Just Ride or in an event you've
+joined.
+
+**Alert** — A safety notification an athlete raises (or crash detection raises
+automatically). It notifies the people watching the ride, and in an event the
+organiser too, with the athlete's live location. It does **not** contact the
+emergency services. The Alert screen offers a one-tap call to 999, and if
+nobody is watching, the app says so plainly. See
+[Alerts and crash detection](../safety-and-offline/sos-and-crash-detection.md).
+
 **Aster** — The app and service this help centre is about: live tracking for
 races, rides and runs, spectating, clubs and events.
 
 **Aster Plus** — An individual membership that unlocks full club membership — the
-roster, chat, RSVP and group rides — and lets you join a club as its fourth or
-later member (the first three members are free). A monthly membership, bought
-in the App Store or Google Play. Prices are on
+roster, chat, RSVP and meet-ups — and lets you join a club as its fourth or
+later member (the first three members are free). Billed monthly or annually,
+bought in the App Store or Google Play. Prices are on
 [aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Bib** — An athlete's number for an event, shown on the leaderboard.
@@ -45,8 +58,8 @@ membership. See [Teams and clubs](../teams-and-clubs/index.md).
 **Course** — A reusable route template — its shape, start/finish lines and feed
 stations — that an organiser can apply to several events.
 
-**Crash detection** — The app can detect a sudden hard impact and start an SOS
-countdown for you; cancel it if you're fine. It never ends your ride.
+**Crash detection** — The app can detect a sudden hard impact and start an
+Alert countdown for you; cancel it if you're fine. It never ends your ride.
 
 **Cut-off** — A deadline set by the organiser; athletes still out past it are
 closed out automatically.
@@ -61,13 +74,17 @@ racing (the Transcontinental and the like), where fans "watch the dots" for days
 In Aster we usually say **live location**, **position** or **marker** on screen,
 but you'll hear "dot watching" across the sport.
 
-**Event** — An organised race, time trial, sportive, group ride or adventure
-you register for.
+**Event** — An organised activity you register for: a race, time trial,
+sportive, meet-up or point-to-point adventure.
+
+**Event Organiser** — The person, club, series or company that hosts an event
+and runs the event dashboard (registrations, results, Alert handling).
 
 **Event Organiser plan** — A monthly subscription for people running events,
-sized by how many registrations each event needs. There's a free
-three-registration preview, then larger tiers, up to enterprise by arrangement.
-Clubs never need it to run their own members-only rides. Prices are on
+sized by how many registrations each event needs (tiers, then a larger
+enterprise option by arrangement). Try the whole flow first by hosting a free
+club meet-up before picking a tier. Clubs never need it to run their own
+members-only meet-ups. Prices are on
 [aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Feed station** — A support point (water, food, aid) marked on the route.
@@ -80,20 +97,17 @@ shows up in your feed and you can be notified when they ride. Following is free
 and unlimited, and you can unfollow any time. You never need to follow (or even
 have an account) just to watch a shared ride.
 
-**Just Ride (formerly Free Ride)** — A personal ride or run you track outside any
-event; private by default, shareable by link. See
-[Just Rides](../for-athletes/free-rides.md).
-
-**Ghost ride** — A replay of two rides on the same map, so you can compare one
+**Ghost race** — A replay of two rides on the same map, so you can compare one
 against the other over the same ground.
-
-**Group ride** — A social format: everyone on the shared live map, no timing,
-no positions, no rankings.
 
 **Gun** — The official start of a mass-start race; everyone's clock starts
 here, not when they individually tapped Start.
 
 **Handle** — Your @username, used for links and @mentions.
+
+**Just Ride (formerly Free Ride)** — A personal ride or run you track outside any
+event; private by default, shareable by link. See
+[Just Rides](../for-athletes/free-rides.md).
 
 **Lap** — One circuit of a looped course; multi-lap events count laps as
 athletes pass the line.
@@ -101,15 +115,19 @@ athletes pass the line.
 **Leaderboard** — The live standings for an event. For sportives it lists times
 without positions.
 
+**Meet-up** — A social, untimed format: everyone rides or runs together on the
+shared live map, with no timing, no positions and no rankings.
+
 **Members-only event** — An event hosted by a club that only its active members
 can see and join. Never appears in public discovery.
+
+**Milestone** — A named landmark an organiser places on a meet-up's route (the
+town sign, a climb, a café). Afterwards, the recap shows who reached it first
+and by how much.
 
 **Moving time** — Your elapsed time minus any time you were paused.
 
 **Off route** — When an athlete has left the event's planned course.
-
-**Organiser** — The person, club, series or company that hosts events and runs
-the event dashboard (registrations, results, SOS handling).
 
 **Point-to-point adventure (grand départ)** — A format with a start, a finish
 and optionally some checkpoints, but no prescribed route between them —
@@ -130,13 +148,6 @@ and gaps.
 their ride live in a browser — no account, no app install. See
 [Share links](../for-spectators/share-links.md).
 
-**SOS** — An alert an athlete raises (or crash detection raises for them). It
-notifies the people watching the ride and the event organiser with the
-athlete's live location — it does **not** contact the emergency services. The
-SOS screen offers a one-tap call to 999, and if nobody is watching, the app
-says so plainly. See
-[SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
-
 **Sportive (gran fondo)** — A timed but non-competitive format: every finisher
 gets a time, and there are no positions, rankings or gaps anywhere.
 
@@ -153,7 +164,7 @@ ends, each with a detection zone that records crossings automatically.
 **Team** — A group of athletes on Aster — a club, a crew, or just a few mates.
 The first three members are free; adding a fourth-or-later member needs each of
 them to have **Aster Plus**, which unlocks the full club features (roster, chat,
-RSVP and recurring group rides). See
+RSVP and recurring meet-ups). See
 [Teams and clubs](../teams-and-clubs/index.md).
 
 **Time trial** — A format where athletes start individually and are timed on

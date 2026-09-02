@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [account, signup, login]
 summary: "When you need an account, how to sign up and sign in, and what an account gives you."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Create an account
@@ -35,8 +35,8 @@ You can sign up in the app or on the website — it's the same account either wa
 1. Choose **Sign Up**.
 2. Enter your **display name** (the name shown on results and your profile),
    your **email**, and a **password** of at least 8 characters.
-3. Enter your **date of birth**. If you're under 16, a parent or guardian must
-   tick the consent box for you.
+3. Enter your **date of birth**. You must be 16 or older to create an Aster
+   account. There's no parent or guardian sign-up path for younger riders.
 4. Optionally pick your **gender**. This is used to group athletes in results
    and can be left blank. Your age category for results is worked out from your
    date of birth — you don't enter it separately.

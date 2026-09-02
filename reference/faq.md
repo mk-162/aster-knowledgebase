@@ -3,9 +3,9 @@ title: "Frequently asked questions"
 parent: "Reference"
 nav_order: 2
 audience: [athlete, spectator, organiser]
-tags: [faq, pricing, offline, battery, sos]
+tags: [faq, pricing, offline, battery, alert]
 summary: "Quick answers to the support questions people ask most."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Frequently asked questions
@@ -21,12 +21,13 @@ that come up in support.
 Not for the things most people do: taking part in events, watching and
 spectating, following, and recording your own Just Rides are all free and stay
 free. Two paid options exist. **Aster Plus** is an individual membership that
-unlocks full club membership — the roster, chat, RSVP and group rides — and is
+unlocks full club membership — the roster, chat, RSVP and meet-ups — and is
 what you need to join a club as its fourth-or-later member (the first three
 members are free). The **Event Organiser** plan is a subscription for people
-running events, sized by how many registrations each event needs (there's a free
-three-registration preview, then larger tiers, up to enterprise by arrangement).
-Clubs themselves never pay a subscription. Current prices are on
+running events, sized by how many registrations each event needs, with a
+larger enterprise option by arrangement. Try the whole flow first by hosting
+a free club meet-up before picking a tier. Clubs themselves never pay a
+subscription. Current prices are on
 [aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Do I need an account to watch?**
@@ -37,13 +38,13 @@ members-only events require signing in. See
 
 ## Safety
 
-**Does SOS call the emergency services?**
-No. An SOS alerts the people watching your ride and the event organiser with
-your live location — it does not contact the emergency services, and nobody at
-Aster is monitoring your ride. The SOS screen offers a one-tap call to 999, and
-if nobody is watching, the app tells you so plainly. Treat it as a way to alert
-your people, not as a rescue service. See
-[SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
+**Does Alert call the emergency services?**
+No. Raising an Alert notifies the people watching your ride and, in an event,
+the organiser, with your live location. It does not contact the emergency
+services, and nobody at Aster is monitoring your ride. The Alert screen offers
+a one-tap call to 999, and if nobody is watching, the app tells you so
+plainly. Treat it as a way to alert your people, not as a rescue service. See
+[Alerts and crash detection](../safety-and-offline/sos-and-crash-detection.md).
 
 ## Offline and signal
 

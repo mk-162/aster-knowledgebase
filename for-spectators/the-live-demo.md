@@ -5,7 +5,7 @@ nav_order: 0.4
 audience: [spectator]
 tags: [demo, watching, no-login, live]
 summary: "A permanent, always-on demo event with simulated riders — see live tracking in action with no signup."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # The live demo (simulated)
@@ -35,9 +35,11 @@ not to track a real race.
 
 ## How to open it
 
-From the app or the website home, look for the **"Aster Live Demo · Yorkshire
-Gravel"** card and tap **Watch it live**. It opens straight into the event —
-no sign-in, in any browser.
+Look for the **"Aster Live Demo · Yorkshire Gravel"** card at the top of the
+Home feed and tap **Watch it live** — it opens straight into the event, no
+sign-in, in any browser. You can also find it by browsing **Events**: it's
+the one simulated event kept in the public listing, clearly labelled so it's
+never mistaken for a real one.
 
 ## What you can try on it
 

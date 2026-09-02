@@ -5,43 +5,43 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [profile, handle, avatar, privacy]
 summary: "Edit your public profile, set your @handle, and control what's shown."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Your profile and handle
 
 Your profile is your page on Aster. From **Edit profile** you can set:
 
-- **Display name** — how you appear on leaderboards and your profile
+- **Display name**: how you appear on leaderboards and your profile
   (required).
-- **Photo and banner** — you crop each before it's saved.
+- **Photo and banner**: you crop each before it's saved.
 - **Bio** and **location**.
-- **Social links** — Strava, Instagram, Twitter/X and a website.
-- **Link my name from leaderboards** — off by default, so a race alias
+- **Social links**: Strava, Instagram, Twitter/X and a website.
+- **Link my name from leaderboards**: off by default, so a race alias
   isn't tied to this profile unless you choose. Turn it on to make your
   name on event leaderboards link back here.
 - **An optional emergency phone number** you can choose to show to whoever
-  receives your SOS. It's off by default and never appears publicly. See
-  [SOS and crash detection](../safety-and-offline/sos-and-crash-detection.md).
+  handles your Alert. It's off by default and never appears publicly. See
+  [Alert and crash detection](../safety-and-offline/sos-and-crash-detection.md).
 
 ## Your handle (@username)
 
 A **handle** is a short, unique @username used to link to a profile and to
 **@mention** it in posts and comments. People, teams, events and organisers
-can all have one, which is what makes `@mentions` work across the app —
+can all have one, which is what makes `@mentions` work across the app:
 tapping a mention takes you straight to whoever or whatever it points to.
 See [Key concepts](../getting-started/key-concepts.md).
 
-Handles are lowercase, 2–30 characters, made of letters, numbers, hyphens
+Handles are lowercase, 2 to 30 characters, made of letters, numbers, hyphens
 and underscores, and a set of common words is reserved. Even without a
-handle, you're still reachable — mentions and leaderboards link to your
+handle, you're still reachable: mentions and leaderboards link to your
 athlete page directly.
 
 ## What's public vs private
 
 - **Public:** your display name, photo, banner, bio, location, social
   links, your follower and following counts, your completed events, and
-  your public rides and posts.
+  your public activities and posts.
 - **Private:** your email and password are never shown. An emergency phone
   number, if you add one, is never public. Just Rides are visible only to
   you and anyone with the watch link.

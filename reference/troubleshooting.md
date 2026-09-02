@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [troubleshooting, help, offline, android, sign-in]
 summary: "The most common issues, the quick fix for each, and where to read more."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Troubleshooting
@@ -20,7 +20,9 @@ explanation. If yours isn't here, see
 They're almost certainly in an area with no phone signal. Their points are
 being saved on their phone and will upload — and the marker, trail and distance
 will catch up — when they get signal back. Nothing is lost. (If they've
-finished, their marker stays at the line for good.) See
+finished, their marker freezes at the line, then fades and clears from the
+live map after a few seconds. Their result stays on the leaderboard and in
+the results.) See
 [Reading the live map and trails](../for-spectators/the-live-map-and-trails.md).
 
 **I'm asked to sign in to watch a public event.**
@@ -88,12 +90,12 @@ events as you like, and unfollow any time. Following never affects watching: a
 shared link or public event page works for anyone, with no account.
 See [Following and your feed](../social-and-following/following-and-your-feed.md).
 
-**Our weekly club ride hasn't appeared.**
-Upcoming recurring rides are created from the club's template while the club has
-its full club features switched on (its members hold **Aster Plus**). If that
-lapses, new rides stop being created — but nothing is deleted, and past rides
-stay readable. Once membership is back in place, the recurring rides resume.
-See [Teams and clubs](../teams-and-clubs/index.md).
+**Our weekly club meet-up hasn't appeared.**
+Upcoming recurring meet-ups are created from the club's template while the
+club has its full club features switched on (its members hold **Aster Plus**).
+If that lapses, new meet-ups stop being created, but nothing is deleted, and
+past ones stay readable. Once membership is back in place, the recurring
+meet-ups resume. See [Teams and clubs](../teams-and-clubs/index.md).
 
 ## Notifications
 

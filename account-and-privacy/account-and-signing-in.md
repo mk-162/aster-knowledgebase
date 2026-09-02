@@ -5,20 +5,22 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [account, login, password, email]
 summary: "Sign in, change your password or email, and understand the never-log-you-out promise."
-last_updated: 2026-07-03
+last_updated: 2026-08-28
 ---
 
 # Account and signing in
 
 ## Signing in and staying signed in
 
-Sign in with your email and password. Once you're in, you **stay** in — Aster
-does not log you out automatically, even if the network drops or something
-errors mid-ride. The only times your session ends are when **you** sign out,
-or if the app detects its saved login is corrupted on your device.
+Sign in with your email and password. That's the only way in today; Aster
+doesn't offer signing in with Google, Apple or any other account. Once
+you're in, you **stay** in. Aster does not log you out automatically, even
+if the network drops or something errors mid-activity. The only times your
+session ends are when **you** sign out, or if the app detects its saved
+login is corrupted on your device.
 
 If your login ever needs refreshing, you'll see a small banner inviting you
-to sign in again — your ride and data stay safe on the device in the
+to sign in again, your ride or run and data stay safe on the device in the
 meantime.
 
 ## Change your password
@@ -33,8 +35,8 @@ get a reset link by email (see
 ## Change your email
 
 In **Settings → Account**, enter the new address and your password to
-confirm. A confirmation email goes to the **new** inbox — the change takes
-effect once you confirm it there.
+confirm. A confirmation email goes to the **new** inbox, and the change
+takes effect once you confirm it there.
 
 ## Sign out
 
@@ -44,9 +46,9 @@ stop your ride first.
 
 ## Good to know
 
-- One account covers every role — athlete, spectator, organiser, team member.
+- One account covers every role: athlete, spectator, organiser, team member.
 - Your password is never shown or sent in plain text.
-- Watching a public event needs no account at all — see
+- Watching a public event needs no account at all, see
   [Who can see your location?](who-can-see-your-location.md).
 - In rare cases support may **disable** an account (for example while sorting
   out a manual refund). A disabled account is turned away at sign-in rather

@@ -2,7 +2,7 @@
 title: "Home"
 nav_order: 0
 description: "The Aster help centre — guides for athletes, spectators and event organisers."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 <div class="kb-hero">
@@ -43,7 +43,7 @@ last_updated: 2026-07-20
 - [Start and track a ride](for-athletes/starting-and-tracking-a-ride.md)
 - [Watch an event live](for-spectators/watch-an-event-live.md)
 - [Clubs on Aster](teams-and-clubs/)
-- [SOS and crash detection](safety-and-offline/sos-and-crash-detection.md)
+- [Alerts and crash detection](safety-and-offline/sos-and-crash-detection.md)
 - [What happens when I lose signal?](safety-and-offline/offline-and-no-signal.md)
 - [Who can see my location?](account-and-privacy/who-can-see-your-location.md)
 - [Organiser quick-start checklist](for-organisers/quick-start-checklist.md)

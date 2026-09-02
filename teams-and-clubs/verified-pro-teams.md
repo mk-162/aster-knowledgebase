@@ -5,14 +5,14 @@ nav_order: 12
 audience: [athlete, organiser]
 tags: [teams, pro, verified]
 summary: "Verified status for professional and elite teams — what it is, how to apply, and how it differs from an ordinary club."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Verified (pro) teams
 
 Verified status marks a team as a genuine professional or elite outfit. It's a
 **reviewed identity badge, granted by Aster** — free, and completely separate
-from [Aster Plus](billing-and-your-club-plan.md), which individual riders
+from [Aster Plus](billing-and-your-club-plan.md), which individual athletes
 choose for club membership.
 
 ## Verified/pro vs an ordinary club
@@ -21,8 +21,8 @@ choose for club membership.
 |---|---|---|
 | What it is | A reviewed identity badge for pro/elite teams | Any group of athletes under one name |
 | How you get it | Apply with evidence; Aster reviews and grants it | Anyone can create one, free |
-| What it gives | A **PRO** badge on the team and its riders, plus a sponsor strip on the team page | The full club toolkit — rides, board, routes, RSVP, register — and a sponsor strip too |
-| Cost | Free | Free; riders join via Aster Plus from the fourth member on |
+| What it gives | A **PRO** badge on the team and its athletes, plus a sponsor strip on the team page | The full club toolkit — meet-ups, board, routes, RSVP, register — and a sponsor strip too |
+| Cost | Free | Free; members join via Aster Plus from the fourth member on |
 
 Every club, verified or not, gets the same free tools — the pro badge is about
 **identity**, not extra features. A team can be verified or not; a local club
@@ -39,6 +39,6 @@ doesn't need to be "pro" for any of its club tools.
 
 ## What members get
 
-Riders on a verified team carry the pro flag on their own profiles while
+Athletes on a verified team carry the pro flag on their own profiles while
 they're on the roster, and the team can show its
 [sponsor strip](club-visibility-and-sharing.md) on its page.

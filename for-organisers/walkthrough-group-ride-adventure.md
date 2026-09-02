@@ -1,75 +1,106 @@
 ---
-title: "Walkthrough: a group ride or adventure"
+title: "Walkthrough: a meet-up or adventure"
 parent: "For organisers"
 nav_order: 3.3
 audience: [organiser]
-tags: [walkthrough, group-ride, grand-depart, adventure, checkpoints]
-summary: "Set up a social group ride or a long-distance point-to-point adventure with checkpoints."
-last_updated: 2026-07-20
+tags: [walkthrough, meetup, grand-depart, adventure, checkpoints]
+summary: "Set up a social meet-up or a long-distance point-to-point adventure with checkpoints."
+last_updated: 2026-08-28
 ---
 
-# Walkthrough: a group ride or adventure
+# Walkthrough: a meet-up or adventure
 
-This covers two non-race formats: a **group ride** (social, untimed, ride
-together) and a **point-to-point adventure** (grand-départ style — start, finish
-and optional checkpoints, with the rider picking the line). In both, riders set
-off individually and it's about taking part, not placing.
+This covers two non-race formats: a **meet-up** (social, untimed, everyone
+rides or runs together) and a **point-to-point adventure** (start, finish
+and optional waypoints in between, with the athlete picking their own line).
+In both, athletes set off individually and it's about taking part, not
+placing.
 
 ## 1. Create the event
 
 When you [create the event](create-an-event.md):
 
-- Pick **Group ride** for a social, untimed ride together.
-- Pick **Point-to-point** for a long-distance adventure with a start, a finish and
-  optional checkpoints along the way.
+- Pick **Meet-up** for a social, untimed activity together.
+- Pick **Point-to-point** for a long-distance adventure with a start, a
+  finish and optional waypoints along the way.
 
-Either way, riders start when they're ready — there's no shared gun.
+Either way, athletes start when they're ready; there's no shared gun.
 
-## 2. Route and checkpoints
+## 2. Route and landmarks (meet-up)
 
-[Add your route](routes-start-and-finish.md). For a point-to-point, set separate
-**start** and **finish** lines, then place **checkpoints** along the way — aid
-stations, key turns, scenic markers. Checkpoints:
+[Add your route](routes-start-and-finish.md) so athletes and spectators can
+see the way. You can then add **Milestones**: named landmarks on the route
+(a regroup point, a café stop, a notable climb). Milestones show up on the
+map in advance, but who reached one first is never a live leaderboard.
+That's part of a meet-up being untimed: results and order only surface
+afterwards, in the recap, not during the ride.
 
-- Show up on the map for riders and spectators.
-- Mark progress along a long route where a single finish line isn't enough.
+## 3. Checkpoints define the course (point-to-point)
 
-## 3. Timing and cut-offs
+A point-to-point adventure doesn't need a GPX file; your **checkpoints**
+define the course:
 
-A group ride is **untimed** — riders stop themselves when they're done. A
-point-to-point adventure is timed from each rider's own start. In either case you
+- Your **first checkpoint** is the start gate.
+- Your **last checkpoint** is the finish gate.
+- Any **checkpoints in between** are waypoints the athlete has to cross, in
+  order.
+
+Athletes register a crossing when their GPS comes within the trigger radius
+of a checkpoint (50 m by default, adjustable per checkpoint). You can still
+add a GPX route alongside your checkpoints if you want a line on the map,
+but the checkpoints, not the route, are what the event actually times
+against.
+
+## 4. Timing and cut-offs
+
+A meet-up is **untimed**: athletes end their own activity when they're
+done, and nothing about it is ranked or timed. A point-to-point adventure
+**is** timed: an athlete's clock starts at their first-checkpoint crossing
+and stops automatically when they cross the last one. In either format you
 can set a **cut-off** if there's a hard course-closing time.
 
-## 4. Registration
+## 5. Registration
 
-Set [registration](registration-and-categories.md) to **Open** for a one-tap,
-relaxed sign-up, or **Managed** if you want a capacity, a deadline, categories or a
-registration form. Categories are optional — run a single "all riders" group, or
-split by distance.
+Set [registration](registration-and-categories.md) to **Open** for a
+one-tap, relaxed sign-up, or **Managed** if you want a capacity, a deadline,
+categories or a registration form. Categories are optional: run a single
+group, or split by distance.
 
-## 5. On the day
+## 6. On the day
 
-- Riders **start when they're ready** and are tracked the whole way.
-- Spectators follow everyone's live position along the route and through the checkpoints.
-- The same safety tools apply — riders have **SOS** and **crash detection**, and
-  you see [SOS alerts](handling-sos-alerts.md) on your dashboard. Remember an SOS
-  alerts you, not the emergency services — brief your riders on that.
-- For remote adventures, reassure riders the app keeps recording even with no
-  signal and catches up when they reconnect —
+- Athletes **start when they're ready** and are tracked the whole way.
+- Spectators follow everyone's live position along the route, and through
+  the checkpoints on a point-to-point.
+- Athletes can raise an **Alert** if they need help, and you see it on your
+  dashboard as usual: see [Handling alerts](handling-sos-alerts.md). Remind
+  them an Alert reaches you, the organisers, not the emergency services;
+  brief them on that beforehand (see
+  [What to tell your riders before the event](brief-your-riders.md)). Note
+  that Aster's automatic crash-detection alert currently only runs during a
+  Just Ride, not during an organised event like this one, so an Alert here
+  is always something the athlete raises themselves.
+- For remote adventures, reassure athletes the app keeps recording even
+  with no signal and catches up when they reconnect: see
   [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md).
 
-## 6. After
+## 7. After
 
-Riders' rides are saved with full routes, stats and a replay. If your event has a
-classification you can [publish results](results.md); otherwise the value is the
-live following and the saved adventures.
+Athletes' activities are saved with full routes, stats and a replay. A
+point-to-point adventure that finishes at the last checkpoint can
+[publish results](results.md) if you've brought in timing data for it; a
+meet-up never has a results page; its value is the live following, the
+Milestone recap, and the saved activities.
 
 ## Things to get right
 
-- **Checkpoints carry a long route.** Place them at meaningful points so riders
-  and spectators can track progress between start and finish.
-- **Brief riders on offline behaviour.** On remote routes, reassure them the app
-  keeps recording with no signal — their live location just catches up when they reconnect.
-- **Brief the safety limits.** For self-supported adventures, make sure riders
-  know SOS alerts *you* (not the emergency services) and that they must carry their
-  own means to call for help.
+- **On a point-to-point, checkpoint order is the whole mechanism.** The
+  first checkpoint starts the clock, the last one stops it, and anything in
+  between must be crossed in sequence.
+- **Milestones are for a meet-up's story, not its scoring.** Place them at
+  meaningful points on the route; they never produce a ranking.
+- **Brief athletes on offline behaviour.** On remote routes, reassure them
+  the app keeps recording with no signal; their live location just catches
+  up when they reconnect.
+- **Brief the safety limits.** For self-supported adventures, make sure
+  athletes know an Alert reaches *you*, not the emergency services, and
+  that they must carry their own means to call for help.

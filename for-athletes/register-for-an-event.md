@@ -5,13 +5,13 @@ nav_order: 1
 audience: [athlete]
 tags: [events, registration, offline]
 summary: "How to find and join an event, what gets downloaded for offline use, and what to do before the start."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Register for an event
 
 Registering links you to an event as a participant, so you can be tracked on
-the day and appear in the live rider list and results.
+the day and appear in the live athlete list and results.
 
 ## Find and join
 
@@ -23,7 +23,7 @@ the day and appear in the live rider list and results.
    [clubs](../teams-and-clubs/create-or-join-a-club.md).
 3. Fill in the short form. Depending on the event this may include your
    **Display Name** (how you appear to spectators and in results), a
-   **Bib Number** (only if the organiser lets riders pick their own), a
+   **Bib Number** (only if the organiser lets athletes pick their own), a
    **Category**, and a **team** (chosen from teams you belong to).
 4. Tap to confirm. You're now registered.
 
@@ -53,14 +53,15 @@ and still start. See
 
 ## Before the start
 
-- The event appears on your tracking screen. Within the last hour before the
-  start you'll see a live **countdown**.
-- The **Start** button unlocks within the start window: about **15 minutes**
-  before the scheduled start for races, time trials and sportives, about
-  **30 minutes** for group rides, and about **2 hours** for long-distance
-  "grand départ" adventures. Until then it shows when it opens.
-- Want friends to follow you? Tap **Share watch link** to send them the
-  event's live page — they can watch you with no account.
+- The event appears on your tracking screen, showing when its start window
+  opens. In a **mass-start race**, once you're within the final hour you'll
+  also see a live "starts in M:SS" **countdown** to the gun.
+- The **Start** button unlocks within the start window: about **1 hour**
+  before the scheduled start for mass-start races, **15 minutes** for time
+  trials and sportives, **30 minutes** for meet-ups, and **2 hours** for
+  long-distance "grand départ" adventures. Until then it shows when it opens.
+- Want friends to follow you? Tap **Share a link to watch you live** to send
+  them the event's live page — they can watch you with no account.
 - If the organiser has enabled rider privacy for the event, you'll also see a
   **Hide my location** toggle — see
   [Who can see your location](../account-and-privacy/who-can-see-your-location.md).

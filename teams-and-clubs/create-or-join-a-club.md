@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete]
 tags: [teams, clubs, join, create]
 summary: "Start a new club, join an existing one — instantly, by application or by invite link — and the difference between joining and following."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Create a club or join one
@@ -25,11 +25,11 @@ depending on how the club has set itself up: instantly, or by application.
 4. Create it. You become the **owner** and first admin, and the club gets its
    own page you can share.
 
-Creating a club is **free**, and it works fully from day one — members, rides
-(one-off or weekly), the board and routes all work at no cost. The club never
-pays a subscription. Its first three members join free; from the fourth member
-onward, each rider chooses [Aster Plus](billing-and-your-club-plan.md) to join
-as a full member.
+Creating a club is **free**, and it works fully from day one — members,
+meet-ups (one-off or weekly), the board and routes all work at no cost. The
+club never pays a subscription. Its first three members join free; from the
+fourth member onward, each new member chooses
+[Aster Plus](billing-and-your-club-plan.md) to join in full.
 
 {% include screenshot-todo.html slug="teams-create-club-form" caption="The create-a-team form: name, description, and the Open vs Application join setting." %}
 
@@ -48,14 +48,18 @@ Clubs can also share a one-tap **invite link** — typically pinned in their
 WhatsApp group or texted round. Tap it and you land on a join page showing the
 club; tap **Join** (or **Sign up & join** if you're new — your place is held
 through sign-up, so you land straight in the club afterwards). The invite is
-the approval: you join as a full member immediately, even for application
-clubs, so there's no waiting to be approved. Invite links are always free to
-join. See [invite links](roles-and-managing-members.md#invite-links) for how
-admins create them.
+the approval: there's no application to wait on, even for an application
+club. If the club still has room in its free first three, you're in
+immediately. If you're joining as the fourth member or later, the invite
+starts your free Aster Plus demo automatically so you land in as a full
+member; if you've already used your demo, you join as a follower of the club
+and are prompted to take out Aster Plus to become a full member. See
+[invite links](roles-and-managing-members.md#invite-links) for how admins
+create them.
 
 **Good to know:** a club's first three members join free. From the fourth
-member onward, each new rider takes out [Aster Plus](billing-and-your-club-plan.md)
-to join as a full member — with a free demo to try first. A club can hold up to
+member onward, each new member takes out [Aster Plus](billing-and-your-club-plan.md)
+to join in full — with a free demo to try first. A club can hold up to
 **500 members**; below that, nobody already in is ever removed.
 
 ## Follow vs join
@@ -65,7 +69,7 @@ to join as a full member — with a free demo to try first. A club can hold up t
   members, anyone can still follow and watch it for free without taking out
   Aster Plus.
 - **Joining** puts you on the roster. Members can see and RSVP to
-  [club rides](club-rides.md), read and post on the
+  [meet-ups](club-rides.md), read and post on the
   [club board](the-club-board.md), and use the
   [route library](the-club-route-library.md). When you join, you
   automatically follow the club too.

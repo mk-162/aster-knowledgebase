@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [app, web, platforms, install]
 summary: "When you need the mobile app, when a browser is enough, and where to install the app."
-last_updated: 2026-08-18
+last_updated: 2026-08-28
 ---
 
 # The app vs the website
@@ -33,7 +33,7 @@ another app. The app also powers:
 - Background GPS recording for hours, with battery modes to match the length
   of your day.
 - The persistent "tracking" notification so you know it's still running.
-- Crash detection, which can start an SOS countdown if you hit the ground.
+- Crash detection, which can start an Alert countdown if you hit the ground.
 
 If you open the tracking screen in a browser, you'll see install options for
 the app instead — GPS tracking simply isn't possible from a browser tab.
@@ -48,8 +48,8 @@ Aster is on both public app stores:
   [Google Play](https://play.google.com/store/apps/details?id=app.astertrack)
   (Android 7 and later).
 
-The same links (with QR codes) are shown on the website whenever you try to
-start tracking in a browser — open **Track** on
+Install options are also shown on the website whenever you try to start
+tracking in a browser — open **Track** on
 [astertrack.app](https://astertrack.app).
 
 {% include screenshot-todo.html slug="getting-started-app-vs-website-install-cards" caption="The install options shown on the website's Track page: App Store and Google Play, each with a QR code." %}
@@ -65,7 +65,7 @@ The website covers everything that isn't live GPS recording:
 - Reading and posting to event **feeds**, and following athletes and teams.
 - Managing your **profile**, **settings**, privacy and account.
 - The full **organiser dashboard** — creating events, uploading routes,
-  managing registrations, monitoring race day and handling SOS alerts.
+  managing registrations, monitoring race day and handling Alerts.
 - **Club and team** pages and management.
 
 > **Good to know:** browsers can't record your location once you switch away

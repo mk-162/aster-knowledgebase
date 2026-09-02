@@ -5,7 +5,7 @@ nav_order: 3.5
 audience: [athlete]
 tags: [data, offline, battery, mobile]
 summary: "How much mobile data tracking uses, what works with no signal, and how to keep both data and battery in check."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Mobile data, battery and what runs offline
@@ -23,7 +23,7 @@ battery? Here's the honest answer for a ride or a run.
   the phone and uploaded later when you reconnect. See
   [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md).
 
-So beyond that first route download, a typical ride uses very little data.
+So beyond that first route download, a typical activity uses very little data.
 
 ## Watching uses more than being tracked
 
@@ -33,11 +33,11 @@ any live-map app. On the move, prefer Wi-Fi for long watching sessions.
 
 ## Battery: honest about the cost
 
-Tracking uses your phone's GPS for the whole ride, and GPS is a real drain — there's
-no way around that on a phone. What you *can* control is the recording rate: pick a
-[battery mode](battery-modes.md) to match your ride length, and let the app drop to
-a more economical mode as your battery falls. For a rough forecast of how long each
-mode lasts, and tips to stretch it further, see
+Tracking uses your phone's GPS for the whole activity, and GPS is a real drain —
+there's no way around that on a phone. What you *can* control is the recording
+rate: pick a [battery mode](battery-modes.md) to match how long you'll be out, and
+let the app drop to a more economical mode as your battery falls. For a rough
+forecast of how long each mode lasts, and tips to stretch it further, see
 [aster-track.com/battery-use](https://aster-track.com/battery-use) and
 [Tips for a reliable track](tips-for-a-reliable-track.md).
 
@@ -45,12 +45,12 @@ mode lasts, and tips to stretch it further, see
 
 Almost everything you need on the day:
 
-- Starting and finishing a ride
+- Starting and finishing an activity
 - Recording your full route
 - Pausing and resuming
 - Your cached offline map and route
-- Crash detection and capturing an SOS
+- Crash detection and raising an Alert
 
 Only **signing up**, your **first** event download, and **live updates reaching
-watchers** need a connection. Everything inside your ride is kept on the phone and
-syncs when you're back in range.
+watchers** need a connection. Everything inside your activity is kept on the phone
+and syncs when you're back in range.

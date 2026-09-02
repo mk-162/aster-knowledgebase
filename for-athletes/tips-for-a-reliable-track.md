@@ -5,7 +5,7 @@ nav_order: 2.5
 audience: [athlete]
 tags: [gps, battery, permissions, reliability, tips]
 summary: "Practical steps to get a clean, complete track for a ride or run, and avoid surprises on the day."
-last_updated: 2026-07-20
+last_updated: 2026-08-28
 ---
 
 # Tips for a reliable track
@@ -44,8 +44,11 @@ surprises.
 
 ## While you're out
 
-- **Don't force-quit the app.** Leave it running in the background — it keeps
-  recording. Swiping it away can stop tracking.
+- **You don't need to keep the app open.** Tracking keeps recording in the
+  background, and even if the app gets swiped away or shut down by your phone's
+  operating system, it picks tracking back up on its own — you don't need to
+  reopen it. Leaving it running is still the tidiest option, since it's one
+  less thing to think about.
 - **Lost signal? Keep going.** Your points are saved on the phone and upload when
   you reconnect; your live location catches up for watchers. See
   [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md).
