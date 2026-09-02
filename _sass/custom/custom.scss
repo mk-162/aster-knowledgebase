@@ -1,35 +1,51 @@
 /* ==========================================================================
-   Aster Help Centre — design-system styles (rebuilt 2026-07-02)
+   Aster Help Centre — design-system styles (rebuilt 2026-07-02;
+   token fidelity pass 2026-09-02)
 
    The chrome (topbar + footer) replicates the main website 1:1
    (aster-website: SiteNav.tsx / SiteFooter.tsx / Button.tsx / globals.css):
-   dark #0E110C sticky nav, mint condensed links, lime CTA (h-10 = 40px),
-   1200px container, dark 4-column footer. Docs body: stone canvas, white
-   bordered content card, 2px borders, sharp pop shadows, Barlow +
+   dark band sticky nav, condensed links, lime CTA (h-10 = 40px),
+   1200px container, dark 4-column footer. Docs body: paper-2 canvas, paper
+   bordered content card, 2px borders, sharp pop shadows, Inter +
    Barlow Condensed. Layout is owned by _layouts/default.html (aster-shell
    flex) — the theme's fixed-sidebar layout is fully overridden.
+
+   2026-09-02: token values re-measured against the house's app/globals.css
+   (aster-website) and aligned — see git history for the prior values. Two
+   things worth knowing if you touch this file next:
+
+   1. $mint (#DCEEEB, an icy pale blue) never existed in the house palette —
+      it was a KB-only placeholder doing three jobs. Each use has been
+      remapped to the actual house token for that job: $soft for text/lines
+      on the dark ground, $paper-2 for a pale neutral ground, $mint-teal
+      (the house's genuine, far more saturated accent) reserved for small
+      filled marks (chips/labels), never a ground.
+   2. The pop shadow now offsets in $lime-deep (house `--shadow-pop`), not
+      $dark — the mixin change below is global and touches every button,
+      card and callout that uses `@include pop()`.
    ========================================================================== */
 
-/* ---- Tokens (mirror the website) ---- */
-$dark: #181E15;
-$navdark: #0E110C;          /* SiteNav bar colour */
-$ink-muted: rgba(24, 30, 21, 0.7);
-$lime: #C7F542;
-$lime-deep: #4A6300;
-$lime-bg: #EFFBC4;
-$mint: #DCEEEB;
-$mint-deep: #b9dcd6;
-$stone: #F0F4F4;
-$gold: #F2C94C;
-$paper: #ffffff;
+/* ---- Tokens (mirror the website's app/globals.css :root) ---- */
+$dark: #181E15;              /* = --aster-ink. Identical to the house value already — kept as-is. */
+$navdark: #0B0E08;           /* = --aster-band (was #0E110C, a KB-only approximation) */
+$ink-muted: #5A6152;         /* = --aster-mut (was rgba(24,30,21,0.7), a tinted-ink guess) */
+$lime: #C7F542;              /* = --aster-lime. Identical. */
+$lime-deep: #4A6300;         /* = --aster-lime-deep. Identical. */
+$lime-bg: #EFFBC4;           /* KB-only pale-lime tint for hover/callout fills — not a house token, left as-is */
+$soft: #F6FCDF;              /* = --aster-soft — text/marks on the dark band */
+$soft-mut: #9AA791;          /* = --aster-soft-mut — muted text on the dark band */
+$mint-teal: #75D6C8;         /* = --aster-mint-teal — a genuine accent (chip/label fills), never a ground */
+$paper-2: #F2F5E9;           /* = --aster-paper-2 (was $stone #F0F4F4, cooler/greyer) */
+$gold: #F2C94C;              /* = --aster-gold. Identical. */
+$paper: #FBFCF7;             /* = --aster-paper (was #ffffff, pure white) */
 $container: 1200px;         /* .container-site on the website */
 $ctrl-h: 40px;              /* Button size sm = h-10 — search matches */
 
-$font-body: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 $font-display: 'Barlow Condensed', $font-body;
 $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 
-@mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $dark; }
+@mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $lime-deep; }
 @mixin press {
   transition: transform 100ms ease, box-shadow 100ms ease, filter 100ms ease;
   &:active { transform: translate(2px, 2px); box-shadow: none; }
@@ -37,15 +53,20 @@ $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 @mixin condensed { font-family: $font-display; text-transform: uppercase; letter-spacing: 0.05em; }
 
 /* ---- Base ---- */
-body { font-family: $font-body; background: $stone; color: $dark; }
+body { font-family: $font-body; background: $paper-2; color: $dark; }
+.main-content { font-size: 16px; line-height: 1.65; } /* was theme default (tighter) — house body copy runs 15-16px / relaxed leading */
 
-h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
+/* Headings are condensed + uppercase + heavy with TIGHT negative tracking on
+   the house (Hero/SportHero/etc: tracking ~ -0.01em to -0.025em). The shared
+   condensed() mixin defaults to loose +0.05em, which is right for small
+   kickers/nav/labels but wrong for real headings — override it here only. */
+h1, h2, h3, h4 { @include condensed; font-weight: 800; letter-spacing: -0.02em; color: $dark; }
 .main-content h1 {
   font-size: 2rem; line-height: 1.1; border-bottom: none; padding-bottom: 0.35rem;
   &::after { content: ''; display: block; width: 56px; height: 6px; margin-top: 10px;
     background: $lime; border: 2px solid $dark; border-radius: 999px; }
 }
-.main-content h2 { font-size: 1.4rem; border-bottom: 2px solid rgba(24,30,21,0.12); padding-bottom: 0.3rem; }
+.main-content h2 { font-size: 1.4rem; border-bottom: 2px solid rgba(24,30,21,0.14); padding-bottom: 0.3rem; } /* = --aster-line hairline (was 0.12) */
 
 /* ==========================================================================
    TOPBAR — replica of the website SiteNav
@@ -66,13 +87,13 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
   text-decoration: none; flex: none;
   img { display: block; width: 26px; height: 26px; }
   .aster-wordmark { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 26px; line-height: 1; color: $lime; }
-  .aster-suffix   { @include condensed; letter-spacing: 0.08em; font-weight: 600; font-size: 13px; color: $mint;
-    border-left: 2px solid rgba(220,238,235,0.25); padding-left: 10px; margin-left: 4px; }
+  .aster-suffix   { @include condensed; letter-spacing: 0.08em; font-weight: 600; font-size: 13px; color: $soft;
+    border-left: 2px solid rgba($soft, 0.25); padding-left: 10px; margin-left: 4px; }
 }
 .aster-topnav {
   display: flex; align-items: center; gap: 1.5rem; margin-left: 0.5rem;
   a { @include condensed; letter-spacing: 0.06em; font-weight: 600; font-size: 0.875rem;
-      color: $mint; text-decoration: none; padding: 6px 0;
+      color: $soft; text-decoration: none; padding: 6px 0;
       &:hover { color: $lime; } }
 }
 .aster-topbar-tools {
@@ -99,19 +120,19 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
   position: relative !important; width: 100% !important; transition: none;
   display: flex; align-items: center; overflow: hidden;
   height: $ctrl-h; border-radius: 12px; box-shadow: none;
-  background: rgba(255,255,255,0.08); border: 2px solid rgba(220,238,235,0.25);
+  background: rgba(255,255,255,0.08); border: 2px solid rgba($soft, 0.25);
   transition: border-color 120ms ease, background 120ms ease;
   &:focus-within { border-color: $lime; background: rgba(255,255,255,0.12); }
 }
 .aster-topbar .search-input {
   position: relative !important; width: 100% !important;
   height: 36px; padding: 0 12px 0 36px; font-size: 0.875rem;
-  background: transparent; border: none; color: #fff;
-  &::placeholder { color: rgba(220,238,235,0.55); }
+  background: transparent; border: none; color: $soft;
+  &::placeholder { color: rgba($soft, 0.55); }
   &:focus { background: transparent; }
 }
 .aster-topbar .search-label { position: absolute; left: 0; top: 0; bottom: 0; padding-left: 10px; display: flex; align-items: center;
-  .search-icon { color: rgba(220,238,235,0.7); width: 16px; height: 16px; } }
+  .search-icon { color: rgba($soft, 0.7); width: 16px; height: 16px; } }
 .aster-topbar .search-results {
   /* the theme's search-active mode pins this to the viewport edge — force a
      dropdown anchored to the input */
@@ -119,7 +140,7 @@ h1, h2, h3, h4 { @include condensed; font-weight: 700; color: $dark; }
   right: 0 !important; left: auto !important;
   width: 560px !important; max-width: min(80vw, 560px) !important;
   max-height: 70vh; overflow-y: auto;
-  background: #fff; border: 2px solid $dark; border-radius: 12px; @include pop(4);
+  background: $paper; border: 2px solid $dark; border-radius: 12px; @include pop(4);
 }
 @media (max-width: 49.99rem) {
   .aster-topbar .search-results {
@@ -203,24 +224,27 @@ blockquote, .note, .tip, .important, .warning {
   > p:first-child { margin-top: 0; } > p:last-child { margin-bottom: 0; }
 }
 .warning { background: #FDECEA; }
-.note { background: $mint; }
+.note { background: $paper-2; } /* was pale-mint $mint — mapped to the house's pale neutral ground, not a tinted mint */
 .main-content table {
   border: 2px solid $dark; border-radius: 12px; border-collapse: separate; border-spacing: 0;
   overflow: hidden; @include pop(2);
-  th { background: $stone; @include condensed; letter-spacing: 0.05em; font-size: 0.75rem;
+  th { background: $paper-2; @include condensed; letter-spacing: 0.05em; font-size: 0.75rem;
     color: $dark; border-bottom: 2px solid $dark; }
-  td { border-bottom: 1px solid rgba(24,30,21,0.12); }
+  td { border-bottom: 1px solid rgba(24,30,21,0.14); }
   tr:last-child td { border-bottom: none; }
 }
-code { background: $stone; border: 1px solid rgba(24,30,21,0.15); border-radius: 6px;
+code { background: $paper-2; border: 1px solid rgba(24,30,21,0.14); border-radius: 6px;
   font-family: $font-mono; font-size: 0.85em; padding: 0.1em 0.35em; color: $dark; }
 div.highlighter-rouge, figure.highlight {
-  background: #f7faf9; border: 2px solid rgba(24,30,21,0.15); border-radius: 12px;
+  background: $paper-2; border: 2px solid rgba(24,30,21,0.14); border-radius: 12px;
   pre.highlight, pre { background: transparent; } code { background: transparent; border: none; }
 }
 .breadcrumb-nav-list-item { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
   a { color: $lime-deep; background-image: none; } }
-.label, .label-blue, .label-green { background: $mint !important; color: $dark;
+/* Labels are small filled marks, not grounds — this is exactly the job the
+   house's genuine accent ($mint-teal) is for (see ClusterChip: fill + ink
+   border + ink text). Was the pale-mint placeholder, never a house colour. */
+.label, .label-blue, .label-green { background: $mint-teal !important; color: $dark;
   border: 2px solid $dark; border-radius: 999px; font-weight: 700; font-family: $font-body; }
 .label-yellow { background: $gold !important; color: $dark; }
 
@@ -228,9 +252,9 @@ div.highlighter-rouge, figure.highlight {
    FOOTER — replica of the website SiteFooter
    ========================================================================== */
 .aster-footer {
-  background: $dark; color: rgba(220,238,235,0.6); margin-top: auto;
-  a { color: rgba(220,238,235,0.6); text-decoration: none; font-size: 0.875rem;
-    &:hover { color: $lime; } }
+  background: $dark; color: rgba($soft, 0.75); margin-top: auto; /* blurb text = text-soft/75 */
+  a { color: rgba($soft, 0.85); text-decoration: none; font-size: 0.875rem; /* nav links = text-soft/85 */
+    &:hover { color: $soft; } } /* house hovers to full-opacity soft, not lime */
 }
 .aster-footer-main {
   display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;
@@ -247,11 +271,11 @@ div.highlighter-rouge, figure.highlight {
   > div { display: flex; flex-direction: column; gap: 0.6rem; }
 }
 .aster-footer-title { @include condensed; letter-spacing: 0.06em; font-weight: 600;
-  font-size: 0.75rem; color: $mint; margin: 0 0 0.25rem 0; }
+  font-size: 0.75rem; color: $soft-mut; margin: 0 0 0.25rem 0; } /* house COLUMN_TITLE = text-soft-mut, not mint/lime */
 .aster-footer-strip {
-  border-top: 1px solid rgba(220,238,235,0.1);
+  border-top: 1px solid rgba($lime, 0.16); /* = --aster-line-band, the house's own dark-ground hairline */
   p { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
-    color: rgba(220,238,235,0.45); padding: 1rem 0; margin: 0; }
+    color: $soft-mut; padding: 1rem 0; margin: 0; } /* house copyright line = text-soft-mut (solid), not a low-opacity mint */
 }
 
 /* ==========================================================================
@@ -262,8 +286,8 @@ div.highlighter-rouge, figure.highlight {
   padding: 2rem 2.25rem; margin-bottom: 1.5rem; @include pop(4);
   .kb-hero-kicker { @include condensed; letter-spacing: 0.12em; color: $lime; font-weight: 700;
     font-size: 0.8rem; margin: 0 0 0.4rem 0; }
-  .kb-hero-title { color: #fff; font-size: 2.4rem; margin: 0 0 0.5rem 0; &::after { display: none; } }
-  .kb-hero-sub { color: rgba(255,255,255,0.85); margin: 0; max-width: 46rem; }
+  .kb-hero-title { color: $soft; font-size: 2.4rem; margin: 0 0 0.5rem 0; &::after { display: none; } }
+  .kb-hero-sub { color: rgba($soft, 0.85); margin: 0; max-width: 46rem; }
 }
 .kb-live-dot {
   display: inline-block; width: 10px; height: 10px; margin-right: 8px;
@@ -279,7 +303,7 @@ div.highlighter-rouge, figure.highlight {
 @media (min-width: 64rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
 a.kb-card {
   display: flex; flex-direction: column; gap: 0.35rem;
-  background: #fff; border: 2px solid $dark; border-radius: 16px; padding: 1.1rem 1.2rem;
+  background: $paper; border: 2px solid $dark; border-radius: 16px; padding: 1.1rem 1.2rem;
   text-decoration: none !important; color: $dark; @include pop(3);
   transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
   &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(5); }
@@ -296,7 +320,7 @@ a.kb-card {
       background: $lime; border: 2px solid $dark; border-radius: 2px; margin-right: 10px; } }
 }
 .kb-support {
-  background: $mint; border: 2px solid $dark; border-radius: 16px;
+  background: $paper-2; border: 2px solid $dark; border-radius: 16px; /* was pale-mint $mint — a ground, mapped to the house's pale neutral ground */
   padding: 1.4rem 1.6rem; margin-top: 2.25rem; @include pop(4);
   .kb-support-kicker { @include condensed; letter-spacing: 0.1em; font-weight: 700;
     font-size: 0.8rem; color: $lime-deep; margin: 0 0 0.35rem 0; }
@@ -322,7 +346,7 @@ a.kb-card {
   .side-bar { position: static !important; width: auto !important; min-width: 0; max-height: none; padding: 1rem 0 0 0; }
   /* restore the theme's mobile menu button strip (dark) so docs nav toggles */
   .side-bar .site-header { display: flex !important; background: $dark; border-radius: 12px; border: 2px solid $dark; }
-  .site-title { color: $mint !important; @include condensed; font-weight: 700; }
+  .site-title { color: $soft !important; @include condensed; font-weight: 700; } /* text on dark — was $mint */
   .main-content-wrap { padding: 1.25rem 1.1rem !important; }
   .kb-topics ul { columns: 1; }
   .aster-footer-main { flex-direction: column; gap: 2rem; }
