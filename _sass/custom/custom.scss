@@ -310,8 +310,14 @@ div.highlighter-rouge, figure.highlight {
   .kb-hero-sub { color: $soft-mut; margin: 0; max-width: 44rem; font-size: 1rem;
     line-height: 1.6; }
 }
-@media (max-width: 50rem) {
-  .kb-hero { margin-left: -1.25rem; margin-right: -1.25rem; padding: 2.5rem 1.25rem 2.75rem; }
+/* Mobile: the hero's break-out has to mirror .main-content-wrap's padding
+   EXACTLY, and the wrap changes at the theme's own 49.99rem switch (to
+   1.25rem 1.1rem). An earlier version of this block used 50rem and 1.25rem,
+   which left a 20px inset on each side at exactly 800px wide, because the
+   hero's override fired one pixel before the padding it was compensating
+   for. Keep these two rules in step. */
+@media (max-width: 49.99rem) {
+  .kb-hero { margin: -1.25rem -1.1rem 1.75rem -1.1rem; padding: 2.5rem 1.1rem 2.75rem; }
 }
 .kb-live-dot {
   display: inline-block; width: 10px; height: 10px; margin-right: 8px;
