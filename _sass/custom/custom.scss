@@ -342,8 +342,8 @@ a.kb-card {
 .kb-topics ul {
   columns: 2; column-gap: 2.5rem; padding-left: 0; list-style: none;
   li { break-inside: avoid; margin: 0 0 0.55rem 0;
-    &::before { content: ""; display: inline-block; width: 8px; height: 8px;
-      background: $lime; border: 2px solid $dark; border-radius: 2px; margin-right: 10px; } }
+    /* No decorative bullet. The site uses none, and a lime square in front of
+       every link read as a third accent competing with the link itself. */ }
 }
 .kb-support {
   background: $paper-2; border: 2px solid $dark; border-radius: 16px; /* was pale-mint $mint — a ground, mapped to the house's pale neutral ground */
@@ -431,7 +431,7 @@ body.kb-landing {
 
 .kb-lede {
   color: $soft-mut; font-size: 1.0625rem; line-height: 1.6; max-width: 44rem; margin: 0;
-  &.kb-lede--centred { margin-left: auto; margin-right: auto; }
+  &.kb-lede--centred { margin-left: auto; margin-right: auto; color: $soft; }
 }
 
 /* In-page headings are Inter, sentence case, exactly as the FAQ sets them. */
@@ -483,8 +483,39 @@ body.kb-landing {
 }
 
 
-/* Links on a dark band: ink-on-lime inverts to soft-on-lime. */
+/* Links on a dark band, measured off aster-track.com/faq's closing section:
+   LIME text with a matching 2px lime underline at weight 600. The first
+   attempt used soft text with a thick lime underline, which reads as a
+   highlighter dragged through grey rather than as a link. */
 .kb-landing .kb-band a:not(.kb-cta-btn) {
-  color: $soft; text-decoration-color: $lime;
-  &:hover { background: rgba($lime, 0.16); }
+  color: $lime; font-weight: 600;
+  text-decoration: underline; text-decoration-color: $lime;
+  text-decoration-thickness: 2px; text-underline-offset: 3px;
+  background-image: none;
+  &:hover { color: $soft; text-decoration-color: $soft; background: transparent; }
+}
+
+
+/* ---- Footer, matching aster-track.com's ---- */
+.aster-footer-brand .aster-lockup {
+  @include condensed; font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 0.86; letter-spacing: -0.025em;
+  color: $soft; margin: 0 0 1rem 0;
+  .aster-stop { color: $lime; }
+}
+.aster-footer-brand .aster-descriptor { color: $soft-mut; margin: 0; max-width: 22rem; }
+
+.aster-footer-compare {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1.5rem;
+  padding-top: 2.5rem;
+  a { color: $soft-mut; text-decoration: none; &:hover { color: $lime; } }
+}
+
+.aster-footer-wordmark {
+  display: flex; align-items: center; justify-content: center; gap: 1.5rem;
+  padding: 2.5rem 1rem 0; overflow: hidden;
+  img { width: clamp(48px, 8vw, 110px); height: auto; }
+  span { @include condensed; font-weight: 800; text-transform: uppercase;
+    font-size: clamp(3.5rem, 17vw, 13rem); line-height: 0.8; letter-spacing: -0.03em;
+    color: $lime; }
 }

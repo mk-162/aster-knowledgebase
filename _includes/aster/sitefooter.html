@@ -1,44 +1,77 @@
-<!-- Website-identical footer (see aster-website components/SiteFooter.tsx). -->
+<!--
+  The site footer, rebuilt 2026-09-02 to actually match aster-track.com's.
+
+  The previous version claimed in its own comment to be "website-identical"
+  and was not: a small logo and a paragraph where the site has the Go. Live.
+  lockup and the house descriptor, four columns whose contents did not match,
+  no Compare row, no wordmark, and "Manual Focus Ltd" where the site says
+  Aster. Anyone moving between the two saw a different footer, which is
+  exactly the thing a shared footer exists to prevent.
+
+  Link sets follow the site's, with one deliberate difference: the site's
+  Resources column becomes Help centre here, pointing at this site's own
+  sections, because on the help centre those are the resources.
+-->
 <footer class="aster-footer">
   <div class="aster-container aster-footer-main">
+
     <div class="aster-footer-brand">
-      <a class="aster-logo" href="https://aster-track.com" aria-label="Aster">
-        <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="24" height="24">
-        <span class="aster-wordmark">Aster</span>
-      </a>
-      <p>The live experience for endurance sport. Track from the phone you carry, share one link, and bring everyone along.</p>
+      <p class="aster-lockup">Go<span class="aster-stop">.</span><br>Live<span class="aster-stop">.</span></p>
+      <p class="aster-descriptor">Any ride or run, live on the map.</p>
     </div>
+
     <div class="aster-footer-cols">
       <div>
         <p class="aster-footer-title">Product</p>
-        <a href="https://astertrack.app">Open the app</a>
-        <a href="https://astertrack.app/login?mode=signup">Start tracking — free</a>
+        <a href="https://astertrack.app/login">Log in</a>
+        <a href="https://astertrack.app/login?mode=signup">Sign up</a>
         <a href="https://astertrack.app/events">Discover events</a>
+        <a href="https://aster-track.com/pricing">Pricing</a>
       </div>
       <div>
         <p class="aster-footer-title">Audiences</p>
-        <a href="https://aster-track.com/for-athletes">For athletes</a>
-        <a href="https://aster-track.com/for-watchers">For watchers</a>
-        <a href="https://aster-track.com/clubs">For clubs</a>
-        <a href="https://aster-track.com/for-organisers">For organisers</a>
+        <a href="https://aster-track.com/for-athletes">Athletes</a>
+        <a href="https://aster-track.com/clubs">Clubs</a>
+        <a href="https://aster-track.com/for-teams">Teams</a>
+        <a href="https://aster-track.com/for-organisers">Event Organisers</a>
+        <a href="https://aster-track.com/for-watchers">Watchers</a>
+        <a href="https://aster-track.com/cycling">Cycling</a>
+        <a href="https://aster-track.com/running">Running</a>
       </div>
       <div>
         <p class="aster-footer-title">Help centre</p>
         <a href="{{ '/getting-started/' | relative_url }}">Getting started</a>
-        <a href="{{ '/reference/' | relative_url }}">FAQ &amp; troubleshooting</a>
+        <a href="{{ '/for-athletes/' | relative_url }}">For athletes</a>
+        <a href="{{ '/for-spectators/' | relative_url }}">For spectators</a>
+        <a href="{{ '/for-organisers/' | relative_url }}">For Event Organisers</a>
+        <a href="{{ '/reference/glossary.html' | relative_url }}">Glossary</a>
+        <a href="{{ '/reference/troubleshooting.html' | relative_url }}">Troubleshooting</a>
         <a href="mailto:help@astertrack.app">Email support</a>
       </div>
       <div>
         <p class="aster-footer-title">Legal</p>
         <a href="https://aster-track.com/privacy">Privacy policy</a>
-        <a href="https://aster-track.com/terms">Terms &amp; conditions</a>
+        <a href="https://aster-track.com/terms">Terms and conditions</a>
+        <a href="https://aster-track.com/cookies">Cookies</a>
         <a href="https://aster-track.com/contact">Contact</a>
       </div>
     </div>
   </div>
-  <div class="aster-footer-strip">
-    <div class="aster-container">
-      <p>© 2026 Manual Focus Ltd</p>
-    </div>
+
+  <div class="aster-container aster-footer-compare">
+    <span class="aster-footer-title">Compare</span>
+    <a href="https://aster-track.com/vs/trackleaders">vs Trackleaders</a>
+    <a href="https://aster-track.com/vs/racemap">vs RaceMap</a>
+    <a href="https://aster-track.com/vs/strava-beacon">vs Strava Beacon</a>
+    <a href="https://aster-track.com/vs/garmin-livetrack">vs Garmin LiveTrack</a>
+  </div>
+
+  <div class="aster-container aster-footer-strip">
+    <p>© 2026 Aster</p>
+  </div>
+
+  <div class="aster-footer-wordmark" aria-hidden="true">
+    <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="120" height="120">
+    <span>Aster</span>
   </div>
 </footer>
