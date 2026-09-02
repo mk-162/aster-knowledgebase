@@ -487,7 +487,12 @@ body.kb-landing {
    LIME text with a matching 2px lime underline at weight 600. The first
    attempt used soft text with a thick lime underline, which reads as a
    highlighter dragged through grey rather than as a link. */
-.kb-landing .kb-band a:not(.kb-cta-btn) {
+/* Specificity note: the general landing-link rule above is
+   `.kb-landing main a:not(.kb-card):not(.kb-cta-btn)` — three classes and two
+   elements. A dark-band rule with one class fewer loses to it however late it
+   sits in the file, which is why these links kept rendering as ink with a 3px
+   underline. Matching its shape and adding the band puts this ahead. */
+.kb-landing main .kb-band a:not(.kb-card):not(.kb-cta-btn) {
   color: $lime; font-weight: 600;
   text-decoration: underline; text-decoration-color: $lime;
   text-decoration-thickness: 2px; text-underline-offset: 3px;
