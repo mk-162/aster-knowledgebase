@@ -1,6 +1,7 @@
 <!-- Site header matched to aster-website SiteHeader.tsx (preview, 2026-08).
      Lockup + audience links live on the dark band. Help Centre search sits
-     in the docs bar below so hopping from aster-track.com feels like one product. -->
+     in the docs bar below so hopping from aster-track.com feels like one product.
+     Mobile topics control is the knowledge-base tree, not the marketing links. -->
 <header class="aster-topbar">
   <div class="aster-topbar-row">
     <a class="aster-logo" href="https://aster-track.com/" aria-label="Aster home">
@@ -41,6 +42,12 @@
 
 <div class="aster-docsbar">
   <div class="aster-docsbar-inner">
+    <button type="button" class="aster-docs-menu" id="aster-docs-menu" aria-expanded="false" aria-controls="site-nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span class="sr-only">Help Centre topics</span>
+    </button>
     <a class="aster-docsbar-kicker" href="{{ '/' | relative_url }}">Help Centre</a>
     {% capture search_placeholder %}Search the help centre{% endcapture %}
     <div class="search" role="search">
@@ -52,28 +59,55 @@
     </div>
   </div>
 </div>
+<div class="aster-kb-nav-backdrop" id="aster-kb-nav-backdrop" hidden></div>
 
 <script>
 (function () {
   var btn = document.getElementById("aster-menu-toggle");
   var panel = document.getElementById("aster-nav-panel");
-  if (!btn || !panel) return;
-  function closeMenu() {
-    btn.setAttribute("aria-expanded", "false");
-    panel.hidden = true;
+  if (btn && panel) {
+    function closeMenu() {
+      btn.setAttribute("aria-expanded", "false");
+      panel.hidden = true;
+    }
+    function openMenu() {
+      btn.setAttribute("aria-expanded", "true");
+      panel.hidden = false;
+    }
+    btn.addEventListener("click", function () {
+      if (panel.hidden) openMenu(); else closeMenu();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeMenu();
+    });
+    panel.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", closeMenu);
+    });
   }
-  function openMenu() {
-    btn.setAttribute("aria-expanded", "true");
-    panel.hidden = false;
+
+  var docsBtn = document.getElementById("aster-docs-menu");
+  var backdrop = document.getElementById("aster-kb-nav-backdrop");
+  if (!docsBtn) return;
+  function closeDocs() {
+    document.body.classList.remove("aster-kb-nav-open");
+    docsBtn.setAttribute("aria-expanded", "false");
+    if (backdrop) backdrop.hidden = true;
   }
-  btn.addEventListener("click", function () {
-    if (panel.hidden) openMenu(); else closeMenu();
+  function openDocs() {
+    document.body.classList.add("aster-kb-nav-open");
+    docsBtn.setAttribute("aria-expanded", "true");
+    if (backdrop) backdrop.hidden = false;
+  }
+  docsBtn.addEventListener("click", function () {
+    if (document.body.classList.contains("aster-kb-nav-open")) closeDocs();
+    else openDocs();
   });
+  if (backdrop) backdrop.addEventListener("click", closeDocs);
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeMenu();
+    if (e.key === "Escape") closeDocs();
   });
-  panel.querySelectorAll("a").forEach(function (a) {
-    a.addEventListener("click", closeMenu);
+  document.querySelectorAll(".side-bar a").forEach(function (a) {
+    a.addEventListener("click", closeDocs);
   });
 })();
 </script>
