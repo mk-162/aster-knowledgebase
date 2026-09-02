@@ -1,30 +1,113 @@
-<!-- Website-identical top nav (see aster-website components/SiteNav.tsx):
-     dark #0E110C bar, logo lockup, mint condensed links, compact search,
-     lime "Open the app" button. Search keeps the theme's #search-input /
-     #search-results IDs so just-the-docs.js binds unchanged. -->
+<!-- Site header matched to aster-website SiteHeader.tsx (preview, 2026-08).
+     Lockup + audience links live on the dark band. Help Centre search sits
+     in the docs bar below so hopping from aster-track.com feels like one product.
+     Mobile topics control is the knowledge-base tree, not the marketing links. -->
 <header class="aster-topbar">
-  <div class="aster-container aster-topbar-row">
-    <a class="aster-logo" href="{{ '/' | relative_url }}" aria-label="Aster Help Centre — home">
-      <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="26" height="26">
+  <div class="aster-topbar-row">
+    <a class="aster-logo" href="https://aster-track.com/" aria-label="Aster home">
+      <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="28" height="28">
       <span class="aster-wordmark">Aster</span>
-      <span class="aster-suffix">Help Centre</span>
     </a>
+
     <nav class="aster-topnav" aria-label="Aster site">
-      <a href="https://aster-track.com/for-athletes">For athletes</a>
-      <a href="https://aster-track.com/for-watchers">For watchers</a>
-      <a href="https://aster-track.com/clubs">For clubs</a>
-      <a href="https://aster-track.com/for-organisers">For organisers</a>
+      <ul>
+        <li><a href="https://aster-track.com/for-athletes">Athletes</a></li>
+        <li><a href="https://aster-track.com/clubs">Clubs</a></li>
+        <li><a href="https://aster-track.com/for-teams">Teams</a></li>
+        <li><a href="https://aster-track.com/for-organisers">Event Organisers</a></li>
+        <li><a href="https://aster-track.com/for-watchers">Watchers</a></li>
+        <li><a href="https://aster-track.com/blog">Journal</a></li>
+      </ul>
     </nav>
-    <div class="aster-topbar-tools">
-      {% capture search_placeholder %}Search the help centre{% endcapture %}
-      <div class="search" role="search">
-        <div class="search-input-wrap">
-          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="{{ search_placeholder }}" aria-label="{{ search_placeholder }}" autocomplete="off">
-          <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
-        </div>
-        <div id="search-results" class="search-results"></div>
+
+    <button type="button" class="aster-menu-btn" aria-expanded="false" aria-controls="aster-nav-panel" id="aster-menu-toggle">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+  </div>
+
+  <nav id="aster-nav-panel" class="aster-nav-panel" hidden>
+    <ul>
+      <li><a href="https://aster-track.com/for-athletes">Athletes</a></li>
+      <li><a href="https://aster-track.com/clubs">Clubs</a></li>
+      <li><a href="https://aster-track.com/for-teams">Teams</a></li>
+      <li><a href="https://aster-track.com/for-organisers">Event Organisers</a></li>
+      <li><a href="https://aster-track.com/for-watchers">Watchers</a></li>
+      <li><a href="https://aster-track.com/blog">Journal</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="aster-docsbar">
+  <div class="aster-docsbar-inner">
+    <button type="button" class="aster-docs-menu" id="aster-docs-menu" aria-expanded="false" aria-controls="site-nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span class="sr-only">Help Centre topics</span>
+    </button>
+    <a class="aster-docsbar-kicker" href="{{ '/' | relative_url }}">Help Centre</a>
+    {% capture search_placeholder %}Search the help centre{% endcapture %}
+    <div class="search" role="search">
+      <div class="search-input-wrap">
+        <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="{{ search_placeholder }}" aria-label="{{ search_placeholder }}" autocomplete="off">
+        <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
       </div>
-      <a class="aster-cta" href="https://astertrack.app">Open the app</a>
+      <div id="search-results" class="search-results"></div>
     </div>
   </div>
-</header>
+</div>
+<div class="aster-kb-nav-backdrop" id="aster-kb-nav-backdrop" hidden></div>
+
+<script>
+(function () {
+  var btn = document.getElementById("aster-menu-toggle");
+  var panel = document.getElementById("aster-nav-panel");
+  if (btn && panel) {
+    function closeMenu() {
+      btn.setAttribute("aria-expanded", "false");
+      panel.hidden = true;
+    }
+    function openMenu() {
+      btn.setAttribute("aria-expanded", "true");
+      panel.hidden = false;
+    }
+    btn.addEventListener("click", function () {
+      if (panel.hidden) openMenu(); else closeMenu();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeMenu();
+    });
+    panel.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", closeMenu);
+    });
+  }
+
+  var docsBtn = document.getElementById("aster-docs-menu");
+  var backdrop = document.getElementById("aster-kb-nav-backdrop");
+  if (!docsBtn) return;
+  function closeDocs() {
+    document.body.classList.remove("aster-kb-nav-open");
+    docsBtn.setAttribute("aria-expanded", "false");
+    if (backdrop) backdrop.hidden = true;
+  }
+  function openDocs() {
+    document.body.classList.add("aster-kb-nav-open");
+    docsBtn.setAttribute("aria-expanded", "true");
+    if (backdrop) backdrop.hidden = false;
+  }
+  docsBtn.addEventListener("click", function () {
+    if (document.body.classList.contains("aster-kb-nav-open")) closeDocs();
+    else openDocs();
+  });
+  if (backdrop) backdrop.addEventListener("click", closeDocs);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeDocs();
+  });
+  document.querySelectorAll(".side-bar a").forEach(function (a) {
+    a.addEventListener("click", closeDocs);
+  });
+})();
+</script>

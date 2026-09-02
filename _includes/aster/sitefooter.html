@@ -1,44 +1,59 @@
-<!-- Website-identical footer (see aster-website components/SiteFooter.tsx). -->
+<!-- Matched to aster-website SiteFooter.tsx: band, Go. Live., columns, sign-off lockup. -->
 <footer class="aster-footer">
   <div class="aster-container aster-footer-main">
     <div class="aster-footer-brand">
-      <a class="aster-logo" href="https://aster-track.com" aria-label="Aster">
-        <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="24" height="24">
-        <span class="aster-wordmark">Aster</span>
-      </a>
-      <p>The live experience for endurance sport. Track from the phone you carry, share one link, and bring everyone along.</p>
+      <p class="aster-footer-line">Go<span>.</span><br>Live<span>.</span></p>
+      <p class="aster-footer-desc">Any ride or run, live on the map.</p>
     </div>
     <div class="aster-footer-cols">
-      <div>
+      <nav aria-label="Product">
         <p class="aster-footer-title">Product</p>
-        <a href="https://astertrack.app">Open the app</a>
-        <a href="https://astertrack.app/login?mode=signup">Start tracking — free</a>
-        <a href="https://astertrack.app/events">Discover events</a>
-      </div>
-      <div>
+        <a href="https://astertrack.app/login">Log in</a>
+        <a href="https://astertrack.app/login?mode=signup">Sign up</a>
+        <a href="https://aster-track.com/discover">Discover events</a>
+        <a href="https://aster-track.com/pricing">Pricing</a>
+      </nav>
+      <nav aria-label="Audiences">
         <p class="aster-footer-title">Audiences</p>
-        <a href="https://aster-track.com/for-athletes">For athletes</a>
-        <a href="https://aster-track.com/for-watchers">For watchers</a>
-        <a href="https://aster-track.com/clubs">For clubs</a>
-        <a href="https://aster-track.com/for-organisers">For organisers</a>
-      </div>
-      <div>
-        <p class="aster-footer-title">Help centre</p>
-        <a href="{{ '/getting-started/' | relative_url }}">Getting started</a>
-        <a href="{{ '/reference/' | relative_url }}">FAQ &amp; troubleshooting</a>
+        <a href="https://aster-track.com/for-athletes">Athletes</a>
+        <a href="https://aster-track.com/clubs">Clubs</a>
+        <a href="https://aster-track.com/for-teams">Teams</a>
+        <a href="https://aster-track.com/for-organisers">Event Organisers</a>
+        <a href="https://aster-track.com/for-watchers">Watchers</a>
+      </nav>
+      <nav aria-label="Resources">
+        <p class="aster-footer-title">Resources</p>
+        <a href="https://aster-track.com/faq">FAQ</a>
+        <a href="{{ '/' | relative_url }}">Help Centre</a>
+        <a href="https://aster-track.com/blog">Journal</a>
+        <a href="https://aster-track.com/about">About</a>
         <a href="mailto:help@astertrack.app">Email support</a>
-      </div>
-      <div>
+      </nav>
+      <nav aria-label="Legal">
         <p class="aster-footer-title">Legal</p>
         <a href="https://aster-track.com/privacy">Privacy policy</a>
-        <a href="https://aster-track.com/terms">Terms &amp; conditions</a>
+        <a href="https://aster-track.com/terms">Terms and conditions</a>
+        <a href="https://aster-track.com/cookies">Cookies</a>
         <a href="https://aster-track.com/contact">Contact</a>
-      </div>
+      </nav>
     </div>
   </div>
+  <nav class="aster-footer-compare" aria-label="Compare">
+    <div class="aster-container">
+      <span class="aster-footer-title">Compare</span>
+      <a href="https://aster-track.com/vs/trackleaders">vs Trackleaders</a>
+      <a href="https://aster-track.com/vs/racemap">vs RaceMap</a>
+      <a href="https://aster-track.com/vs/strava-beacon">vs Strava Beacon</a>
+      <a href="https://aster-track.com/vs/garmin-livetrack">vs Garmin LiveTrack</a>
+    </div>
+  </nav>
   <div class="aster-footer-strip">
     <div class="aster-container">
-      <p>© 2026 Manual Focus Ltd</p>
+      <p>© 2026 Aster</p>
     </div>
+  </div>
+  <div class="aster-footer-signoff" aria-hidden="true">
+    <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="">
+    <span>Aster</span>
   </div>
 </footer>
