@@ -5,7 +5,7 @@ nav_order: 4
 audience: [athlete, spectator, organiser]
 tags: [export, delete, gdpr, data]
 summary: "Download a copy of everything you've stored, or permanently delete your account."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Export or delete your data
@@ -35,11 +35,12 @@ wait a moment and try again.
 Tap **Delete account** to permanently erase your account. This is
 **irreversible**:
 
-- Your profile, activities, GPS history, posts, comments and follows are
-  removed.
+- Your profile, activities, GPS history, comments and follows are removed
+  outright.
 - A message or a feed post you sent that someone else might still see in a
-  thread has its text replaced with **[deleted]** and is detached from you,
-  rather than leaving a broken thread behind.
+  thread instead has its text replaced with **[deleted]** and is detached
+  from you, rather than leaving a broken thread or feed behind.
+- Your **@handle is released** and can be claimed by someone else.
 - Your sign-in identity is removed, so you can no longer log in.
 
 Some records with a lawful reason to be kept, for example a payment

@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [app, web, platforms, install]
 summary: "When you need the mobile app, when a browser is enough, and where to install the app."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # The app vs the website
@@ -35,8 +35,12 @@ another app. The app also powers:
 - The persistent "tracking" notification so you know it's still running.
 - Crash detection, which can start an Alert countdown if you hit the ground.
 
-If you open the tracking screen in a browser, you'll see install options for
-the app instead — GPS tracking simply isn't possible from a browser tab.
+If you open the tracking screen (**Go Live**) in a browser, you won't see a
+live map — you'll see an orientation page instead, since GPS tracking simply
+isn't possible from a browser tab. It walks through the three steps for race
+day (install the app, sign in, open Go Live and tap Start on the day — for an
+event, a meet-up or a Just Ride), leads with a **Download the app** button,
+and offers a **Watch a live event instead** link for anyone who isn't racing.
 
 ### Installing the app
 
@@ -49,10 +53,14 @@ Aster is on both public app stores:
   (Android 7 and later).
 
 Install options are also shown on the website whenever you try to start
-tracking in a browser — open **Track** on
-[astertrack.app](https://astertrack.app).
+tracking in a browser — open **Go Live** on
+[astertrack.app](https://astertrack.app) — and on the dedicated
+**Get the app** page any "get the app" link points to, which always offers
+both stores (so a shared or scanned link works no matter which phone opens
+it) and shows a QR code on desktop that opens the same page on your phone
+with the right store button already picked.
 
-{% include screenshot-todo.html slug="getting-started-app-vs-website-install-cards" caption="The install options shown on the website's Track page: App Store and Google Play, each with a QR code." %}
+{% include screenshot-todo.html slug="getting-started-app-vs-website-install-cards" caption="The Go Live orientation page on the website: the three race-day steps, the Download the app button, and the Get the app panel with its QR code and both store badges." %}
 
 ## Use the website for everything else
 

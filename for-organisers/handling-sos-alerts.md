@@ -5,7 +5,7 @@ nav_order: 7
 audience: [organiser]
 tags: [alert, safety, dashboard]
 summary: "How an athlete's alert reaches your dashboard, how to respond and resolve it, and what Aster's Alert does and does not do."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Handling alerts
@@ -84,10 +84,13 @@ ride you set their status yourself (see
 [Running the event on race day](race-day-management.md)). An Alert on its
 own changes nothing about their race record.
 
-## Good to know: automatic crash alerts are a Just Ride feature today
+## Good to know: automatic crash detection covers your event too
 
 Aster can automatically start an alert countdown if it detects a hard,
-sudden stop while an athlete is on a **[Just Ride](../for-athletes/free-rides.md)**.
-That automatic detection isn't yet part of event tracking: during a race,
-time trial, sportive or meet-up, an alert is something the athlete raises
-themselves. If that changes, this article will be updated.
+sudden stop, whether the athlete is on a **[Just Ride](../for-athletes/free-rides.md)**
+or tracking your event, whatever the format: race, time trial, sportive,
+meet-up or point-to-point. The countdown and the alert it raises are
+identical either way, so everything above (the 60-second cancellable
+countdown, what appears on your dashboard, how you respond) applies the
+same to a crash-triggered alert as to one an athlete raises by hand. There
+is no separate badge or flag to tell the two apart on your side.

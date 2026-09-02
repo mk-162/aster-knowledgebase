@@ -134,7 +134,9 @@ const SKIP = new Set([
   "CONTENT-AUDIT.md",
   "STYLE-GUIDE.md",
   "README.md",
+  /* Review briefs quote the retired words in order to ban them. */
   ".review-brief.md",
+  ".staging-brief.md",
 ])
 
 function walk(dir, out = []) {

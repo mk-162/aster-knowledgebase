@@ -5,7 +5,7 @@ nav_order: 3.1
 audience: [organiser]
 tags: [walkthrough, race, mass-start]
 summary: "Set up and run a mass-start race from scratch, with the gun, the line and the leaderboard."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Walkthrough: a mass-start race
@@ -25,7 +25,7 @@ true mass start.
 
 ## 2. Route and finish line
 
-[Upload your GPX](routes-start-and-finish.md). For a loop course, a single
+[Build or upload your route](routes-start-and-finish.md). For a loop course, a single
 start/finish point is enough; for a point-to-point route, set separate start
 and finish lines. Check the **finish-line detection radius** is generous
 enough that every athlete's GPS registers the crossing, but not so large it

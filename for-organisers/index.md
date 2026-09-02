@@ -2,7 +2,7 @@
 title: "For organisers"
 nav_order: 4
 has_children: true
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # For organisers
@@ -12,12 +12,13 @@ account, building an event (format, route, start/finish, registration,
 categories), managing it live from your dashboard, handling safety alerts, and
 publishing results.
 
-Creating an event is free, previewing it is free, and publishing it is free. A
-free event is a share-link preview that takes **up to 3 registrations**, good
-for building, testing and demoing. To take real registrations beyond that, and
-to appear in public discovery, subscribe to an **Event Organiser** plan sized
-to your event. See [pricing](https://aster-track.com/pricing) for the current
-shape.
+Creating an event is free, and so is building and fully previewing it before
+anyone joins. But there's no free registration allowance: an event can't take
+any registrations at all until you subscribe to an **Event Organiser** plan,
+and the tier you choose sets the cap (100, 500 or 1,000, with a larger
+enterprise option). See [pricing](https://aster-track.com/pricing) for the
+current shape. (A team or club hosting a members-only meet-up is a different
+model and isn't affected — see [Become an organiser](become-an-organiser.md).)
 
 - [Become an organiser](become-an-organiser.md)
 - [Quick-start checklist](quick-start-checklist.md) (the whole journey on one page)

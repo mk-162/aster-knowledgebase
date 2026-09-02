@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [troubleshooting, help, offline, android, sign-in]
 summary: "The most common issues, the quick fix for each, and where to read more."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Troubleshooting
@@ -41,12 +41,14 @@ link. See [Share links](../for-spectators/share-links.md).
 **Important:** never sign out or reinstall the app to fix a mid-ride problem.
 Your ride data is safe on the phone, and the app recovers by itself.
 
-**"Session needs refreshing" / I can't sign in mid-ride.**
+**"Sign-in needs refreshing" / a banner appears mid-ride.**
 Your ride keeps recording regardless — the app never signs you out over a
-network or server error. A banner ("Your ride is saved — sign in to sync")
-will sit at the top of the screen; tap it and sign in whenever convenient,
-with signal. Your ride and everything recorded stay on the device until then.
-See [Account and signing in](../account-and-privacy/account-and-signing-in.md).
+network or server error. A banner sits at the top of the screen — "Your
+activity is saved — tap to refresh" if you have a ride not yet fully synced,
+or "Sign-in needs refreshing" otherwise — and either way it tries a quick,
+silent refresh first; you're only sent to the sign-in screen if that fails.
+Your ride and everything recorded stay on the device throughout. See
+[Account and signing in](../account-and-privacy/account-and-signing-in.md).
 
 **My ride didn't upload.**
 It will. Open the app somewhere with signal and it drains the queue

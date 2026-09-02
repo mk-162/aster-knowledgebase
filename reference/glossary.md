@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [glossary, definitions]
 summary: "Plain-language definitions of the terms used across Aster and this help centre."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Glossary
@@ -15,8 +15,11 @@ a fuller [glossary](https://aster-track.com/glossary) of tracking and
 endurance-sport terms (dot watching, bikepacking, gravel racing and more) —
 this page sticks to what you'll see on screen.
 
-**Abandon** — Ending an event ride before the finish; recorded as DNF. Behind a
-confirmation code so a pocket tap can't end your ride.
+**Abandon** — Ending a **race** or **time trial** early, before the finish;
+recorded as a DNF. Behind a confirmation code so a pocket tap can't end your
+ride. Untimed and unranked formats (sportive, meet-up, point-to-point) don't
+have an Abandon — you end them the same way as a Just Ride, and they're
+recorded as **Finished**, not DNF.
 
 **Activity** — The umbrella word for anything you record on Aster: a ride or a
 run. Aster treats running as a first-class activity alongside cycling, so
@@ -36,8 +39,9 @@ races, rides and runs, spectating, clubs and events.
 
 **Aster Plus** — An individual membership that unlocks full club membership — the
 roster, chat, RSVP and meet-ups — and lets you join a club as its fourth or
-later member (the first three members are free). Billed monthly or annually,
-bought in the App Store or Google Play. Prices are on
+later member (the first three members are free). It also lifts the free
+three-route cap on your personal **My Routes** library. Billed monthly or
+annually, bought in the App Store or Google Play. Prices are on
 [aster-track.com/pricing](https://aster-track.com/pricing).
 
 **Bib** — An athlete's number for an event, shown on the leaderboard.
@@ -62,9 +66,14 @@ stations — that an organiser can apply to several events.
 Alert countdown for you; cancel it if you're fine. It never ends your ride.
 
 **Cut-off** — A deadline set by the organiser; athletes still out past it are
-closed out automatically.
+closed out automatically, as either DNF or Finished — the organiser chooses
+which when they set the cut-off.
 
-**DNF** — "Did not finish": started but didn't complete the event.
+**DNF** — "Did not finish": started an event but didn't complete it. Ending a
+**race** or **time trial** early is always a DNF, via Abandon. Sportives,
+meet-ups and point-to-point adventures normally end as **Finished** instead,
+since there's no ranking to drop out of — an organiser's cut-off is the one
+exception, as it can be configured to mark any format DNF.
 
 **DNS** — "Did not start": registered but never started.
 
@@ -127,6 +136,14 @@ and by how much.
 
 **Moving time** — Your elapsed time minus any time you were paused.
 
+**My Routes** — Your personal library of saved routes: ones you've drawn with
+the route builder, uploaded as a GPX file, or saved from a route someone
+shared with you. From My Routes you can rename, share, or attach a route to
+an event or a Just Ride. Your first three saved routes are free; saving more
+needs **Aster Plus**. Clubs keep their own shared library alongside it, free
+and unlimited for the club regardless of any admin's personal count — see
+[The club route library](../teams-and-clubs/the-club-route-library.md).
+
 **Off route** — When an athlete has left the event's planned course.
 
 **Point-to-point adventure (grand départ)** — A format with a start, a finish
@@ -144,9 +161,19 @@ and gaps.
 
 **Replay** — Watching a finished event or ride back as an animation on the map.
 
+**Route builder** — The in-app tool for creating a route by drawing directly
+on the map — trace roads as you go, snap to the nearest one, generate a round
+trip from a start point, and preview distance, climbing and an elevation
+profile as you draw. An alternative to uploading a GPX file. Finished routes
+save to **My Routes**.
+
 **Share link (watch link)** — A link an athlete shares so others can watch
 their ride live in a browser — no account, no app install. See
 [Share links](../for-spectators/share-links.md).
+
+**Shared route** — A link to one route from **My Routes**. Anyone who opens
+it sees the map, distance, elevation and a GPX download — no account needed —
+and can save their own copy if they're signed in.
 
 **Sportive (gran fondo)** — A timed but non-competitive format: every finisher
 gets a time, and there are no positions, rankings or gaps anywhere.
@@ -174,6 +201,15 @@ their own clock, from crossing the start gate to crossing the finish.
 
 **Unlisted event** — Not listed publicly, but watchable by anyone with the
 link.
+
+**Units** — Your personal choice of metric or imperial for distance and
+speed, set once in **Settings → Display & units**. It only changes how
+numbers are shown to you — everything is still measured and stored the same
+way underneath, so it never affects anyone else's view of the same ride.
+
+**Upgrade** — The page where you buy **Aster Plus** or start an **Event
+Organiser plan** (reached from Settings, or at astertrack.app/plus). The
+organiser side has its own explainer page with the current tiers and prices.
 
 **Verified** — A badge showing an organiser or team has been confirmed by the
 Aster team.

@@ -5,7 +5,7 @@ nav_order: 3.3
 audience: [organiser]
 tags: [walkthrough, meetup, grand-depart, adventure, checkpoints]
 summary: "Set up a social meet-up or a long-distance point-to-point adventure with checkpoints."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Walkthrough: a meet-up or adventure
@@ -75,10 +75,10 @@ group, or split by distance.
   dashboard as usual: see [Handling alerts](handling-sos-alerts.md). Remind
   them an Alert reaches you, the organisers, not the emergency services;
   brief them on that beforehand (see
-  [What to tell your riders before the event](brief-your-riders.md)). Note
-  that Aster's automatic crash-detection alert currently only runs during a
-  Just Ride, not during an organised event like this one, so an Alert here
-  is always something the athlete raises themselves.
+  [What to tell your riders before the event](brief-your-riders.md)). An
+  Alert here can also start automatically: Aster's crash detection watches
+  for a hard, sudden stop during this activity too, not just on a Just Ride,
+  and raises the same cancellable alert if the athlete doesn't dismiss it.
 - For remote adventures, reassure athletes the app keeps recording even
   with no signal and catches up when they reconnect: see
   [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md).
@@ -90,6 +90,11 @@ point-to-point adventure that finishes at the last checkpoint can
 [publish results](results.md) if you've brought in timing data for it; a
 meet-up never has a results page; its value is the live following, the
 Milestone recap, and the saved activities.
+
+An athlete who ends early, a mechanical, weather, running out of daylight,
+is recorded as **Finished**, never **DNF**. Neither format is ranked, so
+there's no standing to fall out of; ending the activity is simply ending
+it, whenever that happens.
 
 ## Things to get right
 

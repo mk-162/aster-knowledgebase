@@ -4,8 +4,8 @@ parent: "For organisers"
 nav_order: 3
 audience: [organiser, athlete]
 tags: [formats, race, time-trial, sportive, gran-fondo, meet-up, point-to-point]
-summary: "The five event formats: race, time trial, sportive / gran fondo, meet-up and point-to-point, and how each times, ranks and finishes."
-last_updated: 2026-08-28
+summary: "The five event formats: meet-up, sportive / gran fondo, race, time trial and point-to-point, and how each times, ranks and finishes."
+last_updated: 2026-09-02
 ---
 
 # Event formats
@@ -15,10 +15,23 @@ athletes start, whether they're timed, whether anyone is ranked, and how the
 activity ends. It's the one choice that shapes everything else, so it's worth
 getting right, and it can't be changed once athletes have registered.
 
-You pick the format from a set of cards. Here they are, in the order you'll
-see them.
+You pick the format from a set of cards, each honestly labelled with whether
+it's timed and whether it's ranked. Here they are, in the order you'll see
+them.
 
-{% include screenshot-todo.html slug="organisers-event-format-cards" caption="The five format cards in the create-event flow, in order: sportive / gran fondo, meet-up, race, time trial, point-to-point." %}
+{% include screenshot-todo.html slug="organisers-event-format-cards" caption="The five format cards in the create-event flow, in order: meet-up, sportive / gran fondo, race, time trial, point-to-point." %}
+
+## Meet-up
+
+**No competition, no timing.** Everyone rides or runs together and the app
+tracks the group so friends and family can follow along. There's no clock, no
+ranking and no finish detection, athletes simply stop when they're done.
+
+Meet-ups are the only format that don't need a start or finish point set
+before you publish, and the only format with no cut-off option. See
+[Create an event](create-an-event.md).
+
+Best for: social club outings, shakeouts, casual get-togethers.
 
 ## Sportive / gran fondo
 
@@ -34,17 +47,6 @@ each athlete's clock runs from their own line-crossing.
 Best for: sportives, gran fondos, and any timed mass-participation activity
 that must not be run as a race. This is the right choice whenever you want to
 give people a time without turning the day into a competition.
-
-## Meet-up
-
-**No competition, no timing.** Everyone rides or runs together and the app
-tracks the group so friends and family can follow along. There's no clock, no
-ranking and no finish detection, athletes simply stop when they're done.
-
-Meet-ups are the only format that don't need a start or finish point set
-before you publish. See [Create an event](create-an-event.md).
-
-Best for: social club outings, shakeouts, casual get-togethers.
 
 ## Race
 
@@ -74,8 +76,10 @@ Best for: individual and team time trials, hill climbs.
 A start, a finish, and any **checkpoints** you place in between, with the
 athlete picking their own line between them. Point-to-point events don't need
 a GPX route; instead you drop checkpoints on the map, and the first one
-becomes the start. This suits long "grand départ"-style adventures where
-there's no single fixed course.
+becomes the start. Each athlete's own **elapsed time** is tracked from the
+first checkpoint to the last, the same personal-times-only presentation as a
+sportive, but **nobody is ranked**. This suits long "grand départ"-style
+adventures where there's no single fixed course.
 
 Best for: bikepacking grand départs, adventure routes, self-navigated
 challenges. See [Courses and feed stations](courses-and-feed-stations.md) for
@@ -85,16 +89,21 @@ placing checkpoints.
 
 | Format | Timed? | Ranked? | How athletes start | How the activity ends |
 |---|---|---|---|---|
-| **Sportive / gran fondo** | Yes | No | Across a start window, own clock | Cross the finish line |
 | **Meet-up** | No | No | Together, whenever | Athlete stops |
+| **Sportive / gran fondo** | Yes | No | Across a start window, own clock | Cross the finish line |
 | **Race** | Yes | Yes | Together, on the gun | Cross the finish line |
 | **Time trial** | Yes | Yes | Individually, own clock | Cross the finish line |
-| **Point-to-point** | No | No | Own time | Reach the final checkpoint |
+| **Point-to-point** | Yes | No | Own time | Reach the final checkpoint |
 
-In every timed format an athlete can also **finish or abandon manually**, and
-a **cut-off** (if you set one) closes out anyone still going past the
-deadline. See [Finishing a ride](../for-athletes/finishing-a-ride.md) and
-[Event lifecycle and rider statuses](event-lifecycle-and-statuses.md).
+In a **ranked** format (race, time trial), an athlete can finish automatically
+by crossing the line, or end early by tapping **Abandon**, which marks them
+**DNF**. In an **unranked** format (sportive / gran fondo, point-to-point,
+meet-up), there's no abandon-as-DNF: an athlete who stops early simply ends
+their activity, and it's marked **Finished**, the same as reaching the line or
+the final checkpoint normally. A **cut-off** (if you set one) closes out
+anyone still going past the deadline, marked DNF or finished depending on how
+you configured it. See [Finishing a ride](../for-athletes/finishing-a-ride.md)
+and [Event lifecycle and rider statuses](event-lifecycle-and-statuses.md).
 
 ## Laps
 
@@ -108,8 +117,9 @@ athlete follows the checkpoints once. See
 
 - On a **race** or **time trial**, spectators see live positions and a
   running order.
-- On a **sportive / gran fondo** or **meet-up**, spectators see who's on
-  course and personal elapsed times, never a placing.
+- On a **sportive / gran fondo**, **point-to-point** or **meet-up**,
+  spectators see who's on course and personal elapsed times (none at all for a
+  meet-up), never a placing.
 
 Everyone spectating a public or unlisted event gets the live map, leaderboard,
 trails and route with no login. See

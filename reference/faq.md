@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [faq, pricing, offline, battery, alert]
 summary: "Quick answers to the support questions people ask most."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Frequently asked questions
@@ -23,7 +23,8 @@ spectating, following, and recording your own Just Rides are all free and stay
 free. Two paid options exist. **Aster Plus** is an individual membership that
 unlocks full club membership — the roster, chat, RSVP and meet-ups — and is
 what you need to join a club as its fourth-or-later member (the first three
-members are free). The **Event Organiser** plan is a subscription for people
+members are free). It also lifts the free three-route cap on your personal
+**My Routes** library (see [Glossary](glossary.md)). The **Event Organiser** plan is a subscription for people
 running events, sized by how many registrations each event needs, with a
 larger enterprise option by arrangement. Try the whole flow first by hosting
 a free club meet-up before picking a tier. Clubs themselves never pay a

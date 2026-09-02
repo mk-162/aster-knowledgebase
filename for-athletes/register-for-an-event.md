@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete]
 tags: [events, registration, offline]
 summary: "How to find and join an event, what gets downloaded for offline use, and what to do before the start."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Register for an event
@@ -58,8 +58,14 @@ and still start. See
   also see a live "starts in M:SS" **countdown** to the gun.
 - The **Start** button unlocks within the start window: about **1 hour**
   before the scheduled start for mass-start races, **15 minutes** for time
-  trials and sportives, **30 minutes** for meet-ups, and **2 hours** for
-  long-distance "grand départ" adventures. Until then it shows when it opens.
+  trials and sportives, and **2 hours** for long-distance "grand départ"
+  adventures. Until then it shows when it opens.
+- **Meet-ups open a full 24 hours early.** Riding or running to the meet
+  point is part of the activity, so you can go live up to a day before the
+  scheduled start — that's a real, recorded start, not a warm-up. On a
+  club-hosted meet-up, going early makes you visible to your **club mates**
+  only — nobody sees you on the public meet-up page until the scheduled
+  start time passes.
 - Want friends to follow you? Tap **Share a link to watch you live** to send
   them the event's live page — they can watch you with no account.
 - If the organiser has enabled rider privacy for the event, you'll also see a

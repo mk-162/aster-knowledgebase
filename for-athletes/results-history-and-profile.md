@@ -5,7 +5,7 @@ nav_order: 7
 audience: [athlete]
 tags: [results, profile, history, privacy, replay]
 summary: "Where to find your past rides and results, how to replay them, and what your public profile shows."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Your results, history and profile
@@ -23,6 +23,10 @@ Open one to see:
 
 - The full route on a map, with distance, time, average speed and elevation.
 - **Download GPX** — the raw GPS track, to import into other tools.
+- **Save as route** — turns the ride's line into a reusable route, saved to
+  **My routes** (your personal route library) or, if you help run a club, to
+  that club's route library. Useful for a loop you want to ride again, or
+  want to hand to an organiser to build an event around.
 - **Replay** — watch the ride play back on the map from start to finish (see
   below).
 - For an **event** ride, **Ghost race** — replay it side by side against another

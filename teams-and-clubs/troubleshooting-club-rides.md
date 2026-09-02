@@ -5,7 +5,7 @@ nav_order: 11
 audience: [athlete, organiser]
 tags: [teams, clubs, troubleshooting, rides]
 summary: "A member can't see the meet-up, the weekly meet-up didn't appear, RSVP or route problems — checks in order."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Troubleshooting meet-ups
@@ -45,6 +45,11 @@ not a limit. But two real things can be in play:
 2. **Is the club at 500 members?** A club can hold up to **500 members** — a
    scale limit. If it's full to 500, someone would need to leave before a new
    full member can join. Below 500, nobody already in is ever removed.
+3. **Has the invite link run out or expired?** An ordinary club's invite link
+   is good for 1,000 joins and never expires on its own; a
+   [verified/pro team's](verified-pro-teams.md) link is tighter — 25 joins,
+   30-day expiry. If a link that used to work suddenly doesn't, an admin
+   should generate a fresh one from the club page.
 
 ## The weekly meet-up didn't appear
 
@@ -68,10 +73,14 @@ the meet-up time. If it's missing:
 
 ## A route isn't showing on the meet-up
 
-1. Is the route in the [club route library](the-club-route-library.md)? Only
-   library routes can be attached, and only admins can upload them.
+1. Is the route in the [club route library](the-club-route-library.md), or
+   one of the admin's own **My routes**? Only those two sources (plus a fresh
+   GPX upload or a route built on the spot) can be attached, and only admins
+   can add or attach one.
 2. Was the meet-up created without a route? If a route fails to attach at
-   creation, the app says so — the meet-up exists but has no route.
+   creation, the app says so — the meet-up exists but has no route. Attach it
+   afterwards from [Manage meet-up](club-rides.md#manage-a-meetup), or from
+   the route's own card menu via **Use in event or meet-up**.
 3. Route on the meet-up page but not on your phone mid-ride? Open the meet-up
    once with signal before you set off so the route and map data download.
 
@@ -85,6 +94,22 @@ the meet-up time. If it's missing:
 - **"Quiet Xm" on the everyone-home panel** — no update for a while, which
   usually means a signal dead zone, not a stopped athlete. The panel is
   informational and never ends anyone's ride or run.
+- **Someone shows as DNF, not Finished** — on a plain meet-up, ending
+  normally always marks an athlete **Finished**, never DNF. A DNF is only
+  possible when the meet-up was given a competitive format (race, TT,
+  sportive, point-to-point via "Add a format") and the athlete formally
+  abandoned it.
+
+## The meet-up still says "Live" (or already says "Finished")
+
+A meet-up has no automatic start or finish — Aster shows **Live** once its
+start time has passed and for about 12 hours afterwards (or as soon as an
+admin taps **We're rolling**), then switches to **Finished** once that window
+closes. It's a display convention, not a claim that anyone's still out —
+check the [everyone-home panel](club-rides.md#everyone-home) or the
+[Club Recap](club-rides.md#the-club-recap) for the real picture. It never
+affects anyone's own tracking, which only ever starts or stops when they tap
+Start or Stop.
 
 ## Something else?
 

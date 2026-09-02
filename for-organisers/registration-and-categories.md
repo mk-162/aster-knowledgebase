@@ -5,7 +5,7 @@ nav_order: 5
 audience: [organiser]
 tags: [registration, categories, capacity, ballot, bibs]
 summary: "Control how athletes join, cap the field, group athletes into categories, and assign bibs."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Registration and categories
@@ -31,16 +31,20 @@ On **managed** events you can set:
 - An overall **capacity**, and a **per-category** capacity.
 - A registration **window**: when joining opens and closes.
 
-Creating, previewing and publishing an event are all free. A **free** event is
-a share-link preview that takes **up to 3 registrations** (ideal for building,
-testing and demoing) and doesn't appear in public discovery. To take more real
-registrations, and to show up in discovery, subscribe to an **Event Organiser**
-plan sized to your event. The plan tiers are set by registrations-per-event
-(100, 500 or 1000, with a larger enterprise / contact-us option), bought in the
-app through the App Store or Google Play. Your plan tier is the ceiling on
-registrations; any capacity you set can only sit at or below it. See
-[pricing](https://aster-track.com/pricing) for the current shape and billing
-terms.
+Creating, building and fully previewing an event are all free. There's no free
+registration allowance, though: an event hosted by an organiser account can't
+take **any** registrations, and doesn't appear in public discovery, until you
+subscribe to an **Event Organiser** plan. The plan tiers are set by
+registrations-per-event (100, 500 or 1000, with a larger enterprise /
+contact-us option), bought in the app through the App Store or Google Play.
+Your plan tier is the ceiling on registrations; any capacity you set can only
+sit at or below it. See [pricing](https://aster-track.com/pricing) for the
+current shape and billing terms.
+
+> **Good to know:** this is separate from a club's free-member allowance. A
+> team or club hosting a members-only activity isn't billed against the
+> organiser tier at all; its first few joiners are free by the club model
+> instead. See [Become an organiser](become-an-organiser.md).
 
 ## The registration form
 
@@ -72,6 +76,14 @@ For each category you can set:
 Athletes pick their category when they register. In ranked formats (race, time
 trial), results are ranked within each category. Spectators see the category
 list with live registration counts on the event page.
+
+## If an athlete withdraws
+
+An athlete can withdraw their own registration before the event. A withdrawn
+registration no longer counts against your capacity or your plan's
+registration cap, and shows as **Withdrawn** on your participant list (see
+[Event lifecycle and rider statuses](event-lifecycle-and-statuses.md)),
+distinct from **DNS** (registered but never started tracking on the day).
 
 ## Bib numbers
 

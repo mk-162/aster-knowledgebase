@@ -5,7 +5,7 @@ nav_order: 2
 audience: [spectator]
 tags: [map, trail, live, markers]
 summary: "What the markers, trails and gaps on the map mean, and how live updates behave."
-last_updated: 2026-07-20
+last_updated: 2026-09-02
 ---
 
 # Reading the live map and trails
@@ -75,14 +75,21 @@ wound back — the markers, trails and standings all replay together.
 
 ## Finished athletes freeze
 
-The moment an athlete finishes — crossing the line, hitting a cutoff, a DNF or
-an abandon — their result **freezes everywhere**. Their time, distance and trail
-lock in at that moment, and even if their phone keeps sending points afterwards
-(driving home, for example), those are ignored.
+The moment an athlete's activity ends — crossing the line, hitting a cutoff,
+or ending early with Abandon — their result **freezes everywhere**. (Abandon
+marks a race or time trial DNF; on other formats it marks the athlete
+Finished instead — see [Reading the leaderboard](the-leaderboard.md).) Their
+time, distance and trail lock in at that moment, and even if their phone
+keeps sending points afterwards (driving home, for example), those are
+ignored.
 
 On the **live map specifically**, a finished rider's marker holds at the line,
 then **fades out over about 2.5 seconds and is removed**. The live map is for
 who's still on course, so it clears riders as they finish. Their frozen result
 doesn't disappear — it stays on the [leaderboard](the-leaderboard.md), the
-Riders tab, [compare](comparing-riders.md), the results and the replay. See
+Riders tab, [compare](comparing-riders.md) and the results. A meet-up has
+none of those — no Riders tab, no results (see
+[Reading the leaderboard](the-leaderboard.md)) — but its marker still fades
+and clears from the live map the same way, and the ride still shows up in the
+event's replay afterwards. See
 [Why your distance and time are accurate](../safety-and-offline/data-accuracy.md).

@@ -5,7 +5,7 @@ nav_order: 6
 audience: [organiser]
 tags: [dashboard, live, participants, start, broadcast]
 summary: "Use the organiser dashboard to start the event, watch athletes, fix problems on individual entries, and message participants."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Running the event on race day
@@ -48,9 +48,13 @@ entries:
 
 - **Change an athlete's status** with the per-athlete dropdown: Registered,
   Started, **Finished**, **DNF** or **DNS**. Use **Finished** for someone who
-  crossed the line while their phone was offline, and **DNF** for someone who
-  pulled out. Because a status change edits their race record immediately,
-  Aster asks you to confirm the consequential ones.
+  crossed the line (or ended their activity) while their phone was offline.
+  On a **sportive, meet-up or point-to-point**, an athlete who pulls out
+  mid-activity in the app is recorded as **Finished**, never DNF: there's no
+  ranking to fall out of on these formats, so use Finished here by hand too
+  for consistency. The dropdown still lets you pick DNF on any format if you
+  have a specific reason to. Because a status change edits their race record
+  immediately, Aster asks you to confirm the consequential ones.
 - **Set an athlete to Registered** to let them start again. This clears their
   previous attempt's live state.
 - **Set a start time by hand** for an athlete on a **time trial or sportive**

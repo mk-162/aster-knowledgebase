@@ -5,7 +5,7 @@ nav_order: 1
 audience: [spectator]
 tags: [watching, live, no-login]
 summary: "Open an event and follow it live — no account needed for public and unlisted events."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Watch an event live
@@ -27,7 +27,8 @@ people waiting at home.
    marker, the route line, and the trails they've left behind.
 4. Switch to the **Riders** tab for live progress — standings and gaps for
    races and time trials, times and "on course / finished" for sportives and
-   meet-ups.
+   point-to-point adventures. **Meet-ups don't have a Riders tab** — see
+   [Reading the leaderboard](the-leaderboard.md) for why.
 5. Tap any athlete to focus on them and see their trail and stats. Tapping also
    adds them to your favourites for this event (no account needed).
 
@@ -47,8 +48,10 @@ event, that's a bug on our side — watching is meant to be open. Please
 - The route line, start/finish and checkpoints where the event uses them
 - The route file (GPX) to download, from the **About** tab
 - The live **Riders** list — standings and gaps where the format publishes
-  them, times otherwise
-- Side-by-side [rider comparison](comparing-riders.md)
+  them, times otherwise (meet-ups don't have this list — the map is the
+  live picture)
+- Side-by-side [rider comparison](comparing-riders.md), on every format that
+  has a Riders list
 - The event **Feed** — organiser announcements and posts
 
 See the detail in [Reading the live map and trails](the-live-map-and-trails.md)
@@ -67,11 +70,12 @@ See [Following riders and getting notified](following-and-notifications.md).
 ## After the event
 
 - **Results** are published on the event page (marked provisional until the
-  organiser makes them official).
+  organiser makes them official). Meet-ups don't publish results — they're
+  untimed, so there's nothing to rank.
 - Once the event finishes, a **Watch replay** button plays back how the whole
-  field moved around the course. While the event is still live the replay isn't
-  ready yet — watch it on the live map, and the replay will be there once it
-  finishes.
+  field moved around the course — meet-ups included. While the event is still
+  live the replay isn't ready yet — watch it on the live map, and the replay
+  will be there once it finishes.
 
 ## Private and members-only events
 
@@ -96,4 +100,6 @@ See [Public, unlisted, private and members events](public-unlisted-private-event
   replay.
 - Occasionally an athlete may be missing from the public map: on events where
   the organiser allows it, individuals can choose to hide their live location
-  from public view. They're still tracked and still in the results.
+  from public view. They're still tracked, but a hidden athlete is left out of
+  every public surface — not just the map, but the Riders tab, compare and the
+  published results too. Event staff still see them everywhere.

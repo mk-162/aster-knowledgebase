@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete]
 tags: [tracking, gps, start, race, time-trial, sportive]
 summary: "How to start tracking an event, what the live screen shows, and how your clock works in each event format."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Starting and tracking a ride
@@ -45,9 +45,11 @@ line. You can change battery mode mid-ride if you need to.
 - **Time trial and sportive** — your official time runs from when you
   physically **cross the start line** to when you cross the finish, not from
   when you tapped Start. You'll see "Start line crossed — clock is running!"
-  as you set off. Warm-up wandering before the line doesn't count. (In a
-  sportive there are no published positions — see
-  [event types](../for-organisers/event-types.md).)
+  as you set off. Warm-up wandering before the line doesn't count. Crossing
+  the finish line ends your tracking automatically, the same as a race. (In a
+  sportive there are no published positions and no DNF — see
+  [event types](../for-organisers/event-types.md) and
+  [Finishing a ride](finishing-a-ride.md).)
 - **Meet-up and adventure (grand départ)** — your time runs from the
   moment you start. No gun, no gate.
 - **Distance** is measured from the GPS points recorded between your start
@@ -63,10 +65,17 @@ While you're out you'll see:
 - A **health pill** summarising GPS, connectivity and battery state at a
   glance.
 - Buttons for **I'm OK**, **Alert**, **Pause**/**Resume**, and an end control
-  that depends on the format: **Abandon** in a race or ranked time trial
-  (before the gun this is **Cancel start** instead — a clean back-out that
-  keeps you registered), or **slide-to-end** in a sportive, meet-up or grand
-  départ, since those have no finish line to protect against a stray tap.
+  that depends on the format:
+  - **Race** — before the gun, **Cancel start** backs you out cleanly and
+    keeps you registered, no DNF. Once the gun's gone, the only early exit is
+    **Abandon**, which is a DNF.
+  - **Time trial** — **Abandon** is the only early exit, from the moment you
+    tap Start. There's no pre-gun grace period like a race has, since a TT
+    has no gun — abandoning before you've even crossed the start line still
+    records a DNF.
+  - **Sportive, meet-up or grand départ** — **slide-to-end**, whenever you're
+    done. These formats never record a DNF, so there's no challenge-code
+    friction to guard against a stray tap.
 
 {% include screenshot-todo.html slug="for-athletes-tracking-live-screen" caption="The tracking screen mid-event: map with your live location and trail, stat cards, and the I'm OK / Alert / Pause / Abandon buttons." %}
 
@@ -82,6 +91,10 @@ While you're out you'll see:
   It alerts the event organisers with your location; it does **not** contact
   emergency services, and it never ends your ride. See
   [Alert and crash detection](../safety-and-offline/sos-and-crash-detection.md).
+- **Automatic crash detection** runs during events too, the same as on a Just
+  Ride: if your speed drops from fast to a dead stop, the app starts the same
+  cancellable countdown and, if you don't cancel, raises a crash Alert to the
+  event organisers.
 - **Open the app on another device** (say the web app) while your phone is
   tracking and you'll see a **"You're live on your other device"** strip with
   a link to watch your own tracking. It's read-only reassurance: your ride
@@ -107,8 +120,9 @@ While you're out you'll see:
 
 - **The Start button shows "Opens in…".** The start window opens shortly
   before the event: about 1 hour before mass-start races, 15 minutes before
-  time trials and sportives, 30 minutes before meet-ups, and 2 hours before
-  grand départs.
+  time trials and sportives, 2 hours before grand départs, and a full 24
+  hours before meet-ups (going early is a real recorded start — see
+  [Register for an event](register-for-an-event.md)).
 - **GPS warm-up is slow.** Step into the open, away from buildings or tree
   cover; you're away once accuracy looks good.
 - **I armed for the wrong race.** Before the gun, tap **Cancel start** — you

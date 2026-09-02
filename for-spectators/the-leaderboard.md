@@ -5,7 +5,7 @@ nav_order: 3
 audience: [spectator]
 tags: [leaderboard, standings, gaps, time-trial, sportive]
 summary: "How live standings work for each event format — and why sportives show times without positions."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Reading the leaderboard
@@ -13,6 +13,12 @@ last_updated: 2026-08-28
 The **Riders** tab shows every athlete in the event and updates live as they
 progress. What each row shows depends on the event format — some formats are
 races with published standings, and some deliberately are not.
+
+**Meet-ups are the exception: there's no Riders tab at all.** A meet-up has no
+clock and no rankings, so the live picture is the **Map** tab only — you see
+each rider's marker, but there's no standings list to read. The event's
+**About** tab shows who's going (an RSVP list), which is a roster, not a live
+progress view.
 
 ## What each row shows
 
@@ -38,6 +44,11 @@ Above the list you can narrow it to what you care about:
 
 Filtering works without an account and only changes what you see.
 
+On events where the organiser allows it, an athlete can choose to hide their
+live location — a hidden athlete's row doesn't appear in this list at all
+(not just on the map), and they're left out of the published results too.
+See [Watch an event live](watch-an-event-live.md).
+
 ## How each format presents
 
 - **Race (mass start):** everyone is on the same clock — the gun. Standings
@@ -47,8 +58,11 @@ Filtering works without an account and only changes what you see.
   start gate. Standings are by fastest elapsed time, and gaps compare each
   rider's time.
 - **Sportive / gran fondo:** **no positions, anywhere** — see below.
-- **Meet-up and point-to-point:** these aren't timed competitions, so there
-  are no positions or gaps. Rows show who's on course and who's finished.
+- **Point-to-point adventure:** timed (each rider gets an elapsed time) but
+  deliberately not ranked — no positions or gaps. Rows show who's on course
+  and who's finished, with their time.
+- **Meet-up:** untimed — no clock and no rankings, and no Riders tab at all.
+  The live picture is the map only; see above.
 
 Distances are measured **along the course** from the start, so what you see
 reflects real progress on the route, not straight-line distance.
@@ -82,3 +96,9 @@ the marker on the map.
 - **DNF** (did not finish) athletes are shown as such and aren't ranked as
   finishers.
 - **DNS** (did not start) marks athletes who registered but never set off.
+
+Ending an activity early through **Abandon** only produces a DNF on **ranked**
+formats (race, time trial). On sportives, point-to-point adventures and
+meet-ups, Abandon marks the athlete **Finished** instead — they aren't
+racing, so there's no "failure to finish" to record. An organiser-set cutoff
+can still mark any format DNF if that's how they've configured it.

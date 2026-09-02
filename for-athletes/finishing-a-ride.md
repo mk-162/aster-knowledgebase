@@ -5,7 +5,7 @@ nav_order: 5
 audience: [athlete]
 tags: [finish, dnf, cutoff, results]
 summary: "The ways a ride ends — crossing the line, abandoning, a cut-off, or sliding to end — and what freezes afterwards."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Finishing a ride
@@ -18,8 +18,8 @@ How an event ride ends depends on whether it's a **ranked** format (a race or
 a ranked time trial) or an **unranked** one (a sportive, a meet-up, a grand
 départ). See [event types](../for-organisers/event-types.md).
 
-**Ranked formats** have a real finish line, so ending is either decided for
-you or deliberately protected against a pocket-tap:
+**Race and time trial** (both ranked) have a real finish line, so ending is
+either decided for you or deliberately protected against a pocket-tap:
 
 - **You cross the finish line.** The app detects the crossing from your
   position and finishes you automatically — no button to tap. You'll see a
@@ -31,11 +31,24 @@ you or deliberately protected against a pocket-tap:
 - **You abandon.** If you need to pull out early, tap **Abandon** and confirm
   by typing a 4-digit code shown on screen. You're recorded as **DNF** (did
   not finish). This is deliberate friction so a pocket-tap can't end your
-  ride, and nothing in the notification tray can end it either.
+  ride, and nothing in the notification tray can end it either. On a time
+  trial there's no pre-start grace period the way a race has before its gun
+  — Abandon is the only early exit from the moment you tap Start, and it's
+  always a DNF.
 
-**Unranked formats** have no finish-line geometry and no DNF, so you end them
-the same way as a Just Ride: with the **slide-to-end** control on the tracking
-screen — *slide to end ride* (or *run*) — whenever you decide you're done.
+**Sportive.** A sportive is timed like a time trial — your time runs from
+crossing the start line to crossing the finish, and crossing the finish
+line ends your tracking automatically, the same finish-line detection as a
+race or TT. The difference is that a sportive is **unranked**: there's no
+DNF. If you stop early, or you'd rather not wait on the app to catch your
+line-crossing, use the **slide-to-end** control instead — either way you're
+recorded as **Finished**, never DNF.
+
+**Meet-up and grand départ** have no finish-line geometry at all — no gun,
+no gate, no course end to detect. You end them the same way as a Just Ride:
+with the **slide-to-end** control on the tracking screen — *slide to end
+ride* (or *run*) — whenever you decide you're done. Like a sportive, this
+is always recorded as **Finished**, never DNF.
 
 Depending on the event, you may be able to rejoin after abandoning — start again
 from the event page. See [Register for an event](register-for-an-event.md).

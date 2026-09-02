@@ -5,7 +5,7 @@ nav_order: 8
 audience: [organiser]
 tags: [results, leaderboard, publishing, csv, replay]
 summary: "How the live leaderboard relates to official results, how sportives publish neutrally, and how to export and replay a finished event."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Results
@@ -101,3 +101,9 @@ a replay of their own ride.
   [Running the event on race day](race-day-management.md).
 - For an athlete whose phone was offline at the line, you can mark them
   finished yourself so their record is right. See the same guide.
+- **A hidden athlete stays hidden in results too.** An athlete who's turned
+  on **Hide my location** for the event is left out of the public results
+  page and its CSV export entirely, name, gender, age band and time alike,
+  the same as they're left off the live map. You still see them, and their
+  full result, on your own manage screen. See
+  [Who can see your location?](../account-and-privacy/who-can-see-your-location.md).

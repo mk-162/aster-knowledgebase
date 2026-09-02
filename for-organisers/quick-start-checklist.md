@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [organiser]
 tags: [checklist, quick-start, setup, race-day]
 summary: "An end-to-end checklist from setting up your account to publishing results."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Organiser quick-start checklist
@@ -18,39 +18,54 @@ to bottom and you'll have a fully set-up, ready-to-run event.
 - [ ] **Create your organiser account** (or use a team you run): name, handle,
       logo, description. [Become an organiser](become-an-organiser.md)
 - [ ] **Add anyone who'll help** as an admin, so race-day duties can be shared.
-- [ ] **Have your route ready** as a GPX file (not needed for point-to-point).
+- [ ] **Have your route ready**, or plan to build one in the app: a GPX file
+      (from Strava, Komoot, Garmin or similar), or nothing at all if you'll
+      draw it on the map yourself. Not needed for point-to-point, which uses
+      checkpoints instead.
 - [ ] **Know your timing**: the exact start date, **time** and the event's local
       **time zone**.
 
 ## B. Build the event
 
-- [ ] **Choose the activity** (ride or run), then **pick the format**: race,
-      time trial, sportive / gran fondo, meet-up or point-to-point.
+- [ ] **Choose the activity** (ride or run), then **pick the format** — every
+      format is a card and none is preselected, so you must choose one:
+      meet-up, sportive / gran fondo, race, time trial or point-to-point.
       [Event formats](event-types.md)
-- [ ] **Choose privacy**: public, unlisted or private. (The picker defaults to
-      unlisted; pick public straight away if you want to.)
+- [ ] **Choose privacy**: public, unlisted or private. (Defaults to unlisted;
+      pick public straight away if you want to.)
       [Public, unlisted and private events](../for-spectators/public-unlisted-private-events.md)
-- [ ] **Plan your registration capacity.** Creating, previewing and publishing are
-      free; a free event is a share-link preview capped at **3 registrations**. To
-      take more real registrations and appear in public discovery, subscribe to an
-      **Event Organiser** plan sized to your event.
+- [ ] **Know your registration plan.** Creating, building and previewing are
+      free, but an event can't take **any** registrations until you subscribe
+      to an **Event Organiser** plan — there's no free allowance. The tier you
+      choose sets the cap (100, 500, 1,000, or a larger enterprise option).
       [Registration and categories](registration-and-categories.md) ·
       [pricing](https://aster-track.com/pricing)
-- [ ] **Name it, choose the host** (organiser account or team, it can't be
-      changed later), and **group it into a festival** if it's part of one.
-- [ ] **Set the start time and time zone.** Double-check the zone.
-- [ ] **Set a cut-off** if you need one, and choose whether timed-out athletes are
-      marked DNF (the default) or finished. (Not used for untimed meet-ups.)
+- [ ] **Name it, choose the host** (organiser account or team — locked once
+      created), and **group it into a festival** if it's part of one.
+- [ ] **Set the start time and time zone.** Double-check the zone; the app
+      auto-detects it, but confirm it got the right one.
+- [ ] **For circuits: turn on laps and set the count now** — laps can only be
+      set at creation, there's no way to add or change them afterwards.
+      (Not offered for point-to-point or meet-up.)
+- [ ] **Set a tracking cutoff** if you need one. (Not offered for meet-ups.)
+      Whether it marks timed-out athletes DNF or finished can be changed later
+      from the Event Day tab; the default is DNF, but note that a
+      **ranked** format (race, time trial) is the only place DNF applies at
+      all — an unranked format (sportive, point-to-point, meet-up) marks an
+      early ender **Finished**, never DNF.
 
 ## C. Route and timing
 
-- [ ] **Upload the route (GPX)** and check the distance and elevation look right,
-      or, for point-to-point, **place your checkpoints**.
+- [ ] **Add your route**: pick a saved route from your library, **upload a
+      GPX**, or **build one in the app** by tapping points on a map — or, for
+      point-to-point, **place your checkpoints** instead. None of this blocks
+      creating the event; add or change it afterwards from the Course tab.
       [Routes, start and finish lines](routes-start-and-finish.md)
 - [ ] **Confirm the start/finish line** the route suggested. Adjust the position
-      and detection radius if needed. (Timed formats need this before you can
-      publish; meet-ups don't.)
-- [ ] **For circuits:** turn on laps and set the lap count.
+      and detection radius if needed. Timed formats (race, time trial,
+      sportive / gran fondo) won't go live automatically without this — a
+      warning tells you so right after you create the event, and again on the
+      Event Day tab if it's still missing. Meet-ups don't need it.
 
 ## D. Registration
 
@@ -61,7 +76,8 @@ to bottom and you'll have a fully set-up, ready-to-run event.
 - [ ] **Build the registration form** (questions and a waiver) if you're using
       managed registration.
 - [ ] **Choose bib assignment**: automatic or self-entry.
-- [ ] **Publish**, then open the event page yourself to check it reads well.
+- [ ] **Add images** on the Summary tab, then open the event page yourself to
+      check it reads well.
 
 ## E. In the week before
 
@@ -79,12 +95,14 @@ to bottom and you'll have a fully set-up, ready-to-run event.
 
 - [ ] Open your **organiser dashboard**. [Running the event on race day](race-day-management.md)
 - [ ] Check the **participant list**: athletes showing as registered/started.
-- [ ] For a **race**, **start it at the gun**. If you forget, it auto-starts at the
-      scheduled time, but press it yourself for precision.
+- [ ] There's nothing to switch on — the event goes live on its own at the
+      scheduled time (or on the first athlete's ping). For a **race**, you can
+      still tap **Start Race Now** on the Event Day tab to fire the gun
+      yourself for precision instead of waiting.
 - [ ] **Watch the field** on the live map and leaderboard.
 - [ ] **Keep an eye out for Alerts** and respond. [Handling Alerts](handling-sos-alerts.md)
-- [ ] Use **force finish / mark DNF / reset** for any athlete whose tracking
-      needs a hand.
+- [ ] Use **force finish / mark DNF / reset / withdraw** for any athlete whose
+      tracking needs a hand.
 
 ## G. After the finish
 

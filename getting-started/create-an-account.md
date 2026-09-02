@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete, spectator, organiser]
 tags: [account, signup, login]
 summary: "When you need an account, how to sign up and sign in, and what an account gives you."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Create an account
@@ -61,8 +61,9 @@ nowhere would be a real problem. See
 [What happens when I lose signal?](../safety-and-offline/offline-and-no-signal.md)
 
 The only times your session ends are when **you** tap Sign Out, or if the app
-detects its saved login is corrupted on your device. If your session ever needs
-refreshing mid-ride, a banner asks you to sign in again — your ride keeps
+detects its saved login is corrupted on your device. If your sign-in ever
+needs refreshing, a banner appears and tries a quick, silent refresh first —
+you're only sent to sign in by hand if that fails — and your ride keeps
 recording and nothing on your device is lost in the meantime.
 
 ## Forgotten password

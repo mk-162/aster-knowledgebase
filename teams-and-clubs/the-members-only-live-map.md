@@ -5,7 +5,7 @@ nav_order: 5
 audience: [athlete, spectator]
 tags: [teams, clubs, live-map, privacy, members-only]
 summary: "Members-only meet-ups: who can watch them live, what non-members see, and how this differs from public events."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # The members-only live map
@@ -17,6 +17,13 @@ participant list, the route — is visible only to signed-in, active members of 
 club. (A club can also open a meet-up to anyone on Aster; see
 [club visibility and sharing](club-visibility-and-sharing.md) for how that
 differs.)
+
+A meet-up's page is the **same map-first page every Aster event uses** — the
+map is the headline, and About, Chat and the post-ride
+[Club Recap](club-rides.md#the-club-recap) open from an **Info** sheet over
+it. A members-only meet-up isn't a separate, simpler page design — it's the
+identical event page, with the same access check gating the whole thing for
+non-members.
 
 ## Who can see a members-only meet-up
 

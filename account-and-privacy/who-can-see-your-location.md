@@ -5,7 +5,7 @@ nav_order: 2.5
 audience: [athlete, spectator, organiser]
 tags: [privacy, location, safety, sharing]
 summary: "Exactly who can see where you are, when, and how to keep a ride private."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Who can see your location?
@@ -19,8 +19,8 @@ clear, honest answer.
   tracking an activity**, not the rest of the time.
 - **In an event,** your live position is visible to whoever can view that
   event, which depends on its privacy level.
-- **On a Just Ride,** you're private by default: only people you send the
-  watch link to can follow along.
+- **On a Just Ride,** you're private by default: nobody can follow along
+  unless you choose to let your followers watch, or share a link.
 - When you **stop** or **finish**, the live sharing ends and your live
   location freezes.
 
@@ -47,20 +47,31 @@ Some organisers let athletes hide their live location from the public map
 for a particular event. When that's switched on for the event, you'll find
 a **Hide my location** toggle on your tracking screen.
 
-Turning it on keeps you off the **public** live map: spectators see a
-"Hidden rider" without your name, marker or trail. It does **not** hide you
-from the organiser: you stay visible on their dashboard, keep your place in
-the results, and keep tracking and uploading exactly as normal. It's a
-visibility choice, not a safety switch. An Alert you raise still reaches
-your organiser and safety contacts. If the organiser hasn't enabled it for
-the event, the toggle isn't there.
+Turning it on keeps you off the **public** live map, the leaderboard, and
+the event's published results: spectators see a "Hidden rider" placeholder
+with no name, marker or trail on the live map, and you're left out of the
+leaderboard and the results list entirely, not shown with your name
+redacted, so nothing there reveals that you rode, your name, your gender or
+your age category. It does **not** hide you from the organiser: you stay
+visible on their dashboard, keep your place internally, and keep tracking
+and uploading exactly as normal. It's a visibility choice, not a safety
+switch. An Alert you raise still reaches your organiser and safety
+contacts. If the organiser hasn't enabled it for the event, the toggle
+isn't there.
 
 ## While you're on a Just Ride
 
-A Just Ride is **private by default**. Nobody can see it unless **you**
-create a **watch link** and share it. Anyone you give that link to can
-follow you live while the ride is on; people without it can't find your
-ride at all. You can turn a watch link off at any time. See
+Before you start, you choose **who can see this activity**, and the default
+is always **Just me**, private, never last-used:
+
+| Choice | Who can see your live location |
+|---|---|
+| **Just me** (default) | Nobody. Saved to your activities for you alone. |
+| **Followers & club** | Anyone who follows you can watch live, no link needed. |
+| **Anyone with link** | Only people you send a watch link to. |
+
+You can change this mid-ride too, and turning sharing off never pauses or
+stops your recording, it only stops who can watch. See
 [Just Ride](../for-athletes/free-rides.md) and
 [Share links](../for-spectators/share-links.md).
 
@@ -84,8 +95,10 @@ What stays visible afterwards depends on the activity:
 
 - A **public** event result stays on the event page and your profile for
   anyone to see.
-- A **Just Ride** is visible only to you and anyone who still has a watch
-  link you sent.
+- A **Just Ride** stays visible only to whoever you shared it with: nobody
+  if you rode as **Just me**, your followers if you chose **Followers &
+  club**, or anyone who still has the link if you chose **Anyone with
+  link**.
 
 ## Raising an Alert
 
@@ -104,7 +117,8 @@ and never appears on your public profile.
 
 - **Use a Just Ride** (private by default) rather than a public event if
   you don't want an audience.
-- **Don't share the watch link**: without it, nobody can find a Just Ride.
+- **Leave it set to Just me**: with that choice, nobody, not even your
+  followers, can find or watch a Just Ride.
 - **Check an event's privacy level** before you register.
 - If the organiser allows it, use **Hide my location** to stay off the public
   map during an event.

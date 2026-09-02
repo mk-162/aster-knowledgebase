@@ -5,7 +5,7 @@ nav_order: 3.2
 audience: [organiser]
 tags: [walkthrough, time-trial, splits]
 summary: "Set up and run a time trial where athletes start individually and race their own clock."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Walkthrough: a time trial
@@ -22,8 +22,8 @@ on a shared gun, and the results are ranked fastest-first.
 
 ## 2. Route, start and finish
 
-[Upload your GPX](routes-start-and-finish.md) and set the **start** and
-**finish** lines. The start line matters more here than in a mass start,
+[Build or upload your route](routes-start-and-finish.md) and set the
+**start** and **finish** lines. The start line matters more here than in a mass start,
 because each athlete's time begins the moment they cross it. Place it where
 athletes are up to speed and the line is unambiguous.
 

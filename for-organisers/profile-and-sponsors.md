@@ -5,7 +5,7 @@ nav_order: 10
 audience: [organiser]
 tags: [profile, sponsors, branding, followers, spectator-report]
 summary: "Control your public organiser page, feature sponsors on your events, and show partners the audience your event reached."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Your organiser profile, sponsors and audience report
@@ -33,12 +33,17 @@ followers, by design.)
 
 ## Sponsors
 
-You can feature **sponsors** on an **event**, on your **organiser account**,
-or on a **team** you run. Each sponsor has a name, logo and link, and they
-render as a strip of circular logos on the relevant public page, a clean,
-consistent way to give partners visibility. Add and reorder them from the
-sponsors screen for that event, org or team.
+You can feature **sponsors** on an **event**, a **festival**, a **series**,
+your **organiser account**, or a **team** you run. Each sponsor has a name,
+logo and link, and they render as a strip of circular logos on the relevant
+public page, a clean, consistent way to give partners visibility. Add and
+reorder them from the sponsors screen for that event, festival, series, org
+or team.
 
+- **A meet-up never carries sponsors.** A social club ride has no
+  commercial backing to show, so the Sponsors tab, and the sponsor strip
+  itself, is dropped entirely for the meet-up format. Every other format
+  (race, time trial, sportive, point-to-point) can carry one.
 - Sponsor links are safety-checked before they're shown.
 - Keep your own logo and banner current; they're the first thing athletes
   and spectators see.

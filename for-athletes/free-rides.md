@@ -5,7 +5,7 @@ nav_order: 6
 audience: [athlete]
 tags: [just-ride, tracking, sharing]
 summary: "Track a personal ride or run outside any event, share it live with anyone, and save it to your history."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Just Ride
@@ -68,14 +68,18 @@ while you're stopped. See [Pausing and resuming](pausing-and-resuming.md).
 
 ## Safety on a Just Ride
 
-A Just Ride carries two safety tools:
+A Just Ride carries these safety tools:
 
+- Tap **I'm OK** to reassure anyone watching if you've been stationary a
+  while — they see a "Checked in OK · HH:MM" chip. Sending it needs signal;
+  the app tells you if it couldn't go, and it never auto-retries.
 - An **Alert** button that raises an alert to the people watching your ride,
   with your location. You confirm first, then have a short cancellable
   countdown before it actually sends — a stray pocket-tap doesn't fire an alert.
-- Automatic **crash detection**, which is a Just-Ride-only feature. If your speed
-  drops from fast to a dead stop, the app starts the same cancellable countdown
-  and, if you don't cancel, raises a crash Alert to your watchers.
+- Automatic **crash detection**. If your speed drops from fast to a dead stop,
+  the app starts the same cancellable countdown and, if you don't cancel,
+  raises a crash Alert to your watchers. Crash detection also runs during
+  events — see [Starting and tracking a ride](starting-and-tracking-a-ride.md).
 
 Both alert the people watching you — they do **not** contact the emergency
 services, and if nobody's watching, the app tells you plainly. Neither ever ends

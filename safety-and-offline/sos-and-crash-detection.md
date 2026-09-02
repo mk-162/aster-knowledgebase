@@ -5,14 +5,14 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [alert, crash, safety, emergency]
 summary: "How to raise the alarm, exactly who gets alerted, and what an Alert can and cannot do."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Alert and crash detection
 
 Aster has two ways to raise the alarm if something goes wrong on a ride or
-run: a manual **Alert** button, and automatic **crash detection** on Just
-Rides.
+run: a manual **Alert** button, and automatic **crash detection**, both
+available on a Just Ride and in an event.
 
 Before anything else, the honest bit, and the app tells you the same thing
 the first time you open Alert:
@@ -35,9 +35,11 @@ before.
   acknowledges it within a couple of minutes they're alerted again. It's
   handled discreetly: spectators don't see it. See
   [Handling Alerts](../for-organisers/handling-sos-alerts.md).
-- **On a Just Ride**, your Alert goes to **your watchers**: everyone
-  following your ride through your watch link. Before you send, the app
-  shows how many people that is. **If nobody is watching, it says so
+- **On a Just Ride**, your Alert goes to **your watchers**: whoever can
+  currently watch your ride, your followers if you chose **Followers &
+  club**, or whoever you sent the link to if you chose **Anyone with
+  link**. Before you send, the app shows how many people that is. **If
+  nobody is watching (including if you started on Just me), it says so
   plainly**: an alert would reach nobody, and if you need urgent help you
   should call your local emergency number.
 
@@ -89,26 +91,26 @@ your profile editor, fill in **Emergency phone**, and tick **Show my phone
 number to safety-alert recipients**. The number is revealed only alongside
 an Alert, it's never shown on your public profile.
 
-## Automatic crash detection (Just Rides)
+## Automatic crash detection
 
-On a Just Ride, Aster watches your GPS speed for the signature of a crash:
-moving at speed, then stopping almost instantly. The speed floor is tuned
-to the activity, roughly 20 km/h for cycling and 9 km/h for running,
-followed by a sudden deceleration. If that happens:
+On both a Just Ride and in an event, Aster watches your GPS speed for the
+signature of a crash: moving at speed, then stopping almost instantly. The
+speed floor is tuned to the activity, roughly 20 km/h for cycling and
+9 km/h for running, followed by a sudden deceleration. If that happens:
 
 1. An **alarm sounds** and your phone vibrates.
 2. The same **60-second cancellable countdown** used for a manual Alert
    appears.
-3. If you don't cancel in time, a crash alert goes to your watchers
-   automatically, same recipients, same rules as a manual Alert, flagged as
-   a possible crash.
+3. If you don't cancel in time, an alert goes to your watchers or your event
+   organisers automatically, same recipients and same rules as a manual
+   Alert for the activity you're on. On a Just Ride it is marked as a
+   possible crash; in an event it reaches the organiser looking the same as
+   an Alert you raised yourself.
 
 Kerb hop, dropped phone, emergency stop for a sheep? Tap **Cancel (I'm OK)**
 during the countdown and nothing is sent. Crash detection never stops your
 ride, if you did come off, your live location staying visible is what
 helps people find you.
-
-Crash detection runs on Just Rides only; it isn't active in events.
 
 ## What a watcher sees
 

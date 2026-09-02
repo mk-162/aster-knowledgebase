@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator]
 tags: [following, feed, discover, live-now]
 summary: "Follow athletes, teams and events, find people under Events and Groups, and see it all in your feed."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Following and your feed
@@ -30,7 +30,8 @@ open a share link or watch a public event, on any device, with no account.
 Two tabs in the main navigation help you find what to follow:
 
 - **Events** lists events, with a **Meet-ups** tab alongside it for untimed
-  group activities. Search or browse either.
+  group activities, and an **Organisers** tab listing every event organiser
+  on Aster. Search or browse any of the three.
 - **Groups** (shown as **Social** in the navigation) has tabs for **Clubs**,
   **Teams** and **Riders** — search a tab, or leave the box empty to browse.
 

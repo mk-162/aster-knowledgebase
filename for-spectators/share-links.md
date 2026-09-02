@@ -3,15 +3,15 @@ title: "Share links: events and shared rides"
 parent: "For spectators"
 nav_order: 6
 audience: [spectator, athlete]
-tags: [sharing, links, just-ride]
-summary: "What a shared event or ride link shows the person who opens it — nothing to install, no account."
-last_updated: 2026-08-28
+tags: [sharing, links, just-ride, routes]
+summary: "What a shared event, ride or route link shows the person who opens it — nothing to install, no account."
+last_updated: 2026-09-02
 ---
 
 # Share links: events and shared rides
 
-A link is all anyone needs to watch on Aster. There's nothing to install and no
-account to create.
+A link is all anyone needs to watch on Aster, or to see a route someone's
+shared. There's nothing to install and no account to create.
 
 ## Event links
 
@@ -50,6 +50,18 @@ rider's live location, trail, distance and time — with no account required.
   with their location. To also get a push notification when you're *not*
   looking at the page, you need to be signed in — see
   [Following riders and getting notified](following-and-notifications.md).
+
+## Route links
+
+An athlete can also share one of their saved **routes** — a course, not a
+live ride — from **My Routes**. Opening a route link shows the route on a
+map with its distance, elevation gain and an elevation profile, no account
+needed, and offers a **Download GPX** button that works for anyone. Signing
+in adds two more options: **Save to my routes** (copies it into your own
+library) and **Use in event or meet-up** (attaches a copy to an event or
+meet-up you manage, if you have one). The person who shared it can turn the
+link off at any time; after that, opening it says the link is no longer
+active.
 
 ## Good to know
 

@@ -5,7 +5,7 @@ nav_order: 0.4
 audience: [spectator]
 tags: [demo, watching, no-login, live]
 summary: "A permanent, always-on demo event with simulated riders — see live tracking in action with no signup."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # The live demo (simulated)
@@ -17,28 +17,30 @@ and leaderboard behave while a race is on.
 
 ## What it is
 
-The demo is titled **"Aster Live Demo · Yorkshire Gravel"** and behaves just
-like a normal event page: a live map with rider markers and trails, a route, a
-leaderboard, and the **Catch up** playback controls. The pitch on the page says
-it best:
-
-> See live tracking in action — a simulated race you can watch right now, no
-> signup needed.
+The demo is a real event on Aster, **"Aster Live Demo · Yorkshire Gravel,"**
+set up as a mass-start race, and it behaves just like a normal event page: a
+live map with rider markers and trails, a route, a Riders/leaderboard tab,
+and the **Catch up** playback controls. It runs a continuous cycle of a
+simulated race, so there's always something moving whenever you open it.
 
 ## It's simulated — not real riders
 
 The one thing to know: **the riders in the demo aren't real people.** It's a
-simulation, and the app makes that clear — it's badged **"Live demo · Simulated
-riders"** wherever it appears. Everything moves and updates like a live event,
+simulation, and the app makes that clear — it's badged **"Live demo ·
+Simulated riders"** wherever it appears: the event listing, the event page
+header, and inside Catch up. Everything moves and updates like a live event,
 but nobody is actually out on a bike. It's there to show you how Aster works,
 not to track a real race.
 
 ## How to open it
 
-Look for the **"Aster Live Demo · Yorkshire Gravel"** card at the top of the
-Home feed and tap **Watch it live** — it opens straight into the event, no
-sign-in, in any browser. You can also find it by browsing **Events**: it's
-the one simulated event kept in the public listing, clearly labelled so it's
+If you're signed in, look for the **"Live demo"** card near the top of the
+Home feed — it's labelled **"Yorkshire Gravel"** with the line "Simulated
+race, running now — no signup," and the whole card is one tap into the event.
+You can dismiss it, and it stays dismissed on that device.
+
+Signed out, or don't see the card? Browse **Events** instead: the demo is the
+one simulated event kept in the public listing, clearly labelled so it's
 never mistaken for a real one.
 
 ## What you can try on it

@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [athlete]
 tags: [safety, alert, watchers, emergency]
 summary: "Your safety contacts on Aster are the people watching your ride, here's how to make sure someone actually is."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Who gets alerted when you need help
@@ -30,9 +30,12 @@ points you at your local emergency number instead.
 A safety contact only works if they exist, so before a big or remote ride or
 run:
 
-1. **On a Just Ride:** create a watch link and send it to someone,
-   a partner, a club mate, whoever would notice if you stopped moving. See
-   [Just Ride](../for-athletes/free-rides.md).
+1. **On a Just Ride:** before you start, choose **Followers & club** (so the
+   people who follow you can watch, no link needed) or **Anyone with link**
+   and send it to someone, a partner, a club mate, whoever would notice if
+   you stopped moving. **Just me** means nobody's watching, so nobody's
+   there to notice. See [Just Ride](../for-athletes/free-rides.md) and
+   [Who can see your location?](../account-and-privacy/who-can-see-your-location.md).
 2. **In an event:** the organisers are your safety contact by default. Share
    the event page with your people too, so they can follow your live position.
 3. Tell them what the link is for: they'll see your live position, and a red

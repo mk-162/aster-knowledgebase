@@ -5,7 +5,7 @@ nav_order: 1.5
 audience: [athlete]
 tags: [quick-start, walkthrough, first-time, checklist]
 summary: "Everything from signing up to seeing your result, in order, for your first tracked event."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Your first event: a walkthrough
@@ -60,11 +60,13 @@ more detail if you want it.
 
 ## Finishing
 
-- **In a race or time trial**, cross the finish line and the app finishes you
-  automatically — no tap needed. If you have to pull out instead, **Abandon**
-  records a DNF. **In a sportive, meet-up or grand départ**, there's no finish
-  line to detect — you end it yourself with the **slide-to-end** control
-  whenever you're done.
+- **In a race, time trial or sportive**, cross the finish line and the app
+  finishes you automatically — no tap needed. In a race or time trial, pulling
+  out instead with **Abandon** records a DNF; a sportive never DNFs, so if you
+  stop early (or don't want to wait on the app to catch your crossing) you can
+  also just **slide to end**. **In a meet-up or grand départ**, there's no
+  finish line to detect at all — you always end it yourself with
+  **slide-to-end**, whenever you're done.
 - You'll see your **summary** — time, distance, average speed, and lap splits
   if it was a multi-lap event. [More on finishing](finishing-a-ride.md)
 

@@ -5,7 +5,7 @@ nav_order: 12
 audience: [athlete, organiser]
 tags: [teams, pro, verified]
 summary: "Verified status for professional and elite teams — what it is, how to apply, and how it differs from an ordinary club."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Verified (pro) teams
@@ -42,3 +42,10 @@ doesn't need to be "pro" for any of its club tools.
 Athletes on a verified team carry the pro flag on their own profiles while
 they're on the roster, and the team can show its
 [sponsor strip](club-visibility-and-sharing.md) on its page.
+
+**Good to know:** because joining an application-type verified team can carry
+the pro badge onto a new member, a verified team's
+[invite link](roles-and-managing-members.md#invite-links) is deliberately
+tighter than an ordinary club's — 25 joins and a 30-day expiry, instead of
+1,000 joins that never expire. Nothing else about membership changes; if a
+link stops working, generate a fresh one.

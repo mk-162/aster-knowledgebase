@@ -5,7 +5,7 @@ nav_order: 5
 audience: [spectator]
 tags: [compare, gaps, splits]
 summary: "Put two to five riders side by side to see gaps, splits and progress."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Comparing riders
@@ -13,6 +13,11 @@ last_updated: 2026-08-28
 The **Compare** view puts riders side by side so you can see exactly how they
 stack up. Like the rest of the spectator experience, it works without an
 account.
+
+Compare needs a Riders tab to select from, so it's available on races, time
+trials, sportives and point-to-point adventures. **Meet-ups don't have a
+Riders tab, so there's no compare view for them** — see
+[Reading the leaderboard](the-leaderboard.md).
 
 ## How to compare
 
@@ -30,9 +35,9 @@ someone sends you.
   stopped rider's speed isn't shown.
 - A **gap matrix** showing the time gap between each pair of riders. For time
   trials these are projected gaps based on each rider's own clock. On
-  unranked formats (sportives and gran fondos, meet-ups and point-to-point
-  rides), the compare page shows no positions and no gap matrix, matching
-  the leaderboard's [neutral treatment](the-leaderboard.md).
+  unranked formats (sportives and gran fondos, point-to-point adventures),
+  the compare page shows no positions and no gap matrix, matching the
+  leaderboard's [neutral treatment](the-leaderboard.md).
 - On time trials with checkpoints, a **splits table** — each rider's time at
   each checkpoint, with the fastest highlighted, so you can see who's quicker
   on which part of the course.

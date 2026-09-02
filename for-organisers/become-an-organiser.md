@@ -5,7 +5,7 @@ nav_order: 1
 audience: [organiser]
 tags: [organiser, account, verification, host]
 summary: "Set up an organiser account so you can create and run events."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Become an organiser
@@ -36,6 +36,17 @@ A **team or club** can also host events. If you run a club on Aster, you can cre
 members-only rides and events under it directly, no separate organiser account
 needed. See [Teams and clubs](../teams-and-clubs/index.md).
 
+> **Good to know:** these are two different money models, and it's worth
+> keeping them apart. An **organiser account's** events need an **Event
+> Organiser** subscription before they can take any registrations at all —
+> there's no free allowance. A **club's** activities are never billed against
+> that organiser tier; instead, a club's first few joiners are free under a
+> separate, smaller club allowance, with Aster Plus covering more. Which model
+> applies is decided by who's hosting (organiser account vs. team), not by the
+> event's format — a club can host a full race or time trial under the club
+> model, and an organiser account's meet-up is still billed as an organiser
+> event.
+
 You pick the host (organiser account **or** team) when you create an event, and it
 **can't be changed afterwards**, so pick the right one at the start.
 
@@ -46,6 +57,17 @@ showing your logo, description, website and social links, your **verified** badg
 (if you have one), and your public and unlisted events. People can **follow** your
 organiser account to be notified when you publish new events. See
 [Your organiser profile and sponsors](profile-and-sponsors.md).
+
+## Choosing a plan
+
+The **Run events with Aster** page (reachable from your profile) is where you
+compare plans, sized by how many registrations a single event can take (100,
+500 or 1,000, or contact Aster for a larger enterprise plan), and where you
+subscribe. It's the same page whether you're just starting out or already
+running events — once you have a subscription and an organiser account, it
+becomes a shortcut back to creating your next event. See
+[Registration and categories](registration-and-categories.md) and
+[pricing](https://aster-track.com/pricing) for the current shape.
 
 ## Verification
 

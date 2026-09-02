@@ -5,7 +5,7 @@ nav_order: 1
 audience: [athlete, spectator, organiser]
 tags: [notifications, alerts]
 summary: "Every kind of notification Aster can send, and whether it's for the people watching or the athlete."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Notification types
@@ -25,7 +25,9 @@ and fans.
 
 - **Race progress**: an athlete you follow signs up for or starts a race, and
   as they go: lap splits and distance milestones (for example passing a round
-  distance or reaching a checkpoint on a point-to-point route).
+  distance or reaching a checkpoint on a point-to-point route). Distances in
+  these read in **your own** unit preference (metric or imperial), not the
+  athlete's, see [Privacy and your data](../account-and-privacy/privacy-and-your-data.md).
 - **Race finishes and cutoffs**: an athlete you're watching crosses the line, hits
   the organiser's cutoff time, or doesn't finish.
 - **Stoppages and off-route**: a tracked athlete hasn't moved for a while, or has

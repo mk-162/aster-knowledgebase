@@ -5,7 +5,7 @@ nav_order: 9
 audience: [athlete, organiser]
 tags: [teams, clubs, aster-plus, membership, subscription]
 summary: "Clubs are free and never pay. Individuals choose Aster Plus to join as a full member from the fourth member onward — and if Plus lapses, nothing is ever deleted."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Club membership and Aster Plus
@@ -32,17 +32,27 @@ public events for free — they just don't take a full member's seat.
 ## Get Aster Plus
 
 Aster Plus is an **in-app purchase**, bought in the **App Store** (iPhone) or
-**Google Play** (Android):
+**Google Play** (Android), billed either **monthly or annually** (annual
+works out cheaper per month) — you choose which when you buy:
 
 1. When you go to join a club as its fourth-or-later member, the app offers
-   **Aster Plus** — with the option of a **free demo** to try it first (once
-   per person, across every club).
-2. Confirm the monthly membership through the store.
+   **Aster Plus** — with the option of a **free first week** to try it first,
+   no card details needed (once per person, across every club).
+2. Pick monthly or annual, and confirm through the store.
 3. You're a full member straight away — roster, chat, RSVP and meet-ups all
    unlock.
 
 Current prices are on
 [aster-track.com/pricing](https://aster-track.com/pricing).
+
+**Good to know:** Aster Plus is one membership across the whole app, not a
+club-only add-on — the same subscription that unlocks full club membership
+also raises a couple of personal, non-club limits (like how many routes you
+can save to your own **My Routes** library, and how far back your own ride
+history goes). None of that changes how club membership itself works, and
+none of it is required to use a club fully as an admin — see
+[the club route library](the-club-route-library.md) for how club routes are
+unaffected by your personal route-saving limit.
 
 ## Manage or cancel Aster Plus
 

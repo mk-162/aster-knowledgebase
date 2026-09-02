@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, spectator, organiser]
 tags: [privacy, data, gdpr]
 summary: "What data Aster holds about you, why, and the control you have over it."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Privacy and your data
@@ -19,6 +19,10 @@ what's held about you and why, and points you to the controls.
   photo, banner, bio, location, social links. At sign-up you also give your
   **date of birth** and, optionally, your **gender**; these place you in the
   right age and gender categories for results.
+- **Display preferences.** Your unit choice (metric or imperial) and sport
+  preference (ride, run, or both) are saved to your account, so notification
+  copy and default views match your choice on every device, not just the one
+  where you set it.
 - **Location, only during an activity you start.** When you tap Start, the
   app records GPS points for that ride or run. Nothing is recorded before
   you start or after you stop.

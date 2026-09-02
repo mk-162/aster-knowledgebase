@@ -5,7 +5,7 @@ nav_order: 8
 audience: [athlete, spectator, organiser]
 tags: [teams, clubs, privacy, sharing, sponsors]
 summary: "What's public on a club page, what stays members-only, and what happens when you share a meet-up link."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Club visibility and sharing
@@ -37,7 +37,11 @@ their feed.
   difference.
 - **[The club board](the-club-board.md)** — all posts. It lives on the
   club's About page, not a separate tab.
-- **[The club route library](the-club-route-library.md)**.
+- **[The club route library](the-club-route-library.md)** — browsing the
+  library itself is members-only. The one exception: an admin can generate a
+  **public share link for a single route**, which anyone can open with no
+  account (map, stats, elevation, GPX download) — opt-in per route, and only
+  that one route, not the library.
 
 ## Sharing a meet-up link
 

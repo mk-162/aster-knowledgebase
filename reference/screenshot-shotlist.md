@@ -5,7 +5,7 @@ nav_order: 99
 audience: [organiser]
 tags: [internal, screenshots]
 summary: "Every screenshot placeholder in the help centre, to be captured in one pass once the app UI settles."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Screenshot shot list
@@ -23,7 +23,7 @@ show.
 | `for-athletes-free-ride-share` | [for-athletes/free-rides.md](../for-athletes/free-rides.md) | The Share Your Ride section on the Just Ride screen: the share link with Copy / Share, the who-can-watch control, and the watcher count. |
 | `for-athletes-register-join-form` | [for-athletes/register-for-an-event.md](../for-athletes/register-for-an-event.md) | The Join form on an event page, showing Display Name, Bib Number, Category and team fields. |
 | `for-athletes-ride-detail` | [for-athletes/results-history-and-profile.md](../for-athletes/results-history-and-profile.md) | A saved ride's detail page: static route map, stats, and the Share / Replay / Ghost race / Download GPX / visibility controls. |
-| `for-athletes-tracking-live-screen` | [for-athletes/starting-and-tracking-a-ride.md](../for-athletes/starting-and-tracking-a-ride.md) | The tracking screen mid-event: map with your live location and trail, stat cards, and the I'm OK / Alert / Pause / Abandon buttons. |
+| `for-athletes-tracking-live-screen` | [for-athletes/starting-and-tracking-a-ride.md](../for-athletes/starting-and-tracking-a-ride.md) | The tracking screen mid-event: map with your live location and trail, stat cards, and the I'm OK / Alert / Pause / Abandon buttons. (Abandon is race/TT only — sportive, meet-up and point-to-point show slide-to-end instead, as on a Just Ride.) |
 | `organisers-event-format-cards` | [for-organisers/event-types.md](../for-organisers/event-types.md) | The five format cards in the create-event flow, in order: sportive / gran fondo, meet-up, race, time trial, point-to-point. |
 | `organisers-series-public-page` | [for-organisers/festivals.md](../for-organisers/festivals.md) | A series page listing its races sorted by distance, each with start time, categories and live registration counts, plus register buttons. |
 | `organisers-sos-dashboard-alert` | [for-organisers/handling-sos-alerts.md](../for-organisers/handling-sos-alerts.md) | An active Alert on the organiser dashboard — rider, last known location, status controls (Responding / Resolved / False alarm) and the message-rider thread. |
@@ -36,7 +36,7 @@ show.
 | `spectators-quick-start-live-map` | [for-spectators/spectator-quick-start.md](../for-spectators/spectator-quick-start.md) | An event's Map tab mid-race: route line, moving rider markers, and a selected rider's trail and stats panel. |
 | `spectators-map-dots-and-trails` | [for-spectators/the-live-map-and-trails.md](../for-spectators/the-live-map-and-trails.md) | The Map tab with several rider markers on the route, one selected rider showing their trail and stats. |
 | `getting-started-create-account-signup-form` | [getting-started/create-an-account.md](../getting-started/create-an-account.md) | The sign-up form showing display name, email, password, date of birth and the privacy-policy tick-box. |
-| `getting-started-app-vs-website-install-cards` | [getting-started/the-app-and-the-website.md](../getting-started/the-app-and-the-website.md) | The install options shown on the website's Track page: App Store and Google Play, each with a QR code. |
+| `getting-started-app-vs-website-install-cards` | [getting-started/the-app-and-the-website.md](../getting-started/the-app-and-the-website.md) | The Go Live orientation page on the website: the three race-day steps, the Download the app button, and the Get the app panel with its QR code and both store badges. |
 | `notifications-push-blocked-banner` | [notifications/push-and-devices.md](../notifications/push-and-devices.md) | The Notification settings warning that appears when the OS is blocking push or the device isn't registered, with the Try again button. |
 | `safety-sos-send-modal` | [safety-and-offline/sos-and-crash-detection.md](../safety-and-offline/sos-and-crash-detection.md) | The Alert confirmation flow on the tracking screen, ending on the sent state with the Call 999 button and 'Cancel alert (False Alarm)'. |
 | `safety-sos-watcher-banner` | [safety-and-offline/sos-and-crash-detection.md](../safety-and-offline/sos-and-crash-detection.md) | The red Alert banner a watcher sees on the live watch page, with the last-known location link and call-999 guidance. |

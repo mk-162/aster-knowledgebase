@@ -5,7 +5,7 @@ nav_order: 9
 audience: [organiser]
 tags: [festivals, series, event-groups, courses, drafting]
 summary: "Group several events under one page, share a course between them, and run festival-wide checks."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Festivals and series (multi-event days)
@@ -70,3 +70,6 @@ disqualify. Disqualifying a rider asks you to confirm first.
   events stay hidden from anyone who doesn't manage the festival.
 - Registration counts and category spots on the page update live as
   athletes sign up.
+- A festival, and the series above it, can each carry their own **sponsor
+  strip**, separate from any sponsors on the individual events inside them.
+  See [Your organiser profile, sponsors and audience report](profile-and-sponsors.md).

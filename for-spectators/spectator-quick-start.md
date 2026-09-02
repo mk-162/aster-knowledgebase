@@ -5,7 +5,7 @@ nav_order: 0.5
 audience: [spectator]
 tags: [quick-start, watching, walkthrough]
 summary: "The fastest path to following an event or a single athlete live — no account, no app, no payment."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Watch your first event: a quick start
@@ -20,8 +20,10 @@ nothing to pay. Watching is part of what Aster is for. Here's the quick path.
 2. Open the **Map** tab: each athlete is a moving **marker** showing their live
    location, with the route and the trail they've left behind.
 3. Open the **Riders** tab for live progress. Races and time trials show
-   standings and gaps; sportives and meet-ups show times and
-   "on course / finished" instead — [here's why](the-leaderboard.md).
+   standings and gaps; sportives and point-to-point adventures show times
+   and "on course / finished" instead — [here's why](the-leaderboard.md).
+   **Meet-ups skip this tab entirely** — it's a map-only, untimed activity,
+   so the marker is the whole picture.
 4. Tap any athlete to focus on them and see their trail and stats — tapping
    also stars them as a favourite for this event, so their marker is easy to
    find.

@@ -5,7 +5,7 @@ nav_order: 2
 audience: [athlete]
 tags: [offline, signal, battery, reliability]
 summary: "Exactly how the app behaves with no signal, and why nothing inside your ride is lost."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # What happens when I lose signal?
@@ -52,15 +52,17 @@ queued.
 
 ## The persistent notification
 
-On Android, while tracking, the app shows a notification like
-"Tracking, 42 km". It's mostly informational: it tells you tracking is
-alive. The only button on it is **Finish…**, and tapping it simply opens
-the app on your ride's end screen, the same slide-to-end control you'd
-reach from inside the app. It doesn't stop, pause or otherwise change your
-tracking by itself, so a stray tap from your lock screen can't end your
-ride. Ending it always still needs your explicit action on that screen. On
-iPhone, iOS shows its own background-location indicator instead; Aster
-doesn't add a custom action to it.
+On Android, while tracking, the app keeps a notification in your tray:
+**"Just Ride — tracking"** on a Just Ride, or **"Activity tracking"** in an
+event, with a line underneath telling you it's recording. It's mostly
+informational: it tells you tracking is alive. The only button on it is
+**Finish…**, and tapping it simply opens the app on your ride's end screen,
+the same slide-to-end control you'd reach from inside the app. It doesn't
+stop, pause or otherwise change your tracking by itself, so a stray tap
+from your lock screen can't end your ride. Ending it always still needs
+your explicit action on that screen. On iPhone, iOS shows its own
+background-location indicator instead; Aster doesn't add a custom action to
+it.
 
 ## The rare edge cases
 

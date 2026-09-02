@@ -5,7 +5,7 @@ nav_order: 3
 audience: [athlete, organiser]
 tags: [teams, clubs, roles, members, management]
 summary: "Owner, admin and member roles, what each can do, invite links, and how club membership and Aster Plus behave."
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 ---
 
 # Roles and managing members
@@ -54,6 +54,12 @@ the sort of thing you pin in the club's WhatsApp group.
 - You can **revoke** a link at any time (and generate a fresh one); revoking
   turns off the old link without affecting anyone who already joined.
 - The owner and admins get a notification each time someone joins via a link.
+- An ordinary club's invite link is good for **1,000 joins and never
+  expires** on its own. A [verified/pro team's](verified-pro-teams.md) invite
+  link is deliberately tighter — **25 joins, expiring after 30 days** — because
+  joining an application-type pro team can carry the pro badge onto the new
+  member. If a link stops working with no obvious reason, it may simply have
+  reached its limit or expiry — generate a fresh one.
 
 ## Club membership and Aster Plus
 
