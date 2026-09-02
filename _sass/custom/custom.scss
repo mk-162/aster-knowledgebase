@@ -412,9 +412,13 @@ body.kb-landing {
 /* The FAQ's display line: Barlow Condensed 800, uppercase, 0.86 leading and
    -0.025em tracking, clamped 3rem to 5.5rem (it renders 68px at 800px wide
    and 88px on a wide desktop). */
+/* just-the-docs sets `h1, .text-alpha { font-size: 2.25rem !important }` and
+   the same shape for h2, so a plain class rule loses however specific it is.
+   That is why the display line rendered at 36px while asking for 88px. The
+   sizes below answer in kind; nothing else here needs to. */
 .kb-display {
   @include condensed;
-  font-size: clamp(3rem, 7.5vw, 5.5rem); line-height: 0.86; letter-spacing: -0.025em;
+  font-size: clamp(3rem, 7.5vw, 5.5rem) !important; line-height: 0.86; letter-spacing: -0.025em;
   font-weight: 800; color: $soft; margin: 0 0 1.5rem 0;
   &::after { display: none; }
   .kb-display-accent { color: $lime; }
@@ -428,7 +432,7 @@ body.kb-landing {
 /* In-page headings are Inter, sentence case, exactly as the FAQ sets them. */
 .kb-heading {
   font-family: $font-body; text-transform: none; font-weight: 500;
-  font-size: clamp(1.75rem, 3.2vw, 2.25rem); line-height: 1.2; letter-spacing: -0.01em;
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem) !important; line-height: 1.2; letter-spacing: -0.01em;
   color: $dark; margin: 0 0 2.5rem 0;
   &::after { display: none; }
 }
@@ -456,7 +460,7 @@ body.kb-landing {
 
 .kb-cta-title {
   font-family: $font-body; text-transform: none; font-weight: 500;
-  font-size: clamp(1.75rem, 3.2vw, 2.25rem); letter-spacing: -0.01em;
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem) !important; letter-spacing: -0.01em;
   color: $soft; margin: 0 0 1rem 0; &::after { display: none; }
 }
 .kb-cta-btn {
