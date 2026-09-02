@@ -176,7 +176,7 @@ h2, h3, h4 { @include heading; color: $dark; }
    ========================================================================== */
 .aster-shell {
   display: flex; align-items: flex-start; gap: 2rem;
-  max-width: $col-max + 2 * $col-pad; margin: 0 auto; padding: 0 $col-pad;
+  max-width: calc(#{$col-max} + 2 * #{$col-pad}); margin: 0 auto; padding: 0 $col-pad;
 }
 .side-bar {
   position: sticky !important; top: 78px;
