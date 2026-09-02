@@ -216,7 +216,12 @@ h2, h3, h4 {
 .nav-category { @include condensed; letter-spacing: 0.08em; color: $ink-muted; font-weight: 600; padding-left: 0; }
 
 /* ---- Content: links, buttons, callouts, tables, code ---- */
-.main-content a:not(.btn) {
+/* The landing page has no .main-content (it is not a docs page), so scoping
+   link styling to that container left its links at the browser default, which
+   renders visited links PURPLE against the brand. Cards and the CTA button are
+   excluded: they are their own components, not body links. */
+.main-content a:not(.btn),
+.kb-landing main a:not(.kb-card):not(.kb-cta-btn) {
   color: $dark; font-weight: 600; text-decoration: underline;
   text-decoration-color: $lime; text-decoration-thickness: 3px; text-underline-offset: 3px;
   background-image: none;
@@ -475,4 +480,11 @@ body.kb-landing {
 
 @media (max-width: 49.99rem) {
   .kb-col { padding: 3.5rem 1.25rem; }
+}
+
+
+/* Links on a dark band: ink-on-lime inverts to soft-on-lime. */
+.kb-landing .kb-band a:not(.kb-cta-btn) {
+  color: $soft; text-decoration-color: $lime;
+  &:hover { background: rgba($lime, 0.16); }
 }

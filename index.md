@@ -50,7 +50,8 @@ last_updated: 2026-09-02
     <p class="kb-kicker">Popular</p>
     <h2 class="kb-heading">Most-read guides</h2>
 
-    <div class="kb-topics" markdown="1">
+<div class="kb-topics" markdown="1">
+
 - [What is Aster?](getting-started/what-is-aster.md)
 - [Create an account](getting-started/create-an-account.md)
 - [Your first event: a walkthrough](for-athletes/your-first-event.md)
@@ -61,8 +62,9 @@ last_updated: 2026-09-02
 - [Who can see my location?](account-and-privacy/who-can-see-your-location.md)
 - [Organiser quick-start checklist](for-organisers/quick-start-checklist.md)
 - [Notification settings](notifications/preferences-and-quiet-hours.md)
-    </div>
-  </div>
+
+</div>
+</div>
 </section>
 
 <section class="kb-sheet">
@@ -70,7 +72,7 @@ last_updated: 2026-09-02
     <p class="kb-kicker">Everything else</p>
     <h2 class="kb-heading">Browse every section</h2>
 
-    <p class="kb-browse" markdown="1">
+<p class="kb-browse" markdown="1">
 [Getting started](getting-started/) ·
 [For athletes](for-athletes/) ·
 [For spectators](for-spectators/) ·
@@ -81,8 +83,8 @@ last_updated: 2026-09-02
 [Notifications](notifications/) ·
 [Account &amp; privacy](account-and-privacy/) ·
 [Glossary, FAQ &amp; troubleshooting](reference/)
-    </p>
-  </div>
+</p>
+</div>
 </section>
 
 <section class="kb-band kb-band--cta">
@@ -92,11 +94,11 @@ last_updated: 2026-09-02
     about a specific event, your category, start time or results, go to that event's organiser.
     For anything else, a human will reply.</p>
     <a class="kb-cta-btn" href="mailto:help@astertrack.app">Email us</a>
-    <p class="kb-cta-links" markdown="1">
+<p class="kb-cta-links" markdown="1">
 [Troubleshooting](reference/troubleshooting.md) ·
 [How to report a bug](reference/getting-support.md) ·
 [Glossary](reference/glossary.md) ·
 [FAQ](reference/faq.md)
-    </p>
-  </div>
+</p>
+</div>
 </section>
