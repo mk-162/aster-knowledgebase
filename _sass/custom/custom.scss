@@ -34,8 +34,19 @@ $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 
 @mixin condensed { font-family: $font-display; text-transform: uppercase; letter-spacing: 0.05em; }
 
-html, body { overflow-x: clip; max-width: 100%; }
 body { font-family: $font-body; background: $paper; color: $dark; }
+
+/* Same inset as SiteHeader / SiteFooter on aster-track.com */
+.aster-container {
+  width: 100%; max-width: $container; margin-inline: auto;
+  padding-left: 24px; padding-right: 24px; box-sizing: border-box;
+}
+@media (min-width: 40rem) {
+  .aster-container { padding-left: 40px; padding-right: 40px; }
+}
+@media (min-width: 64rem) {
+  .aster-container { padding-left: 64px; padding-right: 64px; }
+}
 
 h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-transform: none; }
 .main-content h1 {
@@ -200,19 +211,30 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
    SHELL LAYOUT — centered flex, overrides the theme's fixed sidebar
    ========================================================================== */
 .aster-shell {
-  display: flex; align-items: flex-start; gap: 1.5rem;
-  max-width: $container; margin: 0 auto; padding: 0 1.25rem;
+  display: flex; align-items: flex-start; gap: 2rem;
+  max-width: $container; margin: 0 auto; padding: 0 1.5rem;
   min-width: 0;
 }
 .side-bar {
-  position: sticky !important; top: 120px; left: auto !important;
-  flex: 0 0 248px; width: 248px !important; min-width: 248px;
-  height: auto !important; max-height: calc(100vh - 140px); overflow-x: visible; overflow-y: auto;
-  background: transparent; border: none; box-shadow: none;
-  padding: 1.5rem 0.75rem 2rem 0.25rem;
+  /* Kill Just the Docs' fixed left rail: it grows at lg and align-items:flex-end
+     right-packs the tree, which clips the left edge of every row. */
+  display: block !important;
+  flex-flow: column nowrap !important;
+  align-items: stretch !important;
+  position: sticky !important; top: 120px; left: auto !important; right: auto !important;
+  flex: 0 0 16.5rem; width: 16.5rem !important; min-width: 16.5rem; max-width: 16.5rem;
+  height: auto !important; max-height: calc(100vh - 140px);
+  overflow: visible !important;
+  background: transparent; border: none !important; box-shadow: none;
+  padding: 1.75rem 0.5rem 2.5rem 0.75rem;
   z-index: 1;
   transform: none !important;
   box-sizing: border-box;
+}
+.side-bar .site-nav,
+.side-bar .site-header,
+.side-bar .site-footer {
+  width: 100% !important; max-width: none !important;
 }
 .main {
   position: static !important;
@@ -236,7 +258,12 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
 .breadcrumb-nav { padding: 0 0.25rem; }
 
 /* ---- Docs nav (sidebar) ---- */
-.site-nav { padding-top: 0; padding-left: 0; }
+.site-nav {
+  display: block !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  flex: none !important;
+}
 .site-nav .nav-list { padding-left: 0; margin-left: 0; }
 .site-nav .nav-list .nav-list-item {
   > .nav-list-link {
@@ -441,7 +468,6 @@ a.kb-card {
   }
 
   .kb-topics ul { columns: 1; }
-  .aster-footer-main { flex-direction: column; gap: 2rem; padding-left: 1rem; padding-right: 1rem; }
+  .aster-footer-main { flex-direction: column; gap: 2rem; }
   .aster-footer-signoff span { font-size: 18vw; }
-  .aster-footer-compare .aster-container { padding-left: 1rem; padding-right: 1rem; }
 }
