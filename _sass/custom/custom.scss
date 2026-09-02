@@ -1,28 +1,30 @@
 /* ==========================================================================
-   Aster Help Centre — design-system styles (rebuilt 2026-07-02)
+   Aster Help Centre — house styles
 
-   The site header matches aster-website SiteHeader.tsx (dark band #0b0e08,
-   lime mark + ASTER in soft, audience links). Footer is still the July replica.
-   Docs body: paper canvas, white bordered content card, Barlow +
-   Barlow Condensed. Layout is owned by _layouts/default.html (aster-shell
-   flex) — the theme's fixed-sidebar layout is fully overridden.
+   Site header matches aster-website SiteHeader.tsx (dark band #0b0e08,
+   lime mark + ASTER in soft, audience links). Footer is Go. Live.
+
+   2026-09-02 founder QA: do not paint the retired pop/hard-offset shadow
+   and 2px ink frame on every docs block. The marketing house still holds
+   those tokens, but spends them sparingly; Help Centre chrome is paper,
+   hairline, and lime fill. Hero fills the content well. Mobile docs nav
+   is the knowledge-base tree, opened from the docs bar.
    ========================================================================== */
 
 /* ---- Tokens (mirror aster-website app/globals.css, 2026-08 house) ---- */
 $dark: #181e15;
-$navdark: #0b0e08;          /* --aster-band, SiteHeader strip */
+$navdark: #0b0e08;
 $ink-muted: rgba(24, 30, 21, 0.7);
 $lime: #c7f542;
 $lime-deep: #4a6300;
 $lime-bg: #EFFBC4;
 $mint: #DCEEEB;
-$mint-deep: #b9dcd6;
-$soft: #f6fcdf;             /* --aster-soft, wordmark on the band */
-$soft-mut: #9aa791;         /* --aster-soft-mut, idle header links */
+$soft: #f6fcdf;
+$soft-mut: #9aa791;
 $line-band: rgb(199 245 66 / 0.16);
-$stone: #F0F4F4;
+$line: rgb(24 30 21 / 0.14);
 $gold: #F2C94C;
-$paper: #fbfcf7;            /* --aster-paper */
+$paper: #fbfcf7;
 $container: 1200px;
 $ctrl-h: 40px;
 
@@ -30,14 +32,9 @@ $font-body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, san
 $font-display: 'Barlow Condensed', $font-body;
 $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 
-@mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $lime-deep; }
-@mixin press {
-  transition: transform 100ms ease, box-shadow 100ms ease, filter 100ms ease;
-  &:active { transform: translate(2px, 2px); box-shadow: none; }
-}
 @mixin condensed { font-family: $font-display; text-transform: uppercase; letter-spacing: 0.05em; }
 
-/* ---- Base ---- */
+html, body { overflow-x: clip; max-width: 100%; }
 body { font-family: $font-body; background: $paper; color: $dark; }
 
 h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-transform: none; }
@@ -128,15 +125,16 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
 /* Docs bar — Help Centre identity + search, not part of the site header */
 .aster-docsbar {
   background: $paper;
-  border-bottom: 1px solid rgb(24 30 21 / 0.14);
+  border-bottom: 1px solid $line;
 }
 .aster-docsbar-inner {
-  display: flex; align-items: center; gap: 1rem;
-  padding: 10px 24px;
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 10px 16px;
   max-width: $container; margin-inline: auto;
+  min-width: 0;
 }
 @media (min-width: 40rem) {
-  .aster-docsbar-inner { padding-left: 40px; padding-right: 40px; }
+  .aster-docsbar-inner { padding-left: 40px; padding-right: 40px; gap: 1rem; }
 }
 @media (min-width: 64rem) {
   .aster-docsbar-inner { padding-left: 1.25rem; padding-right: 1.25rem; }
@@ -147,16 +145,27 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
   color: $lime-deep; text-decoration: none; flex: none;
   &:hover { color: $dark; }
 }
+.aster-docs-menu {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; width: 40px; height: 40px; flex: none;
+  background: #fff; border: 1px solid $line; border-radius: 10px; color: $dark; cursor: pointer;
+  span[aria-hidden] { display: block; width: 16px; height: 1.5px; background: currentColor; }
+  &:focus-visible { outline: 2px solid $lime-deep; outline-offset: 2px; }
+}
+@media (min-width: 50rem) {
+  .aster-docs-menu { display: none !important; }
+}
 
 .aster-docsbar .search {
   position: relative; flex: 1 1 auto; min-width: 0; max-width: 420px;
   height: $ctrl-h; padding: 0; margin: 0 0 0 auto;
 }
 .aster-docsbar .search-input-wrap {
-  position: relative !important; width: 100% !important; transition: none;
+  position: relative !important; width: 100% !important; max-width: 100%;
+  transition: none;
   display: flex; align-items: center; overflow: hidden;
   height: $ctrl-h; border-radius: 12px; box-shadow: none;
-  background: #fff; border: 1px solid rgb(24 30 21 / 0.14);
+  background: #fff; border: 1px solid $line;
   &:focus-within { border-color: $lime-deep; }
 }
 .aster-docsbar .search-input {
@@ -173,13 +182,15 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
   right: 0 !important; left: auto !important;
   width: 560px !important; max-width: min(80vw, 560px) !important;
   max-height: 70vh; overflow-y: auto;
-  background: #fff; border: 2px solid $dark; border-radius: 12px; @include pop(4);
+  background: #fff; border: 1px solid $line; border-radius: 12px; box-shadow: none;
   z-index: 80;
 }
 @media (max-width: 49.99rem) {
+  .aster-docsbar .search { max-width: none; margin-left: 0; }
   .aster-docsbar .search-results {
-    left: 0 !important; right: auto !important; width: 100% !important; max-width: 100% !important;
+    left: 0 !important; right: 0 !important; width: auto !important; max-width: none !important;
   }
+  .aster-docsbar-kicker { display: none; }
 }
 .search-result:hover, .search-result.active { background: $lime-bg; }
 .search-result-title { color: $dark; font-weight: 600; }
@@ -189,53 +200,63 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
    SHELL LAYOUT — centered flex, overrides the theme's fixed sidebar
    ========================================================================== */
 .aster-shell {
-  display: flex; align-items: flex-start; gap: 2rem;
+  display: flex; align-items: flex-start; gap: 1.5rem;
   max-width: $container; margin: 0 auto; padding: 0 1.25rem;
+  min-width: 0;
 }
 .side-bar {
-  position: sticky !important; top: 120px;
-  flex: 0 0 240px; width: 240px !important; min-width: 240px;
-  height: auto !important; max-height: calc(100vh - 140px); overflow-y: auto;
-  background: transparent; border: none;
-  padding: 1.5rem 0 2rem 0;
+  position: sticky !important; top: 120px; left: auto !important;
+  flex: 0 0 248px; width: 248px !important; min-width: 248px;
+  height: auto !important; max-height: calc(100vh - 140px); overflow-x: visible; overflow-y: auto;
+  background: transparent; border: none; box-shadow: none;
+  padding: 1.5rem 0.75rem 2rem 0.25rem;
   z-index: 1;
+  transform: none !important;
+  box-sizing: border-box;
 }
 .main {
   position: static !important;
   margin-left: 0 !important; max-width: none !important;
   flex: 1; min-width: 0;
 }
-/* Old theme chrome that the topbar replaces */
 .main-header { display: none !important; }
+.aux-nav { display: none !important; }
 .side-bar .site-header { display: none !important; }
 .side-bar footer, .side-bar .site-footer { display: none !important; }
 
-/* Content card */
 .main-content-wrap {
-  background: #fff; border: 2px solid $dark; border-radius: 16px;
-  @include pop(6);
-  margin: 1.5rem 0 3rem 0 !important;
-  padding: 2rem 2.5rem !important;
+  background: transparent; border: none; border-radius: 0; box-shadow: none;
+  margin: 0 0 3rem 0 !important;
+  padding: 1.25rem 0 0 0 !important;
   max-width: none !important;
 }
+.main-content {
+  padding: 0 0.25rem;
+}
+.breadcrumb-nav { padding: 0 0.25rem; }
 
 /* ---- Docs nav (sidebar) ---- */
-.site-nav { padding-top: 0; }
+.site-nav { padding-top: 0; padding-left: 0; }
+.site-nav .nav-list { padding-left: 0; margin-left: 0; }
 .site-nav .nav-list .nav-list-item {
   > .nav-list-link {
-    color: $dark; font-weight: 500; border-radius: 10px; margin: 1px 0;
-    padding-right: 2.75rem;
+    color: $dark; font-weight: 500; border-radius: 10px; margin: 2px 0;
+    padding: 0.45rem 0.7rem; padding-right: 2.5rem;
+    border: none !important; box-shadow: none !important;
+    background-image: none;
     &:hover { background: $lime-bg; background-image: none; color: $dark; }
-    &.active { background: $lime; background-image: none; color: $dark; font-weight: 700;
-      border: 2px solid $dark; @include pop(2); }
+    &.active {
+      background: $lime; background-image: none; color: $dark; font-weight: 700;
+      border: none !important; box-shadow: none !important;
+    }
   }
   .nav-list-expander {
-    right: 8px; width: 2.25rem; height: 2.25rem; border-radius: 8px;
+    right: 4px; width: 2.25rem; height: 2.25rem; border-radius: 8px;
     color: $ink-muted;
     &:hover { background-image: none; background: $lime-bg; color: $dark; }
   }
 }
-.nav-category { @include condensed; letter-spacing: 0.08em; color: $ink-muted; font-weight: 600; padding-left: 0; }
+.nav-category { @include condensed; letter-spacing: 0.08em; color: $ink-muted; font-weight: 600; padding-left: 0.7rem; }
 
 /* ---- Content: links, buttons, callouts, tables, code ---- */
 .main-content a:not(.btn) {
@@ -248,35 +269,34 @@ h1, h2, h3, h4 { font-weight: 500; color: $dark; letter-spacing: -0.02em; text-t
   display: inline-flex; align-items: center; height: auto; padding: 12px 24px;
   background: $lime; background-image: none; color: $dark; font-weight: 700;
   @include condensed; letter-spacing: 0.06em; font-size: 1rem;
-  border: 2px solid $dark; border-radius: 12px;
-  @include pop(4); @include press;
+  border: none; border-radius: 12px; box-shadow: none;
   &:hover { background: $lime; background-image: none; color: $dark; filter: none; }
 }
 blockquote, .note, .tip, .important, .warning {
-  background: $lime-bg; border: 2px solid $dark; border-radius: 12px;
-  padding: 0.85rem 1.1rem; margin: 1.25rem 0; color: $dark; @include pop(2);
+  background: $lime-bg; border: 1px solid $line; border-radius: 12px; box-shadow: none;
+  padding: 0.85rem 1.1rem; margin: 1.25rem 0; color: $dark;
   > p:first-child { margin-top: 0; } > p:last-child { margin-bottom: 0; }
 }
 .warning { background: #FDECEA; }
 .note { background: $mint; }
 .main-content table {
-  border: 2px solid $dark; border-radius: 12px; border-collapse: separate; border-spacing: 0;
-  overflow: hidden; @include pop(2);
-  th { background: $stone; @include condensed; letter-spacing: 0.05em; font-size: 0.75rem;
-    color: $dark; border-bottom: 2px solid $dark; }
-  td { border-bottom: 1px solid rgba(24,30,21,0.12); }
+  border: 1px solid $line; border-radius: 12px; border-collapse: separate; border-spacing: 0;
+  overflow: hidden; box-shadow: none;
+  th { background: $paper; @include condensed; letter-spacing: 0.05em; font-size: 0.75rem;
+    color: $dark; border-bottom: 1px solid $line; }
+  td { border-bottom: 1px solid $line; }
   tr:last-child td { border-bottom: none; }
 }
-code { background: $stone; border: 1px solid rgba(24,30,21,0.15); border-radius: 6px;
+code { background: $paper; border: 1px solid $line; border-radius: 6px;
   font-family: $font-mono; font-size: 0.85em; padding: 0.1em 0.35em; color: $dark; }
 div.highlighter-rouge, figure.highlight {
-  background: #f7faf9; border: 2px solid rgba(24,30,21,0.15); border-radius: 12px;
+  background: $paper; border: 1px solid $line; border-radius: 12px;
   pre.highlight, pre { background: transparent; } code { background: transparent; border: none; }
 }
 .breadcrumb-nav-list-item { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
   a { color: $lime-deep; background-image: none; } }
 .label, .label-blue, .label-green { background: $mint !important; color: $dark;
-  border: 2px solid $dark; border-radius: 999px; font-weight: 700; font-family: $font-body; }
+  border: none; border-radius: 999px; font-weight: 700; font-family: $font-body; }
 .label-yellow { background: $gold !important; color: $dark; }
 
 /* ==========================================================================
@@ -335,8 +355,8 @@ div.highlighter-rouge, figure.highlight {
    HOMEPAGE components
    ========================================================================== */
 .kb-hero {
-  background: $navdark; border: none; border-radius: 0;
-  padding: 2.5rem 2.25rem; margin: -1.5rem -2.5rem 1.75rem -2.5rem;
+  background: $navdark; border: none; border-radius: 0; box-shadow: none;
+  padding: 2.5rem 1.5rem; margin: -1.25rem -0.25rem 1.75rem -0.25rem;
   .kb-hero-kicker { @include condensed; letter-spacing: 0.12em; color: $lime; font-weight: 700;
     font-size: 0.8rem; margin: 0 0 0.4rem 0; }
   .kb-hero-title { color: $soft; font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 500; letter-spacing: -0.03em; margin: 0 0 0.5rem 0; text-transform: none; &::after { display: none; } }
@@ -352,15 +372,15 @@ div.highlighter-rouge, figure.highlight {
   70% { box-shadow: 0 0 0 12px rgba(199,245,66,0); }
   100% { box-shadow: 0 0 0 0 rgba(199,245,66,0); }
 }
-.kb-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem 0; }
+.kb-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0.25rem 2rem; }
 @media (min-width: 64rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
 a.kb-card {
   display: flex; flex-direction: column; gap: 0.35rem;
-  background: #fff; border: 2px solid $dark; border-radius: 16px; padding: 1.1rem 1.2rem;
-  text-decoration: none !important; color: $dark; @include pop(3);
-  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
-  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(5); }
-  &:active { transform: translate(2px,2px); box-shadow: none; }
+  background: #fff; border: 1px solid $line; border-radius: 16px; padding: 1.1rem 1.2rem;
+  text-decoration: none !important; color: $dark; box-shadow: none;
+  transition: background 120ms ease;
+  &:hover { background: $lime-bg; transform: none; box-shadow: none; }
+  &:active { transform: none; box-shadow: none; }
   .kb-card-emoji { font-size: 1.6rem; line-height: 1; }
   .kb-card-title { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 1.15rem;
     &::after { content: " \2192"; color: $lime-deep; font-weight: 700; } }
@@ -370,11 +390,11 @@ a.kb-card {
   columns: 2; column-gap: 2.5rem; padding-left: 0; list-style: none;
   li { break-inside: avoid; margin: 0 0 0.55rem 0;
     &::before { content: ""; display: inline-block; width: 8px; height: 8px;
-      background: $lime; border: 2px solid $dark; border-radius: 2px; margin-right: 10px; } }
+      background: $lime; border: none; border-radius: 2px; margin-right: 10px; } }
 }
 .kb-support {
-  background: $mint; border: 2px solid $dark; border-radius: 16px;
-  padding: 1.4rem 1.6rem; margin-top: 2.25rem; @include pop(4);
+  background: #fff; border: 1px solid $line; border-radius: 16px; box-shadow: none;
+  padding: 1.4rem 1.6rem; margin: 2.25rem 0.25rem 0;
   .kb-support-kicker { @include condensed; letter-spacing: 0.1em; font-weight: 700;
     font-size: 0.8rem; color: $lime-deep; margin: 0 0 0.35rem 0; }
   ol { margin-bottom: 1rem; }
@@ -382,17 +402,46 @@ a.kb-card {
 .btn.kb-support-btn { display: inline-flex; margin: 0.25rem 0 0.75rem 0; }
 
 /* ==========================================================================
-   RESPONSIVE
+   MOBILE — Help Centre topics drawer + no horizontal crop
    ========================================================================== */
-@media (max-width: 49.99rem) { /* align with the theme's min-width:50rem desktop switch */
-  .aster-docsbar-inner { padding-left: 1rem; padding-right: 1rem; }
-  .aster-shell { display: block; padding: 0 1rem; }
-  .side-bar { position: static !important; width: auto !important; min-width: 0; max-height: none; padding: 1rem 0 0 0; }
-  /* restore the theme's mobile menu button strip (dark) so docs nav toggles */
-  .side-bar .site-header { display: flex !important; background: $dark; border-radius: 12px; border: 2px solid $dark; }
-  .site-title { color: $mint !important; @include condensed; font-weight: 700; }
-  .main-content-wrap { padding: 1.25rem 1.1rem !important; }
+.aster-kb-nav-backdrop {
+  display: none;
+}
+@media (max-width: 49.99rem) {
+  .aster-docsbar-inner { padding-left: 12px; padding-right: 12px; }
+  .aster-shell { display: block; padding: 0; }
+  .main { padding: 0 1rem; }
+  .main-content-wrap { padding-top: 0 !important; }
+  .kb-hero { margin: 0 -1rem 1.5rem; padding: 2rem 1rem; }
+
+  .aster-kb-nav-backdrop {
+    display: none;
+    position: fixed; inset: 0; background: rgba(11,14,8,0.45); z-index: 180;
+  }
+  body.aster-kb-nav-open .aster-kb-nav-backdrop { display: block; }
+
+  .side-bar {
+    display: none;
+    position: fixed !important;
+    top: 0; left: 0 !important; right: auto;
+    width: min(20rem, 86vw) !important; min-width: 0;
+    height: 100vh !important; height: 100dvh !important;
+    max-height: none;
+    background: $paper;
+    z-index: 200;
+    padding: 1.25rem 1rem 2rem;
+    overflow-y: auto;
+    transform: none !important;
+    border-right: 1px solid $line;
+    box-shadow: none;
+  }
+  body.aster-kb-nav-open {
+    overflow: hidden;
+    .side-bar { display: block; }
+  }
+
   .kb-topics ul { columns: 1; }
-  .aster-footer-main { flex-direction: column; gap: 2rem; }
+  .aster-footer-main { flex-direction: column; gap: 2rem; padding-left: 1rem; padding-right: 1rem; }
   .aster-footer-signoff span { font-size: 18vw; }
+  .aster-footer-compare .aster-container { padding-left: 1rem; padding-right: 1rem; }
 }
