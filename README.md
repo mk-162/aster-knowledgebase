@@ -49,3 +49,14 @@ bundle exec jekyll serve
 Read **STYLE-GUIDE.md** first. In short: write for the reader (not the engineer),
 one feature per article, clear headings, step-by-step instructions, and only
 document what the product actually does today.
+
+## The copy on aster-track.com
+
+Since 2026-09-02 the help centre also ships inside the marketing site at
+<https://aster-track.com/help>, in that site's own header and footer. This
+repository stays the place where articles are written and reviewed. To
+publish a change there, run `node scripts/sync-help.mjs` in the
+`aster-website` repository (it reads this repository as a sibling directory,
+or `HELP_SRC`), then commit the regenerated `content/help` alongside your
+change here. Never edit `content/help` on the site directly. `most-read.txt`
+here names the guides that site's front page leads with.
