@@ -60,13 +60,25 @@ body { font-family: $font-body; background: $paper-2; color: $dark; }
    the house (Hero/SportHero/etc: tracking ~ -0.01em to -0.025em). The shared
    condensed() mixin defaults to loose +0.05em, which is right for small
    kickers/nav/labels but wrong for real headings — override it here only. */
-h1, h2, h3, h4 { @include condensed; font-weight: 800; letter-spacing: -0.02em; color: $dark; }
+/* The FAQ splits its type two ways and the help centre now follows it: the
+   page's DISPLAY line is condensed, uppercase and heavy; every heading INSIDE
+   the page is Inter, sentence case, medium. Measured on aster-track.com/faq —
+   its hero runs Barlow Condensed 800 uppercase at -0.025em, and its section
+   headings run Inter 500 with no transform at all. Making every heading a
+   condensed capital, as this file used to, is what made the help centre read
+   as a different product from the site it belongs to. */
+h1 { @include condensed; font-weight: 800; letter-spacing: -0.025em; color: $dark; }
+h2, h3, h4 {
+  font-family: $font-body; text-transform: none; font-weight: 600;
+  letter-spacing: -0.01em; color: $dark;
+}
 .main-content h1 {
   font-size: 2rem; line-height: 1.1; border-bottom: none; padding-bottom: 0.35rem;
   &::after { content: ''; display: block; width: 56px; height: 6px; margin-top: 10px;
     background: $lime; border: 2px solid $dark; border-radius: 999px; }
 }
-.main-content h2 { font-size: 1.4rem; border-bottom: 2px solid rgba(24,30,21,0.14); padding-bottom: 0.3rem; } /* = --aster-line hairline (was 0.12) */
+.main-content h2 { font-size: 1.6rem; line-height: 1.25; margin-top: 2.25rem;
+  border-bottom: 2px solid rgba(24,30,21,0.14); padding-bottom: 0.4rem; } /* = --aster-line hairline */
 
 /* ==========================================================================
    TOPBAR — replica of the website SiteNav
@@ -281,13 +293,25 @@ div.highlighter-rouge, figure.highlight {
 /* ==========================================================================
    HOMEPAGE components
    ========================================================================== */
+/* The FAQ opens on a full-bleed dark BAND, not a rounded card sitting inside
+   the page, and that single difference is most of why the two sites did not
+   look related. This breaks out of .main-content-wrap's 2rem/2.5rem padding
+   and tucks into its rounded top corners (16px outer, less the 2px border).
+   Type is scaled from the FAQ's 88px display: the help centre carries a
+   sidebar, so it clamps rather than matching that number outright. */
 .kb-hero {
-  background: $navdark; border: 2px solid $dark; border-radius: 16px;
-  padding: 2rem 2.25rem; margin-bottom: 1.5rem; @include pop(4);
+  background: $navdark; border: 0; border-radius: 14px 14px 0 0; box-shadow: none;
+  margin: -2rem -2.5rem 2.25rem -2.5rem;
+  padding: 3.25rem 2.5rem 3.5rem;
   .kb-hero-kicker { @include condensed; letter-spacing: 0.12em; color: $lime; font-weight: 700;
-    font-size: 0.8rem; margin: 0 0 0.4rem 0; }
-  .kb-hero-title { color: $soft; font-size: 2.4rem; margin: 0 0 0.5rem 0; &::after { display: none; } }
-  .kb-hero-sub { color: rgba($soft, 0.85); margin: 0; max-width: 46rem; }
+    font-size: 0.8rem; margin: 0 0 0.9rem 0; }
+  .kb-hero-title { color: $soft; font-size: clamp(2.75rem, 7vw, 4.5rem); line-height: 0.86;
+    letter-spacing: -0.025em; margin: 0 0 1.1rem 0; &::after { display: none; } }
+  .kb-hero-sub { color: $soft-mut; margin: 0; max-width: 44rem; font-size: 1rem;
+    line-height: 1.6; }
+}
+@media (max-width: 50rem) {
+  .kb-hero { margin-left: -1.25rem; margin-right: -1.25rem; padding: 2.5rem 1.25rem 2.75rem; }
 }
 .kb-live-dot {
   display: inline-block; width: 10px; height: 10px; margin-right: 8px;
@@ -303,10 +327,10 @@ div.highlighter-rouge, figure.highlight {
 @media (min-width: 64rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
 a.kb-card {
   display: flex; flex-direction: column; gap: 0.35rem;
-  background: $paper; border: 2px solid $dark; border-radius: 16px; padding: 1.1rem 1.2rem;
-  text-decoration: none !important; color: $dark; @include pop(3);
+  background: $paper; border: 2px solid $dark; border-radius: 16px; padding: 1.25rem;
+  text-decoration: none !important; color: $dark; @include pop(6);
   transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
-  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(5); }
+  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(8); }
   &:active { transform: translate(2px,2px); box-shadow: none; }
   .kb-card-emoji { font-size: 1.6rem; line-height: 1; }
   .kb-card-title { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 1.15rem;
