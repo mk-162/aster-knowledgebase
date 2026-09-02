@@ -1,19 +1,35 @@
-<!-- Website-identical top nav (see aster-website components/SiteNav.tsx):
-     dark band bar (#0B0E08), logo lockup, soft condensed links, compact
-     search, lime "Open the app" button. Search keeps the theme's
-     #search-input / #search-results IDs so just-the-docs.js binds unchanged. -->
+<!--
+  The top bar, rebuilt 2026-09-02 against aster-track.com's header as it
+  actually renders (measured, not read off the component):
+
+    band ground, ONE hairline below it (lime at 16%), not a 2px ink rule;
+    a 28px mark + "Aster" in Barlow Condensed 24px/700 in SOFT (not lime);
+    nav links in condensed 14px/600 at 0.14em tracking, soft-mut → soft on hover,
+    8px/10px padding and a 4px gap;
+    on the right, plain text links, no button chrome: the site's "Log in"
+    (soft-mut) and "Sign up" (lime). "Open the app" takes the lime slot here.
+
+  "Help centre" sits beside the wordmark as a quiet section marker in the same
+  nav-link voice, so a reader knows which Aster site they are on without the
+  logo lockup itself diverging from the site's.
+
+  The search box keeps the theme's #search-input / #search-results ids so
+  just-the-docs.js binds unchanged; it is styled as a quiet dark field in the
+  same 36px row height as the links.
+-->
 <header class="aster-topbar">
-  <div class="aster-container aster-topbar-row">
+  <div class="aster-topbar-row">
     <a class="aster-logo" href="{{ '/' | relative_url }}" aria-label="Aster Help Centre — home">
-      <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="26" height="26">
+      <img src="{{ '/assets/images/aster-mark-lime.svg' | relative_url }}" alt="" width="28" height="28">
       <span class="aster-wordmark">Aster</span>
-      <span class="aster-suffix">Help Centre</span>
+      <span class="aster-suffix">Help centre</span>
     </a>
-    <nav class="aster-topnav" aria-label="Aster site">
-      <a href="https://aster-track.com/for-athletes">For athletes</a>
-      <a href="https://aster-track.com/for-watchers">For watchers</a>
-      <a href="https://aster-track.com/clubs">For clubs</a>
-      <a href="https://aster-track.com/for-organisers">For organisers</a>
+    <nav class="aster-topnav" aria-label="Help centre sections">
+      <a href="{{ '/for-athletes/' | relative_url }}">Athletes</a>
+      <a href="{{ '/for-spectators/' | relative_url }}">Watchers</a>
+      <a href="{{ '/teams-and-clubs/' | relative_url }}">Clubs</a>
+      <a href="{{ '/for-organisers/' | relative_url }}">Event Organisers</a>
+      <a href="https://aster-track.com/">aster-track.com</a>
     </nav>
     <div class="aster-topbar-tools">
       {% capture search_placeholder %}Search the help centre{% endcapture %}

@@ -1,45 +1,73 @@
 /* ==========================================================================
-   Aster Help Centre — design-system styles (rebuilt 2026-07-02;
-   token fidelity pass 2026-09-02)
+   Aster Help Centre — design-system styles
 
-   The chrome (topbar + footer) replicates the main website 1:1
-   (aster-website: SiteNav.tsx / SiteFooter.tsx / Button.tsx / globals.css):
-   dark band sticky nav, condensed links, lime CTA (h-10 = 40px),
-   1200px container, dark 4-column footer. Docs body: paper-2 canvas, paper
-   bordered content card, 2px borders, sharp pop shadows, Inter +
-   Barlow Condensed. Layout is owned by _layouts/default.html (aster-shell
-   flex) — the theme's fixed-sidebar layout is fully overridden.
+   Rebuilt 2026-09-02 as ONE coherent pass, measured element by element
+   against aster-track.com/faq at 1280px rather than patched one complaint at
+   a time. Every number below that is not obviously a design choice is a
+   measurement: the site's header, hero, section rhythm, cards, closing band
+   and footer were read off the live page with getComputedStyle and copied.
 
-   2026-09-02: token values re-measured against the house's app/globals.css
-   (aster-website) and aligned — see git history for the prior values. Two
-   things worth knowing if you touch this file next:
+   Structure of the site, which this file now follows:
 
-   1. $mint (#DCEEEB, an icy pale blue) never existed in the house palette —
-      it was a KB-only placeholder doing three jobs. Each use has been
-      remapped to the actual house token for that job: $soft for text/lines
-      on the dark ground, $paper-2 for a pale neutral ground, $mint-teal
-      (the house's genuine, far more saturated accent) reserved for small
-      filled marks (chips/labels), never a ground.
-   2. The pop shadow now offsets in $lime-deep (house `--shadow-pop`), not
-      $dark — the mixin change below is global and touches every button,
-      card and callout that uses `@include pop()`.
+     header   band ground, 1px lime-16% hairline, 66px tall. Logo = 28px mark
+              + "Aster" condensed 24/700 in SOFT. Links condensed 14/600 at
+              0.14em, soft-mut, 8px 10px padding, 4px gap. Right side is plain
+              text links, not buttons.
+     hero     band. Kicker (condensed 14/600 0.14em lime) → display (condensed
+              800, clamp(2.5rem,8.5vw,5.5rem), 0.86 leading, -0.025em, second
+              phrase lime) 20px below → lede (Inter 18/1.625 soft-mut, 56ch)
+              20px below. Column 1152px, 80px/32px padding.
+     sections ALL on paper. No alternating tints. Content capped at 760px and
+              left-aligned inside the 1152px column. Kicker (lime-deep) → h2
+              (Inter 36/500, -0.025em) 20px below → content 48px below. Cards
+              are 2px ink, 16px radius, 20px padding, pop shadow 6px in
+              lime-deep, 16px apart; a card's title is condensed 18/600 at
+              0.03em with a lime-deep glyph on the right.
+     closing  band, centred. h2 Inter 36/500 → lede 18px soft-mut 48ch, 20px
+              below → lime button 32px below (12px radius, lime border, NO
+              shadow, condensed 16/700 0.06em, 12px 24px) → a row of lime
+              14/600 links with a 2px underline, 32px below.
+     footer   band + top hairline, 80px top padding. "Go. / Live." lockup
+              (condensed 800 clamp(2.75rem,8vw,4.5rem), 0.92, -0.02em, lime
+              stops) + descriptor 18px soft-75; a four-column grid (gap 40/56,
+              max 768px) of condensed 12/600 0.14em soft-mut titles over Inter
+              14px soft-85 links 12px apart; a Compare row; a hairline strip
+              with a 12px mono copyright; then a centred mark + a
+              min(19vw,290px) lime wordmark.
+
+   The article pages keep the docs layout (sidebar + bordered card) because a
+   reader who arrives mid-problem wants the navigation; they take the same
+   header, footer and type from this file so the two page kinds read as one
+   site. Only the home page uses the band layout (_layouts/home.html).
+
+   Two things the theme forces, worth knowing before you touch this file:
+   1. just-the-docs sets `h1, .text-alpha { font-size: 2.25rem !important }`
+      and the same for h2. Any display or heading size here has to answer
+      with !important or it silently renders at the theme's size.
+   2. The theme styles bare `a` (purple). Any container that is not
+      .main-content needs its own link rule or links come out purple.
    ========================================================================== */
 
 /* ---- Tokens (mirror the website's app/globals.css :root) ---- */
-$dark: #181E15;              /* = --aster-ink. Identical to the house value already — kept as-is. */
-$navdark: #0B0E08;           /* = --aster-band (was #0E110C, a KB-only approximation) */
-$ink-muted: #5A6152;         /* = --aster-mut (was rgba(24,30,21,0.7), a tinted-ink guess) */
-$lime: #C7F542;              /* = --aster-lime. Identical. */
-$lime-deep: #4A6300;         /* = --aster-lime-deep. Identical. */
-$lime-bg: #EFFBC4;           /* KB-only pale-lime tint for hover/callout fills — not a house token, left as-is */
-$soft: #F6FCDF;              /* = --aster-soft — text/marks on the dark band */
-$soft-mut: #9AA791;          /* = --aster-soft-mut — muted text on the dark band */
-$mint-teal: #75D6C8;         /* = --aster-mint-teal — a genuine accent (chip/label fills), never a ground */
-$paper-2: #F2F5E9;           /* = --aster-paper-2 (was $stone #F0F4F4, cooler/greyer) */
-$gold: #F2C94C;              /* = --aster-gold. Identical. */
-$paper: #FBFCF7;             /* = --aster-paper (was #ffffff, pure white) */
-$container: 1200px;         /* .container-site on the website */
-$ctrl-h: 40px;              /* Button size sm = h-10 — search matches */
+$dark: #181E15;              /* --aster-ink */
+$navdark: #0B0E08;           /* --aster-band */
+$ink-muted: #5A6152;         /* --aster-mut */
+$lime: #C7F542;              /* --aster-lime */
+$lime-deep: #4A6300;         /* --aster-lime-deep */
+$lime-bg: #EFFBC4;           /* KB-only pale-lime hover/callout fill */
+$soft: #F6FCDF;              /* --aster-soft */
+$soft-mut: #9AA791;          /* --aster-soft-mut */
+$mint-teal: #75D6C8;         /* --aster-mint-teal — small filled marks only */
+$paper-2: #F2F5E9;           /* --aster-paper-2 */
+$gold: #F2C94C;              /* --aster-gold */
+$paper: #FBFCF7;             /* --aster-paper */
+$line: rgba($dark, 0.14);    /* --aster-line, the hairline on paper */
+$line-band: rgba($lime, 0.16); /* --aster-line-band, the hairline on the band */
+
+$col-max: 1152px;            /* max-w-6xl */
+$col-pad: 2rem;              /* sm:px-8 */
+$narrow: 760px;              /* the FAQ's content cap inside the column */
+$ctrl-h: 36px;               /* header row control height (links are 36px tall) */
 
 $font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 $font-display: 'Barlow Condensed', $font-body;
@@ -47,128 +75,108 @@ $font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
 
 @mixin pop($px) { box-shadow: #{$px}px #{$px}px 0 0 $lime-deep; }
 @mixin press {
-  transition: transform 100ms ease, box-shadow 100ms ease, filter 100ms ease;
+  transition: transform 100ms ease, box-shadow 100ms ease;
   &:active { transform: translate(2px, 2px); box-shadow: none; }
 }
-@mixin condensed { font-family: $font-display; text-transform: uppercase; letter-spacing: 0.05em; }
+@mixin condensed { font-family: $font-display; text-transform: uppercase; }
+/* The site's one small-caps voice: nav links, kickers, footer titles. */
+@mixin kicker { @include condensed; font-weight: 600; letter-spacing: 0.14em; font-size: 0.875rem; line-height: 1.45; }
+/* The site's in-page heading voice: Inter, sentence case, medium, tight. */
+@mixin heading { font-family: $font-body; text-transform: none; font-weight: 500; letter-spacing: -0.025em; line-height: 1.1; }
 
 /* ---- Base ---- */
 body { font-family: $font-body; background: $paper-2; color: $dark; }
-.main-content { font-size: 16px; line-height: 1.65; } /* was theme default (tighter) — house body copy runs 15-16px / relaxed leading */
+.main-content { font-size: 16px; line-height: 1.65; }
 
-/* Headings are condensed + uppercase + heavy with TIGHT negative tracking on
-   the house (Hero/SportHero/etc: tracking ~ -0.01em to -0.025em). The shared
-   condensed() mixin defaults to loose +0.05em, which is right for small
-   kickers/nav/labels but wrong for real headings — override it here only. */
-/* The FAQ splits its type two ways and the help centre now follows it: the
-   page's DISPLAY line is condensed, uppercase and heavy; every heading INSIDE
-   the page is Inter, sentence case, medium. Measured on aster-track.com/faq —
-   its hero runs Barlow Condensed 800 uppercase at -0.025em, and its section
-   headings run Inter 500 with no transform at all. Making every heading a
-   condensed capital, as this file used to, is what made the help centre read
-   as a different product from the site it belongs to. */
 h1 { @include condensed; font-weight: 800; letter-spacing: -0.025em; color: $dark; }
-h2, h3, h4 {
-  font-family: $font-body; text-transform: none; font-weight: 600;
-  letter-spacing: -0.01em; color: $dark;
-}
+h2, h3, h4 { @include heading; color: $dark; }
 .main-content h1 {
   font-size: 2rem; line-height: 1.1; border-bottom: none; padding-bottom: 0.35rem;
   &::after { content: ''; display: block; width: 56px; height: 6px; margin-top: 10px;
     background: $lime; border: 2px solid $dark; border-radius: 999px; }
 }
 .main-content h2 { font-size: 1.6rem; line-height: 1.25; margin-top: 2.25rem;
-  border-bottom: 2px solid rgba(24,30,21,0.14); padding-bottom: 0.4rem; } /* = --aster-line hairline */
+  border-bottom: 1px solid $line; padding-bottom: 0.4rem; }
+.main-content h3 { font-weight: 600; letter-spacing: -0.01em; }
 
 /* ==========================================================================
-   TOPBAR — replica of the website SiteNav
+   HEADER — the site's, measured
    ========================================================================== */
-.aster-container { max-width: $container; margin-inline: auto; padding-inline: 1.25rem; width: 100%; }
+.aster-container { max-width: $col-max; margin-inline: auto; padding-inline: $col-pad; width: 100%; }
 
 .aster-topbar {
   position: sticky; top: 0; z-index: 100;
-  background: $navdark;
-  border-bottom: 2px solid $dark;
+  background: $navdark; color: $soft;
+  border-bottom: 1px solid $line-band;
 }
 .aster-topbar-row {
-  display: flex; align-items: center; gap: 1.5rem;
-  padding-top: 11px; padding-bottom: 11px;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 14px clamp(1.5rem, 5vw, 4rem);
 }
 .aster-logo {
-  display: inline-flex; align-items: center; gap: 8px;
-  text-decoration: none; flex: none;
-  img { display: block; width: 26px; height: 26px; }
-  .aster-wordmark { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 26px; line-height: 1; color: $lime; }
-  .aster-suffix   { @include condensed; letter-spacing: 0.08em; font-weight: 600; font-size: 13px; color: $soft;
-    border-left: 2px solid rgba($soft, 0.25); padding-left: 10px; margin-left: 4px; }
+  display: inline-flex; align-items: center; gap: 10px;
+  text-decoration: none !important; color: $soft; flex: none;
+  img { display: block; width: 28px; height: 28px; }
+  .aster-wordmark { @include condensed; font-weight: 700; font-size: 24px; line-height: 1; color: $soft; letter-spacing: normal; }
+  .aster-suffix { @include kicker; color: $soft-mut; line-height: 1;
+    margin-left: 4px; padding-left: 14px; border-left: 1px solid $line-band; }
+  &:hover .aster-suffix { color: $soft; }
 }
 .aster-topnav {
-  display: flex; align-items: center; gap: 1.5rem; margin-left: 0.5rem;
-  a { @include condensed; letter-spacing: 0.06em; font-weight: 600; font-size: 0.875rem;
-      color: $soft; text-decoration: none; padding: 6px 0;
-      &:hover { color: $lime; } }
+  display: flex; align-items: center; gap: 4px;
+  a { @include kicker; color: $soft-mut; text-decoration: none !important;
+      padding: 8px 10px; border-radius: 4px; white-space: nowrap;
+      transition: color 100ms ease;
+      &:hover { color: $soft; } }
 }
-.aster-topbar-tools {
-  display: flex; align-items: center; gap: 12px; margin-left: auto; flex: none;
-}
+.aster-topbar-tools { display: flex; align-items: center; gap: 4px; flex: none; }
 .aster-cta {
-  display: inline-flex; align-items: center; justify-content: center;
-  height: $ctrl-h; padding: 0 16px;
-  background: $lime; color: $dark !important; text-decoration: none;
-  @include condensed; letter-spacing: 0.03em; font-weight: 700; font-size: 0.875rem;
-  white-space: nowrap;
-  border: 2px solid $dark; border-radius: 12px;
-  @include pop(3); @include press;
-  &:hover { filter: brightness(1.05); }
+  @include kicker; color: $lime; text-decoration: none !important;
+  padding: 8px 16px; border-radius: 4px; white-space: nowrap;
+  background: none; border: 0; box-shadow: none;
+  transition: color 100ms ease;
+  &:hover { color: $soft; }
 }
 
-/* Search — same height as the CTA, dark-bar treatment, tight */
+/* Search: a quiet dark field in the header's 36px row. Keeps the theme's ids. */
 .aster-topbar .search {
-  position: relative; width: 300px; max-width: 300px; height: $ctrl-h;
-  padding: 0; margin: 0; flex: none;
+  position: relative; width: 240px; max-width: 240px; height: $ctrl-h;
+  padding: 0; margin: 0 8px 0 0; flex: none;
 }
 .aster-topbar .search-input-wrap {
-  /* the theme absolutely-positions + width-animates this — force a plain box */
   position: relative !important; width: 100% !important; transition: none;
   display: flex; align-items: center; overflow: hidden;
-  height: $ctrl-h; border-radius: 12px; box-shadow: none;
-  background: rgba(255,255,255,0.08); border: 2px solid rgba($soft, 0.25);
+  height: $ctrl-h; border-radius: 4px; box-shadow: none;
+  background: rgba($soft, 0.06); border: 1px solid $line-band;
   transition: border-color 120ms ease, background 120ms ease;
-  &:focus-within { border-color: $lime; background: rgba(255,255,255,0.12); }
+  &:focus-within { border-color: $lime; background: rgba($soft, 0.1); }
 }
 .aster-topbar .search-input {
   position: relative !important; width: 100% !important;
-  height: 36px; padding: 0 12px 0 36px; font-size: 0.875rem;
+  height: $ctrl-h - 2px; padding: 0 12px 0 34px; font-size: 0.875rem;
   background: transparent; border: none; color: $soft;
-  &::placeholder { color: rgba($soft, 0.55); }
+  &::placeholder { color: $soft-mut; }
   &:focus { background: transparent; }
 }
 .aster-topbar .search-label { position: absolute; left: 0; top: 0; bottom: 0; padding-left: 10px; display: flex; align-items: center;
-  .search-icon { color: rgba($soft, 0.7); width: 16px; height: 16px; } }
+  .search-icon { color: $soft-mut; width: 16px; height: 16px; } }
 .aster-topbar .search-results {
-  /* the theme's search-active mode pins this to the viewport edge — force a
-     dropdown anchored to the input */
   position: absolute !important; top: calc(#{$ctrl-h} + 8px) !important;
   right: 0 !important; left: auto !important;
   width: 560px !important; max-width: min(80vw, 560px) !important;
   max-height: 70vh; overflow-y: auto;
-  background: $paper; border: 2px solid $dark; border-radius: 12px; @include pop(4);
-}
-@media (max-width: 49.99rem) {
-  .aster-topbar .search-results {
-    left: 0 !important; right: auto !important; width: 100% !important; max-width: 100% !important;
-  }
+  background: $paper; color: $dark; border: 2px solid $dark; border-radius: 12px; @include pop(4);
 }
 .search-result:hover, .search-result.active { background: $lime-bg; }
 .search-result-title { color: $dark; font-weight: 600; }
 .search-result-highlight { color: $lime-deep; }
 
 /* ==========================================================================
-   SHELL LAYOUT — centered flex, overrides the theme's fixed sidebar
+   DOCS SHELL — article pages: centred flex, overrides the theme's fixed sidebar
    ========================================================================== */
 .aster-shell {
   display: flex; align-items: flex-start; gap: 2rem;
-  max-width: $container; margin: 0 auto; padding: 0 1.25rem;
+  max-width: $col-max + 2 * $col-pad; margin: 0 auto; padding: 0 $col-pad;
 }
 .side-bar {
   position: sticky !important; top: 78px;
@@ -183,15 +191,13 @@ h2, h3, h4 {
   margin-left: 0 !important; max-width: none !important;
   flex: 1; min-width: 0;
 }
-/* Old theme chrome that the topbar replaces */
 .main-header { display: none !important; }
 .side-bar .site-header { display: none !important; }
 .side-bar footer, .side-bar .site-footer { display: none !important; }
 
-/* Content card */
 .main-content-wrap {
   background: $paper; border: 2px solid $dark; border-radius: 16px;
-  @include pop(4);
+  @include pop(6);
   margin: 1.5rem 0 3rem 0 !important;
   padding: 2rem 2.5rem !important;
   max-width: none !important;
@@ -213,24 +219,22 @@ h2, h3, h4 {
     &:hover { background-image: none; background: $lime-bg; color: $dark; }
   }
 }
-.nav-category { @include condensed; letter-spacing: 0.08em; color: $ink-muted; font-weight: 600; padding-left: 0; }
+.nav-category { @include kicker; font-size: 0.75rem; color: $ink-muted; padding-left: 0; }
 
-/* ---- Content: links, buttons, callouts, tables, code ---- */
-/* The landing page has no .main-content (it is not a docs page), so scoping
-   link styling to that container left its links at the browser default, which
-   renders visited links PURPLE against the brand. Cards and the CTA button are
-   excluded: they are their own components, not body links. */
-.main-content a:not(.btn),
-.kb-landing main a:not(.kb-card):not(.kb-cta-btn) {
-  color: $dark; font-weight: 600; text-decoration: underline;
-  text-decoration-color: $lime; text-decoration-thickness: 3px; text-underline-offset: 3px;
+/* ---- Article content: links, buttons, callouts, tables, code ---- */
+/* Inline links on paper, measured on aster-track.com/about: lime-deep text,
+   semibold, a 2px underline in the same colour at 2px offset, thickening to
+   4px on hover. Lime itself is unreadable on paper and stays on the band. */
+.main-content a:not(.btn) {
+  color: $lime-deep; font-weight: 600; text-decoration: underline;
+  text-decoration-color: $lime-deep; text-decoration-thickness: 2px; text-underline-offset: 2px;
   background-image: none;
-  &:hover { background: $lime-bg; text-decoration-color: $lime-deep; }
+  &:hover { text-decoration-thickness: 4px; }
 }
 .btn, .btn-primary {
-  display: inline-flex; align-items: center; height: $ctrl-h; padding: 0 16px;
+  display: inline-flex; align-items: center; height: 40px; padding: 0 20px;
   background: $lime; background-image: none; color: $dark; font-weight: 700;
-  @include condensed; letter-spacing: 0.03em; font-size: 0.875rem;
+  @include condensed; letter-spacing: 0.06em; font-size: 0.9375rem;
   border: 2px solid $dark; border-radius: 12px;
   @include pop(3); @include press;
   &:hover { background: #d4f05a; background-image: none; color: $dark; }
@@ -241,118 +245,169 @@ blockquote, .note, .tip, .important, .warning {
   > p:first-child { margin-top: 0; } > p:last-child { margin-bottom: 0; }
 }
 .warning { background: #FDECEA; }
-.note { background: $paper-2; } /* was pale-mint $mint — mapped to the house's pale neutral ground, not a tinted mint */
+.note { background: $paper-2; }
 .main-content table {
   border: 2px solid $dark; border-radius: 12px; border-collapse: separate; border-spacing: 0;
   overflow: hidden; @include pop(2);
-  th { background: $paper-2; @include condensed; letter-spacing: 0.05em; font-size: 0.75rem;
+  th { background: $paper-2; @include kicker; font-size: 0.75rem;
     color: $dark; border-bottom: 2px solid $dark; }
-  td { border-bottom: 1px solid rgba(24,30,21,0.14); }
+  td { border-bottom: 1px solid $line; }
   tr:last-child td { border-bottom: none; }
 }
-code { background: $paper-2; border: 1px solid rgba(24,30,21,0.14); border-radius: 6px;
+code { background: $paper-2; border: 1px solid $line; border-radius: 6px;
   font-family: $font-mono; font-size: 0.85em; padding: 0.1em 0.35em; color: $dark; }
 div.highlighter-rouge, figure.highlight {
-  background: $paper-2; border: 2px solid rgba(24,30,21,0.14); border-radius: 12px;
+  background: $paper-2; border: 2px solid $line; border-radius: 12px;
   pre.highlight, pre { background: transparent; } code { background: transparent; border: none; }
 }
-.breadcrumb-nav-list-item { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
+.breadcrumb-nav-list-item { @include kicker; font-size: 0.75rem;
   a { color: $lime-deep; background-image: none; } }
-/* Labels are small filled marks, not grounds — this is exactly the job the
-   house's genuine accent ($mint-teal) is for (see ClusterChip: fill + ink
-   border + ink text). Was the pale-mint placeholder, never a house colour. */
 .label, .label-blue, .label-green { background: $mint-teal !important; color: $dark;
   border: 2px solid $dark; border-radius: 999px; font-weight: 700; font-family: $font-body; }
 .label-yellow { background: $gold !important; color: $dark; }
 
 /* ==========================================================================
-   FOOTER — replica of the website SiteFooter
+   FOOTER — the site's, measured
    ========================================================================== */
 .aster-footer {
-  background: $dark; color: rgba($soft, 0.75); margin-top: auto; /* blurb text = text-soft/75 */
-  a { color: rgba($soft, 0.85); text-decoration: none; font-size: 0.875rem; /* nav links = text-soft/85 */
-    &:hover { color: $soft; } } /* house hovers to full-opacity soft, not lime */
+  background: $navdark; color: $soft; border-top: 1px solid $line-band; margin-top: auto;
+  overflow: hidden;
+  a { color: rgba($soft, 0.85); text-decoration: none !important; font-size: 0.875rem;
+    &:hover { color: $soft; } }
 }
 .aster-footer-main {
-  display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;
-  padding-top: 2.75rem; padding-bottom: 2.75rem;
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2.5rem 3.5rem;
+  padding-top: 5rem;
 }
 .aster-footer-brand {
-  max-width: 280px;
-  .aster-logo img { width: 24px; height: 24px; }
-  .aster-wordmark { font-size: 24px; }
-  p { margin-top: 1rem; font-size: 0.875rem; line-height: 1.6; }
+  max-width: 24rem;
+  .aster-lockup {
+    @include condensed; font-weight: 800;
+    font-size: clamp(2.75rem, 8vw, 4.5rem); line-height: 0.92; letter-spacing: -0.02em;
+    color: $soft; margin: 0;
+    .aster-stop { color: $lime; }
+  }
+  .aster-descriptor { margin: 1.25rem 0 0; font-size: 1.125rem; line-height: 1.55; color: rgba($soft, 0.75); }
 }
 .aster-footer-cols {
-  display: flex; gap: 3rem; flex-wrap: wrap;
-  > div { display: flex; flex-direction: column; gap: 0.6rem; }
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem 3.5rem;
+  flex: 1 1 32rem; max-width: 48rem;
+  > div { display: flex; flex-direction: column; gap: 0.75rem; }
 }
-.aster-footer-title { @include condensed; letter-spacing: 0.06em; font-weight: 600;
-  font-size: 0.75rem; color: $soft-mut; margin: 0 0 0.25rem 0; } /* house COLUMN_TITLE = text-soft-mut, not mint/lime */
+.aster-footer-title {
+  @include kicker; font-size: 0.75rem; color: $soft-mut; margin: 0;
+}
+.aster-footer-compare {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem;
+  margin-top: 3rem;
+}
 .aster-footer-strip {
-  border-top: 1px solid rgba($lime, 0.16); /* = --aster-line-band, the house's own dark-ground hairline */
-  p { @include condensed; letter-spacing: 0.06em; font-size: 0.75rem;
-    color: $soft-mut; padding: 1rem 0; margin: 0; } /* house copyright line = text-soft-mut (solid), not a low-opacity mint */
+  margin-top: 3rem;
+  > p { border-top: 1px solid $line-band; padding-top: 1.25rem; margin: 0;
+    font-family: $font-mono; font-size: 0.75rem; color: $soft-mut; font-variant-numeric: tabular-nums; }
+}
+.aster-footer-wordmark {
+  display: flex; align-items: center; justify-content: center; gap: 0;
+  margin-top: 3rem; padding: 0 0.5rem 2rem; pointer-events: none;
+  img { width: clamp(64px, 14vw, 180px); height: auto; }
+  span { @include condensed; font-weight: 700;
+    font-size: min(19vw, 290px); line-height: 0.9; letter-spacing: -0.025em;
+    color: $lime; }
 }
 
 /* ==========================================================================
-   HOMEPAGE components
+   HOME PAGE (layout: home) — the FAQ's bands
    ========================================================================== */
-/* The FAQ opens on a full-bleed dark BAND, not a rounded card sitting inside
-   the page, and that single difference is most of why the two sites did not
-   look related. This breaks out of .main-content-wrap's 2rem/2.5rem padding
-   and tucks into its rounded top corners (16px outer, less the 2px border).
-   Type is scaled from the FAQ's 88px display: the help centre carries a
-   sidebar, so it clamps rather than matching that number outright. */
-.kb-hero {
-  background: $navdark; border: 0; border-radius: 14px 14px 0 0; box-shadow: none;
-  margin: -2rem -2.5rem 2.25rem -2.5rem;
-  padding: 3.25rem 2.5rem 3.5rem;
-  .kb-hero-kicker { @include condensed; letter-spacing: 0.12em; color: $lime; font-weight: 700;
-    font-size: 0.8rem; margin: 0 0 0.9rem 0; }
-  .kb-hero-title { color: $soft; font-size: clamp(2.75rem, 7vw, 4.5rem); line-height: 0.86;
-    letter-spacing: -0.025em; margin: 0 0 1.1rem 0; &::after { display: none; } }
-  .kb-hero-sub { color: $soft-mut; margin: 0; max-width: 44rem; font-size: 1rem;
-    line-height: 1.6; }
+body.kb-landing {
+  background: $paper;
+  .aster-shell, .side-bar, .main-content-wrap, .breadcrumb-nav { display: none; }
 }
-.kb-live-dot {
-  display: inline-block; width: 10px; height: 10px; margin-right: 8px;
-  background: $lime; border: 2px solid $lime; border-radius: 50%;
-  animation: kb-pulse 1.6s ease-out infinite; vertical-align: baseline;
+
+/* One centred column: the site's cap and padding. */
+.kb-col {
+  max-width: $col-max; margin: 0 auto; padding: 5rem $col-pad;
+  &.kb-col--centred { text-align: center; }
 }
-@keyframes kb-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(199,245,66,0.55); }
-  70% { box-shadow: 0 0 0 12px rgba(199,245,66,0); }
-  100% { box-shadow: 0 0 0 0 rgba(199,245,66,0); }
+/* Section content sits in a narrower measure inside the column, as the FAQ's does. */
+.kb-narrow { max-width: $narrow; }
+
+.kb-band { background: $navdark; color: $soft; }
+.kb-sheet { background: $paper; color: $dark; }
+
+.kb-kicker { @include kicker; color: $lime-deep; margin: 0;
+  &.kb-kicker--onband { color: $lime; } }
+
+.kb-display {
+  @include condensed; font-weight: 800;
+  font-size: clamp(2.5rem, 8.5vw, 5.5rem) !important; line-height: 0.86; letter-spacing: -0.025em;
+  color: $soft; margin: 1.25rem 0 0;
+  &::after { display: none; }
+  .kb-display-accent { color: $lime; }
 }
-.kb-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem 0; }
-@media (min-width: 64rem) { .kb-cards { grid-template-columns: repeat(3, 1fr); } }
-a.kb-card {
-  display: flex; flex-direction: column; gap: 0.35rem;
+.kb-lede {
+  font-size: 1.125rem; line-height: 1.625; color: $soft-mut; max-width: 56ch;
+  margin: 1.25rem 0 0; text-wrap: pretty;
+  &.kb-lede--centred { margin-left: auto; margin-right: auto; max-width: 48ch; }
+}
+.kb-heading {
+  @include heading; color: $dark;
+  font-size: clamp(1.875rem, 3vw, 2.25rem) !important; margin: 1.25rem 0 0; text-wrap: balance;
+  &::after { display: none; }
+}
+
+/* Cards: the FAQ's question rows. Title left, lime-deep glyph right. */
+.kb-cards { display: flex; flex-direction: column; gap: 1rem; margin: 3rem 0 0; }
+.kb-cards--grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.kb-landing a.kb-card {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem;
   background: $paper; border: 2px solid $dark; border-radius: 16px; padding: 1.25rem;
-  text-decoration: none !important; color: $dark; @include pop(6);
-  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
-  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(8); }
-  &:active { transform: translate(2px,2px); box-shadow: none; }
-  .kb-card-emoji { font-size: 1.6rem; line-height: 1; }
-  .kb-card-title { @include condensed; letter-spacing: 0.04em; font-weight: 700; font-size: 1.15rem;
-    &::after { content: " \2192"; color: $lime-deep; font-weight: 700; } }
-  .kb-card-sub { color: $ink-muted; font-size: 0.9rem; line-height: 1.45; }
+  color: $dark; text-decoration: none !important; @include pop(6);
+  transition: transform 100ms ease, box-shadow 100ms ease;
+  &:hover { transform: translate(-2px, -2px); @include pop(8); }
+  &:active { transform: translate(2px, 2px); box-shadow: none; }
+  .kb-card-body { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; }
+  .kb-card-title { @include condensed; font-weight: 600; font-size: 1.125rem; line-height: 1.3; letter-spacing: 0.03em; }
+  .kb-card-sub { color: $ink-muted; font-size: 1rem; line-height: 1.6; }
+  .kb-card-glyph { flex: none; color: $lime-deep; font-size: 1.25rem; line-height: 1.3; }
+  &.kb-card--row { padding: 1rem 1.25rem; @include pop(4);
+    &:hover { @include pop(6); } }
 }
-.kb-topics ul {
-  columns: 2; column-gap: 2.5rem; padding-left: 0; list-style: none;
-  li { break-inside: avoid; margin: 0 0 0.55rem 0;
-    /* No decorative bullet. The site uses none, and a lime square in front of
-       every link read as a third accent competing with the link itself. */ }
+
+/* The section index: the house chip (paper fill, ink border, ink text). */
+.kb-chips { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 3rem 0 0;
+  a { @include condensed; font-weight: 600; font-size: 0.875rem; letter-spacing: 0.06em; line-height: 1;
+    color: $dark; text-decoration: none !important;
+    background: $paper; border: 2px solid $dark; border-radius: 999px; padding: 0.7rem 1rem;
+    @include pop(2); @include press;
+    &:hover { background: $lime; } } }
+
+/* Closing band */
+.kb-cta-title { @include heading; color: $soft; font-size: clamp(1.875rem, 3vw, 2.25rem) !important; margin: 0;
+  &::after { display: none; } }
+.kb-cta-btn {
+  @include condensed; display: inline-flex; align-items: center; margin: 2rem 0 0;
+  background: $lime; color: $dark !important; font-weight: 700; font-size: 1rem; letter-spacing: 0.06em;
+  padding: 0.75rem 1.5rem; border-radius: 12px; border: 2px solid $lime;
+  text-decoration: none !important; box-shadow: none;
+  transition: transform 100ms ease, filter 100ms ease;
+  &:hover { filter: brightness(1.05); }
+  &:active { transform: translate(2px, 2px); }
 }
-.kb-support {
-  background: $paper-2; border: 2px solid $dark; border-radius: 16px; /* was pale-mint $mint — a ground, mapped to the house's pale neutral ground */
-  padding: 1.4rem 1.6rem; margin-top: 2.25rem; @include pop(4);
-  .kb-support-kicker { @include condensed; letter-spacing: 0.1em; font-weight: 700;
-    font-size: 0.8rem; color: $lime-deep; margin: 0 0 0.35rem 0; }
-  ol { margin-bottom: 1rem; }
+.kb-cta-links {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem;
+  margin: 2rem 0 0; font-size: 0.875rem;
+  a { color: $lime; font-weight: 600; text-decoration: underline;
+    text-decoration-color: $lime; text-decoration-thickness: 2px; text-underline-offset: 2px;
+    &:hover { text-decoration-thickness: 4px; } }
 }
-.btn.kb-support-btn { display: inline-flex; margin: 0.25rem 0 0.75rem 0; }
+
+/* Any bare link on the home page that is none of the above (there should be
+   none) gets the article treatment rather than the theme's purple. */
+.kb-landing main a:not([class]) {
+  color: $lime-deep; font-weight: 600; text-decoration: underline;
+  text-decoration-color: $lime-deep; text-decoration-thickness: 2px; text-underline-offset: 2px;
+}
+.kb-landing main .kb-band a:not([class]) { color: $lime; text-decoration-color: $lime; }
 
 /* ==========================================================================
    RESPONSIVE
@@ -360,167 +415,19 @@ a.kb-card {
 @media (max-width: 64rem) {
   .aster-topnav { display: none; }
 }
-@media (max-width: 49.99rem) { /* align with the theme's min-width:50rem desktop switch */
-  .aster-topbar-row { flex-wrap: wrap; gap: 0.65rem; row-gap: 0.65rem; }
-  .aster-logo { flex: 1; min-width: 0;
-    .aster-suffix { white-space: nowrap; } }
-  /* tools drop to their own full-width row: search flexes, CTA stays put */
-  .aster-topbar-tools { order: 3; width: 100%; margin-left: 0; gap: 10px; }
+@media (max-width: 49.99rem) { /* the theme's desktop switch is min-width: 50rem */
+  .aster-topbar-row { flex-wrap: wrap; gap: 0.5rem; }
+  .aster-logo { flex: 1; min-width: 0; .aster-suffix { white-space: nowrap; } }
+  .aster-topbar-tools { order: 3; width: 100%; gap: 0; }
   .aster-topbar .search { flex: 1 1 auto; width: auto; max-width: none; min-width: 0; }
-  .aster-topbar .search-results { left: 0; right: auto; width: 100%; max-width: none; }
-  .aster-shell { display: block; padding: 0 1rem; }
+  .aster-topbar .search-results { left: 0 !important; right: auto !important; width: 100% !important; max-width: 100% !important; }
+  .aster-shell { display: block; padding: 0 1.5rem; }
   .side-bar { position: static !important; width: auto !important; min-width: 0; max-height: none; padding: 1rem 0 0 0; }
-  /* restore the theme's mobile menu button strip (dark) so docs nav toggles */
   .side-bar .site-header { display: flex !important; background: $dark; border-radius: 12px; border: 2px solid $dark; }
-  .site-title { color: $soft !important; @include condensed; font-weight: 700; } /* text on dark — was $mint */
+  .site-title { color: $soft !important; @include condensed; font-weight: 700; }
   .main-content-wrap { padding: 1.25rem 1.1rem !important; }
-  .kb-topics ul { columns: 1; }
-  .aster-footer-main { flex-direction: column; gap: 2rem; }
-}
-
-
-/* ============================================================
-   THE LANDING PAGE (layout: home)
-
-   Measured off aster-track.com/faq rather than approximated. That page is
-   full-width BANDS, each holding one centred column capped at 1152px with
-   80px/32px padding, and no sidebar or content card anywhere. The help
-   centre's article pages keep the docs layout; only the front door uses this.
-
-   The earlier attempt recoloured the docs layout and called it a match. It
-   was not: the sidebar, the bordered card and the cramped rhythm are what
-   made the two pages look unrelated, not the palette.
-   ============================================================ */
-
-body.kb-landing {
-  background: $paper;
-  .aster-shell, .side-bar, .main-content-wrap, .breadcrumb-nav { display: none; }
-}
-
-/* One centred column, the FAQ's exact cap and padding. */
-.kb-col {
-  max-width: 1152px; margin: 0 auto; padding: 5rem 2rem;
-  &.kb-col--centred { text-align: center; }
-}
-
-/* A full-bleed band. Dark by default; the sheet variants are paper. */
-.kb-band { background: $navdark; color: $soft; }
-.kb-sheet { background: $paper; color: $dark; }
-.kb-sheet--alt { background: $paper-2; }
-
-.kb-kicker {
-  @include condensed; letter-spacing: 0.12em; font-weight: 700;
-  font-size: 0.8rem; color: $lime-deep; margin: 0 0 1rem 0;
-  &.kb-kicker--onband { color: $lime; }
-}
-
-/* The FAQ's display line: Barlow Condensed 800, uppercase, 0.86 leading and
-   -0.025em tracking, clamped 3rem to 5.5rem (it renders 68px at 800px wide
-   and 88px on a wide desktop). */
-/* just-the-docs sets `h1, .text-alpha { font-size: 2.25rem !important }` and
-   the same shape for h2, so a plain class rule loses however specific it is.
-   That is why the display line rendered at 36px while asking for 88px. The
-   sizes below answer in kind; nothing else here needs to. */
-.kb-display {
-  @include condensed;
-  font-size: clamp(3rem, 7.5vw, 5.5rem) !important; line-height: 0.86; letter-spacing: -0.025em;
-  font-weight: 800; color: $soft; margin: 0 0 1.5rem 0;
-  &::after { display: none; }
-  .kb-display-accent { color: $lime; }
-}
-
-.kb-lede {
-  color: $soft-mut; font-size: 1.0625rem; line-height: 1.6; max-width: 44rem; margin: 0;
-  &.kb-lede--centred { margin-left: auto; margin-right: auto; color: $soft; }
-}
-
-/* In-page headings are Inter, sentence case, exactly as the FAQ sets them. */
-.kb-heading {
-  font-family: $font-body; text-transform: none; font-weight: 500;
-  font-size: clamp(1.75rem, 3.2vw, 2.25rem) !important; line-height: 1.2; letter-spacing: -0.01em;
-  color: $dark; margin: 0 0 2.5rem 0;
-  &::after { display: none; }
-}
-
-/* Cards run the full width of the column and stack, like the FAQ's rows. */
-.kb-landing .kb-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0; }
-.kb-landing a.kb-card {
-  display: block; background: $paper; border: 2px solid $dark; border-radius: 16px;
-  padding: 1.25rem 1.5rem; text-decoration: none !important; color: $dark; @include pop(6);
-  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
-  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(8); }
-  &:active { transform: translate(2px,2px); box-shadow: none; }
-  .kb-card-title { @include condensed; display: block; letter-spacing: 0.03em;
-    font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem;
-    &::after { content: " \2192"; color: $lime-deep; } }
-  .kb-card-sub { display: block; color: $ink-muted; font-size: 0.95rem; line-height: 1.55; }
-}
-
-.kb-landing .kb-topics ul { columns: 2; column-gap: 3rem; margin: 0; padding: 0; list-style: none; }
-.kb-landing .kb-topics li { break-inside: avoid; margin: 0 0 0.85rem 0; }
-.kb-landing .kb-topics a { font-weight: 500; }
-@media (max-width: 49.99rem) { .kb-landing .kb-topics ul { columns: 1; } }
-
-.kb-browse { font-size: 1rem; line-height: 2; margin: 0; a { font-weight: 500; } }
-
-.kb-cta-title {
-  font-family: $font-body; text-transform: none; font-weight: 500;
-  font-size: clamp(1.75rem, 3.2vw, 2.25rem) !important; letter-spacing: -0.01em;
-  color: $soft; margin: 0 0 1rem 0; &::after { display: none; }
-}
-.kb-cta-btn {
-  @include condensed; display: inline-block; margin: 2rem 0 1.75rem 0;
-  background: $lime; color: $dark; font-weight: 700; letter-spacing: 0.06em;
-  padding: 0.85rem 2rem; border-radius: 999px; border: 2px solid $dark;
-  text-decoration: none !important; @include pop(4);
-  &:hover { transform: translate(-2px,-2px); @include pop(6); }
-  &:active { transform: translate(2px,2px); box-shadow: none; }
-}
-.kb-cta-links { margin: 0; color: $soft-mut; a { color: $lime; font-weight: 500; } }
-
-@media (max-width: 49.99rem) {
-  .kb-col { padding: 3.5rem 1.25rem; }
-}
-
-
-/* Links on a dark band, measured off aster-track.com/faq's closing section:
-   LIME text with a matching 2px lime underline at weight 600. The first
-   attempt used soft text with a thick lime underline, which reads as a
-   highlighter dragged through grey rather than as a link. */
-/* Specificity note: the general landing-link rule above is
-   `.kb-landing main a:not(.kb-card):not(.kb-cta-btn)` — three classes and two
-   elements. A dark-band rule with one class fewer loses to it however late it
-   sits in the file, which is why these links kept rendering as ink with a 3px
-   underline. Matching its shape and adding the band puts this ahead. */
-.kb-landing main .kb-band a:not(.kb-card):not(.kb-cta-btn) {
-  color: $lime; font-weight: 600;
-  text-decoration: underline; text-decoration-color: $lime;
-  text-decoration-thickness: 2px; text-underline-offset: 3px;
-  background-image: none;
-  &:hover { color: $soft; text-decoration-color: $soft; background: transparent; }
-}
-
-
-/* ---- Footer, matching aster-track.com's ---- */
-.aster-footer-brand .aster-lockup {
-  @include condensed; font-weight: 800; text-transform: uppercase;
-  font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 0.86; letter-spacing: -0.025em;
-  color: $soft; margin: 0 0 1rem 0;
-  .aster-stop { color: $lime; }
-}
-.aster-footer-brand .aster-descriptor { color: $soft-mut; margin: 0; max-width: 22rem; }
-
-.aster-footer-compare {
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1.5rem;
-  padding-top: 2.5rem;
-  a { color: $soft-mut; text-decoration: none; &:hover { color: $lime; } }
-}
-
-.aster-footer-wordmark {
-  display: flex; align-items: center; justify-content: center; gap: 1.5rem;
-  padding: 2.5rem 1rem 0; overflow: hidden;
-  img { width: clamp(48px, 8vw, 110px); height: auto; }
-  span { @include condensed; font-weight: 800; text-transform: uppercase;
-    font-size: clamp(3.5rem, 17vw, 13rem); line-height: 0.8; letter-spacing: -0.03em;
-    color: $lime; }
+  .kb-col { padding: 3rem 1.5rem; }
+  .kb-cards--grid { grid-template-columns: 1fr; }
+  .aster-footer-main { flex-direction: column; }
+  .aster-footer-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
