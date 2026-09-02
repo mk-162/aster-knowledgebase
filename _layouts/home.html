@@ -1,0 +1,41 @@
+---
+layout: table_wrappers
+---
+
+<!--
+  The landing layout.
+
+  The help centre's article pages are a docs layout: a sidebar you navigate by
+  and a bordered content card. That is right for an article and wrong for the
+  front door, and dressing the docs layout in brand colours is what made the
+  home page look nothing like aster-track.com no matter how exactly the tokens
+  matched. The marketing site's FAQ page, which the founder named as the thing
+  to match, has no sidebar and no card at all: full-width bands, each holding
+  one centred column, with a lot of air.
+
+  So the home page gets this layout instead, and only the home page. Articles
+  keep `default.html`, because a reader who arrives mid-problem wants the nav.
+
+  Navigation is not lost by dropping the sidebar here: the topbar carries the
+  audience links and the search box, and the page's own cards are the other
+  way in.
+-->
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en-US' }}">
+{% include head.html %}
+<body class="kb-landing">
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  {% include icons/icons.html %}
+  {% include aster/topbar.html %}
+
+  <main id="main-content">
+    {{ content }}
+  </main>
+
+  {% include aster/sitefooter.html %}
+  {% if site.mermaid %}
+    {% include components/mermaid.html %}
+  {% endif %}
+</body>
+</html>

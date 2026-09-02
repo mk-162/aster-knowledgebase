@@ -310,15 +310,6 @@ div.highlighter-rouge, figure.highlight {
   .kb-hero-sub { color: $soft-mut; margin: 0; max-width: 44rem; font-size: 1rem;
     line-height: 1.6; }
 }
-/* Mobile: the hero's break-out has to mirror .main-content-wrap's padding
-   EXACTLY, and the wrap changes at the theme's own 49.99rem switch (to
-   1.25rem 1.1rem). An earlier version of this block used 50rem and 1.25rem,
-   which left a 20px inset on each side at exactly 800px wide, because the
-   hero's override fired one pixel before the padding it was compensating
-   for. Keep these two rules in step. */
-@media (max-width: 49.99rem) {
-  .kb-hero { margin: -1.25rem -1.1rem 1.75rem -1.1rem; padding: 2.5rem 1.1rem 2.75rem; }
-}
 .kb-live-dot {
   display: inline-block; width: 10px; height: 10px; margin-right: 8px;
   background: $lime; border: 2px solid $lime; border-radius: 50%;
@@ -380,4 +371,104 @@ a.kb-card {
   .main-content-wrap { padding: 1.25rem 1.1rem !important; }
   .kb-topics ul { columns: 1; }
   .aster-footer-main { flex-direction: column; gap: 2rem; }
+}
+
+
+/* ============================================================
+   THE LANDING PAGE (layout: home)
+
+   Measured off aster-track.com/faq rather than approximated. That page is
+   full-width BANDS, each holding one centred column capped at 1152px with
+   80px/32px padding, and no sidebar or content card anywhere. The help
+   centre's article pages keep the docs layout; only the front door uses this.
+
+   The earlier attempt recoloured the docs layout and called it a match. It
+   was not: the sidebar, the bordered card and the cramped rhythm are what
+   made the two pages look unrelated, not the palette.
+   ============================================================ */
+
+body.kb-landing {
+  background: $paper;
+  .aster-shell, .side-bar, .main-content-wrap, .breadcrumb-nav { display: none; }
+}
+
+/* One centred column, the FAQ's exact cap and padding. */
+.kb-col {
+  max-width: 1152px; margin: 0 auto; padding: 5rem 2rem;
+  &.kb-col--centred { text-align: center; }
+}
+
+/* A full-bleed band. Dark by default; the sheet variants are paper. */
+.kb-band { background: $navdark; color: $soft; }
+.kb-sheet { background: $paper; color: $dark; }
+.kb-sheet--alt { background: $paper-2; }
+
+.kb-kicker {
+  @include condensed; letter-spacing: 0.12em; font-weight: 700;
+  font-size: 0.8rem; color: $lime-deep; margin: 0 0 1rem 0;
+  &.kb-kicker--onband { color: $lime; }
+}
+
+/* The FAQ's display line: Barlow Condensed 800, uppercase, 0.86 leading and
+   -0.025em tracking, clamped 3rem to 5.5rem (it renders 68px at 800px wide
+   and 88px on a wide desktop). */
+.kb-display {
+  @include condensed;
+  font-size: clamp(3rem, 7.5vw, 5.5rem); line-height: 0.86; letter-spacing: -0.025em;
+  font-weight: 800; color: $soft; margin: 0 0 1.5rem 0;
+  &::after { display: none; }
+  .kb-display-accent { color: $lime; }
+}
+
+.kb-lede {
+  color: $soft-mut; font-size: 1.0625rem; line-height: 1.6; max-width: 44rem; margin: 0;
+  &.kb-lede--centred { margin-left: auto; margin-right: auto; }
+}
+
+/* In-page headings are Inter, sentence case, exactly as the FAQ sets them. */
+.kb-heading {
+  font-family: $font-body; text-transform: none; font-weight: 500;
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem); line-height: 1.2; letter-spacing: -0.01em;
+  color: $dark; margin: 0 0 2.5rem 0;
+  &::after { display: none; }
+}
+
+/* Cards run the full width of the column and stack, like the FAQ's rows. */
+.kb-landing .kb-cards { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0; }
+.kb-landing a.kb-card {
+  display: block; background: $paper; border: 2px solid $dark; border-radius: 16px;
+  padding: 1.25rem 1.5rem; text-decoration: none !important; color: $dark; @include pop(6);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  &:hover { background: $lime-bg; transform: translate(-2px,-2px); @include pop(8); }
+  &:active { transform: translate(2px,2px); box-shadow: none; }
+  .kb-card-title { @include condensed; display: block; letter-spacing: 0.03em;
+    font-weight: 700; font-size: 1.15rem; margin-bottom: 0.35rem;
+    &::after { content: " \2192"; color: $lime-deep; } }
+  .kb-card-sub { display: block; color: $ink-muted; font-size: 0.95rem; line-height: 1.55; }
+}
+
+.kb-landing .kb-topics ul { columns: 2; column-gap: 3rem; margin: 0; padding: 0; list-style: none; }
+.kb-landing .kb-topics li { break-inside: avoid; margin: 0 0 0.85rem 0; }
+.kb-landing .kb-topics a { font-weight: 500; }
+@media (max-width: 49.99rem) { .kb-landing .kb-topics ul { columns: 1; } }
+
+.kb-browse { font-size: 1rem; line-height: 2; margin: 0; a { font-weight: 500; } }
+
+.kb-cta-title {
+  font-family: $font-body; text-transform: none; font-weight: 500;
+  font-size: clamp(1.75rem, 3.2vw, 2.25rem); letter-spacing: -0.01em;
+  color: $soft; margin: 0 0 1rem 0; &::after { display: none; }
+}
+.kb-cta-btn {
+  @include condensed; display: inline-block; margin: 2rem 0 1.75rem 0;
+  background: $lime; color: $dark; font-weight: 700; letter-spacing: 0.06em;
+  padding: 0.85rem 2rem; border-radius: 999px; border: 2px solid $dark;
+  text-decoration: none !important; @include pop(4);
+  &:hover { transform: translate(-2px,-2px); @include pop(6); }
+  &:active { transform: translate(2px,2px); box-shadow: none; }
+}
+.kb-cta-links { margin: 0; color: $soft-mut; a { color: $lime; font-weight: 500; } }
+
+@media (max-width: 49.99rem) {
+  .kb-col { padding: 3.5rem 1.25rem; }
 }

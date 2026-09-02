@@ -1,79 +1,102 @@
 ---
 title: "Home"
+layout: home
 nav_order: 0
-description: "The Aster help centre — guides for athletes, spectators and event organisers."
-last_updated: 2026-08-28
+description: "The Aster help centre, guides for athletes, spectators and event organisers."
+last_updated: 2026-09-02
 ---
 
-<div class="kb-hero">
-  <p class="kb-hero-kicker"><span class="kb-live-dot"></span>Help Centre</p>
-  <h1 class="kb-hero-title">How can we help?</h1>
-  <p class="kb-hero-sub">Aster is live tracking and sharing for races, meet-ups, runs and
-  adventures. Athletes carry the app; anyone they share with can follow them along the route
-  in real time — no account needed to watch. Search above, or jump to your section below.</p>
-</div>
+<section class="kb-band">
+  <div class="kb-col">
+    <p class="kb-kicker kb-kicker--onband">Help Centre</p>
+    <h1 class="kb-display">How can<br>we <span class="kb-display-accent">help?</span></h1>
+    <p class="kb-lede">Guides for tracking a ride or run, watching someone live, and running
+    an event end to end. Search at the top, or start with your section below.</p>
+  </div>
+</section>
 
-<div class="kb-cards">
-  <a class="kb-card" href="for-athletes/">
-    <span class="kb-card-emoji">🚴</span>
-    <span class="kb-card-title">For athletes</span>
-    <span class="kb-card-sub">Enter events, track a ride or run, share it live, results —
-    built to keep working when the signal doesn't.</span>
-  </a>
-  <a class="kb-card" href="for-spectators/">
-    <span class="kb-card-emoji">👀</span>
-    <span class="kb-card-title">For spectators</span>
-    <span class="kb-card-sub">Follow a race or a single rider live — no account needed.
-    The map, the trails, the leaderboard.</span>
-  </a>
-  <a class="kb-card" href="for-organisers/">
-    <span class="kb-card-emoji">🏁</span>
-    <span class="kb-card-title">For organisers</span>
-    <span class="kb-card-sub">Create and run an event end to end: routes, registration,
-    race-day dashboard, safety, results.</span>
-  </a>
-</div>
+<section class="kb-sheet">
+  <div class="kb-col">
+    <p class="kb-kicker">Where to start</p>
+    <h2 class="kb-heading">Pick your side of the tape</h2>
 
-## Popular topics
+    <div class="kb-cards">
+      <a class="kb-card" href="for-athletes/">
+        <span class="kb-card-title">For athletes</span>
+        <span class="kb-card-sub">Enter events, track a ride or run, share it live, and get
+        your results. Built to keep working when the signal doesn't.</span>
+      </a>
+      <a class="kb-card" href="for-spectators/">
+        <span class="kb-card-title">For spectators</span>
+        <span class="kb-card-sub">Follow a race or a single athlete live, with no account and
+        no app. The map, the trail, the standings.</span>
+      </a>
+      <a class="kb-card" href="for-organisers/">
+        <span class="kb-card-title">For Event Organisers</span>
+        <span class="kb-card-sub">Create and run an event end to end: routes, registration,
+        the race-day dashboard, safety and results.</span>
+      </a>
+      <a class="kb-card" href="teams-and-clubs/">
+        <span class="kb-card-title">For clubs and teams</span>
+        <span class="kb-card-sub">Meet-ups, the club board, a shared route library, and a
+        members-only live map.</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-<div class="kb-topics" markdown="1">
+<section class="kb-sheet kb-sheet--alt">
+  <div class="kb-col">
+    <p class="kb-kicker">Popular</p>
+    <h2 class="kb-heading">Most-read guides</h2>
+
+    <div class="kb-topics" markdown="1">
 - [What is Aster?](getting-started/what-is-aster.md)
 - [Create an account](getting-started/create-an-account.md)
 - [Your first event: a walkthrough](for-athletes/your-first-event.md)
 - [Start and track a ride](for-athletes/starting-and-tracking-a-ride.md)
 - [Watch an event live](for-spectators/watch-an-event-live.md)
-- [Clubs on Aster](teams-and-clubs/)
 - [Alerts and crash detection](safety-and-offline/sos-and-crash-detection.md)
 - [What happens when I lose signal?](safety-and-offline/offline-and-no-signal.md)
 - [Who can see my location?](account-and-privacy/who-can-see-your-location.md)
 - [Organiser quick-start checklist](for-organisers/quick-start-checklist.md)
 - [Notification settings](notifications/preferences-and-quiet-hours.md)
-</div>
+    </div>
+  </div>
+</section>
 
-## Browse everything
+<section class="kb-sheet">
+  <div class="kb-col">
+    <p class="kb-kicker">Everything else</p>
+    <h2 class="kb-heading">Browse every section</h2>
 
+    <p class="kb-browse" markdown="1">
 [Getting started](getting-started/) ·
-[Teams & clubs](teams-and-clubs/) ·
-[Social & following](social-and-following/) ·
-[Safety & offline](safety-and-offline/) ·
+[For athletes](for-athletes/) ·
+[For spectators](for-spectators/) ·
+[For Event Organisers](for-organisers/) ·
+[Teams &amp; clubs](teams-and-clubs/) ·
+[Social &amp; following](social-and-following/) ·
+[Safety &amp; offline](safety-and-offline/) ·
 [Notifications](notifications/) ·
-[Account & privacy](account-and-privacy/) ·
-[Glossary, FAQ & troubleshooting](reference/)
+[Account &amp; privacy](account-and-privacy/) ·
+[Glossary, FAQ &amp; troubleshooting](reference/)
+    </p>
+  </div>
+</section>
 
-<div class="kb-support" markdown="1">
-<p class="kb-support-kicker">Still stuck?</p>
-
-**Here's how to get support:**
-
-1. **Search this help centre** (top of the page) — most answers are a search away, and the
-   [troubleshooting guide](reference/troubleshooting.md) covers the common fixes.
-2. **Questions about a specific event** — your category, start time, registration, results —
-   go to **that event's organiser**. They control the event's settings and can fix most
-   event things on the spot (their contact is on the event page).
-3. **App problems, your account, or anything else** — email us and a human will reply:
-
-<a class="btn kb-support-btn" href="mailto:help@astertrack.app">✉️ &nbsp;Email help@astertrack.app</a>
-
-When reporting a bug, include what you were doing, what you expected, what happened instead,
-and your phone model — [how to write a report that gets fixed fast](reference/getting-support.md).
-</div>
+<section class="kb-band kb-band--cta">
+  <div class="kb-col kb-col--centred">
+    <h2 class="kb-cta-title">Still stuck?</h2>
+    <p class="kb-lede kb-lede--centred">Search first, most answers are a search away. Questions
+    about a specific event, your category, start time or results, go to that event's organiser.
+    For anything else, a human will reply.</p>
+    <a class="kb-cta-btn" href="mailto:help@astertrack.app">Email us</a>
+    <p class="kb-cta-links" markdown="1">
+[Troubleshooting](reference/troubleshooting.md) ·
+[How to report a bug](reference/getting-support.md) ·
+[Glossary](reference/glossary.md) ·
+[FAQ](reference/faq.md)
+    </p>
+  </div>
+</section>
