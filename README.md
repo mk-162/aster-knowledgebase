@@ -1,3 +1,14 @@
+# RETIRED, 2026-09-03
+
+**The help centre now lives in the marketing site's repository,
+`Scylark/aster-website`, under `content/help/`, and is served at
+<https://aster-track.com/help>.** This repository is archived and nothing
+here is a source for anything. Do not edit it, sync from it, or deploy it.
+The style guide and the vocabulary guard moved across with the articles
+(`docs/help-centre-style-guide.md` and `npm run help:check` there).
+
+---
+
 # Aster Help Centre
 
 This folder is the source for the public **Aster help centre**: a
